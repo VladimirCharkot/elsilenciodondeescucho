@@ -1,4 +1,4 @@
-let fs = require('fs/promises');
+let fs = require('fs').promises
 let path = require('path')
 let formidable = require('formidable')
 let _ = require('lodash')
