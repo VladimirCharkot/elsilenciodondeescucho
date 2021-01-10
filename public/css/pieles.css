@@ -1,0 +1,88 @@
+/* Escrito */
+
+
+:root{
+  --color-base: #fcfaf4;
+  --color-default: #e2f7eb88;
+  --textura-default: url(/img/bamboo.png);
+  --blend-default: hard-light;
+  --attach-default: fixed;
+  --pad-default: 5px 0px;
+  --altura-ventanas: 400px;
+  --escala-default: cover;
+  --posicion-default: center;
+}
+
+
+.escrito{
+  background: var(--color-base);
+  width: 100vw;
+}
+
+h2, h3, h4{
+  font: 1.7em 'Julius Sans One';
+  padding: 0px 20%;
+  padding-top: 50px;
+}
+
+.escrito h2, .escrito h3, .escrito h4{
+  background-attachment: var(--attach-default);
+  background-color: var(--color-default);
+  background-image: var(--textura-default);
+}
+
+.escrito p{
+  padding: 0px 25% 0px 25%;
+}
+
+/* Not supported yet :( */
+.escrito p:has(>img){
+  padding: 0;
+  background-color: azure;
+}
+
+.escrito img{
+  width: 100%;
+}
+
+.ventana{
+  background-attachment: var(--attach-default);
+  background-image: var(--url-imagen); /* Se espera que esté definida en el elemento*/
+  background-size: var(--escala, var(--escala-default));
+  background-position: var(--posicion, var(--posicion-default));
+  height: var(--altura-ventanas);
+}
+
+.piel{
+  padding: var(--pad, var(--pad-default));
+  background-attachment: var(--attach, var(--attach-default));
+  background-color: var(--color, var(--color-default));
+  background-image: var(--textura, var(--textura-default));
+  background-blend-mode: var(--blend, var(--blend-default));
+}
+
+.hojas{
+  background-image: url(/img/hojas.jpg);
+  background-color: #ffb8a7;
+  background-blend-mode: color-dodge;
+}
+
+
+.verde{
+  background-color: #e2f7eb88;
+}
+
+.naranja{
+  background-color: #f6ba8f66;
+}
+
+.celeste{
+  background-color: #8bbcfc;
+}
+
+
+.firma{
+  text-align: right;
+  padding-right: 5%;
+  padding-bottom: 15%;
+}

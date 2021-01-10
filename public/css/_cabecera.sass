@@ -1,0 +1,96 @@
+
+// #menu
+//   z-index: 2
+//   position: absolute
+//   width: 100%
+
+
+
+#cabecera
+  position: fixed
+  z-index: 1
+  a
+    text-decoration: none
+    color: #333
+    width: max-content
+    /*margin: 0px*/
+
+  h1
+    letter-spacing: 2px
+    margin: 0px
+    transition: 0.8s
+    font-size: 2.5em
+
+  .intro
+    text-transform: uppercase
+    background-color: #fff
+    font-family: 'Julius Sans One', sans-serif
+    letter-spacing: 2px
+    padding: 40px 9%
+    transition: 0.5s
+
+  .frase
+    font-size: 0.8em
+    transition: 0.9s
+    /*text-align: center*/
+
+  nav
+    background-color: #d7eac9
+    border-bottom: 2px solid rgba(0,0,0,.15)
+    height: 40px
+    top: 200px
+    transition: 0.8s
+    font-size: 1.2em
+
+
+    ul
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      margin: 0
+      padding: 0% 20%
+      height: 100%
+
+
+    li
+        flex-grow: 1
+        text-align: center
+        font-size: 0.7em
+        transition: 1s
+        list-style: none
+        &:hover
+            background-color: #5f9ea066
+
+
+    a
+      text-decoration: none
+      color: black
+      justify-self: center
+      align-self: center
+      color: #333
+      line-height: 3.3em
+
+
+#cabecera.contraida
+  .intro
+    padding: 5px
+    h1
+      font-size: 22px
+      text-align: left
+  nav
+    padding: 0px
+    height: 0px
+    a
+      font-size: 0px
+  .frase
+    z-index: 0
+    opacity: 0
+    max-height: 0
+    text-align: left
+    p
+      margin: 0
+      max-height: 0
+
+
+/*.nav a:hover
+    background-color: #5f9ea066*/

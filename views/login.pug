@@ -1,0 +1,87 @@
+extends layout
+
+block cabecera
+  div
+
+block contenido
+  style.
+    .btn{
+      width: 30px;
+      height: 30px;
+      margin: 10px;
+      background-size: cover;
+      cursor: pointer;
+      box-sizing: border-box;
+    }
+    
+    .btn:hover{
+        background-color: #eadcce;
+        background-blend-mode: multiply;
+        border: 1px solid;
+    }
+    
+    #login{
+      background-image: url('/icon/login.png');
+    }  
+    
+    #contenedor{
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      background-image: url(/img/mussi.jpg); 
+      background-size: cover;
+      background-position: center;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    #contenedor > div{
+      display: flex;
+      height: min-content;
+    }
+    
+    #pwd{
+      background: none;
+      border: none;
+    }
+    
+    #pwd:hover{
+      border: 1px solid;
+    }
+    
+    #pwd:focus{
+      background: #fff4;
+      box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+      outline: none;
+    }
+    
+    #login{
+      opacity: 0;
+    }
+    
+    #pwd:focus + #login{
+      opacity: 1;
+    }
+
+  script.
+    let login = async () => {
+      let r = await fetch('/hogar',{method: 'post', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({username: 'bla', password: document.querySelector('#pwd').value})})
+      let j = await r.json()
+      if(j.ok == true){
+        window.location = '/editor'
+      }else{
+        flash({mensaje: 'Incorrecto!'})
+      } 
+    }
+    
+    let leer_tecla = (e) => {
+      console.log(e.key)
+      if (e.key == 'Enter') login()
+    }
+
+    window.onkeyup = leer_tecla;
+
+  div#contenedor
+    div
+      input(id='pwd', name='password', type='password')
+      div.btn#login(title='Entrar', onclick='login()')

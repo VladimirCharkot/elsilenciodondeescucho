@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= titulo
+    link(href='/css/style.css', rel='stylesheet')
+    link(href='/css/pieles.css', rel='stylesheet')
+    link(href='/icon/leaf.png', rel='icon')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    script(src='/js/flash.js')
+  body
+    block cabecera
+    div#contenido
+      div#flash
+        p
+        a(href='#', onclick="$('#flash').removeClass('expandido')") X
+      block contenido

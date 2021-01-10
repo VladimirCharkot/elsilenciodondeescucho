@@ -1,0 +1,23 @@
+extends layout
+
+include cabecera
+
+block contenido
+  script.
+    let corregir_imagenes = () => {
+      document.querySelectorAll('p img').forEach(i => {
+          let d = document.createElement('div')
+          d.classList.add('ventana')
+          console.log(i.getAttribute('src'))
+          d.style.setProperty('--url-imagen', `url(${i.getAttribute('src')})`)
+          i.parentElement.replaceWith(d)
+          i.style.opacity = 0
+          d.appendChild(i)
+        }) 
+    }
+    window.addEventListener('load', corregir_imagenes)
+
+  div.escrito!= cont
+    div.firma.piel1
+      p Sebastán Rojo
+      p "El Silencio Donde Escucho"

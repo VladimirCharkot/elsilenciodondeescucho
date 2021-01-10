@@ -1,0 +1,31 @@
+{
+  "name": "esde",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "PORT=50505 nodemon ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-session": "^1.17.1",
+    "formidable": "^1.2.2",
+    "http-errors": "~1.6.3",
+    "lodash": "^4.17.20",
+    "markdown-it": "^11.0.0",
+    "markdown-it-attrs": "^3.0.3",
+    "markdown-it-bracketed-spans": "^1.0.1",
+    "markdown-it-container": "^3.0.0",
+    "markdown-it-div": "^1.1.0",
+    "markdown-it-emoji": "^1.4.0",
+    "markdown-it-footnote": "^3.0.2",
+    "morgan": "~1.9.1",
+    "node-sass-middleware": "0.11.0",
+    "nodemon": "^2.0.6",
+    "passport": "^0.4.1",
+    "pug": "2.0.0-beta11",
+    "uuid": "^8.3.2"
+  }
+}

@@ -1,0 +1,329 @@
+/* Editor */
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap")
+
+
+
+
+
+
+
+
+
+/* Area del editor */
+
+#editor
+  height: 100%
+  width: 100vw
+  display: flex
+  background-color: #fffd
+  background-image: url(/img/arbol.jpg)
+  background-size: cover
+  background-blend-mode: color-burn
+  > div
+    width: 100%
+    height: 100%
+    overflow-y: scroll
+    scrollbar-width: none
+
+
+.panel
+  overflow-y: scroll
+  max-width: 0px
+  &.expandido
+    max-width: 3000px
+    border: 1px solid black
+
+
+
+/* Barra */
+
+#controles
+  display: flex
+  flex-direction: column
+  justify-items: center
+  align-items: center
+  max-width: 50px
+  border: 1px solid black
+  background: #e6f3ff
+
+.btn
+  width: 30px
+  min-width: 30px
+  height: 30px
+  margin: 10px
+  background-size: cover
+  cursor: pointer
+  box-sizing: border-box
+  &:hover
+    background-color: #eadcce
+    background-blend-mode: multiply
+    border: 1px solid
+
+
+/* Íconos del árbol */
+.carpeta-icono
+  background-image: url(/icon/folder.png) !important
+  background-size: cover
+
+.texto-icono
+  background-image: url(/icon/articulo.png) !important
+  background-size: cover
+
+
+
+/* Botones de la barra */
+#texto
+  background-image: url(/icon/pen-2.png)
+
+#preview
+  background-image: url(/icon/preview-2.png)
+
+#archivos
+  background-image: url(/icon/tree-1.png)
+
+#imgs
+  background-image: url(/icon/image.png)
+
+#menu
+  background-image: url(/icon/journal.png)
+
+#csss
+  background-image: url(/icon/curly-brackets.png)
+
+#logout
+  background-image: url(/icon/logout.png)
+
+#nuevo
+  background-image: url(/icon/new.png)
+
+#borrar
+  background-image: url(/icon/trash.png)
+
+#subir_imagen
+  background-image: url(/icon/new.png)
+
+#borrar_imagen
+  background-image: url(/icon/trash.png)
+  margin-top: auto
+
+
+#cerrar
+  background-image: url(/icon/close.png)
+  margin-left: auto
+  opacity: 0
+  transition: .1s
+  justify-self: flex-end
+  border: none
+  &:hover
+    opacity: 1
+    background-color: #fff0
+
+
+@keyframes eyecall
+  from
+    box-shadow: inset 0px 0px 0px
+  50%
+    box-shadow: inset 0px 0px 5px orange
+  to
+    box-shadow: inset 0px 0px 0px
+
+.call_eye
+  animation-duration: 0.5s
+  animation-name: eyecall
+
+
+
+
+
+
+/* Botones del area de texto */
+
+#guardar
+  background-image: url(/icon/save.png)
+
+#reset
+  background-image: url(/icon/reset.png)
+
+
+#nombre
+  transition: .7s
+  padding: 5px
+  border: 1px solid white
+  font-size: 1.3em
+  &:hover
+    background-color: #fcfaf4
+    border: 1px solid antiquewhite
+  &:focus
+    outline: none
+
+// #status
+//   transition: .5s
+//   background-image: url(/icon/changed.png)
+//   background-size: 16px
+//   background-repeat: no-repeat
+//   background-position: center
+//   cursor: auto
+//   &:hover
+//     background-color: white
+//     border: none
+
+#status
+  visibility: collapse
+
+
+
+/* Paneles */
+
+#arbol
+  border: 1px solid black
+  p
+    margin: 0
+    display: inline
+
+
+#md
+  > div
+    display: flex
+    background: white
+    overflow: scroll
+  textarea
+    border: none
+    border-right: 1px solid #d7eac9
+    width: 100%
+    height: 100%
+    font-family: 'Cutive Mono', monospace
+    scrollbar-width: none
+    box-sizing: border-box
+    padding: 10px
+    &:focus
+      outline: none
+
+#md.vacio
+    textarea
+      visibility: hidden
+    > div
+      border-bottom: 1px solid #ffc6a4
+    #guardar
+      visibility: collapse
+    #reset
+      visibility: collapse
+    #status
+      visibility: collapse
+    #nombre
+      visibility: collapse
+    #borrar
+      visibility: collapse
+    #cerrar
+      visibility: collapse
+
+#md.nuevo
+  #nuevo
+    visibility: collapse
+  #reset
+    visibility: collapse
+  #nombre
+    box-shadow: inset 0px 0px 5px orange
+  #borrar
+    visibility: collapse
+
+#md.editado
+  #nuevo
+    visibility: collapse
+  #cerrar
+    visibility: collapse
+  #reset
+    visibility: visible
+  #borrar
+    visibility: collapse
+    // box-shadow: inset 0px 0px 5px orange
+
+#md.guardado
+  #guardar
+    visibility: collapse
+  #reset
+    visibility: collapse
+  #status
+    visibility: collapse
+  textarea
+    box-shadow: inset 0px 0px 5px #bfff9b
+
+
+
+
+
+
+#imagenes
+  display: flex
+  > div
+    display: flex
+    flex-direction: column
+    background: white
+    overflow: scroll
+    border-right: 1px solid #ffc6a4
+
+#vitrina
+  width: 100%
+  display: flex
+  flex-direction: column
+  > img
+    margin: 20px
+    border: 2px solid
+  .seleccionada
+    box-shadow: 0px 0px 10px 3px #70ebff
+
+
+#archivo_imagen
+  display: none
+
+
+#css
+
+
+
+// Esto está bueno para mobile
+#previa
+  p
+    padding: 0px 5% 0px 5%
+  h2,h3,h4
+    font: 1.7em 'Julius Sans One'
+    padding: 5% 2%
+    margin: 0
+  img
+    width: 100%
+
+
+
+
+// #visor
+//   position: absolute
+//   top: 0
+//   right: 0
+//   margin: 15px
+//   opacity: .3
+//   transition: .5s
+//   &:hover
+//     opacity: 1
+//
+//
+// #imgs-indice
+//   // float: right
+//   display: inline-block
+//
+// #agregar_img
+//   // float: right
+//   display: inline-block
+//
+// #enviar_img
+//   // float: right
+//   display: inline-block
+
+
+// button
+//   border: 2px solid #cfddc4
+//   background: #fcfaf3
+//   padding: 5px
+//   margin: 5px
+
+
+// .jstree-icon
+//   background-size: cover !important
