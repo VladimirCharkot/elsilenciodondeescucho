@@ -24,10 +24,11 @@ En ello, cada vez que se obra bajo estos principios y tras estos fines, se está
 
 Esto funciona así: ¡hay que estar muy atentos al momento en que comienza a ocurrir!
 La misma "tensión" que sentimos como intranquilidad, ansiedad, deseo, anhelo, necesidad, insatisfacción y otros estados similares y coexistentes a estos en un momento dado, junto a los pensamientos que hay en nosotros en dichos momentos con miras a lograr algo a través de alguna acción futura, son parte, todos, de la negación de lo que Es, y en este caso, del atributo de la abundancia. Estos estados son movimientos de la persona -algo que "fue" y constantemente está intentando "llegar a ser"- y que, desconectada completamente del presente se mueve del pasado al futuro, en lo psicológico, con el propósito en sí de ocupar y dominar la actividad de la existencia, y repetirse, perpetuarse, darse continuidad.
+
 Estos estados, una vez puestos en movimiento por la persona, en nuestra ausencia y sin nuestro dominio propio, nos ponen en movimiento a nosotros tras algo más, tras algo que creemos que nos falta, sin que podamos percatarnos de la confusión en la que ya nos encontramos. Así, al, la mente y el cuerpo estar tomados por la persona, el Ser no puede ocupar la actividad presente, y por tanto, tampoco crecer.
 La misma tensión fabricada por la atracción que provoca un posible estado imaginado diferente al de ahora, y susceptible de ser adquirido, logrado por medio de acciones igualmente imaginadas y futuras, todo, es parte de la ilusión. Nace de la creencia en la carencia y la escasez.
 
-No se puede hacer algo hoy para lograr algo mañana(1). En este sentido, la idea de "dar algo hoy para recibir algo mañana", que está oculta tras el supuesto trabajo que se hace para la abundancia y que implica un "entregar-confiar" este "algo" –dinero por ejemplo, o cosas materiales- para tener más mañana, es ilusoria.
+No se puede hacer algo hoy para lograr algo mañana[^1]. En este sentido, la idea de "dar algo hoy para recibir algo mañana", que está oculta tras el supuesto trabajo que se hace para la abundancia y que implica un "entregar-confiar" este "algo" –dinero por ejemplo, o cosas materiales- para tener más mañana, es ilusoria.
 Entre dar y recibir no hay distancia. No hay tiempo. Son la misma actividad: cuando se da amor se recibe amor… hay amor. Cuando se da paz se recibe paz, se vive paz.
 De la misma manera, y para extender la Verdad a otro concepto corriente de estos tiempos y que se relaciona con el de la abundancia, podemos ver, en el mismo sentido, que no se puede trabajar, hacer, algo para "empoderarse". Todo hacer para llegar a tener "poder" mañana, es dar por sentado, como un hecho, como una realidad, que no se tiene "poder" ahora. De hecho, en ese mismo acto, se corre, de ahora a mañana, el "poder" que uno puede imprimir para trascender el estado que mueve la mente, haciéndonos creer, que no tenemos poder para afrontar la situación dada, y que no está puesta sino con este mismo fin: que se haga el trabajo de trascendencia.
 
@@ -52,4 +53,4 @@ El orden en la Paz es: en el silencio de la profundidad de la Consciencia, del S
 
 Y se anda con liviandad, con la atención y en paz.
 
-[1](#sdfootnote1anc) En este sentido. No hablamos de las cuestiones prácticas de la vida que nos muestran claro que, por ejemplo, si es que un cuerpo crezca se lo debe alimentar… si es que una planta no se seque se la debe regar… si es que un clavo entre en la madera se lo debe martillar. Etc.
+[^1]: En este sentido. No hablamos de las cuestiones prácticas de la vida que nos muestran claro que, por ejemplo, si es que un cuerpo crezca se lo debe alimentar… si es que una planta no se seque se la debe regar… si es que un clavo entre en la madera se lo debe martillar. Etc.

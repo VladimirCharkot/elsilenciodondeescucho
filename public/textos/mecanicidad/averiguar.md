@@ -21,8 +21,9 @@ Al tiempo, "vuelve en sí" por algún momento, antes de volver a perderse en dic
 
 En este punto, se hace muy difícil escapar de esta serie de mecanismos y hábitos que relacionan aquel estado de frustración con la actividad de investigar y viceversa. Ya todo estará confundido. Todo esto sucede por completo desapercibido para quien, en ese estado, vive perdido y que, mecánicamente refuerza toda esta situación que por cierto, es la base con la que nuestros vínculos se comportan. Para quien por supuesto "no Está allí". Con el tiempo, ambas cosas estarán juntas en dicho ser, el niño en este caso. Averiguar será algo que al estar relacionado con aquellas resultantes, no querrá hacer nunca más.
 
+::: piel
 Por ello es importante alimentar en el niño el interés por averiguar por sí mismo cada cosa, y a la vez, en su medida justa, exacta y objetiva, contribuir a que encuentre resultados reales, acercárselos, cooperar a que "descubra", a que logre su cometido." (…)
-
+:::
 
 Del libro en gestación: Una pedagogía de la Presencia(movimiento intelectual), mientras de alguna manera va instantáneamente registrándose y trastocando los registros (otro movimiento intelectual). Así, todo lo anterior, simultáneamente va tomando manifestación en la existencia física, externa, en el comportamiento, la actitud (movimiento motriz) y así, sucesivamente. Hay una contaminación constante de una parte de este conjunto a otra, y un sinfín de movimientos dentro de cada una de estas partes que desprenden "cosas" (energías, influencias) contaminadoras, de una a otra, entre ellas.
 Una reciprocidad y simultaneidad que se da, está, se aloja, en cada movimiento.

@@ -2,7 +2,6 @@
 
 Son solo dos "estados", modos, en los que La Mente se puede encontrar funcionando a cada instante, en cada una de sus partes, o sea en cada uno de nosotros.
 
-
 Mente: Es Una Universal Completa Inteligencia Dichosa. Es Una en y con todas sus partes. Y sus partes -como una neurona de dicha Mente Dichosa- son cada una de nuestras mentes particulares, las de cada organismo inteligente, con sus variables de tipo y estructuras. Estos Modos de funcionar de las mentes particulares, de estas neuronas de la Mente Universal nada tienen que ver, ni dependen, de los contenidos particulares, personales, históricos de cada una de ellas. Los modos en que pueden funcionar, no dependen de ni una sola de las creencias, ideas, que tengamos, sean cuales sean estas, en relación a lo que Somos o lo que Es cada Cosa, y que formen nuestras mentes. No dependen del contenido que cada mente particular contiene. No. Es un modo de funcionar. Sin que ello deslinde la posibilidad de que cierto tipo o calidad de conocimiento adquirido pueda acercar más que otros a este tipo de cuestiones e investigaciones y que por tanto abran la posibilidad de revisar lo expuesto.
 
 ::: piel

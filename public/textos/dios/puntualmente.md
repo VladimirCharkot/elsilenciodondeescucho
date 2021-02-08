@@ -12,8 +12,6 @@ O mejor
 
 O de alguna manera en particular.
 
-</br>
-
 Puro. Limpio. Límpido. Pulcro. Sin manchas.
 
 Tal como Es.
@@ -26,8 +24,6 @@ Una emoción pura.
 
 Un pensamiento puro.
 
-</br>
-
 Es decir.
 
 Una sensación sin contaminación de emoción ni pensamiento.
@@ -38,18 +34,15 @@ Una emoción sin contaminación de pensamiento o memoria.
 
 Un pensamiento sin contaminación de emoción o sensación.
 
-</br>
 
+::: piel hojas
 Puro. Tal como Es.
-
-</br>
-
+:::
 
 En cuanto llega, en cuanto es, tal como Es.
 
 Sin contaminación.
 
-</br>
 
 Vivir en estado puro.
 Observación pura, Atención Pura.

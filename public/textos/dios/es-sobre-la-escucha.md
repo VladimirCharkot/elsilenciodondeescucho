@@ -1,6 +1,5 @@
 Es sobre la escucha, silenciosa y profunda, que precisamente vamos a conversar.
 
-
 Como en este instante,
 
 uno puede detener todo en la mirada y solo escuchar el sonido del viento en las hojas,

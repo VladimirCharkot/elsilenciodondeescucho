@@ -7,6 +7,7 @@ El humano separa todo.
 También separa sistemas. Cada uno separado del otro (capitalista, comunista, socialista, demócrata, popular, cristiano, católico, sufí, judío, etc., etc.).
 
 La existencia de sistemas es señal de la acción misma de separar. De estar separados.
+
 El humano separa en sistemas -y se separa en sistemas- porque carece de un sentido común. No sentido común en su uso corriente. Sino de un "cierto sentido en común". Un "hacia dónde se dirige" que sea común a la humanidad. Una dirección común. Sin esto, todo sistema es imposición. Y con esto, todo sistema es innecesario. Falaz.
 
 El humano separa sistemas. No los sistemas que pone en marcha dicho "posible sentido en común" en pos de ir tras de sí, desarrollarse y procurar su propio medrar. No los del conocimiento práctico que permiten realizar cosas en la existencia, como sembrar, construir una casa, dividir un átomo, diagramar, organizar, etc. Sino los sistemas abstractos de ideas, ideologías, dogmas, reglas morales, etc. los de la necesidad del poder para imponerse unos sobre el otros, con todos sus mecanismos, unos u otros, sin distinción.

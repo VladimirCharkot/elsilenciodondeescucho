@@ -38,4 +38,5 @@ Crece con el Poder del Ser que Hace al Ser realizarse y no con el poder personal
 Es mientras Es, Siendo. Sin ir tras lograr nada más que lo que ya Es. Se Cumple Siendo.
 
 El Ser crece con y en el decrecimiento de la persona.
+
 En cada Hacer del Ser en y con su Poder, y que implica un no poder hacer de la persona para sí, se produce una fricción interna y la invariable disolución de la persona (de lo personal que quería poder llegar a ser), la disolución de algunas de las personalidades y/o de algunos de sus aspectos. Y esta disolución es un evento, un hecho del que se deduce, del cual proviene el Alimento para el Crecimiento para el Ser.

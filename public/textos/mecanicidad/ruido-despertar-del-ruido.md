@@ -1,6 +1,4 @@
-## RUIDO
-
-## DESPERTAR, DEL RUIDO
+## RUIDO. DESPERTAR, DEL RUIDO
 
 Hasta un momento, ese o este ahora, no había nadie -ni nada- en uno.
 
@@ -24,7 +22,6 @@ Están "ellos" y estoy "Yo"
 
 – el espacio donde "ellos" ocurren, donde la existencia ocurre-.
 
-</br>
 
 La existencia –grados, puntos, posiciones,
 
@@ -38,7 +35,6 @@ La consciencia -el espacio- contiene lo conocido.
 
 Lo conocido está contenido en el espacio. O "discurre" en él, existe.
 
-</br>
 
 Pero, ¿Está completo esto? ¿Puede haber algo más que esto?
 

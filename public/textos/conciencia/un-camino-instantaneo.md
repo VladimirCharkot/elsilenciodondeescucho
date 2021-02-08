@@ -46,7 +46,7 @@ Nada, No Es, sin Algo.
 ::: piel
 La afirmación y la negación como respuestas en relación a lo que Es y que llega inmerso en el Flujo de la Vida, surgen de la necesidad de afirmarse-aprobarse-reconocerse-aceptarse uno frente a lo otro. De la necesidad de mostrar nuestro punto de vista, nuestra posición, nuestro parecer, lo que creemos, acerca de lo que Es. La afirmación y la negación, Llegan al ahora, a la relación, de la necesidad de reconocimiento externo por la falta del propio reconocimiento interno. Y dicha necesidad de aprobación, puesta en movimiento como respuesta a lo que Es, es la no aceptación de lo que Es. Es la misma ignorancia que obstruye la Sabiduría e impide el desarrollo, el crecimiento de lo que Somos.
 
->_En el momento en que hay real-verdadera aceptación, no hay movimiento en respuesta a ello, ya que no hay necesidad de negar, ni de afirmar lo escuchado-recibido, aquello que Es. Simplemente se lo ha aceptado, nada hay nada que agregarle. Solo hay silencio, receptividad._
+_En el momento en que hay real-verdadera aceptación, no hay movimiento en respuesta a ello, ya que no hay necesidad de negar, ni de afirmar lo escuchado-recibido, aquello que Es. Simplemente se lo ha aceptado, nada hay nada que agregarle. Solo hay silencio, receptividad._
 :::
 
 Recapitulando:

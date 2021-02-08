@@ -16,7 +16,7 @@ que somos dos
 
 Uno que observa y otro que observa que se está observando
 
-</br>
+--
 
 Y cuando camino.
 
@@ -38,8 +38,7 @@ Vigila saber que observa, que camina, que baila, que habla
 
 Vigila saber que averigua y qué averigua…
 
-</br>
-
+--
 
 Y si deja de vigilar,
 
@@ -61,13 +60,10 @@ ni que habla, o que camina…
 
 ni se lo ve.
 
-</br>
-
 
 Aparece allí, una especie de "yo algo ausente"
 
-</br>
-
+--
 
 Observo hacia mí,
 

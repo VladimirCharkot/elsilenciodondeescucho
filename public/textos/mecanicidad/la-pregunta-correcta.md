@@ -10,6 +10,7 @@ Y hay sólo hay una que es correcta.
 Una... la única que es atendida. ¿Cuál?
 
 El trabajo, si es Real, es siempre un paso mas de entrega.
+
 Y lo único que se tiene para entregar -si es que algo se tiene-; lo único que en algún sentido es de uno y por tanto se puede entregar, es lo que llamamos la propia vida: porque ni aún nuestro cuerpo físico es del todo nuestro, tarde o temprano habremos de devolverlo, es parte de la tierra.
 Lo que es posible entregar, son: los deseos personales, los intereses personales, el desarrollo personal, los títulos, el sentido de pertenencia, los vínculos, las actividades… y, por, sobre todo, la voluntad personal: esa pequeña y esquizofrénica fuerza contradictoria que ahora aboga y se esfuerza, llena de pretensiones y miedos, en una cosa y después en otra, según el viento que sople a cada hora del día (o del año); que quiere cosas, tras las que se mueve, en función de las ideas que tiene acerca de ellas. Esa fuerza que en cuanto cambian las condiciones, cambia su dirección y poder de acción.
 

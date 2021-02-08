@@ -25,5 +25,4 @@ En el esfuerzo y la escucha está la posibilidad y la profundidad de apertura, d
 El futuro es ahora.
 
 En la fe,
-
 allí radica su posibilidad.

@@ -1,6 +1,6 @@
 ## DE LOS ESPACIOS DE TRABAJO
 
-## DINÁMICA DE AVERIGUACIÓN
+**DINÁMICA DE AVERIGUACIÓN**
 
 Un estado de vaciamiento en tus ojos…
 

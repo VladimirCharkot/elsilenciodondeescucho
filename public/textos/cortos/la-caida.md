@@ -8,4 +8,5 @@ Alcanzo a ver los colores de su vestido entre los blancos, amarillos y algunas p
 
 La reciben, abajo, hojas, tierra húmeda, alguna que otra hormiga y hasta la caca de un perro que se huele por ahí. Y cuando cae, desparramada, y se ve salpicada por la tierra y el agua, siente regocijo y se hunde. Se hunde aún más en ese huequito en el que cayo, en ese huequito que se hizo con el impacto del cuerpo contra el piso.
 Y ahí se queda, entre ramas, césped, hojas, flores caídas, cacas de perro y alguna que otra semilla llevada por hormigas.
+
 Ahí se queda, agradeciendo llegar a lugar fértil donde marchitar.

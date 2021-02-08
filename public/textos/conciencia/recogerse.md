@@ -23,23 +23,27 @@ Esto no es una abstracción, no es una idea, no es retórico.
 Real-mente, algo de sí, se pierde en cada cosa y a ella, para todo futuro posible, queda atado.
 
 Es preciso observarlo. Es algo real sucediendo.
+
 Por ejemplo, puede verse sucediendo cuando transitando por la casa, se pasa al lado de, y se ve sin mirar, de "reojo", un objeto que estando en el contexto de la propia vida, al usarlo, otorga la posibilidad de recibir agradecimiento, elogios o halagos desde el entorno social en el que se vive. Por ejemplo el instrumento para el músico. Se puede sentir y observar la sensación-sentimiento que, en el mismo momento en que dicho objeto entra en el campo de la atención, se deriva de todo lo que de sí se identifica con, y por tanto está prendido a dicho objeto y a todo lo que en relación a él se produce en la propia vida como experiencias y vivencias. Puede presentarse como cierto sentimiento de suficiencia, de falso orgullo, de falsa autoestima, engrandecimiento, "hinchazón de la personalidad", etc.… y se ve, dicho "prenderse", en un primer momento, como cierta "tensión" en la atención que, hasta ese momento, estaba en otra cosa, y es atraída por esta, el instrumento en el "rabillo" del ojo.
 
 ¡Atento! Recógete a tiempo…
 
 Recogerse. Hacer un recogimiento.
 Debe, el humano, ofrecerse voluntariamente a realizar el esfuerzo por, cada noche, cada hora, cada minuto –o en ese preciso momento si es que estando allí en y como una continuidad observante alcanza a verlo llegar - tomarse-ofrecerse un tiempo de recogerse, en silencio, y observar el día, o el acontecimiento en ese instante, todo, dentro de sí, y observar qué de sí ha quedado prendido en cada cosa, y recogerse. Y a su vez, devolver lo que ha quedado prendido de otros en él.
+
 Hacer recogimiento. Es tarea. Entrenamiento. Volverse sobre cada una de esas cosas y dejarlas ya, soltarlas en el mismo momento en que uno ve "el enganche" sucediendo, y al final del día también.
 
-Debe el humano, recoger cada parte de sí que deja prendida en las cosas… de otra manera:
-Si nada abandona, si no se desata, para así quedar suelto de las cosas,¿Cómo andar? ¿Cómo avanzar? ¿Cómo crecer? ¿Cómo desarrollarse?
+Debe el humano, recoger cada parte de sí que deja prendida en las cosas… de otra manera: Si nada abandona, si no se desata, para así quedar suelto de las cosas, ¿Cómo andar? ¿Cómo avanzar? ¿Cómo crecer? ¿Cómo desarrollarse?
 Se encuentra sin energía para ofrecer, para hacer, para crecer… No tiene energía porque la va dejando sobre esas cosas sin las que, o no se siente ser o se siente no ser.
 
 Deja partes de sí alojadas, atadas a los demás, a la casa, al auto, a la profesión, a las ideas… y con ello una parte de sí en cada imagen que él y los otros construyen de sí. Deja una parte de sí en los vínculos, en el barrio, en todo sentido de pertenencia y auto-referencia.
 
 No es insensibilidad, o desunión, todo lo contrario.
+
 Le es, al humano, necesario tornarse fuerte, energético, cargado. Le es necesario realizarse a sí como individuo capaz de relacionarse con las cosas sin depender de ellas.
 Le es, necesario recogerse de las cosas en las que se ha depositado.
 Darse un tiempo al menos, cada día, y recogerse dentro de sí, para observar qué de sí ha quedado por ahí, y recogerse a sí.
-Y puede, practicar de a poco, si le es de importancia y encuentra utilidad en ello, un "sostenerse recogido", en cada situación, sin apegarse ni identificarse con nada.
+
+Y puede practicar de a poco si le es de importancia y encuentra utilidad en ello, un "sostenerse recogido", en cada situación, sin apegarse ni identificarse con nada.
+
 Sostenerse siendo un individuo integro, unido, recogido en su interior.

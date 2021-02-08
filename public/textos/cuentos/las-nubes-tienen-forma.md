@@ -19,8 +19,6 @@ contemplando cada parte de la nube,
 
 cada parte del animal.
 
---
-
 Y mientras estoy observando,
 
 las nubes se mueven,
@@ -45,8 +43,6 @@ tengo los pies apoyados en el piso.
 
 Fríos.
 
---
-
 Las nubes, allá afuera, son el reflejo del paisaje aquí dentro.
 
 Nos distanciamos del propio cielo.
@@ -60,8 +56,6 @@ ocultan
 lo eterno e infinito que hay detrás,
 
 en el azul inmenso.
-
---
 
 Las nubes son las formas.
 

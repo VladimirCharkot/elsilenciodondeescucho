@@ -1,12 +1,12 @@
-::: piel1
-
 ## DE PERDER Y TENER 
 
 Hay cosas que, en tanto pertenecen al orden de _la existencia_, resultan pasajeras.
-Cosas que ahora son y mañana, o al rato, no son tales.
-:::
 
-Se trata de objetos, vínculos, situaciones, experiencias, momentos, posiciones, deseos, sueños, imaginaciones, cuerpos, actividades, roles, lugares, ideas, creencias, emociones, pensamientos, recuerdos, sensaciones, estados, sentidos de pertenencia a nacionalidades, grupos, círculos sociales, pequeñas voluntades personales, falsas personalidades, etc.</br>
+Cosas que ahora son y mañana, o al rato, no son tales.
+
+
+Se trata de objetos, vínculos, situaciones, experiencias, momentos, posiciones, deseos, sueños, imaginaciones, cuerpos, actividades, roles, lugares, ideas, creencias, emociones, pensamientos, recuerdos, sensaciones, estados, sentidos de pertenencia a nacionalidades, grupos, círculos sociales, pequeñas voluntades personales, falsas personalidades, etc.
+
 Todas cosas que, si se fija, pertenecen al orden de "lo personal", "mi casa", "mi novia", "mis sueños", "mi profesión", "mi negocio", "mi cuerpo", "mi madre", "mi idea", "mi país", "mis vacaciones", "mi hijo", "mis compañeros de club", "lo que pienso acerca de tal cosa", "mi festival", "mi trabajo", etc.
 
 Como consecuencia de una vida accidental, que se desarrolla a base de mecanismos automáticos en medio de una actividad inconsciente propios de un tipo de funcionamiento sin vigilancia de la mente, de tales cosas, se deriva en nosotros el sentido de posesión que nos provocan la apariencia de ser algo derivado de ellas:Identificación (ellas nos poseen a nosotros, nos perdemos dentro suyo de tal manera que en un momento dado, si observamos bien, "nos encontramos con que vivimos casi constantemente distraídos").

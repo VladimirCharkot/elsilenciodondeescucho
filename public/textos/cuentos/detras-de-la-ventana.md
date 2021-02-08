@@ -8,8 +8,6 @@ Busca el camino de las hormigas negras,
 
 Marca una dirección.
 
---
-
 Luego del hueco, en lo profundo
 
 Se haya germinando la vida.

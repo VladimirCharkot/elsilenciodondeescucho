@@ -1,6 +1,7 @@
 ## NO TODOS LOS PÁJAROS TRINAN AL MISMO TIEMPO
 
 Cuando un pájaro canta hay que escucharlo.
+
 Es aventurero el que despierta a toda la selva a las seis de la mañana.
 
 Cuando un pájaro canta hay que oírlo.

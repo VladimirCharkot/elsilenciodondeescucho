@@ -26,13 +26,23 @@ Es necesario bajar -del pedestal- la idea, basada en carencia y necesidad, de qu
 Dejar de consumir. Dejar todo lo que no es realmente necesario.
 
 Pareciera que se quieren tener otros planetas y ya ni tocamos con las manos esta tierra.
+
 No hay posible evolución para el ser humano sino se baja de este carro infernal cotidiano de consumo.
+
 No hay una evolución posible para el ser humano, si no es de la mano de la Vida.
+
 La vida ya dada.
+
 La relación con la tierra- la lombriz, el árbol, el silencio que lo escucha, que lo ve crecer, lento… tal como es la vida: lenta.
+
 No hay evolución posible para la humanidad que no vuelve sus manos a la tierra, sus ojos y oídos a la naturaleza y que sincronice su tempo-ritmo con ello.
+
 Hasta que se vuelva,
+
 lento y despierto,
+
 paso a paso,
+
 sobre sí mismo,
+
 para verse en comunión.

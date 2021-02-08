@@ -12,7 +12,7 @@ Es decir que, de hecho, ese por qué, ha nacido de una duda, o más visiblemente
 
 Entonces, si ahora me pregunta:
 
--¿por qué ha escrito sobre los porqués?
+-¿Por qué ha escrito sobre los porqués?
 
 La respuesta Es: Porque se ha escrito sobre los porqués.
 
@@ -20,4 +20,5 @@ En un porqué, probablemente, la mayor parte de las veces en las conversaciones 
 Si en verdad uno se inclina en dirección al averiguar entonces pregunta Qué o Para qué.
 "Qué", busca la cosa que Es y qué Hace.
 "Para qué", busca un propósito, tiene una dirección. Inquiere. Lo pone al otro en marcha. Pone en movimiento la cosa.
+
 El "porqué" busca tener la razón.

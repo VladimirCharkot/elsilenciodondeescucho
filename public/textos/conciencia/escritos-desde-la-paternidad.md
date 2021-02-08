@@ -2,7 +2,7 @@
 
 Observe a un niño.
 
->_Toma un limón, lo toca, se lo mete en la boca, lo saca, lo vuelve a mirar, lo deja cuando se le cruza otra cosa…_
+_Toma un limón, lo toca, se lo mete en la boca, lo saca, lo vuelve a mirar, lo deja cuando se le cruza otra cosa…_
 
 Su atención va sobre cada cosa sin nombres, sin etiquetas… para él cada cosa es "eso". Limón es "eso", amarillo es "eso", agrio es "eso", rico es "eso", rugoso es "eso". Él sólo -y solo- investiga. No es algo que deba adquirir, por tanto, tampoco es necesario enseñárselo. No hay nada que se interponga entre los hechos, las cosas internas o externas de la existencia, y él mismo. Es un canal limpio. Vacío. Es pura atención y descubrimiento. Pura vivencia. Para él, cada cosa es "eso" y ya. Es preciso dejarlo.
 
