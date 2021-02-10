@@ -19,19 +19,24 @@ exports.bienvenida = async (req, res) => {
 
 /* Página de índice de escritos para el público */
 exports.escritos = async (req, res) => {
+  // Algo con cookies
   res.render('indice', { titulo: 'Índice'})
 }
 
 /* Índice de escritos en json para ubicar en la página de índices */
 exports.indice_escritos = async (req, res) => {
   let idx = await construir_indice_completo()
-  // let indice_md = await fs.readFile('public/textos/indice.md', 'utf8')
-  // let indice_tokens = md.parse(indice_md, {})
   res.json(idx)
 }
 
+
 /* Página con un escrito */
 exports.escrito = async (req, res) => {
+
+  let visitados = req.cookies.visitados ?  req.cookies.visitados : []
+  visitados.push(req.params.eid)
+  res.cookie('visitados', [...new Set(visitados)], {maxAge: 10*365*24*60*60000, encode: String})
+
   let [texto_html, fm] = await traer_texto(req.params.eid)
   if (!texto_html) return res.status(404).json({status: 404, mensaje: 'No existe'})
   res.render('escrito', { titulo: fm.titulo || 'ESDE', cont: texto_html })
@@ -77,11 +82,10 @@ let construir_indice_completo = async (base = 'public/textos') => {
 
       let cont = await construir_indice_completo(ruta)
       indice = indice.concat(cont)
-      // indice.push({es_serie: true, ruta: ruta_public, text: e.name, type: 'carpeta', children: cont})
 
     }else{
 
-      let entrada = {ruta: ruta_public, filename: e.name, type: 'md'}
+      let entrada = {ruta: ruta_public, filename: e.name, type: 'md', id: e.name.split('.')[0]}
 
       let [html, front_matter] = md.render(await fs.readFile(ruta, 'utf8'))
 
