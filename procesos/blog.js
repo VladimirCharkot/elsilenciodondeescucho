@@ -12,7 +12,7 @@ exports.hogar = async (req, res) => {
 /* Portada del sitio */
 exports.bienvenida = async (req, res) => {
   let bienvenida_md = await fs.readFile('views/bienvenida.md', 'utf8')
-  let bienvenida_html = md.render(bienvenida_md)
+  let [bienvenida_html, fm] = md.render(bienvenida_md)
   res.render('bienvenida', { titulo: 'El Silencio Donde Escucho', cont: bienvenida_html })
 }
 
