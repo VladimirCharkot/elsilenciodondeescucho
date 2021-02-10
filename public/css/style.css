@@ -70,11 +70,6 @@ a {
 #cabecera {
   position: fixed;
   z-index: 1; }
-  #cabecera a {
-    text-decoration: none;
-    color: #333;
-    width: max-content;
-    /*margin: 0px*/ }
   #cabecera h1 {
     letter-spacing: 2px;
     margin: 0px;
@@ -101,10 +96,15 @@ a {
     #cabecera nav ul {
       display: flex;
       flex-direction: row;
+      align-items: center;
       justify-content: space-around;
       margin: 0;
       padding: 0% 20%;
       height: 100%; }
+    #cabecera nav a {
+      width: 100%;
+      height: 100%;
+      line-height: 1.7em; }
     #cabecera nav li {
       flex-grow: 1;
       text-align: center;
@@ -113,13 +113,6 @@ a {
       list-style: none; }
       #cabecera nav li:hover {
         background-color: #5f9ea066; }
-    #cabecera nav a {
-      text-decoration: none;
-      color: black;
-      justify-self: center;
-      align-self: center;
-      color: #333;
-      line-height: 3.3em; }
 
 #cabecera.contraida .intro {
   padding: 5px; }
