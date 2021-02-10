@@ -84,8 +84,7 @@ a {
     transition: 0.5s; }
   #cabecera .frase {
     font-size: 0.8em;
-    transition: 0.9s;
-    /*text-align: center*/ }
+    transition: 0.9s; }
   #cabecera nav {
     background-color: #d7eac9;
     border-bottom: 2px solid rgba(0, 0, 0, 0.15);
@@ -117,7 +116,7 @@ a {
 #cabecera.contraida .intro {
   padding: 5px; }
   #cabecera.contraida .intro h1 {
-    font-size: 22px;
+    font-size: 1em;
     text-align: left; }
 
 #cabecera.contraida nav {
