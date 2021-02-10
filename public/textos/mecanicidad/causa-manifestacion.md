@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Todo problema está fundado en la ignorancia
+---
+
 ## CUANDO LA CAUSA ACABA,SU MANIFESTACIÓN TAMBIÉN.
 
 El problema, el único problema (si es que lo hay) se acaba cuando acaba en nuestra mente.

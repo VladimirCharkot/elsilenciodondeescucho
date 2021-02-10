@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: ¡Es tan sutil!
+---
+
 ## DE LA DIFERENCIA
 
 Eso que "está entre nosotros"

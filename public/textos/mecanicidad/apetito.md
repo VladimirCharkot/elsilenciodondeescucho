@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Elimina eso que quieres de la cosa que quieres y fíjate si aún la quieres
+---
+
 ## APETITO
 
 Es que…

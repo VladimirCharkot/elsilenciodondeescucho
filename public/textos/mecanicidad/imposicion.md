@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Su "quien-es" toma todas las decisiones que, hasta ese punto, al ser humano le parecen ser de él.
+---
+
 ## IMPOSICIÓN
 
 En diálogo con Jesica Bastidas en torno a "un espacio" de entrenamiento en improvisación

@@ -1,22 +1,27 @@
+---
+serie: cortos
+pie: No se pierda de vista
+---
+
 ## ESTAR
 
-Mientras mira el mundo, 
+Mientras mira el mundo,
 
-mientras lo toca, lo saborea, 
+mientras lo toca, lo saborea,
 
-mientras entra en contacto con él, 
+mientras entra en contacto con él,
 obsérvese.
 
-Observe todo lo que en usted se mueve y acontece, 
+Observe todo lo que en usted se mueve y acontece,
 
-corporal, emocional e intelectualmente, 
+corporal, emocional e intelectualmente,
 
-y, 
+y,
 
-a su vez, 
+a su vez,
 
-obsérvese a usted mismo. 
+obsérvese a usted mismo.
 
-Es decir, observe la fuente de la observación. 
+Es decir, observe la fuente de la observación.
 
 No se pierda de vista.

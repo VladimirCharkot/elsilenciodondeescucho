@@ -1,15 +1,19 @@
+---
+serie: conciencia
+pie: Recibir cada cosa. No desear más. Confiar.
+---
+
 ## VIVAMOS COMPLETOS
 
 La vida trae todo lo que tenemos que vivir. Y trae qué vivir.
 
-Confiar. 
+Confiar.
 
-¿Cuál es el límite de confiar? 
+¿Cuál es el límite de confiar?
 
 ¿Confiamos? ¿Cuál es el límite de confiar en que la vida traerá todo lo justo y necesario?
 
-Confundimos deseo, con "necesidad"[^1]
-, ya que confundimos lo necesario con lo que deseamos al darle a lo necesario un carácter personal nombrándolo como "lo que necesito". Lo necesario, de ser personal, es deseo, pretensión, no algo "necesario".
+Confundimos deseo, con "necesidad"[^1], ya que confundimos lo necesario con lo que deseamos al darle a lo necesario un carácter personal nombrándolo como "lo que necesito". Lo necesario, de ser personal, es deseo, pretensión, no algo "necesario".
 
 Desear es pretender. Y cada pretensión existe, y no puede hacerlo de otra manera, sustentada por una disconformidad, que, a su vez contiene en sí misma una gran cuota de resentimiento. En cada pretensión de que la vida sea diferente hay resentimiento.
 

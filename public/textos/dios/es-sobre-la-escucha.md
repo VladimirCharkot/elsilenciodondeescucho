@@ -1,3 +1,10 @@
+---
+serie: dios
+pie: Es sobre la escucha, silenciosa y profunda, que precisamente vamos a conversar
+---
+
+## Es sobre la escucha
+
 Es sobre la escucha, silenciosa y profunda, que precisamente vamos a conversar.
 
 Como en este instante,
@@ -10,7 +17,7 @@ alguna mosca pasando,
 
 la respiración del cuerpo,
 
-algún movimiento del cuerpo, de los cuerpos, 
+algún movimiento del cuerpo, de los cuerpos,
 
 alguna tensión que se afloja,
 
@@ -28,7 +35,9 @@ cuando no están dentro dominando,
 ninguna palabra llega, ninguna palabra-opinión aparece mediando y nublando la comunicación.
 
 ::: piel
-En la escucha silenciosa la mirada es transparente y descansa en quien la da, en quien dirige la mirada,
+En la escucha silenciosa la mirada es transparente y descansa en quien la da,
+
+en quien dirige la mirada,
 
 y hay descanso en quien recibe.
 :::

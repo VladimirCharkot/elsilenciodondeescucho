@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Hay un flujo constante de información
+---
+
 ## PERDIDO
 
 Hay un flujo constante de información,

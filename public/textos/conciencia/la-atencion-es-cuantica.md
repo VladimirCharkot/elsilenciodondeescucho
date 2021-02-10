@@ -1,8 +1,13 @@
+---
+serie: conciencia
+pie: Se mueve, pero su movimiento, puede decirse, no tiene traslación ni recorrido
+---
+
 ## LA ATENCIÓN ES CUÁNTICA
 
 La atención, siendo una función del centro intelectual, es actividad energética que se proyecta hacia fuera de sí. Tiene dirección, siempre recta se dirige sobre lo que atiende. Jamás hace un desvío para "ir".
 
-Todo lo que la atención puede Ver, no es la atención en sí. Ella "va" sobre ello, lo recibe en "su campo". Es la que ve, no lo visto… así eso sea un auto, un árbol, otro humano, un perro, las estrellas, el aura de las cosas, un fantasma, un pensamiento, un estado emocional, un a sensación… todo lo que Ella ve, está fuera de sí. Esa es una dirección.
+Todo lo que la atención puede Ver, no es la atención en sí. Ella "va" sobre ello, lo recibe en "su campo". Es la que ve, no lo visto… así eso sea un auto, un árbol, otro humano, un perro, las estrellas, el aura de las cosas, un fantasma, un pensamiento, un estado emocional, una sensación… todo lo que Ella ve, está fuera de sí. Esa es una dirección.
 
 La atención es cuántica. Se mueve, pero su movimiento, puede decirse, no tiene traslación ni recorrido. No está atada a las leyes del tiempo y el espacio. Está ahora aquí, en mis manos, y al instante siguiente está en ti, al otro lado del mundo.
 
@@ -14,6 +19,7 @@ La atención tal como tiene dirección, tiene centro directivo. Ese centro direc
 Ese centro directivo solo está encendido cuando su atención está dirigida sobre sí.
 
 La atención, en sus dos direcciones, únicamente es real cuando esa, la que está vuelta sobre sí, está sostenidamente encendida por voluntad propia y conscientemente.
+
 Es libre, pero solo en la continuidad esta actividad.
 
 Es cuántica, mientras más continuidad alcanza, más se expande, mientras se expande más comprende y más poderosa se hace, más libre de lo que en su campo hay y sucede.

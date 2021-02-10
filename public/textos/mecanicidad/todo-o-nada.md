@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Verse más de lo mismo
+---
+
 ## TODO O NADA
 
 Todo límite desaparece cuando uno alcanza a "poner" todo lo que "cree que es" en el mismo nivel o dimensión que todo el resto que hace a la "cosa" llegando, en el instante mismo en que dicha cosa viene llegando.
@@ -9,7 +14,7 @@ Si uno logra permanecer atendiendo plenamente a "la cosa" (situación, ser, acon
 Entonces, de esa manera, "yo" pasa a formar parte del todo y uno, que atiende, no es nada… o es solo la atención, la actividad, el acto-hecho. Uno tiene la clara vivencia que puede nombrarse como: "ahora-vivenciando-se-me-parte-del-todo".
 
 Y allí, la dimensión de todo "lo que no es", y que habita en uno, cambia. Realmente cambia, constantemente. Se la ve cambiar, se la vive cambiando.
-Hay la vivencia sutil, material -pero sutil-materia "fina"- de ser más que un cuerpo. Mucho más.
+Hay la vivencia sutil, material -pero sutil, materia "fina"- de ser más que un cuerpo. Mucho más.
 
 Cuando se definen las cosas, el "yo" también se fija. Se ata a la definición… se establece como tal, separado del resto.
 

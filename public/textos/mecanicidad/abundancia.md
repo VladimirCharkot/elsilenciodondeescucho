@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: La abundancia es un atributo de la creación
+---
+
 ## SOBRE LA ABUNDANCIA, EL TENER Y EL PODER, Y UN REAL TRABAJO A SU RESPECTO
 
 La abundancia es un atributo de la creación. En manifestación, en existencia.
@@ -42,7 +47,7 @@ Y si se quiere tomar la Verdad, de Dios, a este respecto, se puede tomar esto en
 
 Lo único importante es, en el silencio de la profundidad de la Consciencia, del Ser, Saber. Detenerse y saber qué Hacer.
 
-El dinero -u otros móviles y en especias- que ingresa, cada vez es dado, a través de distintos medios por la vida, para realizar en la existencia la voluntad de Dios. Esto es bajo dos principios: el dinero es dado para la subsistencia en la existencia de cada Ser. Para que cada Ser tenga en la existencia, _lo imprescindible_ para vivir. Y luego, todo el dinero es puesto en servicio para todos. Puesto en acciones, en materias, que sean para todos.
+El dinero -u otros móviles y especias- que ingresa, cada vez es dado, a través de distintos medios por la vida, para realizar en la existencia la voluntad de Dios. Esto es bajo dos principios: el dinero es dado para la subsistencia en la existencia de cada Ser. Para que cada Ser tenga en la existencia, _lo imprescindible_ para vivir. Y luego, todo el dinero es puesto en servicio para todos. Puesto en acciones, en materias, que sean para todos.
 
 Al ingresarnos dinero cada vez debemos saber para qué lo vamos a utilizar, qué dirección se le va a dar.
 Teniendo en cuenta los dos principios de utilización del dinero, uno puede ver, claramente cuando hace un uso incorrecto… y claro, ¡atentos! Una multiplicidad de justificaciones en torno a esto -la posible utilización que se haga- puede arrojar la persona… No es importante el dialogo con ella que todo pone bajo la idea de "no tener", bajo un miedo de "no tener o de no alcanzar". Es importante simplemente liberarlo y saber que si no se tiene, es por decisión de estar en Dios, y entonces que no hará falta eso que no se tiene. Saber que no es necesario, que no hace falta, y que simplemente no se podrán –en tanto son prescindibles- hacer ciertas actividades, banales. Simplemente se Hace un uso del dinero acorde a la Voluntad de Dios, al servicio de Dios, de todos.

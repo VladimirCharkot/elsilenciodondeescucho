@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Está en nosotros tomar la vida y seguir camino, o dar otra vuelta, esperar, o ignorarla
+---
+
 ## HACIÉNDOSE EN LA TIERRA COMO EN EL CIELO
 
 Para crecer, para nacer, estamos en ambientes cuidados, no es menor, el bebe no se forma afuera, en contacto con la mugre, las miserias… lo mismo es para el Ser.
@@ -12,7 +17,7 @@ Aquí no hay ni bien ni mal. No es esto, cada situación y acontecimiento, algo 
 
 Y claro, ahí está la cuestión de renunciar, por amor, a todo aquello que es idea: que el amor vendrá de afuera a cobijarnos, o que el amor se manifestará fuera.
 
-El amor es trabajo, el amor es un arduo trabajo y nada tiene que ver con aquellos deseos pintados de bonitos colores con lo que vemos las cosas, la maternidad, la paternidad, una familia o una casa ,un vínculo o un trabajo, etc.
+El amor es trabajo, el amor es un arduo trabajo y nada tiene que ver con aquellos deseos pintados de bonitos colores con lo que vemos las cosas, la maternidad, la paternidad, una familia o una casa, un vínculo o un trabajo, etc.
 
 Todo esto –el crecimiento del Ser- implica un gran abandono de mucho en lo que uno ha venido poniendo energía, en lo que uno ha venido pulsando para que sea, creyendo que allí "estaba la cosa".
 

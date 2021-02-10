@@ -1,3 +1,8 @@
+---
+serie: dios
+pie: Tal como Es
+---
+
 ## VIVIR PUNTUAL.MENTE VIVIR PURO
 
 Puro
@@ -42,7 +47,6 @@ Puro. Tal como Es.
 En cuanto llega, en cuanto es, tal como Es.
 
 Sin contaminación.
-
 
 Vivir en estado puro.
 Observación pura, Atención Pura.

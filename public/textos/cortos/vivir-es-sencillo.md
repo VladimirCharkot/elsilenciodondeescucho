@@ -1,3 +1,8 @@
+---
+serie: cortos
+pie: El niño se sube al tobogán y se tira
+---
+
 ## "VIVIR ES SENCILLO"
 
 El niño se sube al tobogán y se tira.

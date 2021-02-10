@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: El humano confunde saber con conocer
+---
+
 ## EL HUMANO CONFUNDE SABER LO QUE PASA CON CONOCER LO QUE PASÓ.
 
 No ve la diferencia entre saber lo que hace y conocer lo que hizo. Aunque diga que sí, en general, esto es un entendimiento intelectual y no una actividad misma del ver mientras la cosa está sucediendo.
@@ -11,7 +16,6 @@ El humano cree saber lo que hace, cuando lo que le sucede es conocer lo que hizo
 El humano confunde esto porque llega siempre un poquito tarde, llega cuando ya ha pensado. Cuando la cosa ya ha pasado. Y dice lo que pensó, no lo que piensa. No lo que está pensando. Porque el decir –el relato- es señalar lo que conoció –supo- y no lo que sabe. Y ello, allí, echa raíz.
 
 La única manera de saber lo que piensa – lo que está pensando- es estar al mismo tiempo que ello viéndolo. Y la única manera que tiene de estar "a tiempo" es Estar desde antes para poder ver cuando la cosa, su automatismo, comienza a suceder. Estar desde antes para ver cuando la cosa – pensamiento en este caso- está arrancando su movimiento, llegando a él. Pero el hombre confunde una y otra acción. Y es perezoso para verse a sí mismo en acción –en actividad- mientras esto –todo y cada cosa- le sucede.
-
 
 El hombre confunde saber lo que pasa con conocer lo que pasó.
 

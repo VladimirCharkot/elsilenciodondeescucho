@@ -1,6 +1,9 @@
+---
+serie: mecanicidad
+pie: Del apego nace el sufrimiento.
+---
 
 ## Sobre el apego
-
 
 >El hombre siente apego,
 >Al honor, a las riquezas, a la vida, al "yo".
@@ -11,7 +14,7 @@
 
 Solemos decir y escuchar, en estos días y tiempos, cosas como: "hay que trabajar con los apegos", "hay que ser menos apegado a las cosas", "tengo que trabajar mis apegos", "tengo que desapegarme de tal o cual cosa", "estoy a pegado a tal persona o tal relación", "no puedo desapegarme de tal situación o cosa, o idea".
 
-¿Qué entendemos de la frase "El hombre siente apego? ¿Qué es sentir apego? ¿Qué es sentir? ¿Qué sentimos cuando decimos que sentimos apego? ¿Hay tiempo en esto? Es decir, cuando decimos que sentimos apego ¿qué estamos sintiendo? ¿Es en verdad que uno sienta tal cosa?
+¿Qué entendemos de la frase "El hombre siente apego"? ¿Qué es sentir apego? ¿Qué es sentir? ¿Qué sentimos cuando decimos que sentimos apego? ¿Hay tiempo en esto? Es decir, cuando decimos que sentimos apego ¿qué estamos sintiendo? ¿Es en verdad que uno sienta tal cosa?
 
 La cuestión es que solemos hablar con mucha frecuencia sin haber llevado a cabo una investigación profunda, dentro de sí mismo, acerca de lo que se habla. Repetimos cosas que hemos escuchado o leído. Lo cual nos conduce a no comprender lo que es cada cosa, y en este caso, el apego. Así, la idea de desapegarnos se ha tornado una especie de _dogma contemporáneo_ con el que continuamos generando más apego al poner la cuestión fuera de nosotros, lejos, en el futuro, un "legar a ser" con cierta sensación (imaginada) de una posible vida sin apego. Estamos convencidos de que de lo que tenemos que desapegarnos, es de cosas tales como las que señala en la frase de Buda de la cabecera de este texto. Cuando desapegarse, de poder hacerse, es de lo que queremos de dichas cosas y no de las cosas en sí. Es decir, de lo que desapegarnos es de nuestras pretensiones y deseos. De nuestros anhelos y expectativas. DE lo que tenemos que desapegarnos es de nosotros mismos.
 

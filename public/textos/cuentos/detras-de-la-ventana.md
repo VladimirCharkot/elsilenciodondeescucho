@@ -1,3 +1,8 @@
+---
+serie: cuentos
+pie: Cuando llegues allí...
+---
+
 ## DETRÁS DE LA VENTANA
 
 Detrás de la ventana hay un gran jardín.

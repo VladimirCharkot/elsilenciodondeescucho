@@ -1,3 +1,8 @@
+---
+serie: cortos
+pie: La hoja seca, se quiebra
+---
+
 ## AQUÍ ESTOY
 
 La hoja seca, se quiebra

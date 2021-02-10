@@ -1,10 +1,16 @@
+---
+serie: mecanicidad
+pie: Encontrar lo trascendental tras lo obvio
+---
+
 ## ¿QUÉ ES UNA Y OTRA COSA?
 
 (…)
 
-Ver-lo,se trata de procurar hacer la distinción, de tener el discernimiento acerca de qué es una y otra cosa, en el momento mismo de la actividad y no sólo aquí a nivel conceptual. Distinguir entre "el pensar" y "el pensamiento" tal, entre "el emocionar" y "la emoción" tal, entre "el hablar" (o debamos comenzar quizás a decir "el hablando") y el contenido de dicha actividad, palabras, tonos, vibraciones, significados…
+Ver-lo, se trata de procurar hacer la distinción, de tener el discernimiento acerca de qué es una y otra cosa, en el momento mismo de la actividad y no sólo aquí a nivel conceptual. Distinguir entre "el pensar" y "el pensamiento" tal, entre "el emocionar" y "la emoción" tal, entre "el hablar" (o debamos comenzar quizás a decir "el hablando") y el contenido de dicha actividad, palabras, tonos, vibraciones, significados…
 
 Distinguir entre los momentos en que sucede una u otra cosa, es decir, cuándo está sucediendo una y otra cosa, cuándo se está pensando, cuándo hay pensamiento y cuándo se ha pensado.
+
 Para esto -encontrar lo trascendental tras lo obvio- será necesario detener las actividades externas por un momento, dejar de "hacer cosas" y dedicar tiempo y energía en observar estás actividades.
 
 Quizás sentarnos un momento y dirigir la observación sobre el pensar, por ejemplo. Intentar ver a través de una vigilancia y cuestionamientos activos:
@@ -21,4 +27,4 @@ Con "ser" sucede exactamente lo mismo: lo que se Es, es vacío, espacio, amor, r
 
 (...)
 
-Del libro en gestación: "Una pedagogía de la Presencia" 
+Del libro en gestación: "Una pedagogía de la Presencia"

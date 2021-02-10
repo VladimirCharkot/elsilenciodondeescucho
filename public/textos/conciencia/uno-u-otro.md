@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Mente: Es Una Universal Completa Inteligencia Dichosa
+---
+
 ## O UNO U OTRO
 
 Son solo dos "estados", modos, en los que La Mente se puede encontrar funcionando a cada instante, en cada una de sus partes, o sea en cada uno de nosotros.

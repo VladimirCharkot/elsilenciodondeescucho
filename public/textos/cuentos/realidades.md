@@ -1,20 +1,25 @@
+---
+serie: cuentos
+pie: Donde el humano ve fragilidad...
+---
+
 ## REALIDADES
 
-Puede hablarse de la fragilidad de la hoja. 
+Puede hablarse de la fragilidad de la hoja.
 
 Sin embargo, ella está decidiendo.
 
-Decide cuando dejar la rama. 
+Decide cuando dejar la rama.
 
-Cuando desprenderse, 
+Cuando desprenderse,
 
 y soltarse a bailar.
 
-Decide cuando separarse de lo ya vivido, 
+Decide cuando separarse de lo ya vivido,
 
 para ir a nutrir otras tierras.
 
-Donde el humano ve fragilidad, 
+Donde el humano ve fragilidad,
 
 hay un mundo de fortaleza,
 

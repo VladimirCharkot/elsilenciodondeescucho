@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Ver-Saber-Hacer. Se estudia la observación.
+---
+
 ## OBSERVACIÓN
 
 Actividades integradas en la Presencia
@@ -7,7 +12,7 @@ Para Hacer con Sabiduría, en Presencia de Espíritu.
 
 Estas tres palabras denotan acciones, actividades involucradas en la práctica de la Presencia. El orden que se les ha dado en la escritura no es aleatorio. Cada una de ellas, para poder ser realizadas, precisa inicialmente del sostenimiento de la actividad de la anterior. De tal manera que, al final, juntas conllevan e implican, son, una misma y sola actividad: La actividad de la consciencia. La Presencia de espíritu.
 
-Para comprender como es que cada una de dichas actividades depende de la anterior para ser real, podemos verlo analógicamente, en un simple ejemplo: 
+Para comprender como es que cada una de dichas actividades depende de la anterior para ser real, podemos verlo analógicamente, en un simple ejemplo:
 
 Admitamos por un momento que ahora, por detrás de nosotros camina una hormiga en cierta dirección, estableciendo cierta trayectoria. Ahora bien, supongamos que se está determinado a cambiar la trayectoria del andar de dicha hormiga, que hasta este momento no se la ha visto pero que se sabe (quizás porque lo acaba de leer) camina por allí. Para poder llevarlo a cabo, para poder cambiar dicha dirección –lo que implica en este ejemplo el Hacer-, es necesario primero saber qué dirección tiene la trayectoria en que la hormiga anda, y para poder saber de dicha trayectoria, no nos quedará otra opción más que darnos vuelta, ahora, y observarla, verla.
 

@@ -1,3 +1,8 @@
+---
+serie: cortos
+pie: Entrar en ella
+---
+
 ## LA OLA
 
 La ola se eleva sobre mí. En altura. En fuerza.

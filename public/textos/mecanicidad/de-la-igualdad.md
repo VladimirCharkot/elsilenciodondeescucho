@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Así es que lo que pensamos, nos hace
+---
+
 ## DE LA IGUALDAD
 
 Si somos iguales.
@@ -21,7 +26,7 @@ Ejemplos:
 
 Cuando decimos: Yo no puedo o vos no podés tal cosa, o, Yo no quiero o vos no tal otra, o, Yo no sé o vos no sabes… y tantos otros "Yo no" y "vos no" ¿acaso eso no es una negación de nosotros mismos, (Yo no) y del otro también (vos no, y viceversa? y ¿qué sano puede venir de negarnos?
 
-Cuando preguntamos acerca de cosas como por ejemplo, nuestro poder, lo ponemos en duda: "¿puedo ayudarte?" 
+Cuando preguntamos acerca de cosas como por ejemplo, nuestro poder, lo ponemos en duda: "¿puedo ayudarte?"
 
 En general lo usamos para ofrecer ayuda. Pero… ¿Qué estamos preguntando? Estamos preguntando si podemos… ¿acaso no lo sabemos? Muy diferente es si en verdad la ofrecemos diciendo por ejemplo: "te puedo ayudar, si quieres". Entonces, en ese mismo momento ponemos el Poder en orden, o lo que es lo mismo pero señalado de otra manera, ordenamos el Poder. Yo acredito poder hacerlo y le otorgo al otro el poder de decidir si quiere, lo necesita, o no.
 

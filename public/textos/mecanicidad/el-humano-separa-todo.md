@@ -1,6 +1,11 @@
+---
+serie: mecanicidad
+pie: La existencia de sistemas es señal de la acción misma de separar. De estar separados.
+---
+
 ## EL HUMANO SEPARA TODO
 
-Y sí. 
+Y sí.
 
 El humano separa todo.
 
@@ -17,7 +22,7 @@ Un "sentido común" no puede ser impuesto. Tiene que nacer de la misma profundid
 
 Lo que la Humanidad Es, es algo que no puede ser impuesto, solo puede ser comprendido. El "posible sentido en común de la humanidad", solo puede nacer de una propia comprensión. De otra manera ¿Cómo "algo" puede alcanzar a vislumbrar un posible sentido en común para sí, sin antes concurrir en una cierta comprensión de lo que dicho algo Es?
 
-Por falta de comprensión es que no hay un sentido en común. El humano es perezoso para comprenderse. Porque es perezoso para verse. Perezoso para investigarse. Y miedoso para hacerlo. Prefiere no verse y continuar creyendo que es otra cosa, muy diferente a lo que él Es. Es perezoso para observarse a sí mismo. Cree que lo hace, porque reflexiona, cada tanto, sobre lo que hizo o dejó de hacer. Nunca sobre lo que está haciendo. Hasta esto, hasta que no se observe, con su violencia, su miedo, su deseo siempre de más, no caerá en comprensión, solo continuará creyendo que lo hace. Creyendo que lo hace porque entiende las cosas que entiende: ciertas ideas que cambia de tanto en tanto, unas por otras, y que están contenidas dentro de uno u otro sistema. Y no dejará de discutir y pelear por ellas. 
+Por falta de comprensión es que no hay un sentido en común. El humano es perezoso para comprenderse. Porque es perezoso para verse. Perezoso para investigarse. Y miedoso para hacerlo. Prefiere no verse y continuar creyendo que es otra cosa, muy diferente a lo que él Es. Es perezoso para observarse a sí mismo. Cree que lo hace, porque reflexiona, cada tanto, sobre lo que hizo o dejó de hacer. Nunca sobre lo que está haciendo. Hasta esto, hasta que no se observe, con su violencia, su miedo, su deseo siempre de más, no caerá en comprensión, solo continuará creyendo que lo hace. Creyendo que lo hace porque entiende las cosas que entiende: ciertas ideas que cambia de tanto en tanto, unas por otras, y que están contenidas dentro de uno u otro sistema. Y no dejará de discutir y pelear por ellas.
 
 Sin la propia comprensión, no podrá acontecer en el humano –y por tanto en la humanidad- el desarrollo de una necesaria y viva-moralidad-sabia-intuitiva-propia que vaya en sincronía con el aconteciendo de la Vida y que le dicte un quehacer, cada vez certero, en dirección de un "posible sentido común". Siempre estará actuando bajo sistemas, "formas de hacer" impuestas. Reglas, creencias, dogmas, religiosos, políticos o culturales, etc. Siempre actuará en base en algo que le dicen que hacer, o en algo que "cree que es lo correcto" y que no es otra cosa que algo que le han dicho que hacer. Siempre actuará en base a un sistema que le ha sido impuesto. O que se ha autoimpuesto, que es lo mismo. Porque lo que la humanidad le impone al humano es algo que el humano se impone a sí mismo. No es algo separado como prefiere pensar para poder victimizarse y culpar.
 :::

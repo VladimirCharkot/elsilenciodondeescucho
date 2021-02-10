@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: El ser humano está convencido de que puede hacer cosas que solo suceden.
+---
+
 ## LO QUE SUCEDE Y LO QUE SE PUEDE HACER
 
 El ser humano está convencido de que puede hacer ciertas cosas; las cuales, solo suceden.
@@ -26,6 +31,7 @@ Nadie anda por la vida cayéndose voluntariamente, sería demente –más dement
 No puede evitarse.
 
 Y ¡ay!, de nuevo… en este momento, cuando lee "no puede evitarse", en seguida la mente trae objeciones.
+
 Es preciso ver la acción en el tiempo para desenmascarar esto:
 
 Hay un momento, en el que se viene caminando, un momento después, en el que sucede un tropiezo. Otro, en el que la caída comienza, y este es un instante pegado a los del tropiezo y quizás hasta parte del mismo. Otros momentos en los que se va en "derrumbe". Otros, en los que se está en el piso, revolcándose, en mayor o menor medida.

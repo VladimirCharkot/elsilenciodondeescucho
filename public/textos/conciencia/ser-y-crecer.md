@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: El Ser crece cuando “Puede No Hacer” lo que la persona quiere hacer
+---
+
 ## Ser y crecer
 
 Aquello que llamamos “crecimiento personal” incluye, en nuestro accionar cotidiano, una gran serie de cosas como: lograr mejor puesto en la empresa, realizar un máster, ser mejor bailarín, tener un sueldo más alto, conseguir mejores y más largas vacaciones, “obtener” el trabajo que queremos, mejorar el plan de salud para nuestros hijos, alcanzar el reconocimiento de cierto círculo social, etc. Estos ejemplos son parte de los roles que representamos en medio de la sociedad y los posibles aumentos y beneficios que de ellos se puedan deducir.

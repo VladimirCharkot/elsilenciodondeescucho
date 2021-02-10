@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Decir "Dios está en todos" es decir el ser humano tiene posibilidad de autodesarrollo
+---
+
 ## Ser de Dios
 
 Decir "Dios (libre de todo dogma y religión) está en todos" es lo mismo que decir: el ser humano tiene posibilidad de autodesarrollo.

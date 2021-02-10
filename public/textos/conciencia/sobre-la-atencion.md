@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Donde está la atención, es donde uno está
+---
+
 ## Sobre la atención
 
 Donde está la atención, es donde uno está.
@@ -29,12 +34,12 @@ La atención sobre la atención mientras es de continuo, no cambia, no es del ti
 Si se confunde la atención con el contenido de la atención, que es lo que cambia, no se comprende lo que la atención es, se es presa del tiempo.
 
 El contenido de la atención sobre la atención es la atención que se posa sobre las cosas, que se mueve. Esta última puede cambiar, la primera no cambia, es libre del tiempo. Es.
-La vivencia "Yo Soy" –que surge de la continuidad que se le da a la atención sobre la atención- es no tiempo. Es atención. 
+La vivencia "Yo Soy" –que surge de la continuidad que se le da a la atención sobre la atención- es no tiempo. Es atención.
 
 
 "Tal cosa" que se añade a "yo soy" es del tiempo. Hoy esto, mañana lo otro, en tal circunstancia y frente a tales cosas esto o aquello otro… frente a otras, otro. No es.
 
-Si aquella atención que atiende a la atención, en medio del movimiento de la atención, tiende a perderse cuando la más externa es atrapada por algún objeto externo a ella… si se "ablanda", si tiende a diluirse… allí hay miedo. 
+Si aquella atención que atiende a la atención, en medio del movimiento de la atención, tiende a perderse cuando la más externa es atrapada por algún objeto externo a ella… si se "ablanda", si tiende a diluirse… allí hay miedo.
 
 El miedo está basado siempre en la creencia que tenemos apoyada en la aparente posibilidad de no ser. Es decir, en el miedo a la muerte.
 Entonces, cuando -y si- en una conversación, por ejemplo, lo que uno piensa y ha expresado se ve contradicho por otra opinión; y si ello trae algo dentro que tensiona aquella parte de su atención puesta sobre su atención, cerrándola… entonces, eso sucediendo es todo miedo y partes de él. Hay identificación con lo que se dijo y con lo que está por detrás de eso que se dijo y se siente ahora. La posibilidad de que la idea pierda su razón frente al argumento contrario se confunde -y lo confunde a uno- con ella, se produce inestabilidad, inquietud, no paz, inseguridad, necesidad de reconocimiento externo, necesidad de protección, ataque etc. La separación es un hecho, la vida no fluye, no circula entre las partes.

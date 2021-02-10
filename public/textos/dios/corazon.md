@@ -1,3 +1,8 @@
+---
+serie: dios
+pie: "El corazón" es Certeza no emoción
+---
+
 ## EL CORAZÓN
 
 "El corazón" es el centro de lo que Somos.

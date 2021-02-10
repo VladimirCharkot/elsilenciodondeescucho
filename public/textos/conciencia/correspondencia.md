@@ -1,7 +1,12 @@
+---
+serie: conciencia
+pie: ¿Cómo corresponder a tanta vida?
+---
+
 ## CORRESPONDENCIA
 
 Observo la vida, la naturaleza…
-Los árboles, las mariposas, el canto de los pájaros, la luz del sol pasando, la sombra fresca…Me detengo un momento -(otro)- a observar a través de la ventana.
+Los árboles, las mariposas, el canto de los pájaros, la luz del sol pasando, la sombra fresca… Me detengo un momento -(otro)- a observar a través de la ventana.
 Veo, todo esto se abre dentro de mí, se presenta y expande.
 ¿Cómo corresponder a tanta vida?
 ¿Cómo alcanzar un grado de acción que se corresponda con tanto que entrega la vida?
@@ -28,7 +33,7 @@ Otro grado de plenitud, de detención y saboreo de la vivencia.
 Porque no se trata de solo mostrar que se reconoce lo que se recibe.
 No se trata de "devolver" "en la misma medida"…
 ¿Cómo llenar el mundo, de la misma manera al menos, con tanta belleza?
- ¿Cómo alcanzar a hacerlo para realmente estar correspondiendo?
+¿Cómo alcanzar a hacerlo para realmente estar correspondiendo?
 
 ¿Cómo alcanzar a corresponder tanta bondad, tanta vida que se nos da constantemente?
 Porque lo más impresionante es que por más que el mundo puede arrastrar y arrastrar con sus pretensiones, puede tironear, y raptarnos, perdernos dentro de él…

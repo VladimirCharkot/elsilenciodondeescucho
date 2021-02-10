@@ -1,6 +1,11 @@
+---
+serie: mecanicidad
+pie: El ego, ahora, juega con preguntas "espirituales"
+---
+
 ## LA PREGUNTA CORRECTA
 
-¿Cuál es el sentido de la vida? ¿Cuál es su propósito? ¿Cuál es el tuyo? ¿para que estás aquí? ¿Quién o qué eres? ¿cuál es tu misión? ¿qué pasos debes dar?
+¿Cuál es el sentido de la vida? ¿Cuál es su propósito? ¿Cuál es el tuyo? ¿Para que estás aquí? ¿Quién o qué eres? ¿Cuál es tu misión? ¿Qué pasos debes dar?
 
 Todas estas preguntas siguen preguntando por ti. Siguen ocupándose de ti. No logran escapar de la prisión. Siguen queriendo más y más, cumplir tu voluntad personal, solo que, el ego, ahora, juega con preguntas "espirituales".
 

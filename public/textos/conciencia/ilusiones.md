@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Ir tras los sueños es desconfiar
+---
+
 ## Del libro de las ilusiones
 
 De los “sueños” y la confianza.

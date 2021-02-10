@@ -1,3 +1,8 @@
+---
+serie: cortos
+pie: Bendita posibilidad de volver a la vida
+---
+
 ## VIVIENDO
 
 La Gracia

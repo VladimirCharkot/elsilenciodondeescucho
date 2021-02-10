@@ -1,4 +1,9 @@
-## PRESENCIA 
+---
+serie: dios
+pie: "Estar presentes aquí y ahora". ¿Aquí y ahora? Fíjese
+---
+
+## PRESENCIA
 
 Estar presentes "aquí y ahora".
 Allí mismo hay un límite para el tiempo y el espacio.

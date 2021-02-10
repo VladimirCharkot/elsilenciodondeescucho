@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Pensar y decir son actos
+---
+
 ## IMPECABILIDAD.
 
 Ver = entender = pensar = decir = crear

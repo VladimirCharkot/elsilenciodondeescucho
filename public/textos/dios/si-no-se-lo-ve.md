@@ -1,3 +1,8 @@
+---
+serie: dios
+pie: Es importante indagar qué es la acción recibir
+---
+
 ## ¿CÓMO RECIBIR Y CONFIAR SI NO SE LO VE?
 
 >_Si, tal cual, pero ¿cómo dar lugar a lo nuevo y confiar si no se lo ve?_
@@ -25,7 +30,7 @@ Recibir es siempre recibir nada. No está atado a ninguna cosa. En el exacto mom
 
 Pero, aun así, hay algo que puede hacerse:
 
-Es importante indagar qué es la acción RECIBIR.No es lo que en lo corriente se cree que es, simplemente porque no se _sabe_ que es, y no se _sabe_ qué es, principalmente porque no se lo _hace_ casi nunca, y esto es así, porque _casi nunca hacemos casi nada_ más que estar ausentes (otra apariencia… no es algo que hagamos, pues, estamos ausentes)
+Es importante indagar qué es la acción RECIBIR. No es lo que en lo corriente se cree que es, simplemente porque no se _sabe_ que es, y no se _sabe_ qué es, principalmente porque no se lo _hace_ casi nunca, y esto es así, porque _casi nunca hacemos casi nada_ más que estar ausentes (otra apariencia… no es algo que hagamos, pues, estamos ausentes)
 Recibir es una disposición.
 
 Al ser, "aquello" a recibir, desconocido, uno no puede verlo, ni esperarlo, ni ansiarlo, ni desearlo, ni conocer cuándo va a venir, ni conocer su paradero… pareciera que uno nada pudiera hacer, pero hay algo que sí: disponerse. Así, puede disponer su casa (alma), prepararla para su llegada, limpiarla, ordenarla. Es decir, lo que se puede hacer es dominar el pensar, realizarlo y no que se haga solo, equilibrar nuestra emocionalidad y no ser manejados por ella, dominar nuestra acción para que esté en acuerdo con lo que pensamos y sentimos. Podemos estar alertas de nosotros mismos. Dar cuenta de cada cosa que entra y sale de nuestra "casa" pudiendo decidir, voluntariamente a donde poner nuestra atención, porque a través de ella es que entra cada cosa. Todo en función de tener nuestra casa siempre preparada, dispuesta a recibir lo desconocido.

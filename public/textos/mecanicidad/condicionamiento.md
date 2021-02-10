@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Una mente en un estado determinado
+---
+
 ## CONDICIONAMIENTO
 
 Así, una mente con condición, es una mente en un estado determinado.
@@ -15,6 +20,6 @@ Y así percibe la cosa, bajo la forma que le ha dado.
 Y esa forma, ese límite, es uno dentro del cual, a la vez, la mente se fija, se encierra a sí misma. Dice: -- Yo soy esto. Tal condición.
 
 Un límite que ella misma se pone para saber lo que en verdad Es.
-::: 
+:::
 
 Una mente así, ignora lo que Es. Ignora al Ser.

@@ -1,3 +1,8 @@
+---
+serie: cortos
+pie: Ofrendar un nuevo fruto
+---
+
 ## SER TAN NOBLE COMO EL ÁRBOL
 
 El árbol está allí. Estable. Sereno. Fuerte.

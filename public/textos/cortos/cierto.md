@@ -1,3 +1,8 @@
+---
+serie: cortos
+pie: De la duda poco certero, cierto, puede nacer
+---
+
 ## CIERTO
 De la duda poco certero, cierto, puede nacer.
 

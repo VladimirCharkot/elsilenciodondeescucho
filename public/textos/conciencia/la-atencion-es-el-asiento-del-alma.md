@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Si intentamos saber qué es el Alma podemos comenzar por vigilar nuestra atención
+---
+
 ## LA ATENCIÓN ES EL ASIENTO DEL ALMA
 
 La atención es el asiento del alma.
@@ -13,7 +18,7 @@ Espíritu, es lo que somos en esencia, y que _puede_ dirigir dicha atención, so
 A eso, sobre lo que está posando la atención, el alma, mientras lo hace, a eso se le da vida, a eso, le estamos dando vida. Alimento. Aliento de vida. Alma.
 
 ::: piel
-Atender, es la acción de atender, la actividad, por tanto sólo se la realiza cuando se la Está Realizando…mientras se la Está Realizando… solo se realiza atención mientras se está _dando cuenta_ de estar realizándola[^1].
+Atender, es la acción de atender, la actividad, por tanto sólo se la realiza cuando se la Está Realizando… mientras se la Está Realizando… solo se realiza atención mientras se está _dando cuenta_ de estar realizándola[^1].
 
 Mientras y en tanto no estemos _dando cuenta_ de estar sabiendo que estamos atendiendo, simplemente, no lo estamos haciendo. No estamos atendiendo. No se puede dar por hecho.
 
@@ -27,7 +32,7 @@ Sólo creemos que sabemos, lo damos por hecho. Y creemos que ese _dar por hecho 
 La mente, en lo corriente, divaga en un constante caos, desorden, no orden, mientras nos ocupamos de las tareas corrientes, mundanas, cotidianas, personales. En verdad, en tanto no estemos dando cuenta de Ser los que estamos dando cuenta de que nuestra atención está puesta sobre tal o cual cosa mientras sucede, pues entonces, no estamos allí; y con honestidad, por tanto, menos podríamos pensar o decir que estamos sabiendo donde está puesta nuestra atención. Y no lo sabemos, ya que ni siquiera está puesta sobre algo. No hay atención en lo más mínimo, no Hay, solo aparenta _Haber_. No hay asiento para el alma aquí, allí. Este no orden, desorden, es algo no establecido por nosotros (nosotros no estamos allí Haciéndolo). Es un desorden en el que nuestra mente salta de un pensamiento a otro sin control. Sin vigilancia.
 
 ::: piel
-La Atención es el asiento del Alma, y el vehículo del Espíritu, de la Vida, aquí. Así, si intentamos saber, o si estamos interesados por saber, qué es el Alma, cómo funciona, podemos comenzar por vigilar nuestra atención. Podemos comenzar por posar nuestra atención sobre nuestra atención, ya que sobre ella se asienta el alma. Más, si en verdad intentamos hacer esto, y siendo honestos con lo que estamos haciendo, veremos al momento siguiente que ya hemos perdido contacto con ella, con la atención. Y claro, en ese mismo instante, volvemos a saberlo, a saber dónde está nuestra atención y la actividad se reanuda. Mas, hasta ese momento en que se reanuda, hemos perdido contacto con la atención, ya no estamos atendiendo en verdad, a nada, hemos perdido el asiento del alma, el alma no tiene asiento, aquí, en ese momento, en nosotros. El alma no está asentada. 
+La Atención es el asiento del Alma, y el vehículo del Espíritu, de la Vida, aquí. Así, si intentamos saber, o si estamos interesados por saber, qué es el Alma, cómo funciona, podemos comenzar por vigilar nuestra atención. Podemos comenzar por posar nuestra atención sobre nuestra atención, ya que sobre ella se asienta el alma. Más, si en verdad intentamos hacer esto, y siendo honestos con lo que estamos haciendo, veremos al momento siguiente que ya hemos perdido contacto con ella, con la atención. Y claro, en ese mismo instante, volvemos a saberlo, a saber dónde está nuestra atención y la actividad se reanuda. Mas, hasta ese momento en que se reanuda, hemos perdido contacto con la atención, ya no estamos atendiendo en verdad, a nada, hemos perdido el asiento del alma, el alma no tiene asiento, aquí, en ese momento, en nosotros. El alma no está asentada.
 
 Nosotros hemos perdido contacto con la atención y por tanto, con nosotros.
 

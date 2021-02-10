@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: El trabajo de la esencia es limpiar toda esta nube
+---
+
 ## PERSONA, ESPÍRITU, ESENCIA Y PERSONALIDADES.
 
 Espíritu es una partícula de Dios que desprendida del Absoluto se individualiza para, a través de la vivencia en la existencia y el auto-desarrollo consciente, volver a entrar en contacto con su fuente. Llega a la existencia por obra y gracia del Absoluto, como una "carga" esencial –esencia- que atrae hacia sí, un entorno de condiciones y seres necesarios para su desarrollo.

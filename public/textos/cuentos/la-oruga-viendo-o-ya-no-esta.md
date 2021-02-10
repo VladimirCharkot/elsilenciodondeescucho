@@ -1,3 +1,8 @@
+---
+serie: cuentos
+pie: A su tiempo
+---
+
 ## LA ORUGA. VIENDO, O YA NO ESTÁ.
 
 Estando en el patio de la casa, como casi cada día en el tiempo de estar allí, con la tierra, las plantas, la huerta, el sol, el aire y las lombrices, los insectos y animales. El tiempo de observar, cuidar, interactuar, reorganizar. Estando en el patio, levanto la vista al cielo, pasando por la enredadera de la pared oeste, y, allí, veo, hay una oruga.

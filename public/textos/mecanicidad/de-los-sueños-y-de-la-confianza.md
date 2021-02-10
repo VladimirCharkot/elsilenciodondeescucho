@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: El movimiento en pos de conseguirlos, es desconfianza
+---
+
 ## DE LOS "SUEÑOS" Y LA CONFIANZA
 
 ¡Atentos!

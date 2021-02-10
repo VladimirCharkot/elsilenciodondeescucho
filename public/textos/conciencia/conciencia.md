@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Donde está nuestra Atención, ahí es donde Estamos.
+---
+
 ## CONCIENCIA
 
 Donde está nuestra Atención, ahí es donde Estamos. La Atención Es el asiento del Alma.
@@ -21,7 +26,7 @@ Continuamos perdidos.
 
 Sólo _Siendo: Sabiendo_ que _Estamos Siendo Conscientes de Ser la Consciencia Siendo Consciente_ es que _Estamos Haciéndolo._ Solo _Siendo_, _Podemos_ abandonar todo aquello que _Estamos Sabiendo_ que está en nosotros. Y sólo cuando aquello, está allí. Así, _Podemos_ abandonar las cosas que _Estamos Sabiendo_ que "_estamos teniendo_" (están en nosotros), no lo que no sabemos, ya que con lo que ignoramos, nada podemos hacer. Solo nos suceden sin que nos demos cuenta de ello.
 
-Acostumbrados, frecuentamos añadir tiempo a la Consciencia. Confundimos Consciencia con cierta importancia otorgada a revisar lo sucedido, pasado, y que nos conduce a, y en, una reflexión. La reflexión que emprendemos cuando se nos pregunta si Hemos Sido Conscientes de lo que hicimos un segundo más tarde de haberlo hecho, y mediante la cual concluimos respondiendo "Sí, claro que soy consciente" cuando la cosa ya ha pasado,no acredita en absoluto que la Consciencia, tomada e impulsada por el Ser dirigiendo la Atención, haya estado posada allí en aquel momento.
+Acostumbrados, frecuentamos añadir tiempo a la Consciencia. Confundimos Consciencia con cierta importancia otorgada a revisar lo sucedido, pasado, y que nos conduce a, y en, una reflexión. La reflexión que emprendemos cuando se nos pregunta si Hemos Sido Conscientes de lo que hicimos un segundo más tarde de haberlo hecho, y mediante la cual concluimos respondiendo "Sí, claro que soy consciente" cuando la cosa ya ha pasado, no acredita en absoluto que la Consciencia, tomada e impulsada por el Ser dirigiendo la Atención, haya estado posada allí en aquel momento.
 
 Lo que nos sucede es que pensamientos, emociones, sensaciones psíquicas y físicas, inundan nuestra mente constantemente sin control, caóticamente. Lo hacen sin que, y debido a que no, Estamos Estando allí Dando Cuenta de todo esto.
 

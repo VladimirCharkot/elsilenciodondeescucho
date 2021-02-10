@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Hasta un momento, todo era ilusión
+---
+
 ## RUIDO. DESPERTAR, DEL RUIDO
 
 Hasta un momento, ese o este ahora, no había nadie -ni nada- en uno.
@@ -25,7 +30,7 @@ Están "ellos" y estoy "Yo"
 
 La existencia –grados, puntos, posiciones,
 
-distancias, movimientos, duraciones entre a y b- 
+distancias, movimientos, duraciones entre a y b-
 
 ocurren en el espacio de la consciencia.
 

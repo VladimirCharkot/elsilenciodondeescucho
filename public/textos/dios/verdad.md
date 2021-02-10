@@ -1,3 +1,8 @@
+---
+serie: dios
+pie: Así que claro. No crea que todo esto que lee sea La Verdad.
+---
+
 ## SOBRE LA VERDAD.
 
 La idea dice:

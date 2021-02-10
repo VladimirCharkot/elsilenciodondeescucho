@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Retiro hay, cuando es retiro de sí
+---
+
 ## RETIRO
 
 Cuando hay retiro,

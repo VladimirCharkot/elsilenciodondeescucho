@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Y si deja de vigilar aparece allí una especie de "yo algo ausente"
+---
+
 ## PRESENCIA MENTAL
 
 Observo hacia mí que observo

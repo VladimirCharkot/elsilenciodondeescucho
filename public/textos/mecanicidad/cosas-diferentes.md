@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Pensemos
+---
+
 ## PENSEMOS, TODAS ESTAS, ABAJO, SON COSAS DIFERENTES.
 
 Estar convencido de que se piensa.

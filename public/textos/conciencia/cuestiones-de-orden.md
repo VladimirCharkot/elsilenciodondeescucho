@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Observador es falsa identidad
+---
+
 ## CUESTIONES DE ORDEN
 
 Primero:

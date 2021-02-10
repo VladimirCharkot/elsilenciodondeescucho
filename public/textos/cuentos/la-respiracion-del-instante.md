@@ -1,3 +1,8 @@
+---
+serie: cuentos
+pie: Hay una hormiga entre los dedos del pie
+---
+
 ## LA RESPIRACIÓN DEL INSTANTE
 
 Hay una hormiga entre los dedos del pie.

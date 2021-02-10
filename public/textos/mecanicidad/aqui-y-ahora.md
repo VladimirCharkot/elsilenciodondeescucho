@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: La persona, no puede vivir aquí y ahora. No. No puede hacerlo.
+---
+
 ## AQUÍ Y AHORA.
 
 Sí. Aquí y Ahora.

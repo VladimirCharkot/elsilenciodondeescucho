@@ -1,9 +1,16 @@
+---
+serie: conciencia
+pie: Nada Hacemos en realidad si la Quietud no está Activa
+---
+
 ## INTEGRACIÓN
 
 Lo que Somos, Unidad, es trina, Cuerpo-Mente-Espíritu, y ese complejo trino está establecido en dos opuestos. Existencia y Ser. Movimiento (Cuerpo y Mente) y Quietud (Espíritu).
 
 Nada Hacemos en realidad, integrada e íntegramente, si la parte que es Quietud, y en la que todo movimiento de la existencia puede acontecer, realizarse, no está Activa.
+
 Activa significa que debe haber un esfuerzo consciente siendo realizado por nuestra parte para estar dando cuenta de que está Activa, que es a su vez el sostenerla Activa mismo.
+
 Ella, que es lo que Somos, Está Activa únicamente cuándo y, solo mientras, estamos dando cuenta de que está Activa. Ese esfuerzo voluntario y consciente de dar cuenta es la actividad misma de la Quietud dando cuenta de Sí.
 
 ::: piel

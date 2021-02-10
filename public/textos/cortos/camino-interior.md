@@ -1,3 +1,8 @@
+---
+serie: cortos
+pie: ¿Qué clase de camino puede tener uno, que anda?
+---
+
 ## CAMINO INTERIOR
 
 ¿Qué clase de camino puede tener uno, que anda?

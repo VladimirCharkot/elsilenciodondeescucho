@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Claro que se puede ver
+---
+
 ## SALIR DEL ESCONDITE
 
 Claro que se puede ver.

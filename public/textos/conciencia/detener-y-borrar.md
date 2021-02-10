@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Lo que borra a las ideas, es la paz que uno encuentra
+---
+
 ## DETENER Y BORRAR
 
 Detengámonos.
@@ -15,6 +20,7 @@ En esta superficie, todo lo que decimos, todo lo que nombramos, se encuentra en 
 Dios trae cada cosa. Para que veamos. La Vida. Para que sepamos de la Vida. Ver, Saber, y a cada uno después le tocará hacer con eso: trasmitir, Sanar, Acompañar, Guiar, Cuidar. Cada cosa que Dios da, que nos pone en frente, es para Ver, y bien, cada quien dirá qué Ve en uno mismo, a partir de eso que ve, y que está puesto allí, fuera, para que muestre lo de adentro.
 
 Algunos de nosotros niegan la oportunidad de abrir las puertas que se nos presentan para ver adentro. Entonces, solo se quedan mirando la cosa puesta como algo externo, algo impuesto, y claro, es que no están haciendo el trabajo de ver qué, eso, abre adentro. Otros saben que cada cosa que ven, que es puesta fuera, refleja lo propio y entonces miran y van descubriendo qué es lo propio, el sí mismo, saber de uno.
+
 Allí hay un riesgo, en el observar dentro, y es, quedar, quedarse, en las ideas.
 
 Ir a otro lado implica ver qué es eso que nos hace quedarnos ahí. No podemos ir más profundo, como una cosa de saltear pasos, como si una puerta mágica se abriera, si no podemos observar, ver, primero, qué es lo que me detiene allí. Es justamente eso que me detiene a quedarme en las ideas lo que no me deja ir más allá, tengo que verlo si quiero ir más profundo.

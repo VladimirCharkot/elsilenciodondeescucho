@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Pequeña muerte de lo que se cree que se Es
+---
+
 ## UN CAMINO INSTANTÁNEO
 
 Nos enseña si Estamos Obrando _desde_ el Ser.
@@ -17,7 +22,7 @@ El primer silencio es la detención voluntaria del diálogo _externo_, el segund
 Fíjese.
 
 ::: piel
-La vida es un aconte-_ciendo_. Un conjunto de sucesos, todos relacionados entre sí, donde nadaestá aislado. Nada hay en aislación. Todo-Es-en-Relación. Cada cosa estando en-relación con las otras.
+La vida es un aconte-_ciendo_. Un conjunto de sucesos, todos relacionados entre sí, donde nada está aislado. Nada hay en aislación. Todo-Es-en-Relación. Cada cosa estando en-relación con las otras.
 
 Allí, dentro de este aconteciendo, estamos nosotros, recibiendo todo ello a través de los sentidos, el intelecto, las emociones, etc., todo a la vez. Estando en relación con las cosas, siendo parte de ese estar aconteciendo, siempre en relación con La Vida circulando por y entre nosotros.
 
@@ -78,7 +83,7 @@ Y más allá de lo que creamos y digamos que el Amor Es, no podemos amar si no h
 Y lo que Es. Es la vida, no lo que creo, digo y quiero que sea la vida. Es un continuo aconteciendo. La vida aconteciendo. Un complejo Organismo-inteligencia-Viviente aconteciendo del cual nosotros formamos parte: todo suceso, hecho y cosa dentro de cada instante del aconteciendo debe, o puede en principio ser aceptado plenamente. Y la aceptación, más allá de lo que sintamos, pensemos y digamos que Es, solo llega a través del silencio y la presencia. O no se acepta, La vida, sólo se la afirma o se la niega, que son cosas diferentes. Por tanto lo primero, es silenciarse.
 :::
 
-Haciendo silencio, uno escucha, ve dentro de sí el movimiento de lo que uno cree que Es lo que uno se cree que Es, el pensamiento, la idea, la imagen, o complejo de imágenes, creencias con las que se identifica, a las que ha atado su identidad creando una falsa identidad, (conocimiento en formas de intelectualidad-emocionalidad-sensualidad completamente revuelto, impuro, sucios) y que llegan en medio de la relación con lo otro, pronto a salir de la boca. En ese acto de Silencio, en ese verse, reconoce, se reconoce, observador, de lo que cree que Es. 
+Haciendo silencio, uno escucha, ve dentro de sí el movimiento de lo que uno cree que Es lo que uno se cree que Es, el pensamiento, la idea, la imagen, o complejo de imágenes, creencias con las que se identifica, a las que ha atado su identidad creando una falsa identidad, (conocimiento en formas de intelectualidad-emocionalidad-sensualidad completamente revuelto, impuro, sucios) y que llegan en medio de la relación con lo otro, pronto a salir de la boca. En ese acto de Silencio, en ese verse, reconoce, se reconoce, observador, de lo que cree que Es.
 
 Y así, en ese _"callarse"_ (pequeña muerte) de lo que se cree que se Es, quedando dentro, eso, se diluye, se despega, y así, se abre la presencia: El silencio interno en el que escuchar lo que en verdad Es. Lo que en Verdad, Es de Verdad, la Verdad de lo que Somos.
 

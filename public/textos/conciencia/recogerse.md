@@ -1,6 +1,9 @@
-## RECOGIMIENTO
+---
+serie: conciencia
+pie: El ser humano vive "esparcido" en las cosas
+---
 
-**Recogerse**
+## RECOGIMIENTO
 
 El ser humano vive "esparcido" en las cosas… a las que se encuentra "atado".
 

@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Fíjese bien como es cuando está volviendo
+---
+
 ## FÍJESE
 
 Fíjese bien como es cuando está volviendo

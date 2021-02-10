@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Saber no es tener ideas
+---
+
 ## SABER
 
 Estamos acostumbrados a usar la palabra saber para señalar el conocimiento que tenemos acumulado en la memoria, el que alcanzamos a abarcar con nuestra conciencia. Decimos: "Yo sé tal cosa o tal otra", "Sé que esto es así por tal y tal cosa" cuando eso, más que saber, es tener una idea cristalizada con respecto a alguna cosa. Estamos acostumbrados a llamar sabios a los que han logrado acumular mucho conocimiento. Sin embargo sabio es el que está sabiendo. Y ello comprende una Presencia Dando Cuenta de Estar Sabiendo que Sabe. Es decir, mientras lo Está Realizando. Mientras Esta Estando allí una Conciencia Consciente Realizándose en la Actividad _Saber._
@@ -36,7 +41,7 @@ Es el Saber dando cuenta de Estar Sabiendo que Sabe.
 
 Solo se Sabe mientras se Sabe que se Está Sabiendo que se Sabe.
 
-::: piel 
+::: piel
 Y ¿Qué está sabiendo? Que está sabiendo.
 La realidad es un flujo de información.
 Y Saber, es saber del flujo fluyendo, solo "_El Sabiendo_".

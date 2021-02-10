@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: No se puede pedir Paz en nuestras vidas y a la vez desear cosas. Ni desear Paz.
+---
+
 ## ¡LOS SERES HUMANOS! ¡NOSOTROS!
 
 No se puede pedir Paz en nuestras vidas y a la vez desear cosas. Desear, situaciones, condiciones, cosas, personas, relaciones, etc. Ni desear Paz.
@@ -20,9 +25,9 @@ Desear, en caso de ser algo que nazca espontáneamente, algo que en verdad _Yo H
 
 ::: piel
 Por ejemplo: Si lo que deseo es viajar, el fin de viajar acaba en lo que en sí es viajar, que desde ese mismo momento iré descubriendo en el "Hacer Siendo", en el "Viajando". No más. Si en algún caso pretendo que viajar sea para mí un descanso, puede que ello no cumpla mis expectativas. Simplemente no pretendo nada más de ello que viajar.
-Es importante captar el deseo: no es que no podamos hacer o tener cosas, generar, vivir en las condiciones externas e internas que nos son a bien, sanas. 
+Es importante captar el deseo: no es que no podamos hacer o tener cosas, generar, vivir en las condiciones externas e internas que nos son a bien, sanas.
 
-El deseo es lo que uno quiere de las cosas, "el "para qué" personal" que esta por detrás de las cosas que voy a hacer, de las cosas que hago. En general está puesto en las cosas en sí, sobre ellas directamente. La mayor parte de las veces lo que estamos haciendo en verdad es algo que está por detrás de lo que aparentemente estamos haciendo, de lo que creemos que estamos haciendo… la mayor parte de las veces, lo que decimos y creemos que estamos haciendo, está cargado con algo sin que nos demos cuenta, sin que comprendamos este mecanismo funcionando… otro ejemplo: supongamos que he decidido dedicarme a la Danza, lo que digo que hago es: "Ser bailarín", ello es un rol que incluye un sin número de actividades en torno a ello. Mas, lo que hago tras ello en verdad, y que carga cada actividad en torno a ese rol que mi persona desarrolla, quizás sea procurar logros, ser mejor que otros, conseguir algún tipo de reconocimiento, sentirme satisfecho, o procurar sustentarme económicamente, etc… es extensa la lista de cosas que pueden estar añadidas a lo que digo que hago y que en verdad, solapado, escondido en ello, es lo que Estoy Haciendo inconscientemente. 
+El deseo es lo que uno quiere de las cosas, "el "para qué" personal" que esta por detrás de las cosas que voy a hacer, de las cosas que hago. En general está puesto en las cosas en sí, sobre ellas directamente. La mayor parte de las veces lo que estamos haciendo en verdad es algo que está por detrás de lo que aparentemente estamos haciendo, de lo que creemos que estamos haciendo… la mayor parte de las veces, lo que decimos y creemos que estamos haciendo, está cargado con algo sin que nos demos cuenta, sin que comprendamos este mecanismo funcionando… otro ejemplo: supongamos que he decidido dedicarme a la Danza, lo que digo que hago es: "Ser bailarín", ello es un rol que incluye un sin número de actividades en torno a ello. Mas, lo que hago tras ello en verdad, y que carga cada actividad en torno a ese rol que mi persona desarrolla, quizás sea procurar logros, ser mejor que otros, conseguir algún tipo de reconocimiento, sentirme satisfecho, o procurar sustentarme económicamente, etc… es extensa la lista de cosas que pueden estar añadidas a lo que digo que hago y que en verdad, solapado, escondido en ello, es lo que Estoy Haciendo inconscientemente.
 :::
 
 Para darnos cuenta de ello, es de provecho preguntarnos ¿Para qué es que estamos haciendo lo que hacemos? De manera que podamos ir tras ello. Si verdaderamente en lo profundo del Estar escuchando, con plena honestidad, las respuestas que nos llegan tras la pregunta, solo encontramos: "para hacer esto mismo que estoy haciendo", es decir "bailo para bailar", entonces allí, en ello hay Paz, una Paz que en ese mismo instante vivenciamos y nos colma. En ese momento nos es Evidente que esa Paz Es lo que Somos.

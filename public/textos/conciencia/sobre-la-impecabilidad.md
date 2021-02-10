@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: El «Saber» ocurre en una mente limpia de pasado
+---
+
 ## SOBRE LA IMPECABILIDAD
 
 ¿"Impecable con las palabras"?
@@ -12,7 +17,7 @@ Inocente.
 
 Sin culpa.
 
-Toda mancha es removible. Si no, no es mancha, 
+Toda mancha es removible. Si no, no es mancha,
 es prenda que se tira.
 
 Todo error es corregible. Si no, es culpa, diferencia entre nosotros, enemigo, vereda del frente.
@@ -41,7 +46,7 @@ Las manchas nos diferencian y por tanto nos separan. Tú, tus manchas, él las d
 
 La percepción debe ser corregida en ese instante, transformada en «_Saber_», para así hacer cada vez, más recto, un camino de comprensión y Sabiduría.
 
-El _«Saber_» ocurre en una mente limpia de pasado.
+El _«Saber»_ ocurre en una mente limpia de pasado.
 
 Mas, a la mente, el pasado llega…
 Si lo vemos llegar, y en ese mismo instante vemos la tensión que crea en nosotros y en la relación…

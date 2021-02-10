@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Dejarse afectar.
+---
+
 ## INVESTIGACIÓN UN SER PERMEABLE - ÚTERO
 
 Dejarse afectar.

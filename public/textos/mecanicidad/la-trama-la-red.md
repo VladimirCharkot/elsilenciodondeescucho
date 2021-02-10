@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: En este tejido que es la existencia...
+---
+
 ## LA TRAMA. LA RED.
 
 En este tejido -de pensamientos- que es la existencia, hay tres tipos de humanos.

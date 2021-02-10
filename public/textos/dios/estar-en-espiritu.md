@@ -1,3 +1,8 @@
+---
+serie: dios
+pie: Lo que borra a las ideas, es la paz que uno encuentra
+---
+
 ## Estar en espíritu es lo único que trae paz
 
 Detengámonos.

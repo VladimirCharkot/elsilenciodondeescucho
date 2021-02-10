@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Nuestras mentes se encuentran funcionando estructuralmente de un modo o de otro
+---
+
 ## Solo dos estados: amnesia y recuerdo
 
 Son solo dos estados, modos, en los que La Mente se puede encontrar funcionando a cada instante, en cada una de sus partes, o sea en cada uno de nosotros. Que nada tienen que ver, ni dependen, de los contenidos particulares, personales, históricos de cada mente individual, de cada parte individual de La Mente. Es decir que los modos en que pueden funcionar no dependen de ni una sola de las creencias, ideas, que tengamos. Sean cuales sean estas, en relación a lo que Somos o lo que Es cada Cosa, y que formen nuestras mentes.

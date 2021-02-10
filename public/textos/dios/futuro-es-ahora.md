@@ -1,14 +1,28 @@
+---
+serie: dios
+pie: La Realidad de lo que es, es de continuo una completa desconocida
+---
+
 ## EL FUTURO, ES AHORA, UNA QUIETUD VIGILANTE E INDAGATORIA
 
 La Realidad es un completo imprevisto.
+
 Si se lo vio, ya fue,
+
 Si se lo ve, no es.
+
 La Realidad está en el Futuro, como una pura invitación al descubrimiento.
+
 En esa actitud de desconocimiento libre de toda idea y suposición, de previsión y prejuicio, que abre al "Silencioso Hablar de la sabiduría", está la energía, la polaridad, que atrae la Verdad.
+
 La Realidad de lo que es, es de continuo una completa desconocida. Está en el Futuro.
+
 Investigar es la posibilidad. La constante indagación de lo que Es… y no confundir:
+
 La posibilidad de la Actividad vigilantemente indagatoria de "lo que Es", "El Futuro", es Ahora.
+
 El Futuro Es una Quietud Vigilante e Indagatoria reactualizada a cada Ahora.
+
 El Futuro es Ahora.
 
 **Pregunta**: Pero, ¿es como que hay un movimiento hacia adelante en el ahora? ¿Qué sería la actitud del descubrimiento?
@@ -35,13 +49,13 @@ Las cosas están sueltas, no atadas, y claro, "aquí", por lo que hace la mente,
 
 **P**: Tal cual. Esa es la sensación
 
-**R**: Si. Y la sensación y el que vive la sensación son parte del mismo hechizo. Ambos son proyecciones de "lo que Es".
+**R**: Sí. Y la sensación y el que vive la sensación son parte del mismo hechizo. Ambos son proyecciones de "lo que Es".
 Lo que hace que la Consciencia esté consciente, que sea consciencia consciente, eso "es lo que Es". Un completo desconocido.
 Sensación y sensible ("sensacionador") son la misma cosa. Uno no aparece sin la aparición del otro. Se usa la palabra "aparición" porque así sucede, así se suceden, apareciendo y desapareciendo. Aparecen y desaparecen juntos.
 
 **P**: ¿Tenemos sensaciones fugaces de ese desconocido?
 
-**R**: Desconozco si "el otro" las tienes. Cada uno, solo, en su perfecta honestidad, puede saberlo, y solo cuando las tiene. Hay, en un principio, "vislumbres" –palabra que usaba Gurdjieff- de cada capa de la Realidad "a la que acceder"-El Futuro-, después llega.
+**R**: Desconozco si "el otro" las tienes. Cada uno, solo, en su perfecta honestidad, puede saberlo, y solo cuando las tiene. Hay, en un principio, "vislumbres" –palabra que usaba Gurdjieff- de cada capa de la Realidad "a la que acceder" -El Futuro-, después llega.
 Una vislumbre siempre es de algo completamente desconocido.
 Una fugaz llegada de lo desconocido.
 Una chispa, una comprensión de lo que Es.

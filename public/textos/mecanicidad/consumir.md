@@ -1,6 +1,11 @@
+---
+serie: mecanicidad
+pie: Si el problema está en algún lado, está en consumir
+---
+
 ## CONSUMIR.
 
-Si el problema está en algún lado, Está en consumir.
+Si el problema está en algún lado, está en consumir.
 
 Se envenena por consumir.
 No solo por consumir alimentos envenenados, sino, por consumir este mundo -de seres/productos- que se envenena y alimenta consumiendo. Por consumir luces, Imágenes, cuerpos, ideas, encuentros sociales, discusiones, problemas y cumpleaños… días y días "de…", etc.

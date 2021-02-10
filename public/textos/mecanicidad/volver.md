@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Lo que principia a cada cosa es, en fin, su propio Fin.
+---
+
 ## VOLVER
 
 El principio de la existencia.
@@ -27,7 +32,7 @@ Al ella buscarse, da por hecho que ella no Es lo que Ella Es, de otra manera no 
 
 Nace, comienza a existir, fabrica un movimiento aquí y ahora, por la aparente falta de algo, que queda oculto tras dicha apariencia, y que intenta conseguir (ella misma). Comienza a existir por la creencia en su aparente falta de Sí. Se separa de sí para buscarse a Sí. Inicia un movimiento creyendo-se ser ese movimiento, que es una apariencia de sí provocada por la sensación-creencia de la falta de Sí.
 
-Su fin, está en su misma causa,  en la cara opuesta de Sí.
+Su fin, está en su misma causa, en la cara opuesta de Sí.
 
 Una y otra, sus caras, nunca han estado, están, ni estarán separadas. Solo es parte de la ilusión fabricada por dicha creencia, por dicha idea, que ha provocado el movimiento desde Sí. La idea de la separación. La idea de estar separada de Sí. De esta misma idea o creencia se principia dicho movimiento, que es la existencia aparente, de la cosa en Sí, en el tiempo y el espacio.
 

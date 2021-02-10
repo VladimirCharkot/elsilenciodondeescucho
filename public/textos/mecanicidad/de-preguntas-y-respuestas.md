@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Se aprende a preguntar preguntando.
+---
+
 ## DE PREGUNTAS Y RESPUESTAS
 
 Pregunta:
@@ -9,7 +14,7 @@ Respuesta:
 Se aprende a preguntar preguntando.
 De a poco.
 
-Mas, no preguntando y preguntando "Como loco", a "lo loco" y sin sentido, solo por preguntar.
+Mas, no preguntando y preguntando "Como loco", "a lo loco" y sin sentido, solo por preguntar.
 
 Deben "estudiarse" las preguntas antes de hacerlas. Cuando están en la mente. Cuando se las escucha, de la misma manera que a las respuestas antes de decirlas.
 

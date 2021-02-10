@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Nombrar todo castra y condiciona el impulso a investigar
+---
+
 ## **ESCRITOS DESDE LA PATERNIDAD.**
 
 Observe a un niño.

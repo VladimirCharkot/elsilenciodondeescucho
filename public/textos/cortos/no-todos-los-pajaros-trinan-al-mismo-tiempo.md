@@ -1,3 +1,8 @@
+---
+serie: cortos
+pie: Ni lo hacen para llenar los silencios
+---
+
 ## NO TODOS LOS PÁJAROS TRINAN AL MISMO TIEMPO
 
 Cuando un pájaro canta hay que escucharlo.

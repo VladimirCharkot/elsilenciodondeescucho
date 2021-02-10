@@ -84,4 +84,3 @@ serie: dios
 
 - [Cortos](/escritos/)
 - [Cuentos](/escritos/)
-

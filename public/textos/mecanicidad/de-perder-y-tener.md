@@ -1,9 +1,13 @@
-## DE PERDER Y TENER 
+---
+serie: mecanicidad
+pie: Hay "cosas" que en tanto se Tengan Son en Uno y a la vez Uno Es ellas y en Ellas
+---
+
+## DE PERDER Y TENER
 
 Hay cosas que, en tanto pertenecen al orden de _la existencia_, resultan pasajeras.
 
 Cosas que ahora son y mañana, o al rato, no son tales.
-
 
 Se trata de objetos, vínculos, situaciones, experiencias, momentos, posiciones, deseos, sueños, imaginaciones, cuerpos, actividades, roles, lugares, ideas, creencias, emociones, pensamientos, recuerdos, sensaciones, estados, sentidos de pertenencia a nacionalidades, grupos, círculos sociales, pequeñas voluntades personales, falsas personalidades, etc.
 

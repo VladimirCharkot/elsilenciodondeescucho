@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Práctica es: el ejercicio de la actividad
+---
+
 ## PRESENCIA ES PRÁCTICA VIVA
 
 Presencia es
@@ -34,13 +39,13 @@ La atención constantemente corre el riesgo de perderse dentro de dichos conocim
 
 (…)
 
-"La práctica es el sostenimiento en ejercicio de la actividad con todo lo involucrado integralmente en ella.
+La práctica es el sostenimiento en ejercicio de la actividad con todo lo involucrado integralmente en ella.
 
 La actividad siempre es en gerundio… por tanto la práctica es y solo así, en gerundio: practicando.
 
 La investigación, que es aún otra actividad a sostenerse en paralelo a la actividad que esté dispuesta a ser investigada, solo es posible cuando la actividad está en actividad.
 
-Nada puede darse nada por hecho.
+Nada puede darse por hecho.
 Todo deber estar siendo -de continuo- realizado.
 
 _Una Práctica no es una forma, no es un método._

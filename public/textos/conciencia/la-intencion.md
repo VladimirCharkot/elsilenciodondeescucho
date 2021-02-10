@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: El poder de la intención está en el reconocimiento del hecho
+---
+
 ## LA INTENCIÓN
 
 Intención, es acción, interna y profunda, que mueve y transforma lo externo, se Realiza Conscientemente.
@@ -23,7 +28,7 @@ Es una actividad plena-mente consciente. Es la certidumbre en la certeza acerca 
 
 Por tanto, no se puede intencionar un deseo y pretender que ello tenga efecto en la existencia. No, al menos, el efecto que procura tener dicha "intención". Porque solo se desea lo que no hay.
 
-En ejemplo: 
+En ejemplo:
 
 Si mi intención es que todos seamos felices; si el propósito de la intención es que todos seamos felices, el deseo de ello nunca puede tener la fuerza para cargarlo de tal manera que se manifieste en la existencia; no puede ser expresado como deseo: "que todos los seres seamos felices".
 Es decir, la _carga -_realidad magnetismo gravedad- que tiene dicha intención está contrarrestada por el deseo de ello.

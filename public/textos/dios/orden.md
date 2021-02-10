@@ -1,3 +1,8 @@
+---
+serie: dios
+pie: El resto, todo el resto, lo añadimos nosotros
+---
+
 ## EL ORDEN
 
 Dios es el Único Orden. Su Voluntad Es un flujo de decretos, órdenes, continuo y constante en el que Hace, Dirige, Entrega, Vehiculiza y Ubica en la existencia entre dos, cada partícula de sí, LA VIDA.

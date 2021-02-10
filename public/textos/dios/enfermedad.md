@@ -1,3 +1,8 @@
+---
+serie: dios
+pie: Señalando lo qué hay para sanar
+---
+
 ## SOBRE LA ENFERMEDAD
 
 O sobre la salud…

@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: "Eso", lo gobierna y vive, casi por completo, "su vida".
+---
+
 ## LA POLILLA NO PUEDE SINO, SOLO, IR A LA LUZ
 
 Mire, usted está sentado allí, y yo aquí.

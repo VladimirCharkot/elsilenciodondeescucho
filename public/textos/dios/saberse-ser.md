@@ -1,3 +1,8 @@
+---
+serie: dios
+pie: Ser Es Actividad. Verbo.
+---
+
 ## LA IMPORTANCIA DE SER. DEL SER
 
 Radica en el hecho de que todo lo que no es Realizado Siendo, pues no es en Verdad una realización. No es algo que se Haga, sino una ilusión de ello. Es solo una apariencia. Una apariencia de aquello que se cree hacer. Es algo que sucede, no que se Hace.

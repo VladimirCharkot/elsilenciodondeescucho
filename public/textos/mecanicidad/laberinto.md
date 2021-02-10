@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Allí está el hombre. Trabado, anclado. "¿Qué hacer?", se preguntó.
+---
+
 ## LABERINTO
 
 El hombre camina de un lugar a otro.
@@ -14,7 +19,7 @@ Allí está el hombre.
 
 Trabado, anclado, en el desequilibro entre el paso hacia adelante y el paso hacia atrás.
 
-Y aunque pudiera detenerse, tomar un momento, sentarse a pensar -a pensar en serio- a revisar lo que siente, a escuchar la voz sabia, genuina, interna; a escuchar el pecho, a escuchar más allá de las primeras voces que hablan en la cabeza… aunque pudiera hacerlo, se mantiene atrapado en la duda y entonces comienza a gritar recriminando cómo es que alguien de afuera -pues está seguro: "alguien puede ver el juego" y no le da respuesta- no le da una señal a partir de la cual encuentre la salida. 
+Y aunque pudiera detenerse, tomar un momento, sentarse a pensar -a pensar en serio- a revisar lo que siente, a escuchar la voz sabia, genuina, interna; a escuchar el pecho, a escuchar más allá de las primeras voces que hablan en la cabeza… aunque pudiera hacerlo, se mantiene atrapado en la duda y entonces comienza a gritar recriminando cómo es que alguien de afuera -pues está seguro: "alguien puede ver el juego" y no le da respuesta- no le da una señal a partir de la cual encuentre la salida.
 
 Y claro, es que allí, las cosas se ponen más arenosas. Cuando el ser humano en vez de escuchar dentro, de averiguar dentro cual es el paso a dar, espera la respuesta que un otro le dé como certera, que le promocione como garantida la caminata, el resultado, y entonces comprando tal boleto se anime a dar el paso que ahora tiene que dar.
 

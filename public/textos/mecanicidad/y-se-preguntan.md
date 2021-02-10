@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Carencia que fabrica duda
+---
+
 ## Y SE PREGUNTAN
 
 Podemos tomar como ejemplo para ver esto, lo siguiente:

@@ -1,8 +1,12 @@
+---
+serie: cuentos
+pie: — En cuanto ya te vayas de este cielo, despiértame
+---
+
 ## EL MUNDO DE BELLEZA
 
 Se encuentran sentados un maestro y un joven aprendiz.
 Y el aprendiz le pregunta: - maestro, ¿cómo puedo hacer para crear un mundo de belleza?
-
 
 El maestro respondió: debes recoger una flor al amanecer y dejarla en mis manos, intacta, al atardecer. Allí la observaremos juntos y encontraremos la respuesta a tu pregunta.
 Entonces el aprendiz, al llegar a la casa, en la noche, pidió a los cielos despertar antes de que salga el sol, previo al canto de los pájaros, cuestión de no perder minuto de tiempo.

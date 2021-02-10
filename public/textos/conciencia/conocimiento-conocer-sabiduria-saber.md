@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: El humano confunde saber con conocer
+---
+
 ## CONOCIMIENTO-CONOCER. SABIDURÍA-SABER
 
 El humano confunde saber con conocer. Por ejemplo: confunde saber lo que está pasando con conocer lo que pasó. Siente la necesidad de nombrar lo que "supo" que pasó, lo que conoce, creyendo que eso es saber, y en ese mismo momento comienza a conocer lo que pasó y en ese mismo momento deja de saber lo que está pasando.

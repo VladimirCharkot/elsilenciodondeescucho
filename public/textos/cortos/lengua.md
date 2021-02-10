@@ -1,3 +1,8 @@
+---
+serie: cortos
+pie: Debiéramos ser más lengua
+---
+
 ## LENGUA
 
 Debiéramos ser más lengua.

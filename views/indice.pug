@@ -1,7 +1,166 @@
 extends layout
 
-include cabecera
-
 block contenido
-  div.indice
-    nav!= cont
+  script(src="https://d3js.org/d3.v6.min.js")
+  
+  style.
+    .volver{
+      background: aliceblue; 
+      padding: 15px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    
+    .vidriera{
+      width: 100vw;
+      height: 100vh;
+    }
+    
+    .entrada .titulo{
+      font-size: 3em;
+    }
+    
+    .entrada .pie{
+      font-size: 1.5em;
+    }
+    
+    .entrada circle{
+      stroke-width: 5px;
+      stroke-opacity: 0.5;
+      fill-opacity: 0.2;
+    }
+    
+  
+  script(src='/js/vidriera.js')
+  
+  script.
+ 
+    var gnodos, gidx
+    
+    d3.json('/indice_json').then(idx => {
+     
+      
+      let centros = {'mecanicidad' : {x: 1500, y: 1500}, 
+                     'dios' : {x: -1500, y: 1500},
+                     'conciencia' : {x: 0, y: 0},
+                     'cortos' : {x: 1500, y: -1500},
+                     'cuentos' : {x: -1500, y: -1500}} 
+                     
+      let colores = {'mecanicidad' :  d3.rgb("#23689b"), 
+                     'dios' :         d3.rgb("#939b62"),
+                     'conciencia' :   d3.rgb("#ffd56b"),
+                     'cortos' :       d3.rgb("#ffb26b"), 
+                     'cortos' :       d3.rgb("#ff7b54")}
+      
+      console.log(idx)
+      
+      let svg = d3.select("svg")
+      let g = svg.append("g")
+      g.attr("class", "base")
+      
+      
+      let zoomed = ({transform}) => {
+        g.attr("transform", transform)
+      }
+      
+      let zoom = d3.zoom()
+        .scaleExtent([0.1, 5])
+        .on("zoom", zoomed);
+      
+      svg.call(zoom)
+      
+        
+      
+      
+      /* Elementos */
+      
+      let nodos = d3.select('.vidriera').select('g').selectAll('g')
+        .data(idx)
+        .enter().append('g')
+        .attr('class', 'entrada')
+        .call(d3.drag()
+          .on("start", dragstarted)
+          .on("drag", dragged)
+          .on("end", dragended)
+          )
+        
+      gnodos = nodos  
+      gidx = idx
+      
+      let links = nodos.append('a')
+        .attr('href', d => `/escritos/${d.filename.split('.')[0]}`)
+        
+      let circulos = links.append('circle')
+        .attr('r', 95)
+        .attr('fill', d => d.serie in colores ? colores[d.serie] : d3.rgb('#bcbcbc'))
+        .attr('stroke', d => (d.serie in colores ? colores[d.serie] : d3.rgb('#bcbcbc')).darker())
+        //- .attr('transform', (d,i) => `translate(${i*10},${i*10})`)
+      
+      let capitalize = (s) => s.substr(0,1).toUpperCase() + s.substr(1)
+      let titulos = nodos.append('text')
+      .text(d => capitalize(d.filename.split('.')[0].replaceAll('-', ' ')))
+      .attr('transform','translate(10,-10)')
+      .attr('class', 'titulo')
+      
+      let pies = nodos.append('text')
+      .text(d => d.pie ? d.pie : '')
+      .attr('transform','translate(20,20)') 
+      .attr('class','pie')
+      
+      
+      
+      
+      /* Fuerzas */
+      
+      let k = 1;
+      let tick = () => {
+        k *= 0.7;
+        idx.forEach((n, i) => {
+          //- console.log(n.serie)
+          //- console.log(centros[n.serie])
+          if(n.serie in centros){
+            n.x += (centros[n.serie].x - n.x) * k;
+            n.y += (centros[n.serie].y - n.y) * k;
+          }
+        });
+        nodos.attr('transform', d => `translate(${d.x},${d.y})`)
+      }
+      
+      let simulation = d3.forceSimulation(idx)
+        .velocityDecay(0.3)
+        //- .alphaDecay(0.0001)
+        .force("campo",       d3.forceManyBody().strength(-200))
+        //- .force("centro", d3.forceCenter())
+        //- .force("colision",    d3.forceCollide(d => 150))
+        .on("tick", tick)
+        
+        
+      function dragstarted(ev, d) {
+        simulation.alpha(0.3).restart();
+        console.log('start')
+        d.fx = d.x;
+        d.fy = d.y;
+      }
+
+      function dragged(ev, d) {
+        console.log('drag')
+        d.fx = ev.x;
+        d.fy = ev.y;
+      }
+
+      function dragended(ev, d) {
+        console.log('end')
+        //- simulation.alpha(0);
+        d.fx = null;
+        d.fy = null;
+      }
+      
+    })
+    
+  div.volver
+    a(href='/') Volver
+
+  svg.vidriera(viewBox="-2200 -2000 5000 4000")
+  //- div.indice
+  

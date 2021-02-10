@@ -1,3 +1,8 @@
+---
+serie: dios
+pie: El límite está siempre en relación a la receptividad
+---
+
 ## CONFIAR Y RECIBIR
 
 El límite,
@@ -6,7 +11,7 @@ el que nos ponemos,
 
 el que nos creímos,
 
-el que creemos que existe y que por 
+el que creemos que existe y que por
 tanto existe,
 
 está siempre en relación a la receptividad.

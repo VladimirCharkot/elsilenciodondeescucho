@@ -1,3 +1,8 @@
+---
+serie: cuentos
+pie: Hay una oveja caminando en la montaña
+---
+
 ## OVEJA BELLEZA
 
 Hay una oveja caminando en la montaña.

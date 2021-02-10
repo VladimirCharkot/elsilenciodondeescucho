@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: La vida no tiene "paras"
+---
+
 ## EL RESTO ES TODO BENDICIÓN
 
 La publicación decía:
@@ -19,7 +24,7 @@ Ese "para", deja en evidencia que, en lo profundo, en la base, todo el acto de m
 Toda cosa hecha _para_ algo, está cargada de la energía, de la resonancia, de la frecuencia que es emanada del hecho profundo de estar convencido de que eso, que se quiere, no se tiene. Carencia, incompletud.
 
 Meditar es el fin de los "paras".
-Es el fin del desenvolvimiento constante y automático de la historia personal apoyada en la ida de insuficiencia.
+Es el fin del desenvolvimiento constante y automático de la historia personal apoyada en la idea de insuficiencia.
 
 El ego, siempre quiere, pretende, lograr algo. Siempre deriva algo (beneficio personal) de eso que hace. El ser humano, tomado por el ego, siempre quiere más.
 

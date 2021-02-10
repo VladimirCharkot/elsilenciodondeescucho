@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: La posibilidad -única- está en que ya "estemos estando".
+---
+
 ## CUANDO ESTÁ PASANDO. ÚNICAMENTE CUANDO ESTÁ PASANDO
 
 La vida en manifestación es un "aconteciendo". Jamás se detiene.
@@ -5,7 +10,8 @@ Es algo que está sucediendo ahora y ya ha pasado.
 
 El ahora, completo y complejo, es algo que solo Es, mientras, de alguna manera, lo estamos "sabiendo", mientras estamos dando cuenta de él.
 Un darse cuenta que debe entenderse -en ejercicio- como un ir nombrando "la cosa" ahora, mientras está en existencia, pasando, sucediendo; y solo si es que ese "nombrando" es lo suficientemente sincrónico al movimiento de "la cosa pasando"-.
-La consciencia de la cosa, es mientras la consciencia está posada en la cosa. A su vez, es y hace a "la cosa en la consciencia": algo que se mueve, que está pasando, por el "campo de la consciencia. Y a su vez, esa actividad, hace real, revela, muestra, la cosa, para esa consciencia.
+
+La consciencia de la cosa, es mientras la consciencia está posada en la cosa. A su vez, es y hace a "la cosa en la consciencia": algo que se mueve, que está pasando, por el "campo" de la consciencia. Y a su vez, esa actividad, hace real, revela, muestra, la cosa, para esa consciencia.
 
 "La cosa" está siempre "pasando", nunca se detiene. Todo está en movimiento. Es ahora, pasando… y ya ha pasado.
 "Pasando", que es "sucediendo": "apareciendo, moviéndose y des-apareciendo"; y "pasando" que es "ya fue": "des-aparecido".

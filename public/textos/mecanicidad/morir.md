@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Y ante la pregunta: ¿Qué soy?... 
+---
+
 ## MORIR
 
 Hacer presencia del tiempo

@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Nuestros actos son el mundo que fabricamos
+---
+
 ## EL MUNDO REPITIÉNDOSE. AUTO-FABRICÁNDOSE
 
 Nuestros actos son el mundo que fabricamos, que hemos fabricado, y que continuamos fabricando.
@@ -34,9 +39,9 @@ Y en esto se muestra con la gravedad (peso-importancia) de lo que las cosas impl
 
 Al decir: "Yo no…" eso es negación de nosotros.
 
-Al decir: "tú no…" eso también es negación de nosotros
+Al decir: "Tú no…" eso también es negación de nosotros
 
-Al decir: aquello (trabajo, vínculo, situación, condición) me da seguridad. Se pone la confianza fuera. Hay falta de confianza, se falta a la confianza. Se desconfía. No se reconoce uno en lo que Es.
+Al decir: "Aquello (trabajo, vínculo, situación, condición) me da seguridad" se pone la confianza fuera. Hay falta de confianza, se falta a la confianza. Se desconfía. No se reconoce uno en lo que Es.
 
 Al decir: "¿Por qué…?", en general, pedimos confirmación de lo que creemos o pensamos por vía de la negación o de la afirmación; y lo mismo en dirección contraria es que: al decir "porque...", en general sucede que nos excusamos, intentamos justificar lo que creemos, decimos, pensamos y hacemos. Y se excusa quien no se reconoce, desconfía de Sí y necesita reafirmarse en los demás.
 
@@ -48,17 +53,17 @@ Cuando el decir es un pensamiento:
 
 Cuando en el pensamiento hay preocupación: tenemos miedo.
 
-Cuando en el pensamiento hay suposiciones: No recibimos lo que Es. "Lo supuesto" es algo diferente de lo que la cosa Es. Dudamos, desconfiamos.
+Cuando en el pensamiento hay suposiciones: no recibimos lo que Es. "Lo supuesto" es algo diferente de lo que la cosa Es. Dudamos, desconfiamos.
 
 Cuando pensamos o hablamos de otros los estamos re fabricando así: como los pensamos y decimos.
 
-Cuando el decir es lo previo al concepto, al pensamiento, cuando es sensación, emoción:
+Cuando el decir es lo previo al concepto, al pensamiento, cuando es sensación, emoción.
 
 Cuando nos quejamos: ese estado se vive, lo fabricamos nosotros en nosotros y fabrica un mundo de queja en ese mismo momento. Lo está haciendo. Es algo que se repite en nosotros. Nos hace a nosotros. Es algo que creemos que somos, y se reafirma en la queja.
 
 Cuando tenemos ira. Y manifestamos lo que nos sale, sucede lo mismo.
 
-Y cuando manifestamos enojo, rencor, desánimo, apatía, engaño, desengaño, bronca, injusticia, duda, celos, miedo, tristeza, angustia, impotencia, inseguridad, desconfianza, desvalorización, temor, vergüenza, culpas, amenazas, penas. Etc.
+Y cuando manifestamos enojo, rencor, desánimo, apatía, engaño, desengaño, bronca, injusticia, duda, celos, miedo, tristeza, angustia, impotencia, inseguridad, desconfianza, desvalorización, temor, vergüenza, culpas, amenazas, penas, etc.
 Todo ello estamos fabricando en y para nosotros y el mundo.
 
 ¿Cómo hacemos para detener esta máquina automática de auto-repetición?

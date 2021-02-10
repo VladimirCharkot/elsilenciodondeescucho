@@ -1,3 +1,8 @@
+---
+serie: cortos
+pie: Abiertas
+---
+
 ## LAS MANOS
 
 Las manos juntas, palmas hacia arriba, ofrecidas, dispuestas, signo de entrega.

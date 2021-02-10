@@ -1,9 +1,14 @@
+---
+serie: conciencia
+pie: Querer y hacer camino espiritual es "ajustarse"
+---
+
 ## EN LA VARA
 
 Elegir camino espiritual es elegir reestructurar, a cualquier precio -con toda entrega- cualquier cosa que haya que reestructurar para Trabajar.
 Con errores, aciertos, tropezones… se camina hacia adelante.
 
-Las realidades existenciales, los presentes, no son hojas lisas, vacías, que invitan a desplegarse, a ser y hacer desde una consciencia absoluta, limpia, silenciosa y armoniosa con todo el entorno. No. Son en cuadriculado… los presentes, cada uno, es un cuadrado en relación con miles de cuadrados más que se atraviesan, se chocan, se ponen límites entre sí, se cruzan. Donde es difícil observar y ser consciente del propio cuadrado constantemente, pues, se contamina la visión rápidamente con los otros. 
+Las realidades existenciales, los presentes, no son hojas lisas, vacías, que invitan a desplegarse, a ser y hacer desde una consciencia absoluta, limpia, silenciosa y armoniosa con todo el entorno. No. Son en cuadriculado… los presentes, cada uno, es un cuadrado en relación con miles de cuadrados más que se atraviesan, se chocan, se ponen límites entre sí, se cruzan. Donde es difícil observar y ser consciente del propio cuadrado constantemente, pues, se contamina la visión rápidamente con los otros.
 
 Eso es la realidad existencial: los presentes, ruidosos, atareados. A todo el resto del mundo le pasa igual que a ti. En quien elige camino espiritual y hace el Trabajo, hay una voluntad para salirse. Voluntad para al menos ser conscientes desde arriba, de esa hoja, y no estar atrapado en medio del cuadrado, en el mismo plano. Y claro que hay un mundo detrás, arriba, abajo, al medio, que atravesará y traerá la cuadricula para que no se viva.
 
@@ -18,6 +23,7 @@ Y nadie está diciendo aquí que el Trabajo tenga que ver con ocultar las dificu
 Primero se lo debe querer, pero ese querer no es uno desde la palabra. Querer es acción. Es quererlo en el momento en el que se debe abandonar el impulso por cumplir tanto deseo personal en procura de enaltecer la imagen que se proyecta…
 
 Querer y hacer camino espiritual es "ajustarse", y ajustarse es "trabajar justo en la vara de Dios".
+
 No hay un estado de iluminación ideal. No hay _estado continuo_ en el mundo, en la existencia. Pues, sino, uno no sería un ser humano sino una esencia volátil, sin forma.
 
 No hay un estado de esencia en el humano que lo aísle por completo.

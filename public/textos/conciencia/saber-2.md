@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: No alcanza con tener la vista puesta sobre la cosa que se dice ver
+---
+
 ## SABER II
 
 Prestemos atención a esto un momento

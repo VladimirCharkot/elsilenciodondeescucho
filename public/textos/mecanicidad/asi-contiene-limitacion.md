@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Cuando se dice: "yo soy así", "Así", contiene toda la limitación para lo que se Es.
+---
+
 ## "Así" Contiene limitación
 
 Cuando se dice: "yo soy así", "Así", contiene toda la limitación para lo que se Es.

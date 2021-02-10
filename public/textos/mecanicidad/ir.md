@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Hacia Uno mismo
+---
+
 ## IR
 
 _Hacia Uno mismo_

@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Para desde allí brotar y renacer
+---
+
 ## LA IMAGEN DEL ÁRBOL
 
 Del árbol: 2 partes, como es arriba, es abajo.
@@ -16,7 +21,7 @@ Desde la perspectiva del tronco, firme, agarrado al suelo y uno con las raíces,
 Desde las ramas, el tronco sigue viéndose como algo firme en su estructura, con estabilidad y seguridad en eso: el estar unido a las raíces, quieto. Más, a ello, ahora, claramente se suma la evidencia de cierta coraza, lleno de cortezas, se presenta inflexible, duro y viejo. Y aquello que desde el tronco se veía frágil y débil de la rama, ahora, desde ella, se agradece la flexibilidad, la vigorosidad, la carne a flor de piel delgada y sensible. Se agradece el contacto cercano con la hoja, a la que sigue viéndose efímera, pero que ahora se revela como un tentador y atractivo momento de desprendimiento.
 
 
-Cuando uno es o está en la hoja, ya todo se ve diferente. En y desde la hoja, uno se encuentra recibiendo la vida, la luz del sol y el aire, se llena todo de vitalidad, llega el viento y se van en exhalación, las cosas de las raíces, el tronco y las ramas. Desde la hoja, se ve claramente la rigidez del tronco, de todo lo que fue en contraste a saberse el desprendimiento mismo para renacer, que suelta, se suelta, a sí mismo, de su tronco y su rama, sabiendo que volverá a brotar. Aquello, que desde el tronco se veía como una parte de sí que se perdía, solo allí, siendo la hoja, desde la hoja, se comprende que la vida no se acaba al darse, al viento y a la tierra, para ser parte de la nutrición de sí misma… y comprende de dónde provino su nutrición. Solo desde allí, se ve que ese dar es volver a brotar, y que eso, y ella, es el ciclo mismo. Desde allí agradece cada parte de sí, raíces, tronco y ramas, sin las que, sabe, no sería ella lo que Es, Árbol. Agradece el pasado y la herencia pero se reconoce, sabe que sabe, está lista, y lo hace: se libera de todo lo que fue y que ya sabe que no Es. 
+Cuando uno es o está en la hoja, ya todo se ve diferente. En y desde la hoja, uno se encuentra recibiendo la vida, la luz del sol y el aire, se llena todo de vitalidad, llega el viento y se van en exhalación, las cosas de las raíces, el tronco y las ramas. Desde la hoja, se ve claramente la rigidez del tronco, de todo lo que fue en contraste a saberse el desprendimiento mismo para renacer, que suelta, se suelta, a sí mismo, de su tronco y su rama, sabiendo que volverá a brotar. Aquello, que desde el tronco se veía como una parte de sí que se perdía, solo allí, siendo la hoja, desde la hoja, se comprende que la vida no se acaba al darse, al viento y a la tierra, para ser parte de la nutrición de sí misma… y comprende de dónde provino su nutrición. Solo desde allí, se ve que ese dar es volver a brotar, y que eso, y ella, es el ciclo mismo. Desde allí agradece cada parte de sí, raíces, tronco y ramas, sin las que, sabe, no sería ella lo que Es, Árbol. Agradece el pasado y la herencia pero se reconoce, sabe que sabe, está lista, y lo hace: se libera de todo lo que fue y que ya sabe que no Es.
 
 Sólo la hoja comprende lo que es soltar el árbol todo, para volver a brotar cada vez. Soltar/se, al viento. Dar/se. Para volver a nacer. Solo la hoja comprende que morir es nacer y vivir. Solo desde la hoja, el árbol, al soltarse, se une a aquella Conciencia Universal, Dios, que abraza todos los árboles. Allí, al viento, se sabe vida brotando y se ve a sí misma desde fuera, desprendida de sí siendo Sí y unida a todo. Se ve a sí misma árbol completo, pleno, sano, y salvo.
 :::

@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Y cuando se elige eso, ya nada hay que elegir
+---
+
 ## LIBRE ELECCIÓN ES, AÚN, CUESTIÓN DE EGO
 
 El ego siempre reacciona, dice, y su pregunta tiene astucia y doblez.

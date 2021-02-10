@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: El ser humano, entiende por "cuidar lo que dice y hace", una especie de auto reflexión
+---
+
 ## EL SER HUMANO PIENSA
 
 Cuidar consciencia.

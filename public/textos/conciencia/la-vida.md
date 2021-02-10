@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Estar en Unión de instante en instante
+---
+
 ## La vida
 
 Los cambios y las novedades que llegan en las "formas",

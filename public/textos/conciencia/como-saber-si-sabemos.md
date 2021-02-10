@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Podemos decir que el principio para saber es observar
+---
+
 ## ¿CÓMO SABER? ¿CÓMO SABER SI SABEMOS?
 
 Podemos decir que el principio para saber es observar.

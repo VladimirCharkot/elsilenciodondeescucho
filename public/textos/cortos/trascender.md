@@ -1,3 +1,8 @@
+---
+serie: cortos
+pie: La manera de "pasar" algo es llegar hasta ello y continuar
+---
+
 ## TRASCENDER
 
 La manera de "pasar" algo es llegar hasta ello y continuar. Se camina hasta la esquina, se llega a ella y se sigue a la siguiente "cuadra".

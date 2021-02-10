@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Y hay hasta quienes la viven solamente en el último suspiro
+---
+
 ## LA VIDA.
 
 ¡Es tan simple!

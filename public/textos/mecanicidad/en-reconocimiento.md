@@ -1,10 +1,15 @@
+---
+serie: mecanicidad
+pie: ¿Cómo es que se averigua?
+---
+
 ## EL RECONOCIMIENTO DE LO QUE ES, EN LA PRÁCTICA
 
 … "El otro día, ayer precisamente, pasando por la plaza del barrio, encontré una situación:
 
-Allí estaban, madre moviendo algunos bultos para la feria de ropa que se preparaba y padre en compañía de dos niños, un niño y una niña, entre los "juegos" de la plaza. En un momento, pues me encontraba caminando en dirección a ellos, escucho a la niña, la veo, comenzar a llorar con una importante efusión. Haciendo unos pasos más me encuentro pasando justo a su lado y escucho al padre decir: "no pasa nada", "no fue nada", "no pasa nada". Una y otra vez, lo repetía sin detenerse, como si quisiera convencerla de ello, o como queriendo tapar alguna otra cosa, que probablemente no quería ver él. La madre se acerca y pregunta: 
+Allí estaban, madre moviendo algunos bultos para la feria de ropa que se preparaba y padre en compañía de dos niños, un niño y una niña, entre los "juegos" de la plaza. En un momento, pues me encontraba caminando en dirección a ellos, escucho a la niña, la veo, comenzar a llorar con una importante efusión. Haciendo unos pasos más me encuentro pasando justo a su lado y escucho al padre decir: "no pasa nada", "no fue nada", "no pasa nada". Una y otra vez, lo repetía sin detenerse, como si quisiera convencerla de ello, o como queriendo tapar alguna otra cosa, que probablemente no quería ver él. La madre se acerca y pregunta:
 
--- _¿qué sucede?_ con cierta carga emocional (otro tema que tratar) que dispara aún más el llanto de la niña que, en su desconsuelo, intenta decir algo. El padre, renovada la fuerza de cierta necesidad en él, dice nuevamente: 
+-- _¿qué sucede?_ con cierta carga emocional (otro tema que tratar) que dispara aún más el llanto de la niña que, en su desconsuelo, intenta decir algo. El padre, renovada la fuerza de cierta necesidad en él, dice nuevamente:
 
 -- _"no pasó nada", "no pasa nada"_ y comienza a dar una explicación de "lo que a la niña le sucede", sin dejar de decir "no pasa nada". La niña llora sin parar, cada vez más.
 

@@ -1,3 +1,8 @@
+---
+serie: dios
+pie: Cada vez que Uno no está, está en funcionamiento el Ego
+---
+
 ## ¿QUÉ ES EL AMOR?
 
 >"El Amor, es la ausencia de juicio."

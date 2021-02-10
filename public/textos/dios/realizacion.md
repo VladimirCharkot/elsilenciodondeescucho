@@ -1,3 +1,8 @@
+---
+serie: dios
+pie: Vivir ese silencio constantemente, revela, lo que allí, en el silencio está
+---
+
 ## REALIZACIÓN
 
 Alguna vez leí, dónde, no recuerdo:

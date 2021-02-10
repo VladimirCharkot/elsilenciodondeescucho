@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: No juzgues lo que sabes
+---
+
 ## HACER CON SABIDURÍA
 
 **SABER Y HACER**
@@ -7,6 +12,7 @@ La verdad es siempre algo nuevo. Un conocimiento nuevo llegando, no uno antiguo 
 Si la juzgas con criterios viejos, entonces es probable que no la Realices, o que cuando por fin tomes decisión de realizarla, dicha manifestación ya esté contaminada, no cierta, no verdadera, que de nuevo es no Realizarla.
 
 Una vez que te encuentres con la verdad, una vez la Sepas, cuando Sabes, Haz, no juzgues ni pretendas entender. Solo haz y abraza el hacer, compréndelo en el mismo momento de la actividad, para así poder comprender lo que ella Es. Reconocerla allí, manifestándose.
+
 Y ¡atento! Para esto, es esencial aprender a discernir entre lo que quieres hacer (actividad dirigida por patrones y estructuras, criterios antiguos o dependientes de otros) y lo que sabes que es hacer (actividad que nace de tu propia profundidad -o altura-, de la conexión que alcances a establecer con el campo de la verdad, de la sabiduría).
 
 Saber es una acción, revísala. Intenta darte cuenta qué tipo de actividad es, intenta guardar un recuerdo de la actividad en sí. ¿Cuándo estás sabiendo? ¡Atento! No lo confundas con recordar, imaginar, especular, proyectar, comparar, emocionar, discriminar o cualquier otra actividad… ninguna otra cosa es.

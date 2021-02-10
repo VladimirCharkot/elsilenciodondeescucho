@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Si ahora, comienzas a mirar tu mente, verás que hace algo
+---
+
 ## ESPACIO PARA PENSAR
 
 Si ahora, comienzas a mirar tu mente, verás que hace algo.
@@ -14,7 +19,7 @@ de instante en instante, continuamente re-acciona.
 
 Este ciclo que la refuerza y le da continuidad, se alimenta, y crece,
 a partir de patrones, estructuras y hábitos establecidos e impuestos por la sociedad, la familia, el entorno, el mundo y que han sido indefectiblemente adquiridos e incorporados y forman el contenido de dicha mente mecánica,
-así ese contenido esté en el mundo -fuera- o en la cabeza -dentro-. 
+así ese contenido esté en el mundo -fuera- o en la cabeza -dentro-.
 
 El funcionamiento automático de la mente se sostiene en marcha por la simple re-actividad que es propia de dicho mecanismo.
 

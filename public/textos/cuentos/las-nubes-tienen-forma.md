@@ -1,3 +1,8 @@
+---
+serie: cuentos
+pie: Nos distanciamos del propio cielo
+---
+
 ## LAS NUBES TIENEN FORMA
 
 A través de la ventana, miro.

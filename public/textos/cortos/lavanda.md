@@ -1,6 +1,11 @@
+---
+serie: cortos
+pie: El mundo se transformaría
+---
+
 ## LAVANDAS
 
-Con las manos se crean bombas, y también se rompen piñatas. 
+Con las manos se crean bombas, y también se rompen piñatas.
 
 Con la boca elegimos qué comer, sin advertir el privilegio que es eso; y con la boca también, decimos barbaridades.
 

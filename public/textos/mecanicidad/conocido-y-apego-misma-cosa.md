@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Lo conocido está aquí "pegado"
+---
+
 ## UNO Y OTRO, CONOCIDO Y APEGO, UNA MISMA COSA
 
 Pregunta:

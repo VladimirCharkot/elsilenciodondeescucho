@@ -1,6 +1,11 @@
+---
+serie: cortos
+pie: Fijate que loco lo que pasa con lo que pasa
+---
+
 ## Eres el río
 
-Fijáte que loco lo que pasa con lo que pasa,
+Fijate que loco lo que pasa con lo que pasa,
 siempre pasa.
 
 Nada queda, todo pasa.

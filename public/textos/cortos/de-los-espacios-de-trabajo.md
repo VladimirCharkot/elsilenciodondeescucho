@@ -1,3 +1,8 @@
+---
+serie: cortos
+pie: Sin forma
+---
+
 ## DE LOS ESPACIOS DE TRABAJO
 
 **DINÁMICA DE AVERIGUACIÓN**

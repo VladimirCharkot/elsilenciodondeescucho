@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Es posible Vivir el Sufrimiento con Amor
+---
+
 ## AMAR LA DIFICULTAD
 
 Usar nuestras cualidades siempre en función de "entregar la vida", de hacer el Trabajo que toca.

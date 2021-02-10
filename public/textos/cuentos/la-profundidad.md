@@ -1,3 +1,8 @@
+---
+serie: cuentos
+pie: Hay un niño. Toma un lápiz, una hoja y dibuja un círculo...
+---
+
 ## LA PROFUNDIDAD
 
 Hay un niño. Toma un lápiz, una hoja y dibuja un círculo. Toma un lápiz azul. Raya dentro del círculo hasta tapar todo el fondo. Cada raya está siendo ejercida con una fuerza que viene de todo el cuerpo, toda la mano y toda la mente concentrada allí.

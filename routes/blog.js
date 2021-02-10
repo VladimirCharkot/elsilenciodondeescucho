@@ -1,6 +1,7 @@
 var express = require('express')
 var router = express.Router()
 var blog = require('../procesos/blog.js')
+var editor = require('../procesos/editor.js')
 let passport = require('passport')
 
 let is_admin = (req, res, next) => { if(req.user) {next()} else {return res.redirect('/hogar')} }
@@ -10,15 +11,16 @@ router.get('/', blog.bienvenida)
 router.get('/escritos/', blog.escritos)
 router.get('/escritos/:eid', blog.escrito)
 
-router.get('/indice', blog.indice)
+router.get('/indice_json', blog.indice_escritos)
 
 
-router.post('/md/', [is_admin, blog.post_md])
-router.delete('/md/', [is_admin, blog.delete_md])
+router.get('/indice', editor.indice)
+router.post('/md/', [is_admin, editor.post_md])
+router.delete('/md/', [is_admin, editor.delete_md])
 
-router.get('/imagenes/', [is_admin, blog.imagenes])
-router.post('/imagenes/', [is_admin, blog.post_imagenes])
-router.get('/editor/', [is_admin, blog.editor])
+router.get('/imagenes/', [is_admin, editor.imagenes])
+router.post('/imagenes/', [is_admin, editor.post_imagenes])
+router.get('/editor/', [is_admin, editor.editor])
 
 router.get('/hogar', blog.hogar)
 router.post('/hogar', function(req, res, next) {

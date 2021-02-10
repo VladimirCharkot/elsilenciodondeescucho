@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Cuando hay comprensión el Hacer es en cumplimiento un cumplimiento
+---
+
 ## Sobre el intercambio (o el cobro) por el trabajo espiritual.
 
 Cuando "la cosa" está recta, en orden, de la mano de la Verdad… cuando el Quehacer es del Espíritu y en Sabiduría, cada cual que Hace, Hace lo que Hace Sabiendo que es eso lo que debe Hacer. Comprende. Esto es para ambos lados de la relación. Ese Hacer es en cumplimiento un cumplimiento, y por tanto algo que está completo en el mismo acto.

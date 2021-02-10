@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Nada más que la plena receptividad, se puede dar
+---
+
 ## Dar y Recibir
 
 Una integrada realidad.

@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Movimiento. Sí, la gran ilusión.
+---
+
 ## SE HACE CAMINO HASTA COMENZAR
 
 Esto es algo que se ha dicho,
@@ -23,6 +28,7 @@ La gran Ilusión.
 Movimiento. Sí, la gran ilusión.
 
 Mientras _se mueve_ nada Hace. Aunque eso parezca.
+
 El tiempo así Es, una apariencia que se produce de la No fijación de la conciencia. Ella al moverse de un objeto al otro, aquello "que hace consciente" o de lo que "se torna consciente", "de lo que toma conciencia"… Al moverse de un objeto a otro fabrica la ilusión del tiempo y del movimiento en él.
 
 Nada se Hace, hasta que, y cuando, la conciencia se fija, se aquieta sobre sí misma y descansa, y entonces la ilusión se desvanece. Se Recuerda a Sí. Se Reconoce. Es.

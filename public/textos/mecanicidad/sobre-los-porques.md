@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: Refieren a cosas que se reclaman y demandan
+---
+
 ## SOBRE LOS PORQUÉS
 
 Los "porqués", que aparecen cuando hablamos, la mayor parte de las veces sino todas, refieren a cosas que se reclaman y demandan. O se agregan y añaden, dependiendo la dirección de los mismos.

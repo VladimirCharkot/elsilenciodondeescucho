@@ -1,3 +1,8 @@
+---
+serie: cortos
+pie: Volviendo a buscar, dentro, en las cumbres más altas de su profundidad
+---
+
 ## TORNARSE COMO EL MAR
 
 Se hace importante –sino imprescindible- para el ser humano, tornarse como el Mar.

@@ -1,3 +1,8 @@
+---
+serie: mecanicidad
+pie: O un constante grito sombrío y sordo
+---
+
 ## EL SILENCIO
 
 El silencio tiene una tremenda, potente, cualidad y capacidad, que, para poder verla, vivirla y captarla, es preciso estar en silencio. Hacer Silencio.
@@ -13,8 +18,8 @@ Las ciudades son un conglomerado de cemento y ruido, que solo en algunos momento
 
 O los domingos por la mañana. Temprano. A eso de las 7 Am, por lo menos en la ciudad donde nací, uno puede salir y caminar por la peatonal del centro y escuchar el canto de los pájaros. Mientras tanto, las ciudades son un conglomerado de cemento que cargamos de ruido.
 
-::: piel 
-Claramente no es la ciudad la ruidosa en sí, es evidente, somos nosotros en ella. Pero la ciudad no es algo separado de nosotros. 
+::: piel
+Claramente no es la ciudad la ruidosa en sí, es evidente, somos nosotros en ella. Pero la ciudad no es algo separado de nosotros.
 
 Nosotros hacemos la ciudad.
 
@@ -50,7 +55,7 @@ Pero no solo expresamos acuerdos y desacuerdos…
 
 Además, precisamos detalles de cada cosa, nos excusamos, damos razones, cargamos de gestos y ademanes cada justificación y defendemos nuestros pareceres (apariencias) basados en una supuesta superioridad sobre "lo otro" con lo que se está o no de acuerdo. Expresamos todo, no nos guardamos ni un adjetivo que tengamos para ponerle a cada cosa que pueda traer la vida. Y todo esto se carga de muecas, elocuciones, se riega con soberbia, resentimiento y ataque, etc.
 
-::: piel 
+::: piel
 Lo importante es que el mundo sepa quién soy.
 
 Lo importante es no pasar desapercibido.

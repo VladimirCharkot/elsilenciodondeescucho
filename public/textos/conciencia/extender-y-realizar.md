@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: Algo que se Extiende en tanto se Realiza no se pide, Se Hace
+---
+
 ## Extender y realizar
 
 Nos engañamos constantemente… y el principio del engaño es el miedo y la pereza. La pretensión.
@@ -64,11 +69,12 @@ O preferimos, “elegimos”, pensar y creer que la pérdida (la cual es parte d
 
 Preferimos tener razón a estar en silencio, conceder, y revisar. Es decir preferimos perder la Razón.
 
-Preferimos gritar a callar… Comprar y tener a vaciar, soltar, abandonar, renunciar…Preferimos hablar a escuchar ya que escuchar abre un silencio en el que nos reconocemos, en el que, y  para recibir al otro, es necesario el cese de lo que uno cree que es, el abandono de todas las razones, las creencias. Silencio que implica no hablar, y que genera la sensación -la apariencia- de no ser.
+Preferimos gritar a callar… Comprar y tener a vaciar, soltar, abandonar, renunciar… Preferimos hablar a escuchar ya que escuchar abre un silencio en el que nos reconocemos, en el que, y  para recibir al otro, es necesario el cese de lo que uno cree que es, el abandono de todas las razones, las creencias. Silencio que implica no hablar, y que genera la sensación -la apariencia- de no ser.
 
 Todo está trastocado: ahí fuera, las personas vivimos – o eso creemos – queriendo cosas que no estamos dispuestos determinadamente a Realizar, y así, cada vez, Poder Reconocer, y Poder Extender.
 
 La Paz es algo que se Extiende, en tanto se Realiza. No se pide. Se Hace. Y se agradece.
+
 La felicidad es algo que se Extiende, en tanto se Realiza. No se pide. Se Hace. Y se agradece.
 
 La curación es algo que se Extiende, en tanto se Realiza. No se pide. Se Hace. Y se agradece.

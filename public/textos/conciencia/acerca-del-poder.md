@@ -1,3 +1,8 @@
+---
+serie: conciencia
+pie: ¿Qué es lo que podemos? ¿Qué es Poder?
+---
+
 ## ACERCA DEL PODER
 
 Trabalenguas transformador: usted no es "usted" sino Usted.
@@ -12,7 +17,7 @@ A veces nos preguntamos si podemos.
 
 A veces decimos que sí podemos.
 
-¿Es así? ¿Estamos seguros de eso? ¿Podemos? 
+¿Es así? ¿Estamos seguros de eso? ¿Podemos?
 
 ¿Qué es lo que podemos? ¿Qué es Poder?
 
