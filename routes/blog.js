@@ -7,8 +7,8 @@ let passport = require('passport')
 let is_admin = (req, res, next) => { if(req.user) {next()} else {return res.redirect('/hogar')} }
 
 /* GET home page. */
-router.get('/', blog.bienvenida)
-router.get('/escritos/', blog.escritos)
+router.get('/', blog.escritos)
+// router.get('/escritos/', blog.escritos)
 router.get('/escritos/:eid', blog.escrito)
 router.get('/reset_cookie/', (req, res) => res.clearCookie('visitados').json({ok: true}))
 

@@ -4,45 +4,14 @@ extends layout
 
 block contenido
 
-  //- markdown-it
-  script(src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.2/markdown-it.min.js")
-  script(src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it-footnote/3.0.2/markdown-it-footnote.min.js")
-  script(src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it-emoji/2.0.0/markdown-it-emoji.min.js")
-  script(src="https://cdn.jsdelivr.net/npm/markdown-it-container@3.0.0/dist/markdown-it-container.js")
-  
   //- jstree
   script(src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.10/jstree.min.js")
   link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css")
   
-  //- script(src="https://cdn.jsdelivr.net/npm/markdown-it-front-matter@0.2.3/index.min.js")
-  //- script(src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js")
-  //- script(src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js")
+  //- markdownit
+  script(src="/js/mdesde.js")
   
   script.
-    let md = markdownit({typographer: true})
-      .use(markdownitEmoji)
-      .use(markdownitFootnote)
-      .use(markdownitContainer, 'clase', {
-        validate: function(params) {
-          return params.trim().match(/^(.+)\s*$/);
-        },
-
-        render: function (tokens, idx) {
-          var m = tokens[idx].info.trim().match(/^(.+)\s*$/);
-
-          if (tokens[idx].nesting === 1) {
-            // opening tag
-            return `<div class="${md.utils.escapeHtml(m[1])}">\n`
-
-          } else {
-            // closing tag
-            return '</div>\n';
-          }
-        }
-      })
-   
-    
-
     
     let get_md = async (ruta) => {
       console.log(`Fetcheando ${ruta}`)
@@ -119,9 +88,8 @@ block contenido
     
     function previa(){
       let elmd = document.querySelector('#md textarea').value
-      let parseado = md.render(elmd)
+      let parseado = md_esde.render(elmd)[0]
       document.querySelector('#previa').innerHTML = parseado
-       //- + `<div class="firma piel1"><p>Sebastán Rojo</p><p>"El Silencio Donde Escucho"</p></div>`
     }
     
     
@@ -234,7 +202,6 @@ block contenido
       }else{
         flash({msg: '¡Primero hay que guardar o descartar los cambios en el editor!'})
       }
-      
     }
       
       
@@ -534,22 +501,7 @@ block contenido
     
     /* Cargar imágenes */
     window.addEventListener('load', cargar_imagenes)
-    
-
-    
-  //- div#controles
-  //-   //- select#mds-indice(onchange='get_md(this.value)')
-  //-   //-   each i in indice
-  //-   //-     option(value=i.index) #{i.text} (#{i.index})
-  //-   //- button#guardar(onclick='guardar()') Guardar
-  //-   //- button#descartar(onclick='descartar()') Descartar
-  //-   input#agregar_img(type='file', onclick='enviar_imagen')
-  //-   button#enviar_img(onclick='enviar()') Enviar
-  //-   select#imgs-indice(onchange='updvisor()')
-  //-     each img in imagenes
-  //-       option(value=img.src)=img.src
-  //-   img#visor(width='200px')
-  
+   
   
   script.
     function toggle(s){

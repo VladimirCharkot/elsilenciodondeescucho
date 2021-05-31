@@ -89,9 +89,9 @@ h2, h3, h4{
 
 
 @media (max-width: 1060px){
-  :root{
+  /* :root{
     font-size: 36px;
-  }
+  } */
   .escrito p{
     padding: 0px 5% 0px 5%;
   }

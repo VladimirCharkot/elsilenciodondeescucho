@@ -8,6 +8,8 @@ let md = require('./mdesde')
 
 /* Editor */
 
+/* GIT */
+
 let post_public = async (ruta, recurso) => {
   // Checkear si existe, sino crear
 

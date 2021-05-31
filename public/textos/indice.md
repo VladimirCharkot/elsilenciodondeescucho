@@ -1,7 +1,3 @@
----
-serie: dios
----
-
 - [Sobre la mecanicidad en la humanidad](/escritos/)
 
   - [Averiguar por sí mismo cada cosa](/escritos/averiguar)
