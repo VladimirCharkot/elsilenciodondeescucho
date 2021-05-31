@@ -7,9 +7,20 @@ block contenido
   script.
     var hammertime = new Hammer(document.querySelector('body'));
     hammertime.get('pinch').set({ enable: true });
+    hammertime.get('pan-x').set({ enable: true });
+    hammertime.get('pan-y').set({ enable: true });
+    
     hammertime.on('pinch', (ev) => {
-      console.log(ev);
-      document.querySelector('#contenido').style.background = "gray"
+      
+      let tamaneo = parseInt(document.documentElement.style.fontSize ? document.documentElement.style.fontSize : "12px")
+      tamaneo = tamaneo < 12 ? 12 : tamaneo
+      tamaneo = tamaneo > 90 ? 90 : tamaneo
+      if(ev.scale > 1){
+        document.documentElement.style.fontSize = `${tamaneo+1}px`
+      }else{
+        document.documentElement.style.fontSize = `${tamaneo-1}px`
+      }
+      
     });
 
   
