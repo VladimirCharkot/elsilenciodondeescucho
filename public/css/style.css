@@ -1,9 +1,6 @@
 @charset "UTF-8";
 /* Sitio */
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
-@import url("http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
-@import url("https://fonts.googleapis.com/css2?family=Mate+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
 html {
@@ -23,7 +20,8 @@ a {
 #contenido {
   height: 100%;
   position: absolute;
-  top: 0px; }
+  top: 0px;
+  touch-action: pan-x pan-y; }
 
 #topbar {
   position: absolute;

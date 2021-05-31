@@ -3,7 +3,15 @@ extends layout
 include cabecera
 
 block contenido
+  script(src="/js/hammer.min.js")
   script.
+    var hammertime = new Hammer(document.querySelector('body'));
+    hammertime.get('pinch').set({ enable: true });
+    hammertime.on('pinch', (ev) => {
+      console.log(ev);
+      document.querySelector('#contenido').style.background = "gray"
+    });
+
   
     
   
