@@ -6,9 +6,11 @@ block contenido
   script(src="/js/hammer.min.js")
   script.
   
-    let contenido = document.querySelector('.contenido')
+    let body = document.querySelector('body')
+    let contenido = document.querySelector('#contenido')
     let hammertime = new Hammer(contenido)
     hammertime.get('pinch').set({ enable: true })
+    body.style.touchAction = "pan-y"
     contenido.style.touchAction = "pan-y"
     
     hammertime.on('pinch', (ev) => {
@@ -17,9 +19,11 @@ block contenido
       tamaneo = tamaneo < 12 ? 12 : tamaneo
       tamaneo = tamaneo > 90 ? 90 : tamaneo
       if(ev.scale > 1){
-        contenido.style.fontSize = `${tamaneo+1}px`
+        document.querySelector('#contenido').style.fontSize = `${tamaneo+1}px`
+        //body.style.fontSize = `${tamaneo+1}px`
       }else{
-        contenido.style.fontSize = `${tamaneo-1}px`
+        document.querySelector('#contenido').style.fontSize = `${tamaneo-1}px`
+        //body.style.fontSize = `${tamaneo-1}px`
       }
       
     });
