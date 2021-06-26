@@ -3,7 +3,7 @@ serie: mecanicidad
 pie: Hasta un momento, todo era ilusión
 ---
 
-## RUIDO. DESPERTAR, DEL RUIDO
+## Despertar, del ruido
 
 Hasta un momento, ese o este ahora, no había nadie -ni nada- en uno.
 
@@ -28,9 +28,7 @@ Están "ellos" y estoy "Yo"
 – el espacio donde "ellos" ocurren, donde la existencia ocurre-.
 
 
-La existencia –grados, puntos, posiciones,
-
-distancias, movimientos, duraciones entre a y b-
+La existencia –grados, puntos, posiciones, distancias, movimientos, duraciones entre a y b-
 
 ocurren en el espacio de la consciencia.
 
@@ -59,7 +57,7 @@ Solo preguntarse, no responderse.
 
 Solo preguntarse, no responderse.
 
-La Respuesta es de lo conocido.
+La respuesta es de lo conocido.
 
 Preguntarse es estar abierto a lo desconocido,
 

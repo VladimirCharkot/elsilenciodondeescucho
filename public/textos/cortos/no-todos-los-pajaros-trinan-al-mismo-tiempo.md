@@ -3,7 +3,7 @@ serie: cortos
 pie: Ni lo hacen para llenar los silencios
 ---
 
-## NO TODOS LOS PÁJAROS TRINAN AL MISMO TIEMPO
+## No todos los pájaros trinan al mismo tiempo
 
 Cuando un pájaro canta hay que escucharlo.
 
@@ -16,4 +16,5 @@ Cuando un pájaro canta hay que oírlo.
 Pues los pájaros miran desde lo alto, sin estar atados a la tierra, sin la pesadez de los pasos de los hombres, con la libertad hecha aire, con la libertad hecha cuerpo, alas y vuelo, sin concepto.
 
 Cuando un pájaro canta hay que oírlo.
+
 No todos lo hacen al mismo tiempo, ni lo hacen para llenar los silencios.

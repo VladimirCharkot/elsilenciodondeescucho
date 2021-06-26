@@ -3,7 +3,11 @@ serie: mecanicidad
 pie: Pensemos
 ---
 
-## PENSEMOS, TODAS ESTAS, ABAJO, SON COSAS DIFERENTES.
+## Pensemos
+
+Fíjate, todas estas cosas, abajo, son diferentes.
+
+--
 
 Estar convencido de que se piensa.
 

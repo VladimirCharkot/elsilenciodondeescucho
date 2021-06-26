@@ -20,8 +20,7 @@ a {
 #contenido {
   height: 100%;
   position: absolute;
-  top: 0px;
-  touch-action: pan-x pan-y; }
+  top: 0px; }
 
 #topbar {
   position: absolute;

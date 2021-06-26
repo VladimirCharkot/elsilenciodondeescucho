@@ -20,11 +20,9 @@ La paradoja se presenta por el hecho de que "ser" es actividad, y una actividad 
 
 Es decir que solo es posible averiguar qué soy cuando estoy siendo.
 
-Tengo que ser para poder averiguar quién soy, pero… eh! si aún no sé quién soy, ¿cómo ir siendo? –condición necesaria para- poder averiguar quién soy.
+Tengo que ser para poder averiguar quién soy, pero… eh! si aún no sé quién soy, ¿cómo ir siendo?
 
-La paradoja.
-
-Tengo que ser aún sin saber quién soy para averiguar quién soy.
+La paradoja es que tengo que ser aún sin saber quién soy para averiguar quién soy.
 
 Como dijo una amiga, “hay que ir siendo”. Sí. El problema es que el ego enseguida se acomoda aquí. Toma esto dicho y, convencido de que él es, todo sigue igual. Eso ya no es posible, ya no se puede seguir siendo el que se era, pues, desde allí uno se ha puesto en búsqueda… eso está claro.
 
@@ -33,4 +31,6 @@ Como dijo una amiga, “hay que ir siendo”. Sí. El problema es que el ego ens
 
 Ser es actividad, bien.
 
-Se trata entonces de procurar realizar la actividad… y la actividad es, exactamente lo que hasta allí se tiene constatado, saboreado, que la actividad es. Es decir, soy esto que hasta aquí tengo constatado que soy y que no es aquel “yo-de-siempre”. Se trata de procurar realizar esta actividad y ninguna otra cosa ideal. No es posible realizar una idea. Se trata de procurar realizar la actividad que puede ser realizada, aquella que alcanzo a comprender que soy.
+Se trata entonces de procurar realizar la actividad… y la actividad es, exactamente lo que hasta allí se tiene constatado, saboreado, que la actividad es.
+
+Se trata de procurar realizar la actividad que puede ser realizada. El estar dando cuenta de aquella sensación/sentimiento de ser que, unida al pensamiento y con plena atención, me “muestran” que soy.

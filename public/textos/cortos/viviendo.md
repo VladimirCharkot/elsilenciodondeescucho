@@ -9,21 +9,28 @@ La Gracia
 
 es que tenemos la posibilidad,
 
-la bendita y Real posibilidad,
+la bendita y real posibilidad,
 
 de volver a poner la atención allí,
 
-en la vida; sobre sí,
+sobre sí,
+
+en la vida;
 
 y la gran y bendita voluntad de sostenerla allí.
 
-Solo así se vive.
+--
 
-Mientras se da cuenta de estar haciéndolo,
+Solo así se vive,
 
-Se Está Viviendo.
+mientras se da cuenta de estar haciéndolo.
 
-Si, así, con Mayúsculas. La VIDA,
+--
+
+
+La VIDA,
+
+si, así, con mayúsculas -
 
 cuando se la vive,
 
@@ -37,19 +44,17 @@ te pone una sonrisa
 
 y te llena de silencio,
 
-de paz, y serenidad,
+de paz, y serenidad.
 
-felicidad, así, sin grandes elocuencias
+Así, sin grandes elocuencias ni extroversiones,
 
-ni grandes extroversiones,
+sin tantas algarabías, contenturas ni desilusiones,
 
-ni muchas algarabías, contenturas ni desilusiones,
+sin ilusiones.
 
-sin ilusiones…
+Y no hay más.
 
-y no hay más…
-
-y es Todo…
+Y es todo…
 
 y lo demás, en verdad, lo demás:
 

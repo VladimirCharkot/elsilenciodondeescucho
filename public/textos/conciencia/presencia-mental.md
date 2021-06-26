@@ -5,105 +5,35 @@ pie: Y si deja de vigilar aparece allí una especie de "yo algo ausente"
 
 ## PRESENCIA MENTAL
 
-Observo hacia mí que observo
+Observo hacia mí que observo -algo- y veo con claridad que somos dos:
 
-y veo con claridad
+Uno que observa y otro que observa que se está observando -ese algo-.
 
-que estoy observando.
+Y cuando camino somos tres:
 
-Observo hacia mí
+Uno que camina, otro que observa que se camina -y todo lo que se desprende de la integridad del acontecer- y otro que observa que se observa que se camina.
 
-que estoy observando
+El sentimiento que trae este hacer, cuando de continuo la sostengo, es de estar vigilando. Un esfuerzo voluntario por no perderlo.
 
-y veo con claridad
-
-que somos dos
-
-Uno que observa y otro que observa que se está observando
-
---
-
-Y cuando camino.
-
-Somos tres.
-
-Uno que camina,
-
-otro que observa que se camina
-
-y otro que observa que se observa que se camina.
-
-Observo que ese, camina y vigila que camina.
-
-Baila y vigila que baila.
-
-Habla y vigila que habla.
-
-Vigila saber que observa, que camina, que baila, que habla
-
-Vigila saber que averigua y qué averigua…
-
---
-
-Y si deja de vigilar,
-
-los dos,
-
-los tres,
-
-desaparecen…
-
-Y en su lugar queda otro
-
-del que nada conozco.
-
+Y si se deja de vigilar, los dos, los tres… todo desaparece…
+Y  en su lugar queda algo/otro del que nada conozco.
 Del que nada se sabe.
-
-Ni que vigila,
-
-ni que habla, o que camina…
-
+Ni que vigila, ni que habla, o que camina…
 ni se lo ve.
 
-
-Aparece allí, una especie de "yo algo ausente"
-
---
+Aparece allí, una especie de “yo algo ausente”
 
 Observo hacia mí,
-
 y veo claramente,
-
 que estoy observando,
-
 que estoy caminando,
-
-que estoy bailando,
-
-que estoy.
-
 Que estoy estando.
-
 Y en ese momento,
+veo claramente que somos cuerpo/sensación, sentimiento y atención integrando
+todo eso en una misma vivencia.
+Y veo claramente que, de la continuidad de esto, surge algo más que no es nada de lo anterior, que es nuevo y no lo hago yo.
 
-veo claramente que somos dos.
-
-Pero si el que observa al que observa desaparece,
-
-entonces, los dos desaparecen y ya nada se observa.
-
-Nada se ve.
-
+Pero si el que observa  al que observa desaparece, entonces nada se ve.
 Nada se sabe.
-
 Nada se hace.
-
-Si el que vigila desaparece,
-
-entonces desaparecen los dos:
-
-el que vigila y el que hace (vigilado)…
-
-y aparece otro del que nada se sabe.
-
-Una especie de "yo algo ausente".
+Si el que vigila desaparece, solo queda, en su lugar,  una especie de “yo algo ausente”.

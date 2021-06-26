@@ -3,11 +3,11 @@ serie: cortos
 pie: La manera de "pasar" algo es llegar hasta ello y continuar
 ---
 
-## TRASCENDER
+## Trascender
 
-La manera de "pasar" algo es llegar hasta ello y continuar. Se camina hasta la esquina, se llega a ella y se sigue a la siguiente "cuadra".
+La manera de "pasar" algo es llegar hasta ello y continuar.
 
-Se pasa la esquina.
+> Se camina hasta la esquina, se llega a ella y se sigue a la siguiente "cuadra". Se pasa la esquina.
 
 Pasar el miedo, la vergüenza, la ira, el entusiasmo, la ansiedad, etc., trascenderlos, es igual:
 
