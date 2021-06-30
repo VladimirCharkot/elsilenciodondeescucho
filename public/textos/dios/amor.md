@@ -1,6 +1,7 @@
 ---
 serie: dios
 pie: Cada vez que Uno no está, está en funcionamiento el Ego
+oculto: sí
 ---
 
 ## ¿QUÉ ES EL AMOR?

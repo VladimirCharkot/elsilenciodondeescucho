@@ -1,6 +1,7 @@
 ---
 serie: mecanicidad
 pie: Hay "cosas" que en tanto se Tengan Son en Uno y a la vez Uno Es ellas y en Ellas
+oculto: sí
 ---
 
 ## DE PERDER Y TENER

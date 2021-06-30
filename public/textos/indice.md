@@ -1,3 +1,7 @@
+---
+oculto: sí
+---
+
 - [Sobre la mecanicidad en la humanidad](/escritos/)
 
   - [Averiguar por sí mismo cada cosa](/escritos/averiguar)
@@ -80,4 +84,3 @@
 
 - [Cortos](/escritos/)
 - [Cuentos](/escritos/)
-

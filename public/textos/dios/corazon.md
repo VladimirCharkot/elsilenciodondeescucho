@@ -1,6 +1,7 @@
 ---
 serie: dios
 pie: "El corazón" es Certeza no emoción
+oculto: sí
 ---
 
 ## EL CORAZÓN

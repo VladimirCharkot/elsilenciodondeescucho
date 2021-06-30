@@ -8,7 +8,7 @@ pie: Se le llevará una flor
 
 Cuando Vicente era niño
 
-    -más niño-
+-más niño-
 
 se quedaba inmóvil atrás de la ventana mirando la lluvia.
 

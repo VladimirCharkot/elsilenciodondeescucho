@@ -1,6 +1,7 @@
 ---
 serie: conciencia
 pie: Donde está nuestra Atención, ahí es donde Estamos.
+oculto: sí
 ---
 
 ## CONCIENCIA
@@ -9,7 +10,7 @@ Donde está nuestra Atención, ahí es donde Estamos. La Atención Es el asiento
 
 La atención es el puente del Alma (psiquis) que conecta lo que Eres, el Ser (Espíritu), con la existencia. Es lo que une a Dios en ti con Dios en Todo.
 
-La atención dirigida, en su función, tiene el Poder de la sincronicidad, gracias al cual, Uno puedeir de la mano de La Vida sin perderse. Es el canal directo, recto, que sostiene unido lo que Somos con el aconteciendo de La Vida (aquello que llamamos Ahora y no alcanzamos a determinar porque siempre: _ya ha pasado_). Cuando ella se ha perdido, es decir, cuando no sabemos dónde está posada, asentada, la atención, nos hemos perdido también Nosotros. _Nosotros no Estamos Estando Allí._
+La atención dirigida, en su función, tiene el Poder de la sincronicidad, gracias al cual, Uno puede ir de la mano de La Vida sin perderse. Es el canal directo, recto, que sostiene unido lo que Somos con el aconteciendo de La Vida (aquello que llamamos Ahora y no alcanzamos a determinar porque siempre: _ya ha pasado_). Cuando ella se ha perdido, es decir, cuando no sabemos dónde está posada, asentada, la atención, nos hemos perdido también Nosotros. _Nosotros no Estamos Estando Allí._
 
 Es preciso, "vigilar" nuestra atención, atender a estar atendiendo (en este sentido se usa la palabra vigilancia). _Estar Dando Cuenta de Nosotros Estando allí_. Es preciso Estar Dando Cuenta de todo este mecanismo interno para que así se cumpla y, para así, poder "Dar cuenta", en ese mismo acto, de estar sabiendo qué es lo que está pasándonos a cada instante. Sin darlo por hecho, acreditar estar Haciéndolo mientras lo estoy Haciendo. Para en Verdad Vivir, y que ello nos conduzca a _Vivir en Verdad_. Solo así es que estamos, no encontramos recibiéndola, Viviéndola. Y solo así, es que podemos Reconocerla Siendo y Agradecerla.
 

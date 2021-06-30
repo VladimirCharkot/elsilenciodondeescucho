@@ -9,18 +9,15 @@ exports.hogar = async (req, res) => {
   return res.render('login', {titulo: '🤫'})
 }
 
-/* Portada del sitio */
-exports.bienvenida = async (req, res) => {
-  let bienvenida_md = await fs.readFile('views/bienvenida.md', 'utf8')
-  let [bienvenida_html, fm] = md.render(bienvenida_md)
-  res.render('bienvenida', { titulo: 'El Silencio Donde Escucho', cont: bienvenida_html })
-}
-
-
 /* Página de índice de escritos para el público */
 exports.escritos = async (req, res) => {
   // Algo con cookies
-  res.render('indice', { titulo: 'Índice'})
+  let visto = true
+  if(!req.cookies.visto){
+    res.cookie('visto', true, {maxAge: 365*24*60*60000, encode: String})
+    visto = false
+  }
+  res.render('indice', { titulo: 'Índice', visto: visto})
 }
 
 /* Índice de escritos en json para ubicar en la página de índices */
@@ -91,7 +88,9 @@ let construir_indice_completo = async (base = 'public/textos') => {
 
       _.assign(entrada, front_matter)
 
-      indice.push(entrada)
+      if (!front_matter.oculto || front_matter.oculto == "no"){
+        indice.push(entrada)
+      }
 
     }
   }

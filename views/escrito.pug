@@ -19,10 +19,10 @@ block contenido
       tamaneo = tamaneo < 12 ? 12 : tamaneo
       tamaneo = tamaneo > 90 ? 90 : tamaneo
       if(ev.scale > 1){
-        document.querySelector('#contenido').style.fontSize = `${tamaneo+1}px`
+        contenido.style.fontSize = `${tamaneo+1}px`
         //body.style.fontSize = `${tamaneo+1}px`
       }else{
-        document.querySelector('#contenido').style.fontSize = `${tamaneo-1}px`
+        contenido.style.fontSize = `${tamaneo-1}px`
         //body.style.fontSize = `${tamaneo-1}px`
       }
       

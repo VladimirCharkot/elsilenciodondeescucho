@@ -50,6 +50,11 @@ block contenido
       opacity: 0.1;
     }
     
+  //- if !visto
+  //-   div#intro
+  //-   script(src='/js/introduccion.js')
+  div#intro
+  script(src='/js/introduccion.js')
   
   script(src='/js/vidriera.js')
   
@@ -131,9 +136,6 @@ block contenido
             d.fy = null;
           })
         )
-        
-      globales.nodos = nodos  
-      globales.idx = idx
       
       let links = nodos.append('a')
         .attr('href', d => `/escritos/${d.filename.split('.')[0]}`)
@@ -154,12 +156,10 @@ block contenido
         .attr('class','pie')
       
       
-      
-      
-      
       /* Fuerzas */
       
       // Sostener aceleración en el scroll
+      // https://github.com/d3/d3-force
       
       let k = 0.7;
       let tick = () => {
@@ -180,8 +180,9 @@ block contenido
         .on("tick", tick)
       
       globales.simulacion = simulacion
+      globales.nodos = nodos  
+      globales.idx = idx
 
-      
     })
     
 
