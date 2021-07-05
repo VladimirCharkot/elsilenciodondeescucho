@@ -1,0 +1,46 @@
+body{
+  font-size: 16px;
+}
+
+.vidriera{
+  font-family: 'Jost';
+}
+
+.volver{
+  background: aliceblue;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.vidriera{
+  width: 100vw;
+  height: 100vh;
+}
+
+.entrada .titulo{
+  font-size: 3em;
+}
+
+.entrada .pie{
+  font-size: 1.5em;
+}
+
+.entrada circle{
+  stroke-width: 5px;
+  stroke-opacity: 0.5;
+}
+
+.entrada.visitado circle{
+  fill-opacity: 0.5;
+}
+
+.entrada.no_visitado circle{
+  fill-opacity: 0.2;
+}
+
+.isla{
+  font-size: 15em;
+  opacity: 0.1;
+}

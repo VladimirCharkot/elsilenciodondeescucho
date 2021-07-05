@@ -15,12 +15,12 @@
 
 
 .escrito{
-  background: var(--color-base);
+  background: url(/img/ruido.png) fixed;
   width: 100vw;
 }
 
 h2, h3, h4{
-  font: 1.7em 'Julius Sans One';
+  font: 1.7em 'EB Garamond';
   padding: 0px 20%;
   padding-top: 50px;
 }

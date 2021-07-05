@@ -4,6 +4,7 @@ include cabecera
 
 block contenido
   script(src="/js/hammer.min.js")
+  
   script.
   
     let body = document.querySelector('body')
@@ -45,7 +46,7 @@ block contenido
       window.addEventListener('load', corregir_imagenes)
     
 
-  div.escrito!= cont
+  div.escrito.ruido!= cont
     div.firma.piel
       p Sebastán Rojo
       p "El Silencio Donde Escucho"
