@@ -42,7 +42,6 @@ exports.escrito = async (req, res) => {
 
 exports.taller = async (req, res) => {
 
-  console.log(req.params.tid)
   let [texto_html, fm] = await traer_texto(req.params.tid, './public/textos/propuestas/')
   if (!texto_html) return res.status(404).json({status: 404, mensaje: 'No existe'})
   res.render('taller', { titulo: fm.titulo || 'El Silencio Donde Escucho', cont: texto_html })
@@ -52,6 +51,11 @@ exports.taller = async (req, res) => {
 
 exports.propuestas = (req, res) => {
   res.render('propuestas', {titulo: 'Propuestas'})
+}
+
+exports.esde = async (req, res) => {
+  let [texto_html, fm] = await traer_texto('hoy', './public/textos/esde/')
+  res.render('taller', { titulo: fm.titulo, cont: texto_html })
 }
 
 

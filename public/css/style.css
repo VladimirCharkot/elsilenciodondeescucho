@@ -373,7 +373,7 @@ header {
     font-size: 2.6em; }
   .propuestas h3 {
     font-size: 1.8em;
-    margin-top: 0; }
+    margin-bottom: 0; }
   .propuestas section div {
     display: flex;
     align-items: center;

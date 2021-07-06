@@ -6,18 +6,26 @@ let passport = require('passport')
 
 let is_admin = (req, res, next) => { if(req.user) {next()} else {return res.redirect('/hogar')} }
 
-/* GET home page. */
+/* Público */
 router.get('/', blog.escritos)
-router.get('/escritos/:eid', blog.escrito)
-router.get('/talleres/:tid', blog.taller)
-router.get('/propuestas/', blog.propuestas)
 
+router.get('/escritos', blog.escritos)
+router.get('/escritos/:eid', blog.escrito)
+
+router.get('/propuestas/', blog.propuestas)
+router.get('/propuestas/:tid', blog.taller)
+
+router.get('/esde/', blog.esde)
+
+
+/* Público funcional */
 router.get('/reset_cookie/', (req, res) => res.clearCookie('visitados').json({ok: true}))
 
 router.get('/indice_json', blog.indice_escritos)
-
-
 router.get('/indice', editor.indice)
+
+
+/* Privado */
 router.post('/md/', [is_admin, editor.post_md])
 router.delete('/md/', [is_admin, editor.delete_md])
 

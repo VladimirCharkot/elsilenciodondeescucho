@@ -14,12 +14,6 @@ try{
 }
 
 
-
-
-
-
-
-
 d3.json('/indice_json').then(idx => {
 
   /***** SVG *****/
