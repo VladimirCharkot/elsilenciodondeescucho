@@ -120,8 +120,10 @@ let construir_indice_completo = async (base = 'public/textos/escritos') => {
 
 
 exports.login = (req, res, next) => {
+    console.log('INTENTANDO')
     passport.authenticate('local', function(err, user, info){
       try{
+        console.log(err)
         if (err) return next(err);
         if (!user) return res.json({ok: false})
         console.log(`Logueado con ${user.id}`)
