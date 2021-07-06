@@ -1,119 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap")
 
-#indice
-  background-image: url(/icon/journal.png)
-  position: absolute
-  top: 0
-  right: 0
-  margin: 0
-  margin-right: 1em
-  margin-top: 0.5em
-  width: 2em
-  height: 2em
-
-#cabecera
+header
   position: fixed
   z-index: 1
   width: 100vw
-  font-family: 'Libre Baskerville', sans-serif
+  padding: 0.5em
+  background-color: rgba(255,255,255,0.65)
+  border-bottom: 1px solid black
+  display: flex
+  align-items: center
 
   h1
-    letter-spacing: 2px
-    margin: 0px
-    font-size: 2.5em
-    font-weight: 100
-    transition-duration: 1s
-
-  .intro
+    font-family: 'Libre Baskerville', sans-serif
+    font-size: 1em
+    margin: 0.5em
+    letter-spacing: 0.28em
     text-transform: uppercase
-    background-color: rgba(255,255,255,0.65)
-    letter-spacing: 2px
-    padding: 2em 10%
-    transition-duration: 1s
-
-  .frase
-    font-size: 0.8em
-    transition-duration: 0.3s
-    p
-      transition-duration: 0.3s
+    display: inline-block
+    transition: .5s
+    &:hover
+      text-shadow: 1px 1px #b4b4b4
 
   nav
-    // background-color: #d7eac9
-    background: linear-gradient(180deg, rgba(255,255,255,0.8) 30%, rgba(255,255,255,0) 100%)
-    border-top: 1px solid rgba(0,0,0,.15)
-    height: 2em
     display: flex
     align-items: center
-    justify-content: space-around
-    padding: 0% 20%
-    transition-duration: 0.8s
+    flex-grow: 1
+    justify-content: right
+    margin-right: 1.6em
 
     a
-      line-height: 2em
-
-    li
-      flex-grow: 1
-      text-align: center
-      font-size: 0.9em
-      transition-duration: 1s
-      list-style: none
-      height: 100%
-
+      transition: .4s
+      display: block
+      text-transform: uppercase
+      padding: 1em
+      color: black
       &:hover
-          background: white
-          border: 1px solid gainsboro
-      p
-        margin: 0
-      .btn
-        opacity: 0
-        visibility: collapse
-
-
-
-
-@mixin barra-contraida
-  .intro
-    padding: 5px
-    min-height: 2em
-    h1
-      font-size: 1em
-      margin: 0.5em
-      text-align: left
-      display: inline-block
-  nav
-    padding: 0px
-    height: 0px
-    a
-      font-size: 0px
-  .frase
-    z-index: 0
-    opacity: 0
-    transform: scaleY(0)
-    max-height: 0
-    text-align: left
-    p
-      margin: 0
-      max-height: 0
-  #indice
-    visibility: visible
-    opacity: 1
-
-
-
-#cabecera.contraida
-  border-bottom: 1px solid black
-  @include barra-contraida
-
-
-@media (max-width: 800px)
-
-  #cabecera
-    @include barra-contraida
-
-  #cabecera *
-    transition: 0s
-  #indice
-    margin-top: 0.25em
-
-/*.nav a:hover
-    background-color: #5f9ea066*/
+        text-shadow: 2px 2px #cdcdcd

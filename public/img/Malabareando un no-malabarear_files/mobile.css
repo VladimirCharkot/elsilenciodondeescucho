@@ -1,0 +1,15 @@
+@media (max-width: 800px){
+  /* :root{
+    font-size: 36px;
+  } */
+  .escrito p{
+    padding: 0px 5% 0px 5%;
+  }
+  h1{
+    font-size: 2em;
+  }
+  .escrito h2{
+    padding: 0px 2%;
+    padding-top: 0.8em;
+  }
+}

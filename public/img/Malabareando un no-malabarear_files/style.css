@@ -20,7 +20,11 @@ main {
   position: absolute; }
 
 hr {
-  border: 1px solid #e7e7e7; }
+  border: 1px solid #e7e7e7;
+  width: 80%; }
+
+.footnotes-list {
+  list-style: none; }
 
 .error {
   padding: 10%; }
@@ -31,33 +35,24 @@ header {
   width: 100vw;
   padding: 0.5em;
   background-color: rgba(255, 255, 255, 0.65);
-  border-bottom: 1px solid black;
-  display: flex;
-  align-items: center; }
+  border-bottom: 1px solid black; }
   header h1 {
     font-family: 'Libre Baskerville', sans-serif;
     font-size: 1em;
     margin: 0.5em;
     letter-spacing: 0.28em;
-    text-transform: uppercase;
-    display: inline-block;
-    transition: .5s; }
-    header h1:hover {
-      text-shadow: 1px 1px #b4b4b4; }
-  header nav {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    justify-content: right;
-    margin-right: 1.6em; }
-    header nav a {
-      transition: .4s;
-      display: block;
-      text-transform: uppercase;
-      padding: 1em;
-      color: black; }
-      header nav a:hover {
-        text-shadow: 2px 2px #cdcdcd; }
+    text-transform: uppercase; }
+
+/* Índice */
+.indice {
+  counter-reset: subidx;
+  padding: 50px 25% 0 25%; }
+  .indice li {
+    list-style: none;
+    background: #faebd7b0;
+    width: 40vw;
+    padding: 2px 15px;
+    margin: 1px; }
 
 /* Editor */
 /* Area del editor */
@@ -345,93 +340,5 @@ header {
     background: antiquewhite; }
     #flash.expandido:hover {
       background: #faebd769; }
-
-/* Este sería para los talleres, título en overlay sobre imagen */
-.taller {
-  padding-bottom: 5em; }
-  .taller h2 {
-    font: 3.4em 'Cinzel';
-    background: none;
-    text-align: right;
-    margin-top: 2em;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
-  .taller .ventana {
-    display: flex;
-    border-bottom: 2px solid black;
-    height: min-content; }
-  .taller img {
-    display: none; }
-  .taller hr {
-    width: 30%; }
-
-.propuestas {
-  padding-bottom: 5em; }
-  .propuestas h2, .propuestas h3, .propuestas h4 {
-    font-family: 'Cinzel'; }
-  .propuestas h2 {
-    font-size: 2.6em; }
-  .propuestas h3 {
-    font-size: 1.8em;
-    margin-top: 0; }
-  .propuestas section div {
-    display: flex;
-    align-items: center;
-    padding: 0.2em 20%; }
-    .propuestas section div:hover hr {
-      opacity: 1; }
-    .propuestas section div h4 {
-      flex-grow: 1;
-      min-width: max-content;
-      padding: 0.2em; }
-    .propuestas section div hr {
-      border: 1px solid #b5b5b5;
-      transition: .6s;
-      flex-grow: 50;
-      opacity: 0; }
-
-/* Escrito */
-.texto {
-  background: url(/img/ruido.png) fixed;
-  margin: 0;
-  display: flex;
-  flex-direction: column; }
-  .texto h2 {
-    padding: 0em 20%;
-    padding-top: 1.8em; }
-  .texto h3, .texto h4 {
-    padding: 0.2em 20%; }
-  .texto p {
-    padding: 0px 25% 0px 25%; }
-
-.escrito {
-  width: 100vw;
-  padding: 0;
-  /* Not supported yet :( */ }
-  .escrito h2 {
-    margin-top: 3em;
-    margin-bottom: 0;
-    background: var(--attach-default) var(--color-default) var(--textura-default); }
-  .escrito h3, .escrito h4 {
-    padding-top: 0.8em; }
-  .escrito p:has(> img) {
-    padding: 0;
-    background-color: azure; }
-  .escrito img {
-    width: 100%; }
-
-.ventana {
-  background-attachment: var(--attach-default);
-  background-image: var(--url-imagen);
-  background-size: var(--escala, var(--escala-default));
-  background-position: var(--posicion, var(--posicion-default));
-  height: var(--altura-ventanas); }
-
-.piel {
-  padding: var(--pad, var(--pad-default));
-  background-attachment: var(--attach, var(--attach-default));
-  background-color: var(--color, var(--color-default));
-  background-image: var(--textura, var(--textura-default));
-  background-blend-mode: var(--blend, var(--blend-default)); }
 
 /*# sourceMappingURL=style.css.map */

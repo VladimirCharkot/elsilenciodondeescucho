@@ -1,5 +1,7 @@
 /* Escrito */
 
+// EN DESUSO
+
 $color-1: rgb(252, 250, 243)
 $color-2: rgba(226, 247, 235, 0.5)
 
@@ -9,43 +11,51 @@ $color-4: #8bbcfc
 $color-5: #d8e3e3
 $color-6: #d8d3cd
 
-
-.escrito
+.texto
+  background: url(/img/ruido.png) fixed
+  // width: 100vw
+  margin: 0
+  display: flex
+  flex-direction: column
+  h2
+    padding: 0em 20%
+    padding-top: 1.8em
+  h3, h4
+    padding: 0.2em 20%
   p
     padding: 0px 25% 0px 25%
-  h2,h3,h4
-    font: 1.7em 'Uchen'
-    padding: 0px 20%
-    padding-top: 50px
-    background-attachment: fixed
-    background-color: $color-2
-    background-image: url(/img/bamboo.png)
+
+
+.escrito
+  width: 100vw
+  padding: 0
+  h2
+    margin-top: 3em
+    margin-bottom: 0
+    background: var(--attach-default) var(--color-default) var(--textura-default)
+  h3, h4
+    padding-top: 0.8em
+
+  /* Not supported yet :( */
+  p:has(>img)
+    padding: 0
+    background-color: azure
+
+  img
+    width: 100%
+
 
 .ventana
-  background-attachment: fixed
-  background-image: url(vida.jpg)
-  background-size: cover
-  height: $altura-ventanas
+  background-attachment: var(--attach-default)
+  background-image: var(--url-imagen) /* Se espera que esté definida en el elemento*/
+  background-size: var(--escala, var(--escala-default))
+  background-position: var(--posicion, var(--posicion-default))
+  height: var(--altura-ventanas)
 
-.piel1
-  padding: 5px 0px
-  background-attachment: fixed
-  background-color: $color-2
-  background-image: url(/img/bamboo.png)
 
-.piel2
-  padding: 5px 0px
-  background-attachment: fixed
-  background-color: $color-3
-  background-image: url(/img/bamboo.png)
-
-.piel3
-  padding: 5px 0px
-  background-attachment: fixed
-  background-color: $color-4
-  background-image: url(/img/bamboo.png)
-
-.firma
-  text-align: right
-  padding-right: 5%
-  padding-bottom: 15%
+.piel
+  padding: var(--pad, var(--pad-default))
+  background-attachment: var(--attach, var(--attach-default))
+  background-color: var(--color, var(--color-default))
+  background-image: var(--textura, var(--textura-default))
+  background-blend-mode: var(--blend, var(--blend-default))

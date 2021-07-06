@@ -14,52 +14,7 @@
 }
 
 
-.escrito{
-  background: url(/img/ruido.png) fixed;
-  width: 100vw;
-}
 
-h2, h3, h4{
-  font: 1.7em 'EB Garamond';
-  padding: 0px 20%;
-  padding-top: 50px;
-}
-
-.escrito h2, .escrito h3, .escrito h4{
-  background-attachment: var(--attach-default);
-  background-color: var(--color-default);
-  background-image: var(--textura-default);
-}
-
-.escrito p{
-  padding: 0px 25% 0px 25%;
-}
-
-/* Not supported yet :( */
-.escrito p:has(>img){
-  padding: 0;
-  background-color: azure;
-}
-
-.escrito img{
-  width: 100%;
-}
-
-.ventana{
-  background-attachment: var(--attach-default);
-  background-image: var(--url-imagen); /* Se espera que esté definida en el elemento*/
-  background-size: var(--escala, var(--escala-default));
-  background-position: var(--posicion, var(--posicion-default));
-  height: var(--altura-ventanas);
-}
-
-.piel{
-  padding: var(--pad, var(--pad-default));
-  background-attachment: var(--attach, var(--attach-default));
-  background-color: var(--color, var(--color-default));
-  background-image: var(--textura, var(--textura-default));
-  background-blend-mode: var(--blend, var(--blend-default));
-}
 
 .hojas{
   background-image: url(/img/hojas.jpg);
@@ -83,20 +38,15 @@ h2, h3, h4{
 
 .firma{
   text-align: right;
-  padding-right: 5%;
-  padding-bottom: 15%;
+  padding-bottom: 3em;
+  flex: 1 0 auto;
 }
 
+blockquote {
+    text-align: right;
+    font-style: italic;
+}
 
-@media (max-width: 1060px){
-  /* :root{
-    font-size: 36px;
-  } */
-  .escrito p{
-    padding: 0px 5% 0px 5%;
-  }
-  h2,h3,h4{
-    padding: 0px 2%;
-    padding-top: 50px;
-  }
+.footnotes-list{
+  list-style: none
 }

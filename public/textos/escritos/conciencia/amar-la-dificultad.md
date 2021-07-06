@@ -1,6 +1,7 @@
 ---
 serie: conciencia
 pie: Es posible Vivir el Sufrimiento con Amor
+titulo: Amar la dificultad
 ---
 
 ## AMAR LA DIFICULTAD
@@ -9,7 +10,7 @@ Usar nuestras cualidades siempre en función de "entregar la vida", de hacer el 
 
 Saber que las dificultades, junto a los momentos en que se presentan, son la gran puerta al Amor. O nos perdemos en ellas, nos perdemos en el sufrimiento bajo la forma que se muestre: envidia, miedo, vergüenza, victimización, (que son formas de aislación) justificándonos, explicándonos o aislándonos por completo... o las usamos para crecer.
 
-::: piel hojas
+::: piel
 Es posible Vivir el Sufrimiento con Amor.
 :::
 

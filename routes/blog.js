@@ -9,6 +9,9 @@ let is_admin = (req, res, next) => { if(req.user) {next()} else {return res.redi
 /* GET home page. */
 router.get('/', blog.escritos)
 router.get('/escritos/:eid', blog.escrito)
+router.get('/talleres/:tid', blog.taller)
+router.get('/propuestas/', blog.propuestas)
+
 router.get('/reset_cookie/', (req, res) => res.clearCookie('visitados').json({ok: true}))
 
 router.get('/indice_json', blog.indice_escritos)
@@ -23,23 +26,7 @@ router.post('/imagenes/', [is_admin, editor.post_imagenes])
 router.get('/editor/', [is_admin, editor.editor])
 
 router.get('/hogar', blog.hogar)
-router.post('/hogar', function(req, res, next) {
-    passport.authenticate('local', function(err, user, info){
-      try{
-        if (err) return next(err);
-        if (!user) return res.json({ok: false})
-        console.log(`Logueado con ${user.id}`)
-        console.log(user)
-
-        req.login(user, (e,b ) => {console.log(e); console.log(b); })
-
-        return res.json({ok: true})
-
-      }catch(e){
-        console.log(e)
-      }
-    })(req, res, next)
-  })
+router.post('/hogar', blog.login)
 
 router.get('/logout', (req,res) => {req.logout(); res.redirect('/')})
 

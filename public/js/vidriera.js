@@ -1,4 +1,4 @@
-window.onscroll = null
+// window.onscroll = null
 
 
 let globales = {}
@@ -12,6 +12,13 @@ try{
 }catch(err){
   visitados = []
 }
+
+
+
+
+
+
+
 
 d3.json('/indice_json').then(idx => {
 
@@ -50,7 +57,8 @@ d3.json('/indice_json').then(idx => {
 
   /* Elementos */
 
-  let islas = d3.select('.vidriera').select('g').selectAll('g.isla')
+
+  let labels = d3.select('.vidriera').select('g').selectAll('g.isla')
     .data(Object.entries(centros))
     .enter().append('g')
     .attr('transform', d => `translate(${d[1].x * 1.2}, ${d[1].y * 1.2})`)

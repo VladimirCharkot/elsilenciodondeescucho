@@ -2,15 +2,16 @@ doctype html
 html
   head
     title= titulo
-    link(href='/css/style.css', rel='stylesheet')
-    link(href='/css/pieles.css', rel='stylesheet')
+    link(rel="stylesheet", href="/css/style.css")
+    link(rel="stylesheet", href="/css/pieles.css")
+    link(rel="stylesheet", href="/css/mobile.css")
     link(href='/icon/leaf.png', rel='icon')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
     script(src='/js/general.js')
   body
     block cabecera
-    div#contenido
-      div#flash
+    main
+      dialog#flash
         p
         a(href='#', onclick="$('#flash').removeClass('expandido')") X
       block contenido

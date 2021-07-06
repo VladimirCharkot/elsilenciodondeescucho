@@ -1,0 +1,109 @@
+/* Escrito */
+
+
+:root{
+  --color-base: #fcfaf4;
+  --color-default: #e2f7eb88;
+  --textura-default: url(/img/bamboo.png);
+  --blend-default: hard-light;
+  --attach-default: fixed;
+  --pad-default: 5px 0px;
+  --altura-ventanas: 400px;
+  --escala-default: cover;
+  --posicion-default: center;
+}
+
+
+.escrito{
+  background: url(/img/ruido.png) fixed;
+  width: 100vw;
+  /* height: 100vh; */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.escrito h2{
+  font: 1.7em 'EB Garamond';
+  padding: 0.8em 20%;
+  margin-top: 2em;
+  margin-bottom: 0;
+  background: var(--attach-default) var(--color-default) var(--textura-default);
+}
+
+.escrito h3, .escrito h4{
+  font-family: 'EB Garamond';
+  padding: 0px 20%;
+  padding-top: 0.8em;
+}
+
+.escrito p{
+  padding: 0px 25% 0px 25%;
+}
+
+/* Not supported yet :( */
+.escrito p:has(>img){
+  padding: 0;
+  background-color: azure;
+}
+
+.escrito img{
+  width: 100%;
+}
+
+.ventana{
+  background-attachment: var(--attach-default);
+  background-image: var(--url-imagen); /* Se espera que esté definida en el elemento*/
+  background-size: var(--escala, var(--escala-default));
+  background-position: var(--posicion, var(--posicion-default));
+  height: var(--altura-ventanas);
+}
+
+.piel{
+  padding: var(--pad, var(--pad-default));
+  background-attachment: var(--attach, var(--attach-default));
+  background-color: var(--color, var(--color-default));
+  background-image: var(--textura, var(--textura-default));
+  background-blend-mode: var(--blend, var(--blend-default));
+}
+
+.hojas{
+  background-image: url(/img/hojas.jpg);
+  background-color: #ffb8a7;
+  background-blend-mode: color-dodge;
+}
+
+
+.verde{
+  background-color: #e2f7eb88;
+}
+
+.naranja{
+  background-color: #f6ba8f66;
+}
+
+.celeste{
+  background-color: #d7e8ff;
+}
+
+
+.firma{
+  text-align: right;
+  padding-bottom: 3em;
+  flex: 1 0 auto;
+}
+
+blockquote {
+    text-align: right;
+    font-style: italic;
+}
+
+
+/* Este sería para los talleres, overlay sobre imagen */
+.taller h2{
+  font: 3.4em 'Cinzel';
+}
+
+.taller .ventana{
+  display: flex;
+}

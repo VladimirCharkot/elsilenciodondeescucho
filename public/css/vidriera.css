@@ -2,9 +2,6 @@ body{
   font-size: 16px;
 }
 
-.vidriera{
-  font-family: 'Jost';
-}
 
 .volver{
   background: aliceblue;
@@ -14,9 +11,14 @@ body{
   right: 0;
 }
 
+/* SVG */
+
 .vidriera{
+  font-family: 'Jost';
+  font-weight: 200;
   width: 100vw;
   height: 100vh;
+  position: absolute;
 }
 
 .entrada .titulo{
