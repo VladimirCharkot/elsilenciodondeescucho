@@ -19,6 +19,7 @@ md.use(markdownItFrontMatter, function(fm) {
   hay_front_matter = true
   front_matter = _.fromPairs(fm.split('\n').filter(l => l.includes(':')).map(l => l.split(':')).map(p => [p[0],p[1].trim()]))
 })
+
 md.use(markdownItContainer, 'clase', {
   validate: function(params) {
     return params.trim().match(/^(.+)\s*$/);

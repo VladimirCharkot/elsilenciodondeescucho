@@ -15,6 +15,8 @@ router.get('/escritos/:eid', blog.escrito)
 router.get('/propuestas/', blog.propuestas)
 router.get('/propuestas/:tid', blog.taller)
 
+router.get('/buscar/:consulta', blog.buscar)
+
 router.get('/esde/', blog.esde)
 
 

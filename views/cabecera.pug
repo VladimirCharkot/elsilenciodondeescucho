@@ -1,9 +1,9 @@
 block cabecera
-
-  header
+  script(src="/js/buscar.js")
+  header.contraido
     h1
       a(href="/", title="El Silencio donde Escucho", rel="home") El Silencio donde Escucho
-    nav
-      a(href="/escritos/", title="Escritos") Escritos
-      a(href="/propuestas/", title="Propuestas") Propuestas
-      a(href="/esde/", title="ESDE") ESDE
+    div#area_busqueda
+      div.icon#brujula(onclick="abrir_busqueda()")
+      input#busqueda(type="text", onkeyup="buscar(this)")
+  div#panel

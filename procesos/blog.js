@@ -2,7 +2,7 @@ let fs = require('fs').promises
 let path = require('path')
 let _ = require('lodash')
 let md = require('./mdesde')
-
+let passport = require('passport')
 
 exports.hogar = async (req, res) => {
   if (req.user) return res.redirect('/editor')
@@ -83,7 +83,6 @@ let buscar_texto = async (eid, base = './public/textos/escritos/') => {
 }
 
 
-
 /* Lee public/textos/escritos y devuelve un índice en json conteniendo la info del front_matter */
 let construir_indice_completo = async (base = 'public/textos/escritos') => {
   let lista = await fs.readdir(base, {withFileTypes: true})
@@ -119,17 +118,78 @@ let construir_indice_completo = async (base = 'public/textos/escritos') => {
 }
 
 
+
+let capitalize = (s) => s.substr(0,1).toUpperCase() + s.substr(1)
+
+let cargar_textos = async () => {
+  let textos = []
+  let indice = await construir_indice_completo()
+  for (let entrada of indice){
+    let contenido = await fs.readFile('public' + entrada.ruta, 'utf8')
+
+    textos.push({
+      titulo: capitalize(entrada.id.replace(/-/g,' ')),
+      cuerpo: contenido,
+      link: entrada.ruta,
+      id: entrada.id
+    })
+  }
+  // console.log(textos[0])
+  return textos
+}
+
+
+let textos;
+cargar_textos().then(res => textos = res)
+
+
+exports.buscar = async(req, res) => {
+  // req.params.consulta
+  // console.log(textos)
+  if(req.params.consulta.length < 4) res.json([])
+  let delta = 50
+  let resultados = _.map(textos, (t) => {
+
+    const regex = RegExp(req.params.consulta, 'ig')
+    let matches = []
+    let l = t.cuerpo.lenght
+
+    let texto = t.cuerpo.split('---')[2]
+
+    let r
+    while ((r = regex.exec(texto)) !== null) {
+      let inf = regex.lastIndex - delta
+      let sup = regex.lastIndex + delta
+      let i = inf < 0 ? 0 : inf
+      let j = sup > l ? l : sup
+      let frag = (inf != 0 ? '...' : '') + texto.slice(i,j) + (sup != l ? '...' : '')
+      matches.push(frag)
+      // console.log(`Found ${r[0]}. Next starts at ${regex.lastIndex}.`)
+      // console.log(texto.slice(i, j))
+    }
+
+    let resp = {titulo: t.titulo, matches : matches, id: t.id}
+    // console.log('Devolviendo')
+    // console.log(resp)
+    return resp
+  })
+  let relevantes = _.filter(resultados, r => r.matches.length > 0)
+  res.json(relevantes)
+}
+
+
+
+
+// Roto? :C
 exports.login = (req, res, next) => {
     console.log('INTENTANDO')
     passport.authenticate('local', function(err, user, info){
       try{
-        console.log(err)
+        // console.log(err)
         if (err) return next(err);
         if (!user) return res.json({ok: false})
-        console.log(`Logueado con ${user.id}`)
-        console.log(user)
 
-        req.login(user, (e,b ) => {console.log(e); console.log(b); })
+        req.login(user, (e,b ) => {console.log("############ LOGIN ############")})
 
         return res.json({ok: true})
 

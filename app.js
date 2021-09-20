@@ -4,11 +4,13 @@ let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 let sassMiddleware = require('node-sass-middleware');
-let passport = require('passport')
 let fs = require('fs')
+
+let passport = require('passport')
 let session = require('express-session')
 let bodyParser = require('body-parser');
 let LocalStrategy = require('passport-local').Strategy;
+
 let blogRouter = require('./routes/blog');
 
 
