@@ -23,7 +23,7 @@ La práctica es viva
 
 "Práctica es: el ejercicio de la actividad (lo que simplemente se ejerce, cada vez).
 
-Decir que la práctica es "el ejercicio de la actividad" quiere decir queésta es Real únicamente cuando están en funcionamiento las actividades, operaciones y funciones que la comportan, y queno pueden estar en actividad por sí mismas, automática y mecánicamente, sino que deben ponerse en actividad voluntaria y conscientemente."
+Decir que la práctica es "el ejercicio de la actividad" quiere decir que ésta es Real únicamente cuando están en funcionamiento las actividades, operaciones y funciones que la comportan, y queno pueden estar en actividad por sí mismas, automática y mecánicamente, sino que deben ponerse en actividad voluntaria y conscientemente."
 
 (…)
 
@@ -50,5 +50,3 @@ Todo deber estar siendo -de continuo- realizado.
 
 _Una Práctica no es una forma, no es un método._
 _La práctica no es la "forma de" practicar, es la Actividad en sí."_
-
-Fragmente del libro en gestación "Una Pedagogía de la Presencia"

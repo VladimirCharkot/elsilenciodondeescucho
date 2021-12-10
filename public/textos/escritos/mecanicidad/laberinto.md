@@ -23,7 +23,7 @@ Y aunque pudiera detenerse, tomar un momento, sentarse a pensar -a pensar en ser
 
 Y claro, es que allí, las cosas se ponen más arenosas. Cuando el ser humano en vez de escuchar dentro, de averiguar dentro cual es el paso a dar, espera la respuesta que un otro le dé como certera, que le promocione como garantida la caminata, el resultado, y entonces comprando tal boleto se anime a dar el paso que ahora tiene que dar.
 
-_Y si nadie de afuera nos dice… y si tampoco damos crédito total y absoluto a las voces que emiten opiniones desde nuestro razonamiento…¿Cómo se hace? ¿Qué se hace?_
+_Y si nadie de afuera nos dice… y si tampoco damos crédito total y absoluto a las voces que emiten opiniones desde nuestro razonamiento… ¿Cómo se hace? ¿Qué se hace?_
 
 Allí se encuentra el hombre, agitado, traspirado, cansado.
 
