@@ -20,10 +20,16 @@ router.get('/buscar/:consulta', blog.buscar)
 router.get('/esde/', blog.esde)
 
 
+/* TEST */
+
+router.get('/test', (req, res) => res.render('test'))
+
+
 /* Público funcional */
 router.get('/reset_cookie/', (req, res) => res.clearCookie('visitados').json({ok: true}))
 
 router.get('/indice_json', blog.indice_escritos)
+router.get('/indice_imgs', blog.indice_imagenes)
 router.get('/indice', editor.indice)
 
 

@@ -3,13 +3,15 @@ extends layout
 include cabecera
 
 block contenido
-  script(src="https://d3js.org/d3.v6.min.js")
+  script(src="/js/d3.v6.min.js")
   script(src="/js/lodash.js")
-  script(src="/js/perlin.js")
+  
   
   link(rel="stylesheet", href="/css/vidriera.css")
   
   nav
     svg.vidriera(viewBox="-2200 -2000 5000 4000")
+    
+  //- include aviso
   
-  script(src='/js/vidriera.js')
+  script(src='/js/vidriera/vidriera.js' type='module')

@@ -5,8 +5,8 @@ extends layout
 block contenido
 
   //- jstree
-  script(src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.10/jstree.min.js")
-  link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css")
+  script(src="/js/jstree.min.js")
+  link(rel="stylesheet", href="/js/style.min.css")
   
   //- markdownit
   script(src="/js/mdesde.js")
@@ -537,7 +537,12 @@ block contenido
     }
     
     
-    
+  script.
+    /* Ace */
+    window.addEventListener('load', () => {
+      document.querySelector("#md").
+      let editor = ace.edit("md");
+    })
     
   
   div#editor

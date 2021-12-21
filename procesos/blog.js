@@ -27,6 +27,12 @@ exports.indice_escritos = async (req, res) => {
 }
 
 
+exports.indice_imagenes = async (req, res) => {
+  let idx = await construir_indice_completo('public/img')
+  res.json(idx)
+}
+
+
 /* Página con un escrito */
 exports.escrito = async (req, res) => {
 
@@ -100,13 +106,18 @@ let construir_indice_completo = async (base = 'public/textos/escritos') => {
 
     }else{
 
-      let entrada = {ruta: ruta_public, filename: e.name, type: 'md', id: e.name.split('.')[0]}
+      if (ruta_public.endsWith('.md')){
+        let entrada = {ruta: ruta_public, filename: e.name, type: 'md', id: e.name.split('.')[0]}
 
-      let [html, front_matter] = md.render(await fs.readFile(ruta, 'utf8'))
+        let [html, front_matter] = md.render(await fs.readFile(ruta, 'utf8'))
 
-      _.assign(entrada, front_matter)
+        _.assign(entrada, front_matter)
 
-      if (!front_matter.oculto || front_matter.oculto == "no"){
+        if (!front_matter.oculto || front_matter.oculto == "no"){
+          indice.push(entrada)
+        }
+      }else{
+        let entrada = {ruta: ruta_public, filename: e.name, type: e.name.split('.')[1], id: e.name.split('.')[0]}
         indice.push(entrada)
       }
 
@@ -180,9 +191,7 @@ exports.buscar = async(req, res) => {
 
 
 
-// Roto? :C
 exports.login = (req, res, next) => {
-    console.log('INTENTANDO')
     passport.authenticate('local', function(err, user, info){
       try{
         // console.log(err)

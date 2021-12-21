@@ -10,7 +10,8 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: start; }
+  align-items: start;
+  overflow: hidden; }
 
 a {
   color: black;
@@ -19,7 +20,8 @@ a {
 main {
   height: 100vh;
   width: 100vw;
-  position: absolute; }
+  position: absolute;
+  overflow-y: scroll; }
 
 hr {
   border: 1px solid #e7e7e7; }
