@@ -1,0 +1,38 @@
+style.
+  .telon{
+    position: absolute;
+    z-index: 1;
+    width: 100vw; 
+    height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+  }
+  
+  .telon h1{
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 1.4em;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: 2s;
+  }
+  
+  
+
+
+.telon
+  h1 El Silencio Donde Escucho
+  
+script.
+  
+  if(!window.visto){
+    setTimeout(() => document.querySelector('.telon h1').style.opacity = 1, 100)
+    setTimeout(() => document.querySelector('.telon').style.opacity = 0, 3000)
+    setTimeout(() => document.querySelector('.telon').style.visibility = 'hidden', 4000)
+  }else{
+    setTimeout(() => document.querySelector('.telon').style.opacity = 0, 300)
+    setTimeout(() => document.querySelector('.telon').style.visibility = 'hidden', 300)
+  }

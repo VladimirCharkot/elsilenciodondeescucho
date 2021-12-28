@@ -285,4 +285,19 @@ let menu = () => {
   }, df: -500})
 }
 
-menu()
+
+
+
+let visto
+try{
+  visto = document.cookie.split('; ').filter(s => s.startsWith('visto'))[0].split('=')[1] == 'true'
+}catch(err){
+  visto = false
+}
+
+if(!visto){
+  setTimeout(menu, 2000)
+}else{
+  menu()
+  console.log('abriendo menu')
+}

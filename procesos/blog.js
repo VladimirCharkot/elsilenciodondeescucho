@@ -11,13 +11,12 @@ exports.hogar = async (req, res) => {
 
 /* Página de índice de escritos para el público */
 exports.escritos = async (req, res) => {
-  // Algo con cookies
   let visto = true
   if(!req.cookies.visto){
-    res.cookie('visto', true, {maxAge: 365*24*60*60000, encode: String})
+    res.cookie('visto', true, {maxAge: 24*60*60000, encode: String})
     visto = false
   }
-  res.render('indice', { titulo: 'Índice', visto: visto})
+  res.render('indice', { titulo: 'Índice'})
 }
 
 /* Índice de escritos en json para ubicar en la página de índices */
@@ -39,18 +38,18 @@ exports.escrito = async (req, res) => {
   // Guardo la visita en la cookie
   let visitados = req.cookies.visitados ?  req.cookies.visitados : []
   visitados.push(req.params.eid)
-  res.cookie('visitados', [...new Set(visitados)], {maxAge: 10*365*24*60*60000, encode: String})
+  res.cookie('visitados', [...new Set(visitados)], {maxAge: 3*365*24*60*60000, encode: String})
 
   let [texto_html, fm] = await traer_texto(req.params.eid)
   if (!texto_html) return res.status(404).json({status: 404, mensaje: 'No existe'})
-  res.render('escrito', { titulo: fm.titulo || 'El Silencio Donde Escucho', cont: texto_html })
+  res.render('texto', { titulo: fm.titulo || 'El Silencio Donde Escucho', cont: texto_html })
 }
 
 exports.taller = async (req, res) => {
 
   let [texto_html, fm] = await traer_texto(req.params.tid, './public/textos/propuestas/')
   if (!texto_html) return res.status(404).json({status: 404, mensaje: 'No existe'})
-  res.render('taller', { titulo: fm.titulo || 'El Silencio Donde Escucho', cont: texto_html })
+  res.render('texto', { titulo: fm.titulo || 'El Silencio Donde Escucho', cont: texto_html })
 
 }
 
@@ -61,7 +60,7 @@ exports.propuestas = (req, res) => {
 
 exports.esde = async (req, res) => {
   let [texto_html, fm] = await traer_texto('hoy', './public/textos/esde/')
-  res.render('taller', { titulo: fm.titulo, cont: texto_html })
+  res.render('texto', { titulo: fm.titulo, cont: texto_html })
 }
 
 
