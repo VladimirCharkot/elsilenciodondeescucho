@@ -21,9 +21,13 @@ block contenido
           i.style.opacity = 0
           d.appendChild(i)
         }) 
-      let titulo = document.querySelector('h2')
-      let imagen = document.querySelector('.ventana')
-      imagen.appendChild(titulo)
+      try{
+        let titulo = document.querySelector('h2')
+        let imagen = document.querySelector('.ventana')
+        imagen.appendChild(titulo)
+      }catch{
+        console.log(`Parece que este texto no tiene imagen de cabecera c:`)
+      }
     }
       
     window.addEventListener('load', corregir_imagenes)
