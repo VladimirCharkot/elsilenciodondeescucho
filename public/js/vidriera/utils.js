@@ -44,7 +44,8 @@ export let get_cookie = (nombre) => {
   let c
   try{
     console.log(`Parseando cookie ${nombre}...`)
-    let cookie_json = document.cookie.split(';').filter(s => s.startsWith(nombre))[0].split(':')[1]
+    let cookie_json = document.cookie.split(';').filter(s => s.startsWith(nombre))
+    cookie_json = cookie_json.lenght > 1 ? cookie_json[0].split(':')[1] : '[]'
     c = JSON.parse(cookie_json)
     console.log(c)
   }catch(err){

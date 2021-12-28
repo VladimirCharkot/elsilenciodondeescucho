@@ -28,10 +28,11 @@ style.
   
 script.
   
-  if(!window.visto){
+  if(Date.now() - window.visto > 1000 * 60 * 60){
     setTimeout(() => document.querySelector('.telon h1').style.opacity = 1, 100)
     setTimeout(() => document.querySelector('.telon').style.opacity = 0, 3000)
     setTimeout(() => document.querySelector('.telon').style.visibility = 'hidden', 4000)
+    document.cookie = `visto=${Date.now()};max-age=${60*60*24}`
   }else{
     setTimeout(() => document.querySelector('.telon').style.opacity = 0, 300)
     setTimeout(() => document.querySelector('.telon').style.visibility = 'hidden', 300)

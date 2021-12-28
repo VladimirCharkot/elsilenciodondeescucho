@@ -11,12 +11,12 @@ exports.hogar = async (req, res) => {
 
 /* Página de índice de escritos para el público */
 exports.escritos = async (req, res) => {
-  let visto = true
-  if(!req.cookies.visto){
-    res.cookie('visto', true, {maxAge: 24*60*60000, encode: String})
-    visto = false
-  }
-  res.render('indice', { titulo: 'Índice'})
+  // let visto = true
+  // if(!req.cookies.visto){
+  //   res.cookie('visto', Date.now(), {maxAge: 365*24*60*60000, encode: Number})
+  //   visto = false
+  // }
+  res.render('indice', { titulo: 'Índice' })
 }
 
 /* Índice de escritos en json para ubicar en la página de índices */

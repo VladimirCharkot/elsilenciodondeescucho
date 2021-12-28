@@ -290,12 +290,13 @@ let menu = () => {
 
 let visto
 try{
-  visto = document.cookie.split('; ').filter(s => s.startsWith('visto'))[0].split('=')[1] == 'true'
+  visto = parseInt(document.cookie.split('; ').filter(s => s.startsWith('visto'))[0].split('=')[1])
 }catch(err){
-  visto = false
+  visto = 0
 }
 
-if(!visto){
+
+if(Date.now() - window.visto > 1000 * 60 * 60){
   setTimeout(menu, 2000)
 }else{
   menu()
