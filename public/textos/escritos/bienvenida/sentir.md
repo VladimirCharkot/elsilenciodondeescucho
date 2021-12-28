@@ -1,5 +1,5 @@
 ---
-serie: bienvenida
+serie: esencial
 pie: ¿Qué haces realmente cuando dices que sientes?
 ---
 

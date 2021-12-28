@@ -1,5 +1,5 @@
 ---
-serie: bienvenida
+serie: esencial
 pie: Claro que se puede ver
 ---
 

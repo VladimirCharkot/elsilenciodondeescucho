@@ -1,5 +1,5 @@
 ---
-serie: bienvenida
+serie: esencial
 pie: Movimiento. Sí, la gran ilusión.
 ---
 

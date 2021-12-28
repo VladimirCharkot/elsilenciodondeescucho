@@ -1,5 +1,5 @@
 export let centros_indice = {
-  'bienvenida' : {x: 0, y: 0, color: '#D8EBD8'},
+  'esencial' : {x: 0, y: 0, color: '#D8EBD8'},
   'atención' : {x: -1000, y: 400, color: '#B4D6D7'},
   'mecanicidad' : {x: -1000, y: -400, color: '#F5EDCE'},
   'trabajo' : {x: 1000, y: -400, color: '#FAE0B8'},

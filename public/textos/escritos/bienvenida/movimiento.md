@@ -1,5 +1,5 @@
 ---
-serie: bienvenida
+serie: esencial
 pie: La Vida es un continuo en movimiento constante aconteciendo
 ---
 

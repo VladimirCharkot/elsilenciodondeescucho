@@ -1,5 +1,5 @@
 ---
-serie: bienvenida
+serie: esencial
 pie: El humano confunde saber con conocer
 ---
 

@@ -1,5 +1,5 @@
 ---
-serie: bienvenida
+serie: esencial
 pie: Si ahora, comienzas a mirar tu mente, verás que hace algo
 ---
 
