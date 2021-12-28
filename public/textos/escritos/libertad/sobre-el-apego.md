@@ -1,6 +1,6 @@
 ---
 serie: libertad
-pie: Del apego nace el sufrimiento.
+pie: Del apego nace el sufrimiento
 ---
 
 ## Sobre el apego
