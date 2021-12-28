@@ -17,7 +17,7 @@
 
 
 .hojas{
-  background-image: url(/img/hojas.jpg);
+  /*background-image: url(/img/hojas.jpg);*/
   background-color: #ffb8a7;
   background-blend-mode: color-dodge;
 }
