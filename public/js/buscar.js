@@ -1,14 +1,28 @@
+let area = document.querySelector('#area_busqueda')
+let busqueda = document.querySelector('#busqueda')
+let encuentro = document.querySelector('#area_encuentro')
+
+let dimensiones_header = document.querySelector('header').getBoundingClientRect()
+let dimensiones_input = document.querySelector('#area_busqueda').getBoundingClientRect()
+
+
+
+let ubicar_resultados = () => {
+  encuentro.style.top = `${dimensiones_header.height + 4}px`
+  encuentro.style.width = `${window.innerWidth - dimensiones_input.width}px`
+  encuentro.style.left = `${dimensiones_input.left}px`
+}
+
 let abrir_busqueda = () => {
-  let area = document.querySelector('#area_busqueda')
-  let busqueda = document.querySelector('#busqueda')
-  let panel = document.querySelector('#panel')
+
   area.classList.toggle('expandido');
   if (area.classList.contains('expandido') && busqueda.value.length > 3) {
-    panel.classList.add('revelado')
+    encuentro.classList.add('revelado')
+    ubicar_resultados()
   }else{
-    panel.classList.remove('revelado')
+    encuentro.classList.remove('revelado')
   }
-  document.querySelector('#busqueda').focus();
+  busqueda.focus()
 }
 
 let buscar = (e) => {
@@ -17,10 +31,9 @@ let buscar = (e) => {
     fetch(`/buscar/${e.value}`)
     .then(r => r.json())
     .then(res => {
-      console.log(res)
-      let resultados = document.querySelector('#panel')
-      resultados.innerHTML = ''
-      resultados.className = 'revelado'
+
+      encuentro.innerHTML = ''
+      encuentro.classList.add('revelado')
 
       for (let r of res){
 
@@ -39,18 +52,28 @@ let buscar = (e) => {
           base.appendChild(p)
         }
 
-        resultados.appendChild(base)
+        encuentro.appendChild(base)
 
       }
     })
   }else{
-    document.querySelector('#panel').classList.remove('revelado')
+    encuentro.classList.remove('revelado')
   }
 }
 
-window.addEventListener('keyup', (e) => {
-  let inputbox = document.querySelector('#busqueda')
-  if (document.activeElement == inputbox && e.key == "Escape"){
-    inputbox.value = ""
-  }
+// let busqueda = document.querySelector('#busqueda')
+let limpiar_busqueda = () => {
+  busqueda.value = ""
+  window.focus('main')
+  area.classList.remove('expandido')
+  encuentro.classList.remove('revelado')
+}
+
+// busqueda.addEventListener('focus', () => h.classList.add('habitado'))
+// busqueda.addEventListener('blur', limpiar_busqueda)
+ubicar_resultados()
+
+busqueda.addEventListener('keyup', (e) => {
+  if (e.key != 'Escape') buscar(e.target)
+  if (e.key == 'Escape') limpiar_busqueda()
 })

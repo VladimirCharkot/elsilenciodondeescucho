@@ -1,19 +1,24 @@
 block cabecera
-  script(src="/js/buscar.js")
-  header.contraido
+  
+  header
     h1
       a(href="/", title="El Silencio Donde Escucho", rel="home") El Silencio Donde Escucho
     div#area_busqueda
       div.icon#brujula(onclick="abrir_busqueda()")
-      input#busqueda(type="text", onkeyup="buscar(this)")
-  div#panel
+      input#busqueda(type="text")
+  div#area_encuentro
 
+  script(src="/js/buscar.js")
   script.
     let h = document.querySelector('header')
-    h.addEventListener('mouseenter', () => h.classList.add('activo'))
-    h.addEventListener('mouseleave', () => h.classList.remove('activo'))
+    h.addEventListener('mouseenter', () => h.classList.add('hovereado'))
+    h.addEventListener('mouseleave', () => h.classList.remove('hovereado'))
+    
+    let b = document.querySelector('#busqueda')
+    b.addEventListener('focus', () => h.classList.add('habitado'))
+    b.addEventListener('blur', () => h.classList.remove('habitado'))
     
     if(!window.visto){
-      setTimeout(() => h.classList.add('activo'), 1000)
-      setTimeout(() => h.classList.remove('activo'), 5000)      
+      setTimeout(() => h.classList.add('hovereado'), 1000)
+      setTimeout(() => h.classList.remove('hovereado'), 5000)      
     }
