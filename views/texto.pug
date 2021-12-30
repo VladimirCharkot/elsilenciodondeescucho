@@ -3,8 +3,8 @@ extends layout
 include cabecera
 
 block contenido
-  script(src="/js/hammer.min.js")
-  script(src="/js/touch.js")
+  //- script(src="/js/hammer.min.js")
+  //- script(src="/js/touch.js")
   
   script.
   
@@ -15,8 +15,15 @@ block contenido
       document.querySelectorAll('p img').forEach(i => {
           let d = document.createElement('div')
           d.classList.add('ventana')
-          console.log(i.getAttribute('src'))
+          d.classList.add('cabecera')
+          for (let attr of i.getAttributeNames()){
+            d.setAttribute(attr, i.getAttribute(attr))
+          }
           d.style.setProperty('--url-imagen', `url(${i.getAttribute('src')})`)
+          if(i.getAttribute('data-pos')) 
+            d.style.setProperty('--posicion', i.getAttribute('data-pos'))
+          if(i.getAttribute('data-escala'))
+            d.style.setProperty('--escala', i.getAttribute('data-escala'))
           i.parentElement.replaceWith(d)
           i.style.opacity = 0
           d.appendChild(i)
@@ -29,8 +36,45 @@ block contenido
         console.log(`Parece que este texto no tiene imagen de cabecera c:`)
       }
     }
+    
+    let agregar_scroll_a_backref = () => {
+      document.querySelectorAll('.footnote-backref').forEach(r => {
+        let target = document.querySelector(r.getAttribute('href'))
+        r.addEventListener('click', e => {
+          e.preventDefault()
+          document.querySelector('main').scrollTo({
+            top: target.offsetTop-window.innerHeight/4,
+            left: 0,
+            behavior: 'smooth'
+          })
+          target.classList.add('backref-highlight')
+          setTimeout(() => target.classList.remove('backref-highlight'), 2000)
+        })
+      })
+    }
+    
+    let agregar_highlights_a_ref = () => {
+      document.querySelectorAll('.footnote-ref a').forEach(r => {
+        let target = document.querySelector(r.getAttribute('href'))
+        r.addEventListener('click', e => {
+          e.preventDefault()
+          document.querySelector('main').scrollTo({
+            top: target.offsetTop,
+            left: 0,
+            behavior: 'smooth'
+          })
+          target.classList.add('ref-highlight')
+          setTimeout(() => target.classList.remove('ref-highlight'), 2000)
+        })
+      })
+    }
       
     window.addEventListener('load', corregir_imagenes)
+    window.addEventListener('load', agregar_scroll_a_backref)
+    window.addEventListener('load', agregar_highlights_a_ref)
     
   //- El contenido viene en html, del md parseado
   article.texto.taller!= cont
+    address.firma.piel
+      p Sebastián Rojo
+      p "El Silencio Donde Escucho"

@@ -46,9 +46,35 @@ $color-6: #d8d3cd
   img
     width: 100%
 
+.footnote-item
+  margin: 0 20vw
+
 .footnote-item p
   padding: 0
 
+.backref-highlight
+  border-radius: 20%
+  animation: 2s ease-in backref-highlight
+
+.ref-highlight
+  &::marker
+    animation: 2s ease-in ref-highlight
+
+@keyframes backref-highlight
+  0%
+    background-color: #75d2ff
+    padding: 0.2em
+  100%
+    background-color: #75d2ff00
+    padding: 0em
+
+@keyframes ref-highlight
+  0%
+    color: #75d2ff
+    font-size: 2em
+  100%
+    color: #000
+    font-size: 1em
 
 .ventana
   background-attachment: var(--attach-default)
