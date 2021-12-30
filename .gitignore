@@ -1,6 +1,7 @@
 .pass
 node_modules/
 public/img
+public/foto
 diseños/
 style.css
 style.css.map

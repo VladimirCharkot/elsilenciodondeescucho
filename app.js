@@ -11,7 +11,7 @@ let session = require('express-session')
 let bodyParser = require('body-parser');
 let LocalStrategy = require('passport-local').Strategy;
 
-let blogRouter = require('./routes/blog');
+let blogRouter = require('./routes/esde');
 
 
 let app = express();

@@ -1,7 +1,6 @@
 let body = document.querySelector('body')
 let contenido = document.querySelector('#contenido')
 
-
 let hammertime = new Hammer(contenido)
 hammertime.get('pinch').set({ enable: true })
 body.style.touchAction = "pan-y"

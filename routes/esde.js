@@ -2,22 +2,25 @@ var express = require('express')
 var router = express.Router()
 var blog = require('../procesos/blog.js')
 var editor = require('../procesos/editor.js')
+var visitas = require('../procesos/visitas.js')
+let { logaccess } = require('../procesos/accesos.js')
 let passport = require('passport')
+
 
 let is_admin = (req, res, next) => { if(req.user) {next()} else {return res.redirect('/hogar')} }
 
 /* Público */
-router.get('/', blog.escritos)
+router.get('/', [logaccess,blog.escritos])
 
 router.get('/escritos', blog.escritos)
-router.get('/escritos/:eid', blog.escrito)
+router.get('/escritos/:eid', [logaccess, blog.escrito])
 
-router.get('/propuestas/', blog.propuestas)
-router.get('/propuestas/:tid', blog.taller)
+router.get('/propuestas/', [logaccess, blog.propuestas])
+router.get('/propuestas/:tid', [logaccess, blog.taller])
 
 router.get('/buscar/:consulta', blog.buscar)
 
-router.get('/esde/', blog.esde)
+router.get('/esde/', [logaccess, blog.esde])
 
 
 /* TEST */
@@ -34,6 +37,13 @@ router.get('/indice', editor.indice)
 
 
 /* Privado */
+router.get('/visitas', [is_admin, visitas.visor])
+router.get('/data/hora', [is_admin, visitas.hora])
+router.get('/data/dia', [is_admin, visitas.dia])
+router.get('/data/semana', [is_admin, visitas.semana])
+router.get('/data/mes', [is_admin, visitas.mes])
+router.get('/data/semestre', [is_admin, visitas.semestre])
+
 router.post('/md/', [is_admin, editor.post_md])
 router.delete('/md/', [is_admin, editor.delete_md])
 

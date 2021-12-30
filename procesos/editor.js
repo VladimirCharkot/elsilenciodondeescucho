@@ -120,8 +120,10 @@ exports.post_md = async (req, res) => {
 /* Devuelve la lista de imágenes en public/img */
 let imagenes = async () => {
   let imgs_raw = await fs.readdir('public/img')
-  let imgs = imgs_raw.map(fn => ({src: '/img/' + fn}))
-  return imgs
+  let foto_raw = await fs.readdir('public/foto')
+  let imgs = imgs_raw.map(fn => ({src: '/img/' + fn})).filter(fn => !fn.src.includes('.DS_Store'))
+  let foto = foto_raw.map(fn => ({src: '/foto/' + fn})).filter(fn => !fn.src.includes('.DS_Store'))
+  return imgs.concat(foto)
 }
 
 
