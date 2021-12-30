@@ -5,17 +5,12 @@ let md = require('./mdesde')
 let passport = require('passport')
 
 exports.hogar = async (req, res) => {
-  if (req.user) return res.redirect('/editor')
+  if (req.user) return res.redirect('/visitas')
   return res.render('login', {titulo: '🤫'})
 }
 
 /* Página de índice de escritos para el público */
 exports.escritos = async (req, res) => {
-  // let visto = true
-  // if(!req.cookies.visto){
-  //   res.cookie('visto', Date.now(), {maxAge: 365*24*60*60000, encode: Number})
-  //   visto = false
-  // }
   res.render('indice', { titulo: 'Índice' })
 }
 
@@ -27,8 +22,9 @@ exports.indice_escritos = async (req, res) => {
 
 
 exports.indice_imagenes = async (req, res) => {
-  let idx = await construir_indice_completo('public/img')
-  res.json(idx)
+  let idx_img = await construir_indice_completo('public/img')
+  let idx_foto = await construir_indice_completo('public/foto')
+  res.json(idx_img.concat(idx_foto))
 }
 
 
@@ -94,6 +90,8 @@ let construir_indice_completo = async (base = 'public/textos/escritos') => {
   let indice = []
 
   for (let e of lista){
+
+    if (e.name.includes('.DS_Store')) continue
 
     let ruta = path.join(base, e.name)
     let ruta_public = ruta.replace('public', '')
