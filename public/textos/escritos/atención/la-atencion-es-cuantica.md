@@ -1,9 +1,14 @@
 ---
 serie: atención
 pie: Se mueve, pero su movimiento, puede decirse, no tiene traslación ni recorrido
+titulo: La atención es cuántica
 ---
 
 ## LA ATENCIÓN ES CUÁNTICA
+
+
+![Estrellas](/foto/11073467_10206321740543851_4728131287305182543_o.webp)
+
 
 La atención, siendo una función del centro intelectual, es actividad energética que se proyecta hacia fuera de sí. Tiene dirección, siempre recta se dirige sobre lo que atiende. Jamás hace un desvío para "ir".
 

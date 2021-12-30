@@ -1,9 +1,15 @@
 ---
 serie: atención
 pie: Bendita posibilidad de volver a la vida
+titulo: Viviendo
 ---
 
 ## VIVIENDO
+
+
+![Construcción y luz dorada](/foto/10847710_10206346210955596_3093959709229512734_o.webp)
+
+
 
 La Gracia
 

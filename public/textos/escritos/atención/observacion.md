@@ -1,9 +1,13 @@
 ---
 serie: atención
 pie: Ver-Saber-Hacer. Se estudia la observación.
+titulo: Observación
 ---
 
 ## OBSERVACIÓN
+
+
+![Texto alt](/foto/P1080678.webp){data-pos=bottom data-escala=auto}
 
 Actividades integradas en la Presencia
 Ver-Saber-Hacer

@@ -1,9 +1,14 @@
 ---
 serie: mecanicidad
 pie: La existencia de sistemas es señal de la acción misma de separar. De estar separados.
+titulo: El humano separa todo
 ---
 
 ## EL HUMANO SEPARA TODO
+
+
+![Muro con vidrios incrustados](/foto/P1470689.webp)
+
 
 Y sí.
 

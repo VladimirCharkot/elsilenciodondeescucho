@@ -1,9 +1,13 @@
 ---
 serie: atención
 pie: Donde está la atención, es donde uno está
+titulo: Sobre la atención
 ---
 
 ## Sobre la atención
+
+![Clavijero](/foto/P1390556.webp)
+
 
 Donde está la atención, es donde uno está.
 

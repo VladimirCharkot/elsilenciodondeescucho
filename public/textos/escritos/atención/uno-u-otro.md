@@ -1,9 +1,13 @@
 ---
 serie: atención
 pie: Mente: Es Una Universal Completa Inteligencia Dichosa
+titulo: Uno u otro
 ---
 
 ## O UNO U OTRO
+
+![Pared de cañas](/foto/P1440479.webp)
+
 
 Son solo dos "estados", modos, en los que La Mente se puede encontrar funcionando a cada instante, en cada una de sus partes, o sea en cada uno de nosotros.
 
@@ -23,3 +27,5 @@ De un modo, la mente está atendiendo, alerta se sabe mientras y se reconoce. Sa
 Completa. Es Ser, Dios. La Vida. Eternidad. Paz. _Es Quietud, en Actividad_, Silencio, Realización, Amor, Verdad, Confianza, Aceptación, Certeza. Es Acción, Conciencia consciente de Sí. Vigilia, o vigilancia, orden. Es Unicidad. Integridad, Plenitud, Receptividad. Apertura. Felicidad. Presencia… Todo esto es una misma cosa funcionando al mismo momento de continuo.
 
 O de otro modo: la mente perdida, distraída; alimenta la ilusión, es miedo, se mueve por desconfianza, duda. Se desvía en parloteos, razones o excusas, justificaciones. Es distorsión, separación, elección, reacción, repetición, patrón, falsedad, rechazo. Es decir, Es afirmación y negación. Es deseo, desorden, caos, automaticidad. Es tiempo-duración-psicológico funcionando. Es lucha, conflicto. Es decir movimiento. No Es. No sabe lo que Es. Desea devenir, ser. Carece. Cree ser lo que cree que es e intenta realizarlo. Se Ignora, tiene Amnesia de Sí.
+
+

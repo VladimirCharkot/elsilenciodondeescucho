@@ -5,6 +5,8 @@ pie: Cuando llegues allí...
 
 ## DETRÁS DE LA VENTANA
 
+![Ventana](/foto/P1140231.webp)
+
 Detrás de la ventana hay un gran jardín.
 
 Utiliza la linterna en la noche,

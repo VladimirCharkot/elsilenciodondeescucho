@@ -1,9 +1,14 @@
 ---
 serie: esencial
 pie: Si ahora, comienzas a mirar tu mente, verás que hace algo
+titulo: Espacio para pensar
 ---
 
 ## ESPACIO PARA PENSAR
+
+
+![Bruma](/foto/P1540062.webp)
+
 
 Si ahora, comienzas a mirar tu mente, verás que hace algo.
 Verás que eso que hace, lo hace sola.

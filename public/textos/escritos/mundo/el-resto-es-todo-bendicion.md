@@ -32,7 +32,7 @@ Abundancia es el fin de los "_para_".
 
 El ser humano ha dejado de hacer la cosa por la cosa misma, sin algo que "sacar" "para" provecho personal. Hasta de una caricia, muchas veces, espera "sacar" algo: "Sacar" que lo quieran. Y es difícil ver esto, recibirlo… y no implica que se haga por iniciativa propia, que haya algo como una "maldad intencional" en ello… el ser humano no está allí y no se da cuenta de que eso pasa. Es profundo. Todo el mecanismo del ego está parado en esta idea, en esa supuesta necesidad, en esa carencia: "No me quieren", "no soy suficiente", "tengo que hacer para llegar a".
 
-::: piel hojas
+::: piel
 "Hacer para ser": allí el engaño del ego. Toda la historia personal está apoyada en esta idea. Así, de fondo, el ego, la persona, el ser humano, casi todo lo hace "para ser amado". Cuando la Realidad es que "Es un Amado Ser".
 :::
 

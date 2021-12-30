@@ -40,7 +40,7 @@ Una emoción sin contaminación de pensamiento o memoria.
 Un pensamiento sin contaminación de emoción o sensación.
 
 
-::: piel hojas
+::: piel
 Puro. Tal como Es.
 :::
 

@@ -1,9 +1,12 @@
 ---
 serie: esencial
 pie: ¿Qué haces realmente cuando dices que sientes?
+titulo: Sentir
 ---
 
 ## Sentir
+
+![Reflejos de agua](/foto/P1520924.webp)
 
 
 ¿Qué haces si te piden que sientas el contacto de tus pies con el piso?

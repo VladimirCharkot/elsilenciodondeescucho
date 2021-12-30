@@ -5,6 +5,9 @@ pie: El movimiento en pos de conseguirlos, es desconfianza
 
 ## DE LOS "SUEÑOS" Y LA CONFIANZA
 
+
+![Esclavo del tiempo](/foto/P1110433.webp)
+
 ¡Atentos!
 
 Si es que "confiamos en la vida" como puede que digamos, como puede que nos digamos a nosotros mismos.

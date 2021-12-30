@@ -5,11 +5,15 @@ pie: Supongamos que se intenta averiguar algo pero que no sabe qué es
 
 ## AVERIGUAR POR SÍ MISMO CADA COSA
 
+
+![Puerta](/foto/IMG_20181102_110356.webp)
+
+
 (…) "puede explicarse con este ejemplo que es de suma utilidad para revisar esto en el vínculo con los niños:
 
 Supongamos que se intenta averiguar algo pero que no sabe qué es, ni dónde está, mucho menos aún cuáles son sus partes y funciones, cómo se comporta, etc. Solo se va tras ello, se intenta descubrirlo, se hace caminos, se escudriña, se abre la visión buscando, pesquisando en cada lugar, rostro, casa, y oscuridad, dentro y fuera, se siguen huellas, rastros, indicaciones, señales encontradas aquí y allí, etc. Esto es la actividad, atrapante, vigorosa y vivificante de investigar, de averiguar (vacía de resultante.
 
-::: piel hojas
+::: piel
 El niño vive esto con considerable libertad, pues, el conocimiento que tiene acumulado es mínimo. Él, investiga todo.
 :::
 

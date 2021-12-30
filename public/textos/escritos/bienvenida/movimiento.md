@@ -1,9 +1,15 @@
 ---
 serie: esencial
+titulo: Movimiento
 pie: La Vida es un continuo en movimiento constante aconteciendo
+titulo: Movimiento
 ---
 
 ## MOVIMIENTO
+
+![Blur](/img/integrador-de-movimineto.webp)
+
+
 
 (...) "La Vida es un continuo en movimiento constante aconteciendo. Un movimiento derivando en otro. La deriva misma es movimiento de algo dentro de sí.
 

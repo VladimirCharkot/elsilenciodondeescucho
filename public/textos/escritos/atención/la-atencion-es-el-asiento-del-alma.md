@@ -1,9 +1,14 @@
 ---
 serie: atención
 pie: Si intentamos saber qué es el Alma podemos comenzar por vigilar nuestra atención
+titulo: La atención es el asiento del Alma
 ---
 
 ## LA ATENCIÓN ES EL ASIENTO DEL ALMA
+
+
+![Amarillo](/foto/10712387_10206321914028188_1971706280111100412_o.webp)
+
 
 La atención es el asiento del alma.
 

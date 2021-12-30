@@ -5,6 +5,11 @@ pie: ¡Es tan sutil!
 
 ## DE LA DIFERENCIA
 
+
+![Edificio de departamentos](/foto/P1170969.webp)
+
+
+
 Eso que "está entre nosotros"
 
 ¡Es tan sutil! (su comportamiento)

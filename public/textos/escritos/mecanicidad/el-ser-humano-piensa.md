@@ -5,6 +5,10 @@ pie: El ser humano, entiende por "cuidar lo que dice y hace", una especie de aut
 
 ## EL SER HUMANO PIENSA
 
+
+![Pinocha en el árbol](/foto/P1510068.webp)
+
+
 Cuidar consciencia.
 
 El ser humano, entiende por "cuidar lo que dice y hace", una especie de auto reflexión. Un doblarse en el tiempo para ver lo que hizo. Lo hecho. El pasado.

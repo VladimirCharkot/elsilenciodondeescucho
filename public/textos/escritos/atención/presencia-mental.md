@@ -1,9 +1,14 @@
 ---
 serie: atención
 pie: Y si deja de vigilar aparece allí una especie de "yo algo ausente"
+titulo: Presencia mental
 ---
 
 ## PRESENCIA MENTAL
+
+
+![Ave con cabeza torcida](/foto/11056588_10206321866587002_3340416466814343724_o.webp){data-pos=bottom}
+
 
 Observo hacia mí que observo -algo- y veo con claridad que somos dos:
 

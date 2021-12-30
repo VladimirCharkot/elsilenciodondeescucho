@@ -1,9 +1,13 @@
 ---
 serie: esencial
 pie: Claro que se puede ver
+titulo: Salir del escondite
 ---
 
 ## SALIR DEL ESCONDITE
+
+![Edificios](/foto/IMG_20191022_182541.webp)
+
 
 Claro que se puede ver.
 

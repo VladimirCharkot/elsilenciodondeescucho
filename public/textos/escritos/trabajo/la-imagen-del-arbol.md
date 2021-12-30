@@ -5,6 +5,10 @@ pie: Para desde allí brotar y renacer
 
 ## LA IMAGEN DEL ÁRBOL
 
+
+![Dibujo árbol](/foto/IMG_20171106_205417.webp)
+
+
 Del árbol: 2 partes, como es arriba, es abajo.
 Hay lo que no se ve, y lo que sí.
 Está la raíz, está el tronco las ramas y las hojas.

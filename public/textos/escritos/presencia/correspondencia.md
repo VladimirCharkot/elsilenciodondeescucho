@@ -5,6 +5,10 @@ pie: ¿Cómo corresponder a tanta vida?
 
 ## CORRESPONDENCIA
 
+
+![Nube de mosquitas bañadas en luz de atardecer](/foto/P1430717.webp)
+
+
 Observo la vida, la naturaleza…
 Los árboles, las mariposas, el canto de los pájaros, la luz del sol pasando, la sombra fresca… Me detengo un momento -(otro)- a observar a través de la ventana.
 Veo, todo esto se abre dentro de mí, se presenta y expande.

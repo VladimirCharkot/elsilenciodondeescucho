@@ -5,6 +5,10 @@ pie: Es una contradicción hablar de Unidad y defender nada.
 
 ## Autoengaño y simulación: contra-dicción
 
+
+![Muro](/foto/P1130219.webp)
+
+
 Es una enorme contradicción (nuestra) hablar de Unión, de Unidad y a la vez tomar, tener, y defender una ideología, política, o de cualquier otro tipo. ("Posición-ideología Política" es lo que se ve, escucha, y lee, hoy, por todos lados, en el territorio en el que estoy, de "todos lados")
 Entendamos:
 

@@ -1,9 +1,13 @@
 ---
 serie: atención
 pie: No alcanza con tener la vista puesta sobre la cosa que se dice ver
+titulo: Saber II
 ---
 
 ## SABER II
+
+![Nubes al atardecer](/foto/P1080798.webp){data-escala=contain data-pos=top}
+
 
 Prestemos atención a esto un momento
 
