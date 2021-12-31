@@ -3,6 +3,38 @@ extends layout
 //- include cabecera
 
 block contenido
+  
+  div#editor
+    div#controles
+      div.btn#texto(title='Editor [E]', onclick='toggle("#md")')
+      div.btn#preview(title='Vista previa [P]', onclick='toggle("#previa")')
+      div.btn#archivos(title='Textos [A]', onclick='toggle("#arbol")')
+      div.btn#imgs(title='Imágenes [I]', onclick='toggle("#imagenes")')
+      //- div.btn#menu(title='Índice', onclick='toggle("#indices")')
+      //- div.btn#csss(title='CSS', onclick='load_pieles()')
+      div.btn#logout(title='Salir', onclick='logout()')
+      
+    div.panel#arbol
+    div.panel#imagenes
+      div
+        div.btn#subir_imagen(title='Cargar imagen', onclick='document.querySelector("#archivo_imagen").click()')
+        input#archivo_imagen(type='file', onchange='cargar_imagen()')
+        div.btn#borrar_imagen(title='Borrar imagen', onclick='borrar_imagen()')
+      div#vitrina
+    div.panel#md.vacio
+      div
+        div.btn#nuevo(title='Nuevo texto', onclick='nuevo()')
+        div.btn#guardar(title='Guardar cambios', onclick='guardar()')
+        div.btn#reset(title='Descartar cambios', onclick='reset()')
+        input#nombre(title='Titulo', onkeyup='editado();')
+        div.btn#borrar(title='Borrar', onclick='borrar()')
+        //- div.btn#status(title='Hay cambios sin guardar')
+        div.btn#cerrar(title='Cerrar', onclick='cerrar()')
+      textarea(onkeyup="previa(); editado();")
+    div.panel#previa.escrito.expandido
+    //- div.panel#indices
+    //- div.panel#css
+    
 
   //- jstree
   script(src="/js/jstree.min.js")
@@ -500,7 +532,11 @@ block contenido
     
     
     /* Cargar imágenes */
-    window.addEventListener('load', cargar_imagenes)
+    let btn_imgs = document.querySelector('#imgs')
+    btn_imgs.addEventListener('click', cargar_imagenes)
+    btn_imgs.addEventListener('click', () => 
+      btn_imgs.removeEventListener('click', cargar_imagenes)
+    )
    
   
   script.
@@ -536,45 +572,6 @@ block contenido
       window.location = '/logout'
     }
     
-    
-  script.
-    //- /* Ace */
-    //- window.addEventListener('load', () => {
-    //-   document.querySelector("#md").
-    //-   let editor = ace.edit("md");
-    //- })
-    
   
-  div#editor
-    div#controles
-      div.btn#texto(title='Editor [E]', onclick='toggle("#md")')
-      div.btn#preview(title='Vista previa [P]', onclick='toggle("#previa")')
-      div.btn#archivos(title='Textos [A]', onclick='toggle("#arbol")')
-      div.btn#imgs(title='Imágenes [I]', onclick='toggle("#imagenes")')
-      //- div.btn#menu(title='Índice', onclick='toggle("#indices")')
-      //- div.btn#csss(title='CSS', onclick='load_pieles()')
-      div.btn#logout(title='Salir', onclick='logout()')
-      
-    div.panel#arbol
-    div.panel#imagenes
-      div
-        div.btn#subir_imagen(title='Cargar imagen', onclick='document.querySelector("#archivo_imagen").click()')
-        input#archivo_imagen(type='file', onchange='cargar_imagen()')
-        div.btn#borrar_imagen(title='Borrar imagen', onclick='borrar_imagen()')
-      div#vitrina
-    div.panel#md.vacio
-      div
-        div.btn#nuevo(title='Nuevo texto', onclick='nuevo()')
-        div.btn#guardar(title='Guardar cambios', onclick='guardar()')
-        div.btn#reset(title='Descartar cambios', onclick='reset()')
-        input#nombre(title='Titulo', onkeyup='editado();')
-        div.btn#borrar(title='Borrar', onclick='borrar()')
-        //- div.btn#status(title='Hay cambios sin guardar')
-        div.btn#cerrar(title='Cerrar', onclick='cerrar()')
-      textarea(onkeyup="previa(); editado();")
-    div.panel#previa.escrito.expandido
-    //- div.panel#indices
-    //- div.panel#css
-    
 
   
