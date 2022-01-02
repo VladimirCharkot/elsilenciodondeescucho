@@ -64,7 +64,3 @@ Estando en este preciso momento en contacto con algo de lo que desde “El Silen
 Si ves que contribuyen a tu desarrollo y el de la humanidad y “ves” o “sentís” la oportunidad de colaborar con el sostenimiento de todo el trabajo que desde aquí se desarrolla, podés hacerlo contactándote con nosotros vía mail a: elsilenciodondeescucho@gmail.com
 
 ---
-
-> Sebastián Rojo
->
-> El Silencio Donde Escucho
