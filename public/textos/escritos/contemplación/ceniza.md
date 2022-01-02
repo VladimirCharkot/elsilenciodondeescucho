@@ -5,6 +5,8 @@ pie: Tapa
 
 ## Ceniza
 
+![Fogata](/foto/10712553_10206321884027438_9174534756872404125_o.webp)
+
 La brasa está ahí,
 en la ceniza.
 Cuando le entra el aire

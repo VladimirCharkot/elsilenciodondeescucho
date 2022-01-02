@@ -5,6 +5,10 @@ pie: ¿Qué estás haciendo?
 
 ## JUGANDO
 
+
+![Dibujito](/foto/IMG_20200502_094731.webp)
+
+
 Hay una piedra al lado de un árbol y alcanzo a ver, en una de las ramas, algo amarillo… quizás una campera.
 
 ¿Cómo hago para ir a averiguar qué es? Está del otro lado del río. Entre la piedra y mis pies, está el río. Podría cruzar, pero ¡hace tanto frío! Podría caminar hacia los costados hasta, quizás, encontrar algún puente o una secuencia de piedras que, saltando, me lleven del otro lado… mmm… ¿cómo puedo llegar a ver qué es?

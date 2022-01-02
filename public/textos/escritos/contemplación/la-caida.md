@@ -5,6 +5,10 @@ pie: Llegar a lugar fértil
 
 ## LA CAÍDA
 
+
+![Ocaso](/foto/1891352_10206321796585252_2531965689531711994_o.webp)
+
+
 El sol está cayendo.
 
 El día concluye y aún entre las sombras alcanzo a ver que trastabilla entre ramas, que hay un movimiento habitado por su peso cayendo a la tierra, al piso. Cae como desarmándose. Una danza conmovedora.

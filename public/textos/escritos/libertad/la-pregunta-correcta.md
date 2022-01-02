@@ -15,7 +15,7 @@ Todas estas preguntas siguen preguntando por ti. Siguen ocupándose de ti. No lo
 
 Tarde o temprano tiene que llegar.
 Tarde o temprano, en el camino del trabajo interior, del desarrollo de la consciencia, llegará el momento en que hacer la pregunta correcta.
-Y hay sólo hay una que es correcta.
+Y hay sólo una que es correcta.
 Una... la única que es atendida. ¿Cuál?
 
 El trabajo, si es Real, es siempre un paso mas de entrega.
@@ -42,6 +42,6 @@ En una completa rendición.
 
 Solo allí puede, tras el vacío de la más honesta pregunta, escucharse-recibirse la respuesta que elimine, sane, toda necesidad de hacer otra pregunta y que, a la vez, trae respuesta a todas ellas.
 
-Y no hay respuesta posible ha ofrecerse, desde "arriba", si antes no se ha decidido dar el primer paso:
+Y no hay respuesta posible a ofrecerse, desde "arriba", si antes no se ha decidido dar el primer paso:
 
 Entregar la propia voluntad por cumplir la propia vida.

@@ -5,6 +5,10 @@ pie: Pensar sin pensamientos
 
 ## Cuanto tiempo
 
+
+![Viejito](/foto/15577896_10211599702969613_3474155097372279628_o.webp)
+
+
 Cuanto tiempo,
 desde que brota hasta que cae,
 la hoja se mece en su rama

@@ -5,6 +5,10 @@ pie: No se pierda de vista
 
 ## ESTAR
 
+
+![Cartel "La vida Es"](/foto/IMG_20200218_185504.webp)
+
+
 Mientras mira el mundo,
 
 mientras lo toca, lo saborea,

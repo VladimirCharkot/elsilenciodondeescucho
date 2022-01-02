@@ -5,6 +5,10 @@ pie: ¿Qué clase de camino puede tener uno, que anda?
 
 ## Camino interior
 
+
+![Pies en el camino](/foto/IMG_20200119_094441.webp)
+
+
 ¿Qué clase de camino puede tener uno, que anda?
 
 Que anda constantemente andando…

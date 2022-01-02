@@ -5,6 +5,10 @@ pie: Ni lo hacen para llenar los silencios
 
 ## No todos los pájaros trinan al mismo tiempo
 
+
+![Aves en ramas](/foto/P1530864.webp)
+
+
 Cuando un pájaro canta hay que escucharlo.
 
 Es aventurero el que despierta a toda la selva a las seis de la mañana.
