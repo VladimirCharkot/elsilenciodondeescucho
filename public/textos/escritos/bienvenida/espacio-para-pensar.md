@@ -1,5 +1,5 @@
 ---
-serie: esencial
+serie: primarios
 pie: Si ahora, comienzas a mirar tu mente, verás que hace algo
 titulo: Espacio para pensar
 ---

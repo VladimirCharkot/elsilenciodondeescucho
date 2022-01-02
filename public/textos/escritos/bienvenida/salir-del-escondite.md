@@ -1,5 +1,5 @@
 ---
-serie: esencial
+serie: primarios
 pie: Claro que se puede ver
 titulo: Salir del escondite
 ---

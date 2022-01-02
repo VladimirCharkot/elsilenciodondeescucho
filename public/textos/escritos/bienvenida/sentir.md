@@ -1,5 +1,5 @@
 ---
-serie: esencial
+serie: primarios
 pie: ¿Qué haces realmente cuando dices que sientes?
 titulo: Sentir
 ---

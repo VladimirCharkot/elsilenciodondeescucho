@@ -1,5 +1,5 @@
 ---
-serie: esencial
+serie: primarios
 pie: El humano confunde saber con conocer
 titulo: Conocimiento-Conocer. Sabiduría-Saber.
 ---

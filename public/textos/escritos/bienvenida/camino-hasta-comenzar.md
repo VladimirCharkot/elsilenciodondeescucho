@@ -1,5 +1,5 @@
 ---
-serie: esencial
+serie: primarios
 pie: Movimiento. Sí, la gran ilusión.
 titulo: Se hace camino hasta comenzar
 ---
