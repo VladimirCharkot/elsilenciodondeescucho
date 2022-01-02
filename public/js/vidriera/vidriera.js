@@ -121,22 +121,32 @@ let labels = () => {
 
 let grafo = (idx, grupos={base: {x : 0, y: 0}}) => {
 
+  let agregar_grupo = g => g.append('g')
+    .attr('class', 'grupo')
+    .attr('id', d => d[0])
+    .attr('transform', d => `translate(${d[1].x}, ${d[1].y})`)
+  .append('text')
+    .text(d => capitalize(d[0]))
+    .attr('transform', d => `translate(${d[1].x * scl}, ${d[1].y * scl})`)
+    .attr('class', 'cabecera')
+    .style('visibility', d => d[0] == 'base' ? 'hidden' : 'visible')
+
+  console.log(`Agregando grupo:`)
+  console.log(Object.entries(grupos))
   let scl = 1.6
   // let scl = 1
   let gs = d3.select('.lienzo').selectAll('g.grupo')
-    .data(Object.entries(grupos), d => d).enter()
-    .append('g')
-      .attr('class', 'grupo')
-      .attr('id', d => d[0])
-      .attr('transform', d => `translate(${d[1].x}, ${d[1].y})`)
-    .append('text')
-      .text(d => capitalize(d[0]))
-      .attr('transform', d => `translate(${d[1].x * scl}, ${d[1].y * scl})`)
-      .attr('class', 'cabecera')
-      .style('visibility', d => d[0] == 'base' ? 'hidden' : 'visible')
+    .data(Object.entries(grupos), d => d).join(
+      agregar_grupo, agregar_grupo
+    )
 
+
+  console.log(`Seleccion para el grupo creado:`)
+  console.log(gs);
   gs.each((grupo,i) => {
 
+    console.log(`Agregando esferas al grupo`)
+    console.log(idx.filter(elem => elem.serie ? elem.serie == grupo[0] : true))
     let nodos = d3.select('#' + grupo[0]).selectAll('g.entrada')
       .data(idx.filter(elem => elem.serie ? elem.serie == grupo[0] : true))
       .enter().append('g')
@@ -259,7 +269,7 @@ let menu_principal = [
     accion: () => {
       console.log('Abriendo propuestas...')
       limpiar_svg()
-      propuestas()
+      setTimeout(propuestas, 500)
     },
     color: d3.rgb("#939b62"),
     pie: 'Propuestas'
