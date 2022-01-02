@@ -5,7 +5,10 @@ export let transform = (nodos) => {
 }
 
 export let limpiar_svg = () => {
-  d3.selectAll(".lienzo *").remove()
+  d3.selectAll(".lienzo *")
+    .transition(500)
+    .style('opacity', 0)
+    .remove()
 }
 
 let caracteres = 80

@@ -123,16 +123,12 @@ let grafo = (idx, grupos={base: {x : 0, y: 0}}) => {
 
   let scl = 1.6
   // let scl = 1
-
-  let gs = d3.select('svg.vidriera g').selectAll('g.grupo')
-    .data(Object.entries(grupos)).enter()
+  let gs = d3.select('.lienzo').selectAll('g.grupo')
+    .data(Object.entries(grupos), d => d).enter()
     .append('g')
       .attr('class', 'grupo')
       .attr('id', d => d[0])
       .attr('transform', d => `translate(${d[1].x}, ${d[1].y})`)
-      // Esto no funca bien:
-      // .on('mouseenter', (e, d) => d3.select(e.target).classed('resaltado', true))
-      // .on('mouseleave', (e, d) => d3.select(e.target).classed('resaltado', false))
     .append('text')
       .text(d => capitalize(d[0]))
       .attr('transform', d => `translate(${d[1].x * scl}, ${d[1].y * scl})`)
@@ -279,10 +275,12 @@ let menu_principal = [
 let menu = () => {
   grafo(menu_principal)
   let nodos = d3.selectAll('.entrada')
-  layout_fuerza(nodos, {init: () => {
+  layout_fuerza(nodos, {
+    init: () => {
     svg.transition().duration(2750).ease(d3.easeCubic)
       .call(zoom.scaleTo, 2)
-  }, df: -500})
+    },
+    df: -500})
 }
 
 
