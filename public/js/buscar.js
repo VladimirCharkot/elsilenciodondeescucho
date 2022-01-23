@@ -9,8 +9,6 @@ let dimensiones_input = document.querySelector('#area_busqueda').getBoundingClie
 
 let ubicar_resultados = () => {
   encuentro.style.top = `${dimensiones_header.height + 4}px`
-  encuentro.style.width = `${window.innerWidth - dimensiones_input.width}px`
-  encuentro.style.left = `${dimensiones_input.left}px`
 }
 
 let abrir_busqueda = () => {
@@ -43,8 +41,8 @@ let buscar = (e) => {
         h.textContent = r.titulo
         let link = document.createElement('a')
         link.setAttribute('href', `/escritos/${r.id}`)
-        link.appendChild(h)
-        base.appendChild(link)
+        link.appendChild(base)
+        base.appendChild(h)
 
         for (let m of r.matches){
           let p = document.createElement('p')
@@ -52,7 +50,7 @@ let buscar = (e) => {
           base.appendChild(p)
         }
 
-        encuentro.appendChild(base)
+        encuentro.appendChild(link)
 
       }
     })

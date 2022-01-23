@@ -6,19 +6,28 @@ header
   padding: 0.5em
 
   display: flex
-  justify-content: center
+  justify-content: space-between
   align-items: center
 
-  transition: 1s
+  transition: 0.2s
 
-  background: linear-gradient(180deg, #fcfaf4 0%, rgba(255,255,255,0) 70%)
   border-bottom: 0px solid #0000
 
-  h1
-    opacity: 0
-    transition: 1s
+  font-family: 'Libre Baskerville', sans-serif
+  letter-spacing: 0.28em
+  text-transform: uppercase
 
-    font-family: 'Libre Baskerville', sans-serif
+  #indice, #area_busqueda a
+    font-size: 0.7em
+    margin: 0.5em
+    opacity: 0
+
+  h1
+    opacity: 0.8
+    transition: 1s
+    color: white
+
+
     font-size: 1em
     margin: 0.5em
     letter-spacing: 0.28em
@@ -53,6 +62,9 @@ header
     background-color: rgba(255,255,255,0.65)
     border-bottom: 1px solid rgba(0,0,0,1)
     h1
+      opacity: 1
+      color: black
+    #indice, #area_busqueda a
       opacity: 1
     #area_busqueda
       #brujula
@@ -104,6 +116,8 @@ header
 
   position: fixed
 
+  background: #eae3d9
+
   right: 0
   width: 20vw
   height: 100vh
@@ -116,21 +130,22 @@ header
   border-left: 1px solid black
 
   div
-    opacity: 0.8
+    border-top: 3px solid #8a4f4f
+    opacity: 0.7
     &:hover
       opacity: 1
-      border-top: 1px solid black
-      border-bottom: 1px solid black
+      // border-top: 1px solid black
+      // border-bottom: 1px solid black
       h4
-        color: black
+        // color: white
         &::after
           content: '–'
 
   h4
     margin: 0
     padding: 0em 1em
-    background: #eeee
-    color: #444
+    background: #181a3ced
+    color: #dbbdab
 
 
 

@@ -262,7 +262,7 @@ let menu_principal = [
       indice()
     },
     color: d3.rgb("#23689b"),
-    pie: 'Textos'
+    pie: ''
   },
   {
     titulo: 'Propuestas',
@@ -272,13 +272,13 @@ let menu_principal = [
       setTimeout(propuestas, 500)
     },
     color: d3.rgb("#939b62"),
-    pie: 'Propuestas'
+    pie: ''
   },
   {
-    titulo: 'ESDE',
+    titulo: 'El Silencio Donde Escucho',
     accion: () => document.location = '/esde/',
     color: d3.rgb("#ffd56b"),
-    pie: 'El Silencio Donde Escucho'
+    pie: ''
   }
 ]
 
@@ -303,10 +303,10 @@ try{
   visto = 0
 }
 
+let desplegar = () => window.location.hash == '#indice' ?  indice() : menu()
 
 if(Date.now() - window.visto > 1000 * 60 * 60){
-  setTimeout(menu, 2000)
+  setTimeout(desplegar, 2000)
 }else{
-  menu()
-  console.log('abriendo menu')
+  desplegar()
 }

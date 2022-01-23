@@ -1,12 +1,17 @@
 block cabecera
   
   header
+    #indice
+      a(href='/#indice') < Índice 
+      script.
+        d3.select("#indice a").style("visibility", location.pathname.includes("escritos") ? "visible" : "hidden")
     h1
       a(href="/", title="El Silencio Donde Escucho", rel="home") El Silencio Donde Escucho
-    div#area_busqueda
-      div.icon#brujula(onclick="abrir_busqueda()")
+    #area_busqueda
+      //- div.icon#brujula(onclick="abrir_busqueda()")
+      a(href='#' onclick="abrir_busqueda()") Búsqueda 
       input#busqueda(type="text")
-  div#area_encuentro
+  #area_encuentro
 
   script(src="/js/buscar.js")
   script.
@@ -22,3 +27,24 @@ block cabecera
       setTimeout(() => h.classList.add('hovereado'), 1000)
       setTimeout(() => h.classList.remove('hovereado'), 5000)      
     }
+  
+    window.addEventListener('load', () => {
+      let main = document.querySelector("main")
+      window.ultimoScroll = 0
+      window.scrollDelta = 0
+      main.onscroll = () => {
+        let actual = main.scrollTop
+        let ultimo = window.ultimoScroll
+        let delta = actual - ultimo
+        
+        if (delta > 0 && window.scrollDelta < 0 || delta < 0 && window.scrollDelta > 0) window.scrollDelta = 0
+        
+        window.scrollDelta += delta
+        window.ultimoScroll = actual
+        
+        if(window.scrollDelta < -50) h.classList.add('hovereado')
+        if(window.scrollDelta > 50) h.classList.remove('hovereado')
+       
+      } 
+    })
+    
