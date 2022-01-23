@@ -3,25 +3,27 @@ addEventListener('load', () => {
   let contenido = document.querySelector('.texto')
   let header = document.querySelector('header')
 
+  window.baseFontSize = parseInt(contenido.style.fontSize != "" ? contenido.style.fontSize : "12px")
+
   var hammertime = new Hammer(contenido,  {})
   hammertime.add(new Hammer.Pinch({}))
-  hammertime.add(new Hammer.Press({}))
+  hammertime.add(new Hammer.Tap({}))
   // hammertime.get('pinch').set({ enable: true })
   body.style.touchAction = "pan-y"
   contenido.style.touchAction = "pan-y"
 
   hammertime.on('pinch', (ev) => {
 
-    let tamaneo = parseInt(contenido.style.fontSize ? contenido.style.fontSize : "12px")
     if(ev.scale > 1){
-      contenido.style.fontSize = `clamp(12px, ${tamaneo+1}px, 72px)`
+      window.baseFontSize += 1
     }else{
-      contenido.style.fontSize = `clamp(12px, ${tamaneo-1}px, 72px)`
+      window.baseFontSize -= 1
     }
+    contenido.style.fontSize = `clamp(12px, ${window.baseFontSize}px, 72px)`
 
   })
 
-  hammertime.on('press', (ev) => {
+  hammertime.on('tap', (ev) => {
     header.classList.toggle('hovereado')
   })
 
