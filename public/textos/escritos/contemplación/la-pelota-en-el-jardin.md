@@ -5,6 +5,10 @@ pie: ¿Que hice con todo eso?
 
 ## LA PELOTA EN EL JARDÍN
 
+
+![Un jardín](/foto/10985347_10206346319318305_2627007919243957652_o.webp)
+
+
 Abro la ventana para que entre aire nuevo a la casa, fresco, de la mañana, con el aroma de las flores del naranjo que se huele, y también con el residuo que acaba de dejar el camión de la basura. Y, mientras tomo un segundo de respiro, pasa al frente de mis ojos una pelota que cae en mi jardín
 
 Saco la cabeza por la ventana y miro, para un lado y para el otro. no hay niños ni adultos, ni ancianos, ni perros ni gatos, ni palomas alrededor.

@@ -5,6 +5,8 @@ pie: Es importante indagar qué es la acción recibir
 
 ## ¿CÓMO RECIBIR Y CONFIAR SI NO SE LO VE?
 
+![Arcoiris](/foto/P1260049.webp)
+
 >_Si, tal cual, pero ¿cómo dar lugar a lo nuevo y confiar si no se lo ve?_
 
 ¿Cómo recibir y confiar si no se lo ve?
@@ -15,9 +17,9 @@ Nosotros, los humanos, hacemos depender unas cosas de otras.
 
 Recibir, para ser, y cuando es, no puede depender de lo recibido.
 
-Es decir: recibir es una cosa, y lo recibido es otra. "Aquello", lo recibido, es un desconocido hasta el momento exacto en que ha sido recibido, y hasta ese momento, sin embargo,se lo ha estado recibiendo. El estarlo recibiendo no depende de lo recibido. En el momento de "haber sido recibido", "recibiendo" puede o no continuar su actividad, sin depender necesariamente de dicho "algo" recibido o no. Esto es de la misma manera en que en este mismo momento, estando ahora donde uno está, puede atender a otro sitio cualquiera del planeta. Puede contenerlo dentro de su campo atencional. Uno lo puede "escuchar", sin que se haga necesario para dicha actividad, el que ella contenga o no algún sonido que nos sea evidentemente proveniente de dicho sitio.
+Es decir: recibir es una cosa, y lo recibido es otra. "Aquello", lo recibido, es un desconocido hasta el momento exacto en que ha sido recibido, y hasta ese momento, sin embargo,se lo ha estado recibiendo. El estarlo recibiendo no depende de lo recibido. En el momento de "haber sido recibido", "recibiendo" puede o no continuar su actividad, sin depender necesariamente de dicho "algo" recibido o no. Esto es de la misma manera en que en este mismo momento, estando ahora donde uno está, puede atender a otro sitio cualquiera del planeta. Puede contenerlo dentro de su campo atencional. Uno lo puede "escuchar", sin que se haga necesario para dicha actividad, el que ella contenga o no algún sonido que nos sea evidentemente proveniente de dicho sitio. 
 
-Hay que fijarse bien en esto mientras la cosa está en actividad, de otra manera no se lo podrá ver. No se lo comprenderá. Solo ahí, en el momento en que la cosa en sí está en actividad es que puede ser vista, ni antes ni después. En el momento en que "recibiendo" está en actividadsiendo realizado, es cuando se lo puede ver.
+Hay que fijarse bien en esto mientras la cosa está en actividad, de otra manera no se lo podrá ver. No se lo comprenderá. Solo ahí, en el momento en que la cosa en sí está en actividad es que puede ser vista, ni antes ni después. En el momento en que "recibiendo" está en actividad siendo realizado, es cuando se lo puede ver.
 
 Constantemente hacemos depender una cosa de otras. Atamos unas cosas a otras. Este es el "problema" del conocimiento, su riesgo. El de lo conocido. En el preciso momento en que nos disponemos a recibir -lo desconocido- lo conocido, espera, ansía, pretende conocer lo desconocido, por tanto, se mueve intentando atarse a eso desconocido con algo de lo que conoce. Intenta ser aquello que desconoce. Intenta nombrarlo en el mismo momento de disponernos a recibir. El hecho de desconocer le provoca vértigo y lo "descoloca", lo desequilibra, lo desestabiliza. Lo inquieta. Podemos decir que a "lo conocido" no le gusta desconocer y se mueve intentando llegar a ello. Hace un movimiento intentando llegar a ser aquello y en ese mismo momento se ata y dejamos de recibir lo desconocido.
 Lo conocido nos ha atrapado. Quedamos atados, dependiendo del vínculo que establecemos con lo conocido y abandonamos la investigación de lo desconocido.

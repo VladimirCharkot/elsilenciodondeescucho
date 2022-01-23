@@ -6,8 +6,7 @@ titulo: Observación
 
 ## OBSERVACIÓN
 
-
-![Texto alt](/foto/P1080678.webp){data-pos=bottom data-escala=auto}
+![Hormiga de cerca](/foto/P1080678.webp){data-pos=bottom data-escala=auto}
 
 Actividades integradas en la Presencia
 Ver-Saber-Hacer

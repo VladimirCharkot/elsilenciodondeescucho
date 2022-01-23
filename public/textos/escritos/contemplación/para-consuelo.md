@@ -6,6 +6,9 @@ pie: Se le llevará una flor
 ## Para consuelo
 
 
+![Gotas de lluvia sobre el agua](/foto/1978547_10206321622700905_4411612520915147899_o.webp)
+
+
 Cuando Vicente era niño
 
 -más niño-

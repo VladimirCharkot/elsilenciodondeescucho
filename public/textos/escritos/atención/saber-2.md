@@ -8,7 +8,6 @@ titulo: Saber II
 
 ![Nubes al atardecer](/foto/P1080798.webp){data-escala=contain data-pos=top}
 
-
 Prestemos atención a esto un momento
 
 Para ver, cualquier cosa, no alcanza con tener la vista puesta sobre la cosa que se dice ver, o que se quiere ver. Tiene que haber algo más.

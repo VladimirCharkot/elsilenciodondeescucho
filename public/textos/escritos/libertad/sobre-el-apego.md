@@ -5,6 +5,8 @@ pie: Del apego nace el sufrimiento
 
 ## Sobre el apego
 
+![Camioneta tomada por enredaderas](/foto/P1500960.webp)
+
 >El hombre siente apego,
 >Al honor, a las riquezas, a la vida, al "yo".
 >De este apego nace el sufrimiento.

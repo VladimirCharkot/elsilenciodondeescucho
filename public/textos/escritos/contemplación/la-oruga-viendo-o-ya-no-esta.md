@@ -5,6 +5,10 @@ pie: A su tiempo
 
 ## LA ORUGA. VIENDO, O YA NO ESTÁ.
 
+
+![Hojas comidas](/foto/IMG_20161128_192233757.webp)
+
+
 Estando en el patio de la casa, como casi cada día en el tiempo de estar allí, con la tierra, las plantas, la huerta, el sol, el aire y las lombrices, los insectos y animales. El tiempo de observar, cuidar, interactuar, reorganizar. Estando en el patio, levanto la vista al cielo, pasando por la enredadera de la pared oeste, y, allí, veo, hay una oruga.
 
 Posándome sobre ella, viéndola, discierno que es grande, al menos 10 centímetros, gruesa como un dedo, de colores borravinos, rojos, con manchas blancas y negras, líneas más claras. Las manchas blancas tienen otras, más pequeñas y negras, dentro, que asemejan un ojo. Varios ojos diagonales en el cuerpo.

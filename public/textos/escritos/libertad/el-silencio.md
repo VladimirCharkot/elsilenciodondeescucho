@@ -5,6 +5,8 @@ pie: O un constante grito sombrío y sordo
 
 ## EL SILENCIO
 
+![Cartel "Salida"](/foto/wp-impecables-palabras.webp)
+
 El silencio tiene una tremenda, potente, cualidad y capacidad, que, para poder verla, vivirla y captarla, es preciso estar en silencio. Hacer Silencio.
 
 Hacer del silencio un amigo, un compañero, no un ratito aisladamente, sino en "todo"[^1]

@@ -8,7 +8,6 @@ titulo: Sobre la atención
 
 ![Clavijero](/foto/P1390556.webp)
 
-
 Donde está la atención, es donde uno está.
 
 Para saber dónde se está se debe saber dónde está la atención.

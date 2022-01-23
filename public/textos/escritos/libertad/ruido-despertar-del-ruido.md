@@ -5,6 +5,8 @@ pie: Hasta un momento, todo era ilusión
 
 ## Despertar, del ruido
 
+![Amanecer](/foto/P1310250.webp)
+
 Hasta un momento, ese o este ahora, no había nadie -ni nada- en uno.
 
 Todo era ilusión, imagen, fantasía.

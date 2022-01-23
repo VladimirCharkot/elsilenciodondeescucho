@@ -5,6 +5,8 @@ pie: Pensemos
 
 ## Pensemos
 
+![Nubecita](/foto/fb_mussi.webp)
+
 Fíjate, todas estas cosas, abajo, son diferentes.
 
 --

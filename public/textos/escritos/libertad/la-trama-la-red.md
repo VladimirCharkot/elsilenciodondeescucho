@@ -5,6 +5,8 @@ pie: En este tejido que es la existencia...
 
 ## LA TRAMA. LA RED.
 
+![Telaraña](/foto/P1500470.webp)
+
 En este tejido -de pensamientos- que es la existencia, hay tres tipos de humanos.
 
 El primero de estos, es el que en lo corriente vive en una de las fibras del tejido, enredado en los pensamientos y las cosas que son propios de su fibra. Pertenece allí. No ve más allá del hilo en el que se encuentra. Tampoco se pregunta más allá de eso que ve. Es pensado por los pensamientos que forman parte de ese hilo en el que se encuentra, y cree que es eso que se piensa en él, de él.

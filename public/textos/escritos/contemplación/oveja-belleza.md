@@ -5,6 +5,8 @@ pie: Hay una oveja caminando en la montaña
 
 ## OVEJA BELLEZA
 
+![Montañas](/foto/P1150946.webp)
+
 Hay una oveja caminando en la montaña.
 
 Camina. Camina. Camina.

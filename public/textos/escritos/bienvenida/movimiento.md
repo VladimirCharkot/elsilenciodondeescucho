@@ -9,8 +9,6 @@ titulo: Movimiento
 
 ![Blur](/img/integrador-de-movimineto.webp)
 
-
-
 (...) "La Vida es un continuo en movimiento constante aconteciendo. Un movimiento derivando en otro. La deriva misma es movimiento de algo dentro de sí.
 
 La Vida, al comenzar a Ser, antes de tornarse cualquier cosa en la existencia, previamente a su concepción, es un movimiento. Y cada cosa en sí, ya existiendo, es un continuo movimiento aconteciendo.

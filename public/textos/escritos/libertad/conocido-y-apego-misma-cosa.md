@@ -5,6 +5,8 @@ pie: Lo conocido está aquí "pegado"
 
 ## UNO Y OTRO, CONOCIDO Y APEGO, UNA MISMA COSA
 
+![Ave en vuelo](/foto/fb_vuelo_2.webp)
+
 Pregunta:
 
 El hacer es entrenar el desapego? Lo conocido genera apego, lo desconocido es un salto al vacío?

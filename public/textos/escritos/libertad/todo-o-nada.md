@@ -5,6 +5,8 @@ pie: Verse más de lo mismo
 
 ## TODO O NADA
 
+![Piedra](/foto/P1310341.webp)
+
 Todo límite desaparece cuando uno alcanza a "poner" todo lo que "cree que es" en el mismo nivel o dimensión que todo el resto que hace a la "cosa" llegando, en el instante mismo en que dicha cosa viene llegando.
 
 Natural es que, ante una contradicción dada, ante un conflicto, el yo, la identidad, la memoria, el conocimiento, el pasado etc., se dispare en una reacción. En una interpretación. En una definición. En un "esto o aquello" o en un "tal o cual". Y toda percepción indirecta, mediada por el conocimiento, por la identidad, es conflicto, es separación. Entre "esto yo", y "eso tu", entre "así sí", "así no", etc.

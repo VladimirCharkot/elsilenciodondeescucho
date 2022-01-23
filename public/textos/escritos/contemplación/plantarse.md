@@ -3,8 +3,10 @@ serie: contemplación
 pie: No hay lugar para la sequía
 ---
 
-## Plantarse
-```
+## Plantarse
+
+![Huerta](/foto/11701215_10207441918907610_6984480955011924810_n.webp)
+
 Hay un sonido que llega de lejos.
 Escucha mi boca seca.
 
@@ -20,4 +22,4 @@ el mundo se despliega,
 no hay lugar para la sequía
 cuando desde adentro gritamos:
 Si a la Vida.
-```
+

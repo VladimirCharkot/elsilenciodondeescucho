@@ -5,6 +5,8 @@ pie: Debiéramos ser más lengua
 
 ## LENGUA
 
+![Pared pintada con la palabra "Educación"](/foto/463682_10201264315351382_143894981_o.webp)
+
 Debiéramos ser más lengua.
 Permanecer dentro, mirando todas las paredes del cuerpo. Sintiendo cada vibración, cada movimiento, cada sensación que nace.
 

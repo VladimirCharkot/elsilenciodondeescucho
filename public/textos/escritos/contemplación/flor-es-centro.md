@@ -6,7 +6,7 @@ pie: Cada uno de los pétalos
 ## Flor es el centro
 
 
-![Flor](/foto/IMG_20200215_091106.webp)
+![Flor](/foto/IMG_20200215_091106.webp){data-pos="center -100px"}
 
 
 La flor,

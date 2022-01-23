@@ -5,6 +5,10 @@ pie: Entrar en ella
 
 ## LA OLA
 
+
+![Onda dibujada en el vidrio de un bondi](/foto/13580393_10210022034648891_8919068106760584823_o.webp){data-pos="0px -300px"}
+
+
 La ola se eleva sobre mí. En altura. En fuerza.
 
 En la capacidad de arrastrar y de moverme de lugar.

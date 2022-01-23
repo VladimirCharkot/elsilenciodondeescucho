@@ -5,9 +5,7 @@ pie: Decir "Dios está en todos" es decir el ser humano tiene posibilidad de aut
 
 ## Ser de Dios
 
-
 ![Borde laguna](/foto/P1540072.webp)
-
 
 Decir "Dios (libre de todo dogma y religión) está en todos" es lo mismo que decir: el ser humano tiene posibilidad de autodesarrollo.
 

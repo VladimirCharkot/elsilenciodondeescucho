@@ -5,6 +5,8 @@ pie: Encontrar lo trascendental tras lo obvio
 
 ## ¿QUÉ ES UNA Y OTRA COSA?
 
+![Atardecer](/foto/P1430380.webp)
+
 (…)
 
 Ver-lo, se trata de procurar hacer la distinción, de tener el discernimiento acerca de qué es una y otra cosa, en el momento mismo de la actividad y no sólo aquí a nivel conceptual. Distinguir entre "el pensar" y "el pensamiento" tal, entre "el emocionar" y "la emoción" tal, entre "el hablar" (o debamos comenzar quizás a decir "el hablando") y el contenido de dicha actividad, palabras, tonos, vibraciones, significados…

@@ -5,6 +5,8 @@ pie: — En cuanto ya te vayas de este cielo, despiértame
 
 ## EL MUNDO DE BELLEZA
 
+![Flor acuática](/foto/wp-sobre-la-verdad.webp)
+
 Se encuentran sentados un maestro y un joven aprendiz.
 Y el aprendiz le pregunta: - maestro, ¿cómo puedo hacer para crear un mundo de belleza?
 

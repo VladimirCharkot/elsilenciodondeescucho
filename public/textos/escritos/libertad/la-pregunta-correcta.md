@@ -5,9 +5,7 @@ pie: El ego, ahora, juega con preguntas "espirituales"
 
 ## LA PREGUNTA CORRECTA
 
-
 ![Girasoles](/foto/P1120609.webp)
-
 
 ¿Cuál es el sentido de la vida? ¿Cuál es su propósito? ¿Cuál es el tuyo? ¿Para que estás aquí? ¿Quién o qué eres? ¿Cuál es tu misión? ¿Qué pasos debes dar?
 

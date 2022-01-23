@@ -5,6 +5,8 @@ pie: Allí está el hombre. Trabado, anclado. "¿Qué hacer?", se preguntó.
 
 ## LABERINTO
 
+![Goma de borrar](/foto/PSX_20180829_194406.webp)
+
 El hombre camina de un lugar a otro.
 Avanza de a pasos cortos, y retrocede al mismo punto del que salió.
 

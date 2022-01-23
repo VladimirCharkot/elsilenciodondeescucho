@@ -8,8 +8,6 @@ titulo: Se hace camino hasta comenzar
 
 ![Camino](/foto/P1160722.webp){data-pos=center}
 
-
-
 Esto es algo que se ha dicho,
 Señalado de muchas maneras, contadas veces.
 Más, vale insistir:

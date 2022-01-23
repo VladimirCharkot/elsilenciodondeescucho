@@ -5,6 +5,8 @@ pie: Fijate que loco lo que pasa con lo que pasa
 
 ## Eres el río
 
+![Arroyo](/foto/fb_arroyo.webp)
+
 Fijate que loco lo que pasa con lo que pasa,
 siempre pasa.
 
@@ -49,3 +51,5 @@ Deja que las cosas pasen tal como pasan,
 que siempre, terminan pasando.
 
 Nada queda, solo el río en el que todo pasa.
+
+![Texto alt](/foto/fb_arroyo.webp)

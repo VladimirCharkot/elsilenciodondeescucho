@@ -6,9 +6,7 @@ titulo: Cuestiones de orden
 
 ## CUESTIONES DE ORDEN
 
-
 ![Árbol con cables](/img/arbolcables.jpg)
-
 
 Primero:
 

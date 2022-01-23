@@ -8,7 +8,6 @@ titulo: Salir del escondite
 
 ![Edificios](/foto/IMG_20191022_182541.webp)
 
-
 Claro que se puede ver.
 
 Pero para ver hay que salir del escondite.

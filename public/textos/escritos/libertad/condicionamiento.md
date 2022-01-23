@@ -5,6 +5,8 @@ pie: Una mente en un estado determinado
 
 ## CONDICIONAMIENTO
 
+![Ave enjaulada](/foto/wp-condicionamiento.webp)
+
 Así, una mente con condición, es una mente en un estado determinado.
 Determinado por su condición. Fijado. En término, por su condición. Dicho. Nombrado. Limitado. Finito. No infinito. Esto quiere decir, que esta mente está condicionada para recibir la cosa que entra en el campo de la conciencia, cada cosa…
 

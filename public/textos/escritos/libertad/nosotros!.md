@@ -5,6 +5,8 @@ pie: No se puede pedir Paz en nuestras vidas y a la vez desear cosas. Ni desear 
 
 ## ¡LOS SERES HUMANOS! ¡NOSOTROS!
 
+![Rama con espinas](/foto/P1510308.webp)
+
 No se puede pedir Paz en nuestras vidas y a la vez desear cosas. Desear, situaciones, condiciones, cosas, personas, relaciones, etc. Ni desear Paz.
 
 Desear acarrea ansias por lo deseado. Trae la preocupación por la posibilidad de no conseguirlo, trae especulaciones, caminos posibles que sostenemos dentro de nosotros a fuerza de energía, de vida. Desear implica proyecciones que difícilmente se cumplirán tal como las anhelamos y por tanto cierto abatimiento, desaliento. Desear trae el temor por la posible insatisfacción de dicho deseo.

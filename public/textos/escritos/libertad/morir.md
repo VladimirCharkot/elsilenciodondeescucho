@@ -5,6 +5,8 @@ pie: Y ante la pregunta: ¿Qué soy?...
 
 ## MORIR
 
+![Puerta con cruz](/foto/PSX_20180211_234036.webp)
+
 Hacer presencia del tiempo
 
 lo que dura el tiempo: nada.

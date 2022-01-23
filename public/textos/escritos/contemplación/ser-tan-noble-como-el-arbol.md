@@ -5,6 +5,8 @@ pie: Ofrendar un nuevo fruto
 
 ## SER TAN NOBLE COMO EL ÁRBOL
 
+![Árbol](/foto/11046359_10206406095252666_698122704569781609_o.webp)
+
 El árbol está allí. Estable. Sereno. Fuerte.
 
 Trabaja día y noche, transformando.
