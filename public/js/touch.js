@@ -5,7 +5,10 @@ addEventListener('load', () => {
 
   window.baseFontSize = parseInt(contenido.style.fontSize != "" ? contenido.style.fontSize : "12px")
 
-  var hammertime = new Hammer(contenido,  {})
+  delete Hammer.defaults.cssProps.userSelect;
+  var hammertime = new Hammer(contenido,  {
+    inputClass: Hammer.TouchInput
+  })
   hammertime.add(new Hammer.Pinch({}))
   hammertime.add(new Hammer.Tap({}))
   // hammertime.get('pinch').set({ enable: true })

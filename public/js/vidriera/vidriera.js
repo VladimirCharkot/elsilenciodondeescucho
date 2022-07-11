@@ -42,18 +42,18 @@ svg.call(zoom)
 
 
 let drag =  d3.drag()
-  .on('start', (ev, d) => {
-    d.fx = d.x;
-    d.fy = d.y;
-  })
+  // .on('start', (ev, d) => {
+  //   d.x = d.x;
+  //   d.y = d.y;
+  // })
   .on('drag', (ev, d) => {
-    d.fx = ev.x;
-    d.fy = ev.y;
+    d.x = ev.x;
+    d.y = ev.y;
   })
-  .on('end', (ev, d) => {
-    d.fx = null;
-    d.fy = null;
-  })
+  // .on('end', (ev, d) => {
+  //   d.fx = null;
+  //   d.fy = null;
+  // })
 
 
 
@@ -150,7 +150,7 @@ let grafo = (idx, grupos={base: {x : 0, y: 0}}) => {
     let nodos = d3.select('#' + grupo[0]).selectAll('g.entrada')
       .data(idx.filter(elem => elem.serie ? elem.serie == grupo[0] : true))
       .enter().append('g')
-      .call(drag)
+      // .call(drag)
       .on('click', (e, d) => {
         d.accion()
       })

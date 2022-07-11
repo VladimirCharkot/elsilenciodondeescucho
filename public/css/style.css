@@ -36,18 +36,28 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 1s; }
+  transition: 0.2s;
+  border-bottom: 0px solid #0000;
+  font-family: 'Libre Baskerville', sans-serif;
+  letter-spacing: 0.28em;
+  text-transform: uppercase; }
+  header #indice, header #area_busqueda a {
+    font-size: 0.7em;
+    margin: 0.5em;
+    opacity: 0; }
   header h1 {
-    font-family: 'Libre Baskerville', sans-serif;
+    opacity: 0.8;
+    transition: 1s;
+    color: white;
     font-size: 1em;
     margin: 0.5em;
     letter-spacing: 0.28em;
     text-transform: uppercase;
-    display: inline-block;
-    transition: 1s; }
+    display: inline-block; }
     header h1:hover {
       text-shadow: 1px 1px #b4b4b4; }
   header nav {
+    visibility: hidden;
     display: flex;
     align-items: center;
     flex-grow: 1;
@@ -61,81 +71,78 @@ header {
       color: black; }
       header nav a:hover {
         text-shadow: 2px 2px #cdcdcd; }
+  header.hovereado, header.habitado {
+    background-color: rgba(255, 255, 255, 0.65);
+    border-bottom: 1px solid black; }
+    header.hovereado h1, header.habitado h1 {
+      opacity: 1;
+      color: black; }
+    header.hovereado #indice, header.hovereado #area_busqueda a, header.habitado #indice, header.habitado #area_busqueda a {
+      opacity: 1; }
+    header.hovereado #area_busqueda #brujula, header.habitado #area_busqueda #brujula {
+      opacity: 0.4; }
+  header #area_busqueda {
+    display: flex;
+    flex-direction: row;
+    margin-right: 2em; }
+    header #area_busqueda #brujula {
+      transition: 1s;
+      width: 2em;
+      height: 2em;
+      background: url("/icon/brújula.png");
+      background-size: cover;
+      opacity: 0;
+      margin-right: 1.3em;
+      cursor: pointer; }
+    header #area_busqueda #busqueda {
+      transform: scaleX(0);
+      max-width: 0vw;
+      transition: 1s;
+      border: none;
+      border-bottom: 1px solid gainsboro;
+      font-family: 'Libre Baskerville', sans-serif;
+      background-color: #fff6; }
+      header #area_busqueda #busqueda:focus {
+        outline: none; }
+      header #area_busqueda #busqueda:focus-visible {
+        outline-width: 0; }
+    header #area_busqueda.expandido #busqueda {
+      transform: scaleX(1);
+      max-width: 20vw; }
 
-#area_busqueda {
-  display: flex;
-  flex-direction: row;
-  margin-right: 2em; }
-  #area_busqueda #brujula {
-    transition: 1s;
-    width: 2em;
-    height: 2em;
-    background: url("/icon/brújula.png");
-    background-size: cover;
-    opacity: 0;
-    margin-right: 1.3em;
-    cursor: pointer; }
-  #area_busqueda #busqueda {
-    transition: 1s;
-    border: none;
-    border-bottom: 1px solid gainsboro;
-    font-family: 'Libre Baskerville', sans-serif;
-    transform: scaleX(0);
-    max-width: 0vw; }
-    #area_busqueda #busqueda:focus {
-      outline: none; }
-    #area_busqueda #busqueda:focus-visible {
-      outline-width: 0; }
-
-#area_busqueda.expandido #busqueda {
-  transform: scaleX(1);
-  max-width: 20vw; }
-
-header.contraido:hover {
-  background-color: rgba(255, 255, 255, 0.65);
-  border-bottom: 1px solid black; }
-  header.contraido:hover h1 {
-    font-size: 1em;
-    opacity: 1; }
-  header.contraido:hover #area_busqueda #brujula {
-    opacity: 0.4; }
-
-header.contraido {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
-  border-bottom: 0px solid rgba(0, 0, 0, 0); }
-  header.contraido h1 {
-    opacity: 0.1; }
-  header.contraido nav {
-    visibility: hidden; }
-
-#panel {
+#area_encuentro {
+  visibility: hidden;
+  overflow: scroll;
+  z-index: 1;
+  position: fixed;
+  background: #eae3d9;
   right: 0;
   width: 20vw;
   height: 100vh;
-  max-width: 0vw;
   transition: 1s;
-  background: rgba(255, 247, 239, 0.8);
-  visibility: hidden;
+  background: #fffe;
   opacity: 0;
-  overflow: scroll;
-  z-index: 1;
-  border-left: 2px solid #c1a289; }
-  #panel h4 {
+  border-left: 1px solid black; }
+  #area_encuentro div {
+    border-top: 3px solid #8a4f4f;
+    opacity: 0.7; }
+    #area_encuentro div:hover {
+      opacity: 1; }
+      #area_encuentro div:hover h4::after {
+        content: '–'; }
+  #area_encuentro h4 {
     margin: 0;
     padding: 0em 1em;
-    background: rgba(244, 222, 203, 0.9);
-    border-top: 2px solid #c1a289;
-    border-bottom: 2px solid #c1a289; }
-  #panel p {
+    background: #181a3ced;
+    color: #dbbdab; }
+  #area_encuentro p {
     font-size: 0.7em;
-    padding: 0em 1em;
-    border-top: 1px solid #f4d8be99;
+    padding: 0em 0.1em;
+    padding-bottom: 1em;
     margin: 0.6em 1em; }
-
-#panel.revelado {
-  max-width: 20vw;
-  visibility: visible;
-  opacity: 1; }
+  #area_encuentro.revelado {
+    visibility: visible;
+    opacity: 1; }
 
 /* Editor */
 /* Area del editor */
@@ -425,23 +432,24 @@ header.contraido {
       background: #faebd769; }
 
 /* Este sería para los talleres, título en overlay sobre imagen */
-.taller {
-  padding-bottom: 5em; }
-  .taller h2 {
-    font: 3.4em 'Cinzel';
-    background: none;
-    text-align: right;
-    margin-top: 2em;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
-  .taller .ventana {
-    display: flex;
-    border-bottom: 2px solid black;
-    height: min-content; }
-  .taller img {
-    display: none; }
-  .taller hr {
-    width: 30%; }
+.texto h2 {
+  font: 3.4em 'Cinzel';
+  background: none;
+  text-align: right;
+  margin-top: 2em;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+
+.texto .ventana {
+  display: flex;
+  border-bottom: 2px solid black;
+  height: min-content; }
+
+.texto img {
+  display: none; }
+
+.texto hr {
+  width: 30%; }
 
 .propuestas {
   padding-bottom: 5em; }
@@ -482,22 +490,34 @@ header.contraido {
   .texto p {
     padding: 0px 25% 0px 25%; }
 
-.escrito {
-  width: 100vw;
-  height: 100vh;
-  padding: 0;
-  /* Not supported yet :( */ }
-  .escrito h2 {
-    margin-top: 3em;
-    margin-bottom: 0;
-    background: var(--attach-default) var(--color-default) var(--textura-default); }
-  .escrito h3, .escrito h4 {
-    padding-top: 0.8em; }
-  .escrito p:has(> img) {
-    padding: 0;
-    background-color: azure; }
-  .escrito img {
-    width: 100%; }
+.footnote-item {
+  margin: 0 20vw; }
+
+.footnote-item p {
+  padding: 0; }
+
+.backref-highlight {
+  border-radius: 20%;
+  animation: 2s ease-in backref-highlight; }
+
+.ref-highlight::marker {
+  animation: 2s ease-in ref-highlight; }
+
+@keyframes backref-highlight {
+  0% {
+    background-color: #75d2ff;
+    padding: 0.2em; }
+  100% {
+    background-color: #75d2ff00;
+    padding: 0em; } }
+
+@keyframes ref-highlight {
+  0% {
+    color: #75d2ff;
+    font-size: 2em; }
+  100% {
+    color: #000;
+    font-size: 1em; } }
 
 .ventana {
   background-attachment: var(--attach-default);

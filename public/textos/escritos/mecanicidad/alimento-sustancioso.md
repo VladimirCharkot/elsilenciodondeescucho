@@ -5,6 +5,10 @@ pie: Una energía que es liberada tras cierto esfuerzo
 
 ## ALIMENTO SUSTANCIOSO
 
+
+![Ave entre comida](/foto/10869833_10206321783584927_1274295610397558321_o.webp)
+
+
 Fíjese bien…
 
 Se suele decir:
