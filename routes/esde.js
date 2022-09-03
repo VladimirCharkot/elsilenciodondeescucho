@@ -1,10 +1,13 @@
-var express = require('express')
-var router = express.Router()
-var blog = require('../procesos/blog.js')
-var editor = require('../procesos/editor.js')
-var visitas = require('../procesos/visitas.js')
-let { logaccess } = require('../procesos/accesos.js')
-let passport = require('passport')
+const express = require('express')
+const router = express.Router()
+const blog = require('../procesos/blog.js')
+const editor = require('../procesos/editor.js')
+const visitas = require('../procesos/visitas.js')
+const { logaccess } = require('../procesos/accesos.js')
+const passport = require('passport')
+
+const sheets = require('../procesos/googlesheets.js')
+const mp = require('../procesos/mp.js')
 
 
 let is_admin = (req, res, next) => { if(req.user) {next()} else {return res.redirect('/hogar')} }
@@ -22,10 +25,33 @@ router.get('/buscar/:consulta', blog.buscar)
 
 router.get('/esde/', [logaccess, blog.esde])
 
+router.get('/colecta', [logaccess, blog.colecta])
 
 /* TEST */
 
-router.get('/test', (req, res) => res.render('test'))
+router.post('/pago', (req, res) => {
+  mp.procesarPago(req, res);
+});
+router.post('/billetera', (req, res) => mp.generarLink(req, res));
+
+
+router.post('/webhook', (req, res) => mp.webhook(req, res));
+
+router.get('/pago_aprobado', mp.back_aprobado);
+router.get('/pago_pendiente', mp.back_pendiente);
+router.get('/pago_fallido', mp.back_rechazado);
+
+// router.get('/sheet', async (req, res) => {
+//   // Sheet privada: 1EkXD4b5vIQn1vsuJrQAYRAHYlCmAMkrk-vYlgI0AEkM
+//   // Sheet pública: 1nxNa1IOaquv3luX2Kgu1EohSK3goN04b9TkCRhs1mko
+//   await sheets.appendSpreadSheetValues({
+//     spreadsheetId: '1nxNa1IOaquv3luX2Kgu1EohSK3goN04b9TkCRhs1mko',
+//     sheetName: 'contribuciones',
+//     auth: await sheets.getAuthToken(),
+//     values: [["El Vladi", "555", "=now()"]]
+//     })
+//   res.status(200).send();
+// });
 
 
 /* Público funcional */
@@ -57,3 +83,5 @@ router.post('/hogar', blog.login)
 router.get('/logout', (req,res) => {req.logout(); res.redirect('/')})
 
 module.exports = router
+
+// https://www.mercadopago.com.ar/developers/es/docs/checkout-api/landing

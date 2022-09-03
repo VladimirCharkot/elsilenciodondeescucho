@@ -1,18 +1,20 @@
-let createError = require('http-errors');
-let express = require('express');
-let path = require('path');
-let cookieParser = require('cookie-parser');
-let logger = require('morgan');
-let sassMiddleware = require('node-sass-middleware');
-let fs = require('fs')
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const sassMiddleware = require('node-sass-middleware');
+const fs = require('fs')
 
-let passport = require('passport')
-let session = require('express-session')
-let bodyParser = require('body-parser');
-let LocalStrategy = require('passport-local').Strategy;
+const passport = require('passport')
+const session = require('express-session')
+const bodyParser = require('body-parser');
+const LocalStrategy = require('passport-local').Strategy;
 
-let blogRouter = require('./routes/esde');
+const blogRouter = require('./routes/esde');
 
+const { logger } = require('./procesos/esdelogger')
+
+logger.info("Instanciando server")
 
 let app = express();
 
@@ -22,7 +24,6 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 
-app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -69,8 +70,6 @@ passport.deserializeUser(function(id, done) {
 
 
 app.use('/', blogRouter);
-
-
 
 
 // catch 404 and forward to error handler

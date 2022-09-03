@@ -1,0 +1,319 @@
+extends layout
+
+block contenido
+
+  //- script(src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.js")
+  script(src="https://sdk.mercadopago.com/js/v2")
+  script.
+    // Credenciales Vlad
+    const mp = new MercadoPago('TEST-0100141a-9eb5-49be-be2f-b3f793d420d0', {locale: 'es-AR'});
+    // Credenciales Ernestón Vendedor
+    //- const mp = new MercadoPago('TEST-c1ca89ec-06e6-47f9-8c4a-9111e9fedd49', {locale: 'es-AR'});
+    
+    const revelar = (s) => document.querySelector(s).classList.remove('oculto');
+    const ocultar = (s) => document.querySelector(s).classList.add('oculto');
+    
+  #colecta
+    #desktop
+      .uno
+        .izquierda
+          .header
+            .titulo
+              h1 Presencia
+              #flores
+            h2 Una práctica para la redirección del Ser
+          .separador
+          .llamada
+            p ¡Hola!
+            p Les contamos, llenos de gratitud, que ha llegado el tiempo, luego de un largo proceso, de publicar el libro. Sin embargo, al no contar con los fondos necesarios para imprimir una primera tirada de 200 ejemplares, tomamos la opción de hacer una “colecta”, a la manera de crowdfunding, pero de manera independiente.
+            .flechita1
+            button.boton_colaborar(onclick="revelar('#contribucion')") ¡Quiero colaborar!
+        .derecha
+          .libro
+          
+      .dos
+        .izquierda
+          h2 ¿Por qué de manera independiente?
+          p Luego de revisar un poco, encontramos que la única plataforma –o la más usada y conocida- que funciona en argentina para gestión de fondos comunes es “Ideame”, y las maneras preestablecidas bajo las que se opera a través de la misma están bastante alejadas de nuestras preferencias. 
+          p Por esta razón hemos decidido programar por nuestra cuenta el mecanismo y realizar la recaudación de la siguiente manera:
+          .medio_circulo_flores
+          .columna_tres_flores
+        .derecha
+          .portada
+          
+      .tres
+        .izquierda
+          .paso
+            .flechita2
+            p Elegís el monto con el que quieras colaborar
+          .paso
+            .flechita3
+            p Realizás la transferencia por MercadoPago desde este mismo sitio, o por Western Union desde el exterior de Argentina
+          .paso
+            .flechita4
+            p Tu aporte se registra en una planilla de Drive abierta al público
+            button.quiero_ver ¡Quiero verla!
+          .paso
+            .flechita5
+            p Ese aporte queda como adelanto (transferible) para la compra de uno o más ejemplares, en caso de querer adquirirlos, una vez la publicación se haya realizado
+        .derecha
+          .contratapa
+          .flechita6
+          button.quiero_leer(onclick="document.location = '/img/preventa/extracto.pdf'") ¡Quiero leer!
+          
+      .cuatro
+        .ochoflores
+        .grupo
+          p Este ha sido un trabajo arduo. De escritura y reescrituras de muchos años. 
+          p Los primeros indicios comenzaron en el 2015 ¡imagínense! 
+          p Muchos seres hermanos/as han sido parte del proceso con sus lecturas y devoluciones. 
+          p En el camino, la escritura mutó en varias capas y formas. 
+          p El contenido se mantuvo fiel a los principios y experiencias que desde un inicio han surgido para trasmitirse. 
+        .grupo
+          p Nace para ser útil a la búsqueda de sí mismos. 
+          p ¡Que sea del mayor provecho! 
+          p ¡Salud!
+        .grupo
+          p Y ¡gracias!
+        .grupo
+          p Vamos a caminar
+        .firma
+          p Sebastián Rojo
+          p El Silencio Donde Escucho
+          .flor
+          
+        .botones
+          button.planilla Consultar planilla
+          button.colaborar(onclick="revelar('#contribucion')") Colaborar
+          button.leer(onclick="document.location = '/img/preventa/extracto.pdf'") Leer un fragmento
+          
+
+
+      
+    #mobile
+      .uno
+        .header
+          .titulo
+            #cuatroflores1
+            h1 Presencia
+            #cuatroflores2
+          h2 Una práctica para la redirección del Ser
+        .separador
+        h2 Colecta para auto-publicación
+        .llamada
+          p ¡Hola!
+          p Les contamos, llenos de gratitud, que ha llegado el tiempo, luego de un largo proceso, de publicar el libro. Sin embargo, al no contar con los fondos necesarios para imprimir una primera tirada de 200 ejemplares, tomamos la opción de hacer una “colecta”, a la manera de crowdfunding, pero de manera independiente.
+        .libro
+        button.boton_colaborar(onclick="revelar('#contribucion')") ¡Quiero colaborar!
+
+      .dos
+        h2 ¿Por qué de manera independiente?
+        p Luego de revisar un poco, encontramos que la única plataforma –o la más usada y conocida- que funciona en argentina para gestión de fondos comunes es “Ideame”, y las maneras preestablecidas bajo las que se opera a través de la misma están bastante alejadas de nuestras preferencias. 
+        p Por esta razón hemos decidido programar por nuestra cuenta el mecanismo y realizar la recaudación de la siguiente manera:
+        .flor_sola_1
+        .flor_sola_2
+        .fila_tres_flores
+        .circulo_flores_1
+        .circulo_flores_2
+        
+      .tres
+        .paso
+          p Elegís el monto con el que quieras colaborar
+        .paso
+          p Realizás la transferencia por MercadoPago desde este mismo sitio, o por Western Union desde el exterior de Argentina
+        .paso
+          p Tu aporte se registra en una planilla de Drive abierta al público
+        button.quiero_ver ¡Quiero verla!
+        .paso
+          p Ese aporte queda como adelanto (transferible) para la compra de uno o más ejemplares, en caso de querer adquirirlos, una vez la publicación se haya realizado
+        .flor_sola_1
+        .flor_sola_2
+        
+      .cuatro
+        .ochoflores
+        .grupo
+          p Este ha sido un trabajo arduo. De escritura y reescrituras de muchos años. 
+          p Los primeros indicios comenzaron en el 2015 ¡imagínense! 
+          p Muchos seres hermanos/as han sido parte del proceso con sus lecturas y devoluciones. 
+          p En el camino, la escritura mutó en varias capas y formas. 
+          p El contenido se mantuvo fiel a los principios y experiencias que desde un inicio han surgido para trasmitirse. 
+        .grupo
+          p Nace para ser útil a la búsqueda de sí mismos. 
+          p ¡Que sea del mayor provecho! 
+          p ¡Salud!
+        .grupo
+          p Y ¡gracias!
+        .grupo
+          p Vamos a caminar
+        .firma
+          p Sebastián Rojo
+          p El Silencio Donde Escucho
+          .flor
+          
+        button.colaborar(onclick="revelar('#contribucion')") Colaborar
+        button.planilla Consultar planilla
+        button.leer(onclick="document.location = '/img/preventa/extracto.pdf'") Leer un fragmento
+        
+
+    #contribucion.oculto
+      div
+        h1 Presencia
+        h2 Colecta para auto-publicación
+        #cruz(onclick="ocultar('#contribucion')")
+                
+        p Ingresá el monto con el que deseás colaborar 
+        #monto_planilla
+          label (ARS$)
+          input(type="tel")
+        p Ingresá tu nombre (como quieras que figure en la planilla pública, puede no ser completo)
+        #nombre_planilla
+          input
+        p Ingresá tu mail. Lo usaremos para validar identidad caso que en el futuro quieras comprar o regalar el libro con este adelanto.
+        #mail_planilla
+          input(type='email')
+          
+        #medios
+          p ¿Con qué medio querés transferir?
+          ul
+            li 
+              input(id='tarjeta' type='radio' name='medio_de_pago') 
+              label(for='tarjeta') 
+                .toggle
+                span Tarjeta
+            li 
+              input(id='mercadopago' type='radio' name='medio_de_pago') 
+              label(for='mercadopago') 
+                .toggle
+                span MercadoPago
+            li 
+              input(id='westernunion' type='radio' name='medio_de_pago')
+              label(for='westernunion') 
+                .toggle
+                span WesternUnion
+          
+        #mensaje
+          p
+        
+        #tarjeta.detalle_de_pago.oculto
+          h3 Datos privados
+          p Ningún dato aquí será guardado o publicado. El tratamiento de la transacción es delegado a MercadoPago a través de una conexión excriptada (https).
+          p Ingresá los datos de tu tarjeta
+          include colectacardform.html
+          
+        #mercadopago.detalle_de_pago.oculto
+          h3 Link con billetera MercadoPago
+          //- p Cargá tu nombre y monto arriba para generar un link de pago.
+          //- button#listobutton Listo!
+          //- p#mercadopagomensaje
+          div.cho-container
+          
+          
+        #westernunion.detalle_de_pago.oculto
+          h3 Datos para WesternUnion
+          p Enviar un depósito a Sebastián Rojo, datos tal, tal y tal
+
+    script.
+    
+      const lis = document.querySelectorAll("#medios li");
+      const dvs = document.querySelectorAll(".detalle_de_pago");
+      
+      const freezar_datos_planilla = () => {
+        ['#monto_planilla', '#nombre_planilla', '#mail_planilla'].forEach(id => 
+          document.querySelector(`${id} input`).setAttribute('disabled', true)
+        )
+      }
+    
+      const elegir_medio_de_pago = async e => {
+          e.preventDefault();
+          
+          const medio_seleccionado = e.target.closest('li').querySelector('label').getAttribute('for');
+          const monto = document.querySelector("#monto_planilla input").value;
+          const nombre = document.querySelector("#nombre_planilla input").value;
+          const email = document.querySelector("#mail_planilla input").value;
+          const falta_alguno = (monto == "" || nombre == "" || email == "");
+        
+          const faltan_datos = 
+            (medio_seleccionado == 'tarjeta' && falta_alguno)
+            || (medio_seleccionado == 'mercadopago' && falta_alguno);
+            // WesternUnion valida con DNI en lugar de mail
+        
+          if (faltan_datos){
+            document.querySelector('#mensaje p').innerText = "Es preciso conocer monto, nombre y email antes de generar el formulario de tarjeta o link de MercadoPago, por favor completá esos datos antes de seleccionar medio de pago";
+            return;
+          }
+          
+          document.querySelector('#mensaje p').innerText = "";
+          if (medio_seleccionado == 'tarjeta') {initFormularioTarjeta(); freezar_datos_planilla();}
+          if (medio_seleccionado == 'mercadopago') {generar_link_mp(); freezar_datos_planilla();}
+          
+          // Descheckear radiobuttons y checkear este
+          lis.forEach(li => li.querySelector('input').checked = false);
+          e.target.closest('li').querySelector('input').checked = true;
+          
+          // Ocultar medios de pago y mostrar este
+          dvs.forEach(dv => {
+            if(dv.id !== medio_seleccionado){
+              dv.classList.add('oculto');
+            } else {
+              dv.classList.remove('oculto');
+            }
+          });           
+        }
+
+      // Registrar la función que acabamos de definir en el onclick de los radio
+      lis.forEach(li => {
+        li.querySelector('input').checked = false;
+        li.addEventListener('click', elegir_medio_de_pago)
+        })
+        
+        
+      // Billetera MP
+      const generar_link_mp = async () => {
+          document.querySelector('.cho-container').innerHTML = '';
+        
+          let r = await fetch('/billetera', {
+            method: 'POST',
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              monto: Number(document.querySelector("#monto_planilla input").value),
+              nombre: document.querySelector("#nombre_planilla input").value,
+              mail: document.querySelector("#mail_planilla input").value
+            })
+          });
+
+          let res = await r.json();
+
+          console.log('Respuesta jsoneada:');
+          console.log(res);
+          
+          document.location = res.body.init_point;
+
+          //- mp.checkout({
+          //-   preference: {
+          //-     id: r.body.id
+          //-   },
+          //-   render: {
+          //-     container: '.cho-container',
+          //-     label: `Transferir $${document.querySelector("#monto_planilla input").value} con Mercado Pago`,
+          //-     type: 'wallet',
+          //-     amount: Number(document.querySelector("#monto_planilla input").value)
+          //-   }
+          //- });
+
+
+        }
+      
+      //- document.querySelector('#mercadopago button').addEventListener('click', generar_link_mp)
+              
+
+
+
+//- Los aportes, y el registro de los mismos se realizarán de la siguiente manera: 
+//- Desde argentina
+//- Haciendo click en el enlace lo que sucederá es:
+//- 	Cada aportante será redireccionado a una ventana en la que podrá decidir cuál es el monto que quiere aportar. Completando los pasos en esa ventana, realizará su aporte mediante transferencia vía mercado pago. Este movimiento automáticamente impactará en un “registro de aportes”, colocado en un drive, y que estará abierto al público. (Cada aportante podrá corroborar al instante si su aporte ha sido registrado).
+//- 
+//- Desde el exterior
+//- Cada aporte se realizará vía Western Union (sostiene un cambio de divisas favorable). Y nosotros, de manera manual, incluiremos dicho aporte en el archivo “registro de aportes” que, al igual que las transferencias nacionales, quedará abierto al público general para ser revisado cuando se quiera.

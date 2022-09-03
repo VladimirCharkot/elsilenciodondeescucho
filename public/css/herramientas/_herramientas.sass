@@ -1,0 +1,43 @@
+@mixin fullbackground
+  background-position: center
+  background-size: contain
+  background-repeat: no-repeat
+
+@mixin flexcenter
+  display: flex
+  align-items: center
+
+@mixin flexcentercolumn
+  @include flexcenter
+  flex-direction: column
+  justify-content: center
+
+@mixin flexcenterrow
+  @include flexcenter
+  flex-direction: row
+  justify-content: center
+
+@mixin boton
+  @include fullbackground
+  background-image: url(/img/preventa/botonnopresionado.png)
+  background-color: #fff0
+  font-family: 'Reenie Beanie'
+  font-size: 1.5em
+  border: none
+  cursor: pointer
+  &:active
+    transform: translateY(5px)
+    background-image: url(/img/preventa/botonpresionado.png)
+
+@mixin fullscreen
+  position: fixed
+  width: 100vw
+  height: 100vh
+  top: 0
+  left: 0
+
+@mixin textura
+  background-image: url(/img/texturas/papel.jpg)
+  background-color: #fffc
+  background-size: cover
+  background-blend-mode: color

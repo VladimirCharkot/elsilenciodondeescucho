@@ -4,6 +4,12 @@ let _ = require('lodash')
 let md = require('./mdesde')
 let passport = require('passport')
 
+
+exports.colecta = async (req, res) => {
+  res.render('colecta', { titulo: 'Colecta' })
+}
+
+
 exports.hogar = async (req, res) => {
   if (req.user) return res.redirect('/visitas')
   return res.render('login', {titulo: '🤫'})
