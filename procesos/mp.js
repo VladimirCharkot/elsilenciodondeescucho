@@ -3,13 +3,12 @@ const fs = require('fs');
 const mercadopago = require('mercadopago');
 const {logger} = require('./esdelogger');
 const {appendPagoPublico, appendPagoPrivado, appendPendientePrivado, appendRechazadoPrivado} = require('./googlesheets');
-
+const conf = require('./config');
 
 const url_base = 'https://elsilenciodondeescucho.com';
 
 try{
-  let token = fs.readFileSync('.mptoken', 'utf8').trim();
-  mercadopago.configurations.setAccessToken(token);
+  mercadopago.configurations.setAccessToken(conf.mercadoPago.token);
   logger.debug('MercadoPago configurado');
 }catch(e){
   logger.error('No se pudo configurar MercadoPago. Está el token en el archivo correspondiente (.mptoken)?')
@@ -28,12 +27,12 @@ const generarLink = async (req, res) => {
     purpose: "wallet_purchase",
     items: [
       {
-        title: 'Contribución libro Presencia',
-        description: 'Contribución para impresión de "Presencia, Una práctica para la redirección del Ser"',
+        title: conf.libro.titulo,
+        description: conf.libro.descripcion,
         currency_id: 'ARS',
         unit_price: req.body.monto,
         quantity: 1,
-        picture_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/The_Book_Hunters_by_Gordon_Grant.jpg/1280px-The_Book_Hunters_by_Gordon_Grant.jpg"
+        picture_url: conf.libro.imagen
       },
     ]
   };

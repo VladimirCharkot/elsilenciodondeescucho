@@ -12,7 +12,9 @@ const LocalStrategy = require('passport-local').Strategy;
 
 const blogRouter = require('./routes/esde');
 
-const { logger } = require('./procesos/esdelogger')
+const { logger } = require('./procesos/esdelogger');
+
+const conf = require('./procesos/config');
 
 logger.info("Instanciando server")
 
@@ -38,7 +40,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
-let pass = fs.readFileSync('.pass', 'utf8')
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(session({ secret: "najndjvnskjdnvijwnjovnqoneuqnvqw", resave: true, saveUninitialized: true }));
@@ -51,7 +52,7 @@ app.use(passport.session());
 passport.use(new LocalStrategy(
   (username, password, done) => {
     console.log('Logueando...')
-    if (password.trim() == pass.trim()) {
+    if (password.trim() == conf.editor.password.trim()) {
       console.log('Login!')
       return done(null, {user: 'esde', username: 'esde', id: 'esde'})
     }

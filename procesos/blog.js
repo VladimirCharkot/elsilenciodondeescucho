@@ -3,10 +3,10 @@ let path = require('path')
 let _ = require('lodash')
 let md = require('./mdesde')
 let passport = require('passport')
-
+const conf = require('./config')
 
 exports.colecta = async (req, res) => {
-  res.render('colecta', { titulo: 'Colecta' })
+  res.render('colecta', { titulo: 'Colecta', accessKeyMP: conf.mercadoPago.accessKey })
 }
 
 
