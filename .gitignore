@@ -1,10 +1,7 @@
 .pass
-.mptoken
-.sheet_credentials.json
 node_modules/
 public/img
 public/foto
 diseños/
 style.css
 style.css.map
-logs

@@ -139,16 +139,7 @@ let construir_indice = async (base = 'public/textos') => {
       let cont = await construir_indice(ruta)
       indice.push({es_carpeta: true, ruta: direccion, text: e.name, type: 'carpeta', children: cont})
     }else{
-      if (ruta.endsWith('.md')){
-        let [html, front_matter] = md.render(await fs.readFile(ruta, 'utf8'))
-        if (Object.keys(front_matter).includes('portada')){
-          indice.push({es_carpeta: false, ruta: direccion, text: e.name, type: 'md', ...front_matter, li_attr: {portada: front_matter.portada}}) 
-        }else{
-          indice.push({es_carpeta: false, ruta: direccion, text: e.name, type: 'md', ...front_matter})
-        }
-      }else{
-        indice.push({es_carpeta: false, ruta: direccion, text: e.name, type: 'md'})
-      }
+      indice.push({es_carpeta: false, ruta: direccion, text: e.name, type: 'md'})
     }
   }
   // Carpetas primero:
