@@ -6,7 +6,11 @@ let passport = require('passport')
 const conf = require('./config')
 
 exports.colecta = async (req, res) => {
-  res.render('colecta', { titulo: 'Colecta', accessKeyMP: conf.mercadoPago.accessKey })
+  res.render('colecta', {
+    titulo: 'Colecta',
+    MPaccessKey: conf.mercadoPago.accessKey,
+    URLPlanillaPublica: `https://docs.google.com/spreadsheets/d/${conf.sheets.planillaPublica}/`
+   })
 }
 
 

@@ -1,12 +1,10 @@
 extends layout
 
 block contenido
-
-  //- script(src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.js")
   script(src="https://sdk.mercadopago.com/js/v2")
   script.
     // Credenciales Vlad
-    const mp = new MercadoPago('TEST-0100141a-9eb5-49be-be2f-b3f793d420d0', {locale: 'es-AR'});
+    const mp = new MercadoPago('#{MPaccessKey}', {locale: 'es-AR'});
     
     const revelar = (s) => document.querySelector(s).classList.remove('oculto');
     const ocultar = (s) => document.querySelector(s).classList.add('oculto');
@@ -81,7 +79,7 @@ block contenido
           .flor
           
         .botones
-          button.planilla Consultar planilla
+          button.planilla(onclick="document.location = '#{URLPlanillaPublica}'") Consultar planilla
           button.colaborar(onclick="revelar('#contribucion')") Colaborar
           button.leer(onclick="document.location = '/img/preventa/extracto.pdf'") Leer un fragmento
           
@@ -288,6 +286,7 @@ block contenido
           
           document.location = res.body.init_point;
 
+          //- Esto era para generar el botón de MP 
           //- mp.checkout({
           //-   preference: {
           //-     id: r.body.id
@@ -305,13 +304,3 @@ block contenido
       
       //- document.querySelector('#mercadopago button').addEventListener('click', generar_link_mp)
               
-
-
-
-//- Los aportes, y el registro de los mismos se realizarán de la siguiente manera: 
-//- Desde argentina
-//- Haciendo click en el enlace lo que sucederá es:
-//- 	Cada aportante será redireccionado a una ventana en la que podrá decidir cuál es el monto que quiere aportar. Completando los pasos en esa ventana, realizará su aporte mediante transferencia vía mercado pago. Este movimiento automáticamente impactará en un “registro de aportes”, colocado en un drive, y que estará abierto al público. (Cada aportante podrá corroborar al instante si su aporte ha sido registrado).
-//- 
-//- Desde el exterior
-//- Cada aporte se realizará vía Western Union (sostiene un cambio de divisas favorable). Y nosotros, de manera manual, incluiremos dicho aporte en el archivo “registro de aportes” que, al igual que las transferencias nacionales, quedará abierto al público general para ser revisado cuando se quiera.

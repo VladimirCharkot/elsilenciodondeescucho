@@ -1,4 +1,12 @@
 extends ../layout
 
 block contenido
-  h2 Pago aprobado
+  #colecta
+    #aprobado
+      h2 ¡Gracias!
+      p Tu transferencia fue procesada correctamente, podés verla en la planilla pública a continuación. Si no estuviera allí por favor escribinos a elsilenciodondeescucho@gmail.com
+      p También podés leer un fragmento del texto, si aún no lo hiciste :)
+      a.urlplanilla(href=URLPlanillaPublica style='visibility: hidden;') Link
+      .botones
+        button.planilla(onclick="document.location = document.querySelector('.urlplanilla').getAttribute('href')") Consultar planilla
+        button.leer(onclick="document.location = '/img/preventa/extracto.pdf'") Leer un fragmento

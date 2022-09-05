@@ -57,12 +57,12 @@ const procesarPago = async (req, res) => {
 
   logger.debug('Procesando pago con');
   logger.debug(JSON.stringify(req.body));
-  const nombre = req.body.nombre;
-  delete req.body.nombre;
-  const email = req.body.email;
-  delete req.body.email;
 
   try{
+    const nombre = req.body.nombre;
+    delete req.body.nombre;
+    const email = req.body.email;
+    delete req.body.email;
 
     const r = await mercadopago.payment.save({
       ...req.body,
@@ -75,7 +75,7 @@ const procesarPago = async (req, res) => {
 
     const acciones = {
       approved: async () => {
-        logger.debug('Pago aprobado, agregando a la planilla')
+        logger.info('Pago aprobado, agregando a la planilla')
         await appendPagoPublico({
           nombre: nombre,
           monto: req.body.transaction_amount
@@ -89,7 +89,7 @@ const procesarPago = async (req, res) => {
         })
       },
       in_process: async () => {
-        logger.debug('Pago pendiente, agregando a la planilla')
+        logger.info('Pago pendiente, agregando a la planilla')
         await appendPendientePrivado({
           nombre: nombre,
           email: email,
@@ -99,7 +99,7 @@ const procesarPago = async (req, res) => {
         })
       },
       rejected: async () => {
-        logger.debug('Pago rechazado, agregando a la planilla')
+        logger.info('Pago rechazado, agregando a la planilla')
         await appendRechazadoPrivado({
           nombre: nombre,
           email: email,
@@ -138,6 +138,13 @@ const dump = (req) => {
 
 
 const webhook = async (req, res) => {
+  if(req.body.action == 'payment.created'){
+    let payment = mercadopago.payment.get(req.body.data.id);
+    logger.debug('Entró el pago:');
+    logger.debug(JSON.stringify(payment));
+  }
+  if(req.body.action == 'payment.updated'){} // ???
+
   // if (req.body.type == 'payment') {
   //   let payment = mercadopago.payment.get(req.body.data.id)
   //   Agregar al excel
@@ -163,7 +170,7 @@ const back_aprobado = async (req, res) => {
   //   medio: 'mercadopago',
   //   monto: req.body.transaction_amount
   // });
-  res.render('colecta/aprobado', { titulo: 'Gracias!' });
+  res.render('colecta/aprobado', { titulo: 'Gracias!', URLPlanillaPublica: `https://docs.google.com/spreadsheets/d/${conf.sheets.planillaPublica}` });
 }
 
 const back_pendiente = async (req, res) => {
@@ -176,7 +183,7 @@ const back_pendiente = async (req, res) => {
   //   medio: 'mercadopago',
   //   monto: req.body.transaction_amount
   // });
-  res.render('colecta/pendiente', { titulo: 'Esperamos' });
+  res.render('colecta/pendiente', { titulo: 'Esperamos', URLPlanillaPublica: `https://docs.google.com/spreadsheets/d/${conf.sheets.planillaPublica}` });
 }
 
 const back_rechazado = async (req, res) => {
@@ -189,7 +196,7 @@ const back_rechazado = async (req, res) => {
   //   medio: 'mercadopago',
   //   monto: req.body.transaction_amount
   // });
-  res.render('colecta/rechazado', { titulo: 'Fallido' });
+  res.render('colecta/rechazado', { titulo: 'Fallido', mensaje_mp: '[insertar mensaje]' });
 }
 
 

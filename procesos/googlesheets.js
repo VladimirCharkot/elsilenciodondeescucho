@@ -46,6 +46,9 @@ const appendSpreadSheetValues = async ({spreadsheetId, auth, sheetName, values, 
 }
 
 
+const ahora = (offset = -3) => {
+  return new Date(Date.now() + offset * 60 * 60 * 1000);
+}
 
 
 // Append a la planilla pública
@@ -56,7 +59,7 @@ const appendPagoPublico = async ({nombre, monto}) => {
     spreadsheetId : conf.sheets.planillaPublica,
     auth: await getAuthToken(),
     sheetName : conf.sheets.nombreHoja,
-    values : [[nombre, monto, new Date().toLocaleString()]],
+    values : [[nombre, monto, ahora().toLocaleString()]],
     range: 'A:C'
   })
 }
@@ -70,7 +73,7 @@ const appendPagoPrivado = async ({nombre, email, dni, medio, monto}) => {
     spreadsheetId : conf.sheets.planillaPrivada,
     auth: await getAuthToken(),
     sheetName : conf.sheets.nombreHoja,
-    values : [[nombre, email, dni, monto, medio, new Date().toLocaleString()]],
+    values : [[nombre, email, dni, monto, medio, ahora().toLocaleString()]],
     range: 'A:F'
   })
 }
@@ -81,7 +84,7 @@ const appendPendientePrivado = async ({nombre, email, dni, medio, monto}) => {
     spreadsheetId : conf.sheets.planillaPrivada,
     auth: await getAuthToken(),
     sheetName : conf.sheets.nombreHoja,
-    values : [[nombre, email, dni, monto, medio, new Date().toLocaleString()]],
+    values : [[nombre, email, dni, monto, medio, ahora().toLocaleString()]],
     range: 'H:M'
   })
 }
@@ -92,7 +95,7 @@ const appendRechazadoPrivado = async ({nombre, email, dni, medio, monto}) => {
     spreadsheetId : conf.sheets.planillaPrivada,
     auth: await getAuthToken(),
     sheetName : conf.sheets.nombreHoja,
-    values : [[nombre, email, dni, monto, medio, new Date().toLocaleString()]],
+    values : [[nombre, email, dni, monto, medio, ahora().toLocaleString()]],
     range: 'O:T'
   })
 }

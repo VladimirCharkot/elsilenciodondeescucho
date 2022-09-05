@@ -1,4 +1,14 @@
 extends ../layout
 
 block contenido
-  h2 Pago pendiente
+  #colecta
+    #pendiente
+      h2 Esperamos
+      p Aguardamos tu transferencia
+      p Tan pronto como se efectúe, la agregaremos a la planilla pública
+      p Si aún no lo hiciste, podés leer un fragmento del texto a continuación
+      p ¡Gracias!
+      a.urlplanilla(href=URLPlanillaPublica style='visibility: hidden;') Link
+      .botones
+        button.planilla(onclick="document.location = document.querySelector('.urlplanilla').getAttribute('href')") Consultar planilla
+        button.leer(onclick="document.location = '/img/preventa/extracto.pdf'") Leer un fragmento
