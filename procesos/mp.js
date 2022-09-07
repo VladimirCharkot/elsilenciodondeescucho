@@ -23,6 +23,7 @@ const generarLink = async (req, res) => {
       mail: req.body.mail,
       monto: req.body.monto
     }),
+    notification_url: url_base + '/webhook',
     back_urls: {
       success: url_base + '/pago_aprobado',
       pending: url_base + '/pago_pendiente',
