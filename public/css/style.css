@@ -537,7 +537,8 @@ header {
   background-blend-mode: var(--blend, var(--blend-default)); }
 
 #colecta {
-  font-family: 'Reenie Beanie'; }
+  font-family: 'Reenie Beanie';
+  overflow-x: clip; }
   @media screen and (min-width: 1080px) {
     #colecta #desktop {
       visibility: visible; }
@@ -803,96 +804,164 @@ header {
       margin: 1em;
       width: 10em;
       height: 3em; }
-  #colecta #mobile .uno {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: space-between; }
-    #colecta #mobile .uno .header .titulo {
-      margin-top: 1em;
-      width: 100vw;
+  #colecta #mobile {
+    font-size: 42px; }
+    #colecta #mobile .uno {
+      height: 100vh;
       display: flex;
       align-items: center;
-      flex-direction: row;
-      justify-content: center; }
-      #colecta #mobile .uno .header .titulo #cuatroflores1, #colecta #mobile .uno .header .titulo #cuatroflores2 {
+      flex-direction: column;
+      justify-content: center;
+      justify-content: space-between; }
+      #colecta #mobile .uno .header .titulo {
+        margin-top: 1em;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center; }
+        #colecta #mobile .uno .header .titulo #cuatroflores1, #colecta #mobile .uno .header .titulo #cuatroflores2 {
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 5vh; }
+        #colecta #mobile .uno .header .titulo #cuatroflores1 {
+          background-image: url(/img/preventa/cuatro_flores_1.png); }
+        #colecta #mobile .uno .header .titulo #cuatroflores2 {
+          background-image: url(/img/preventa/cuatro_flores_2.png); }
+        #colecta #mobile .uno .header .titulo h1 {
+          font-size: 10vw;
+          margin: 0; }
+      #colecta #mobile .uno .header h2 {
+        text-align: center;
+        font-size: 5vw; }
+      #colecta #mobile .uno .separador {
+        width: 80%; }
+      #colecta #mobile .uno .llamada {
+        text-align: center; }
+        #colecta #mobile .uno .llamada p {
+          font-size: 1.2em;
+          margin: 1em; }
+        #colecta #mobile .uno .llamada p:nth-of-type(1) {
+          font-size: 1.6em;
+          margin: 1em 0em 0em 0.6em; }
+      #colecta #mobile .uno .libro {
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        width: 100%;
-        height: 5vh; }
-      #colecta #mobile .uno .header .titulo #cuatroflores1 {
-        background-image: url(/img/preventa/cuatro_flores_1.png); }
-      #colecta #mobile .uno .header .titulo #cuatroflores2 {
-        background-image: url(/img/preventa/cuatro_flores_2.png); }
-      #colecta #mobile .uno .header .titulo h1 {
-        font-size: 10vw;
-        margin: 0; }
-    #colecta #mobile .uno .header h2 {
-      text-align: center;
-      font-size: 5vw; }
-    #colecta #mobile .uno .separador {
-      width: 80%; }
-    #colecta #mobile .uno .llamada {
-      text-align: center; }
-      #colecta #mobile .uno .llamada p {
-        font-size: 1.2em;
-        margin: 1em; }
-      #colecta #mobile .uno .llamada p:nth-of-type(1) {
-        font-size: 1.6em;
-        margin: 1em 0em 0em 0.6em; }
-    #colecta #mobile .uno .libro {
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(/img/preventa/tapa_preventa.png);
-      width: 30vw;
-      height: 30vh; }
-    #colecta #mobile .uno .boton_colaborar {
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(/img/preventa/botonnopresionado.png);
-      background-color: #fff0;
-      font-family: 'Reenie Beanie';
-      font-size: 1.5em;
-      border: none;
-      cursor: pointer;
-      width: 280px;
-      height: 55px; }
-      #colecta #mobile .uno .boton_colaborar:active {
-        transform: translateY(5px);
-        background-image: url(/img/preventa/botonpresionado.png); }
-      #colecta #mobile .uno .boton_colaborar::before {
-        background-image: url(/img/preventa/flechita_1.png); }
-  #colecta #mobile .dos {
-    padding: 2em;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    position: relative; }
-    #colecta #mobile .dos h2 {
-      font-size: 1.8em; }
-    #colecta #mobile .dos p {
-      z-index: 1;
-      background: rgba(255, 255, 255, 0.9); }
-    #colecta #mobile .dos p:nth-of-type(1) {
-      padding: 0.3em 0em;
-      font-size: 1.3em;
-      width: 60vw;
-      align-self: flex-end;
-      text-align: right; }
-    #colecta #mobile .dos p:nth-of-type(2) {
-      padding: 0.3em 0em;
-      font-size: 1.3em;
-      width: 60vw;
-      text-align: center;
-      margin-top: 12vh; }
-    @media screen and (max-width: 530px) {
-      #colecta #mobile .dos .flor_sola_1 {
+        background-image: url(/img/preventa/tapa_preventa.png);
+        width: 30vw;
+        height: 30vh; }
+      #colecta #mobile .uno .boton_colaborar {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(/img/preventa/botonnopresionado.png);
+        background-color: #fff0;
+        font-family: 'Reenie Beanie';
+        font-size: 1.5em;
+        border: none;
+        cursor: pointer;
+        width: 280px;
+        height: 55px; }
+        #colecta #mobile .uno .boton_colaborar:active {
+          transform: translateY(5px);
+          background-image: url(/img/preventa/botonpresionado.png); }
+        #colecta #mobile .uno .boton_colaborar::before {
+          background-image: url(/img/preventa/flechita_1.png); }
+    #colecta #mobile .dos {
+      padding: 2em;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      position: relative; }
+      #colecta #mobile .dos h2 {
+        font-size: 1.8em; }
+      #colecta #mobile .dos p {
+        z-index: 1;
+        background: rgba(255, 255, 255, 0.9); }
+      #colecta #mobile .dos p:nth-of-type(1) {
+        padding: 0.3em 0em;
+        font-size: 1.3em;
+        width: 60vw;
+        align-self: flex-end;
+        text-align: right; }
+      #colecta #mobile .dos p:nth-of-type(2) {
+        padding: 0.3em 0em;
+        font-size: 1.3em;
+        width: 60vw;
+        text-align: center;
+        margin-top: 12vh; }
+      @media screen and (max-width: 530px) {
+        #colecta #mobile .dos .flor_sola_1 {
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(/img/preventa/flor_sola.png);
+          position: absolute;
+          width: 10vw;
+          height: 10vw;
+          left: 10vw;
+          top: 55vh; }
+        #colecta #mobile .dos .flor_sola_2 {
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(/img/preventa/flor_sola_2.png);
+          position: absolute;
+          width: 10vw;
+          height: 10vw;
+          right: 10vw;
+          top: 60vh; }
+        #colecta #mobile .dos .fila_tres_flores {
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(/img/preventa/fila_tres_flores.png);
+          position: absolute;
+          width: 40vw;
+          height: 10vw;
+          left: 2vw;
+          bottom: 0; } }
+      #colecta #mobile .dos .circulo_flores_1 {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(/img/preventa/circulo_flores.png);
+        position: absolute;
+        width: 60vw;
+        height: 50vw;
+        left: -30vw;
+        top: 15vh; }
+      #colecta #mobile .dos .circulo_flores_2 {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(/img/preventa/circulo_flores.png);
+        position: absolute;
+        width: 60vw;
+        height: 50vw;
+        right: -37vw;
+        bottom: -15vh; }
+    #colecta #mobile .tres {
+      padding: 2em;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      position: relative; }
+      #colecta #mobile .tres .quiero_ver {
+        padding: 1em 2em;
+        width: max-content; }
+      #colecta #mobile .tres p {
+        font-size: 1.3em;
+        text-align: center; }
+      #colecta #mobile .tres p:nth-of-type(1) {
+        align-self: flex-start;
+        width: 50vw; }
+      #colecta #mobile .tres .flor_sola_1 {
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -902,7 +971,7 @@ header {
         height: 10vw;
         left: 10vw;
         top: 55vh; }
-      #colecta #mobile .dos .flor_sola_2 {
+      #colecta #mobile .tres .flor_sola_2 {
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -912,112 +981,46 @@ header {
         height: 10vw;
         right: 10vw;
         top: 60vh; }
-      #colecta #mobile .dos .fila_tres_flores {
+    #colecta #mobile .cuatro {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center; }
+      #colecta #mobile .cuatro p {
+        text-align: center;
+        font-size: 1.3em;
+        margin: 0.3em; }
+      #colecta #mobile .cuatro .ochoflores {
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(/img/preventa/fila_tres_flores.png);
-        position: absolute;
-        width: 40vw;
-        height: 10vw;
-        left: 2vw;
-        bottom: 0; } }
-    #colecta #mobile .dos .circulo_flores_1 {
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(/img/preventa/circulo_flores.png);
-      position: absolute;
-      width: 60vw;
-      height: 50vw;
-      left: -30vw;
-      top: 15vh; }
-    #colecta #mobile .dos .circulo_flores_2 {
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(/img/preventa/circulo_flores.png);
-      position: absolute;
-      width: 60vw;
-      height: 50vw;
-      right: -37vw;
-      bottom: -15vh; }
-  #colecta #mobile .tres {
-    padding: 2em;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    position: relative; }
-    #colecta #mobile .tres .quiero_ver {
-      padding: 1em 2em;
-      width: max-content; }
-    #colecta #mobile .tres p {
-      font-size: 1.3em;
-      text-align: center; }
-    #colecta #mobile .tres p:nth-of-type(1) {
-      align-self: flex-start;
-      width: 50vw; }
-    #colecta #mobile .tres .flor_sola_1 {
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(/img/preventa/flor_sola.png);
-      position: absolute;
-      width: 10vw;
-      height: 10vw;
-      left: 10vw;
-      top: 55vh; }
-    #colecta #mobile .tres .flor_sola_2 {
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(/img/preventa/flor_sola_2.png);
-      position: absolute;
-      width: 10vw;
-      height: 10vw;
-      right: 10vw;
-      top: 60vh; }
-  #colecta #mobile .cuatro {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center; }
-    #colecta #mobile .cuatro p {
-      text-align: center;
-      font-size: 1.3em;
-      margin: 0.3em; }
-    #colecta #mobile .cuatro .ochoflores {
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(/img/preventa/ocho_flores.png);
-      height: 3em;
-      width: 14em; }
-    #colecta #mobile .cuatro .grupo {
-      width: 80vw;
-      margin: 1em; }
-    #colecta #mobile .cuatro .firma {
-      align-self: flex-end;
-      margin-right: 20vw;
-      position: relative;
-      padding-bottom: 0; }
-      #colecta #mobile .cuatro .firma p {
-        text-align: right; }
-      #colecta #mobile .cuatro .firma .flor {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(/img/preventa/flor_sola.png);
-        position: absolute;
-        width: 3em;
+        background-image: url(/img/preventa/ocho_flores.png);
         height: 3em;
-        right: -3.2em;
-        top: 0.6em; }
-    #colecta #mobile .cuatro button {
-      margin: 0.3em;
-      width: 10em;
-      height: 3em; }
+        width: 14em; }
+      #colecta #mobile .cuatro .grupo {
+        width: 80vw;
+        margin: 1em; }
+      #colecta #mobile .cuatro .firma {
+        align-self: flex-end;
+        margin-right: 20vw;
+        position: relative;
+        padding-bottom: 0; }
+        #colecta #mobile .cuatro .firma p {
+          text-align: right; }
+        #colecta #mobile .cuatro .firma .flor {
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(/img/preventa/flor_sola.png);
+          position: absolute;
+          width: 3em;
+          height: 3em;
+          right: -3.2em;
+          top: 0.6em; }
+      #colecta #mobile .cuatro button {
+        margin: 0.3em;
+        width: 10em;
+        height: 3em; }
   #colecta #contribucion {
     position: fixed;
     width: 100vw;
@@ -1077,6 +1080,131 @@ header {
       width: 280px;
       height: 55px; }
       #colecta #contribucion #mercadopago #listobutton:active {
+        transform: translateY(5px);
+        background-image: url(/img/preventa/botonpresionado.png); }
+  #colecta #aprobado {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; }
+    #colecta #aprobado h2 {
+      font-size: 9em;
+      margin: 0.3em;
+      margin-top: 1em; }
+    #colecta #aprobado p {
+      font-size: 2em;
+      text-align: center; }
+    #colecta #aprobado .botones .planilla, #colecta #aprobado .botones .leer {
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(/img/preventa/botonnopresionado.png);
+      background-color: #fff0;
+      font-family: 'Reenie Beanie';
+      font-size: 1.5em;
+      border: none;
+      cursor: pointer;
+      width: 9em;
+      height: 2em; }
+      #colecta #aprobado .botones .planilla:active, #colecta #aprobado .botones .leer:active {
+        transform: translateY(5px);
+        background-image: url(/img/preventa/botonpresionado.png); }
+    @media screen and (min-width: 1080px) {
+      #colecta #aprobado {
+        background-image: url(/img/preventa/flores_scatter.png); }
+        #colecta #aprobado p {
+          margin: 0.3em 10em; } }
+    @media screen and (max-width: 1080px) {
+      #colecta #aprobado {
+        background-image: url(/img/preventa/fila_tres_flores.png);
+        background-position: center 5%;
+        background-size: 30%; }
+        #colecta #aprobado h2 {
+          font-size: 6em; }
+        #colecta #aprobado p {
+          margin: 0.3em 1em; }
+        #colecta #aprobado .botones {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center; } }
+  #colecta #pendiente {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; }
+    #colecta #pendiente h2 {
+      font-size: 9em;
+      margin: 0.3em; }
+      #colecta #pendiente h2::after {
+        display: inline-block;
+        content: '';
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 0.7em;
+        height: 0.7em;
+        background-image: url(/img/preventa/flor_sola.png); }
+    #colecta #pendiente p {
+      font-size: 2em;
+      margin: 0.3em 8em;
+      text-align: center; }
+      #colecta #pendiente p.gracias {
+        font-size: 3em; }
+    #colecta #pendiente .botones .planilla, #colecta #pendiente .botones .leer {
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(/img/preventa/botonnopresionado.png);
+      background-color: #fff0;
+      font-family: 'Reenie Beanie';
+      font-size: 1.5em;
+      border: none;
+      cursor: pointer;
+      width: 9em;
+      height: 2em; }
+      #colecta #pendiente .botones .planilla:active, #colecta #pendiente .botones .leer:active {
+        transform: translateY(5px);
+        background-image: url(/img/preventa/botonpresionado.png); }
+  #colecta #rechazado {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; }
+    #colecta #rechazado h2 {
+      font-size: 9em;
+      margin: 0.3em; }
+    #colecta #rechazado p {
+      font-size: 2em;
+      margin: 0.3em 4em;
+      text-align: center; }
+      #colecta #rechazado p.de_nuevo {
+        font-size: 3em; }
+        #colecta #rechazado p.de_nuevo::after {
+          display: inline-block;
+          content: '';
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 0.7em;
+          height: 0.7em;
+          background-image: url(/img/preventa/flor_sola.png); }
+    #colecta #rechazado .volver {
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(/img/preventa/botonnopresionado.png);
+      background-color: #fff0;
+      font-family: 'Reenie Beanie';
+      font-size: 1.5em;
+      border: none;
+      cursor: pointer;
+      width: 9em;
+      height: 2em; }
+      #colecta #rechazado .volver:active {
         transform: translateY(5px);
         background-image: url(/img/preventa/botonpresionado.png); }
 

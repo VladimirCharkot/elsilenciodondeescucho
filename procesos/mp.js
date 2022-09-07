@@ -18,6 +18,11 @@ try{
 const generarLink = async (req, res) => {
 
   let preference = {
+    additional_info: JSON.stringify({ 
+      nombre: req.body.nombre,
+      mail: req.body.mail,
+      monto: req.body.monto
+    }),
     back_urls: {
       success: url_base + '/pago_aprobado',
       pending: url_base + '/pago_pendiente',
@@ -155,10 +160,15 @@ const webhook = async (req, res) => {
 }
 
 
+// {"collection_id":"25550392357","collection_status":"approved","payment_id":"25550392357","status":"approved","external_reference":"null","payment_type":"account_money","merchant_order_id":"5739835224","preference_id":"1191219791-cf29e19d-98de-43cb-8d61-e592d63712f7","site_id":"MLA","processing_mode":"aggregator","merchant_account_id":"null"}
 
 const back_aprobado = async (req, res) => {
   logger.debug('Pago aprobado, agregando a la planilla');
   dump(req);
+  logger.debug('Obteniendo detalle del pago...');
+  logger.debug(JSON.stringify(await mercadopago.payment.get(req.query.payment_id)));
+  logger.debug('Obteniendo detalle de la preferencia...');
+  logger.debug(JSON.stringify(await mercadopago.preferences.get(req.query.preference_id)));
   // await appendPagoPublico({
   //   nombre: nombre,
   //   monto: req.body.transaction_amount
