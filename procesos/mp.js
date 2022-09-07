@@ -18,7 +18,7 @@ try{
 const generarLink = async (req, res) => {
 
   let preference = {
-    additional_info: JSON.stringify({ 
+    additional_info: JSON.stringify({
       nombre: req.body.nombre,
       mail: req.body.mail,
       monto: req.body.monto
@@ -143,6 +143,8 @@ const dump = (req) => {
 
 
 const webhook = async (req, res) => {
+  // Al final no lo estamos usando porque el proceso de tarjeta
+  // recibe confirmación sincrónica y las back_urls reciben por query
   if(req.body.action == 'payment.created'){
     let payment = mercadopago.payment.get(req.body.data.id);
     logger.debug('Entró el pago:');
@@ -165,47 +167,60 @@ const webhook = async (req, res) => {
 const back_aprobado = async (req, res) => {
   logger.debug('Pago aprobado, agregando a la planilla');
   dump(req);
-  logger.debug('Obteniendo detalle del pago...');
-  logger.debug(JSON.stringify(await mercadopago.payment.get(req.query.payment_id)));
-  logger.debug('Obteniendo detalle de la preferencia...');
-  logger.debug(JSON.stringify(await mercadopago.preferences.get(req.query.preference_id)));
-  // await appendPagoPublico({
-  //   nombre: nombre,
-  //   monto: req.body.transaction_amount
-  // });
-  // await appendPagoPrivado({
-  //   nombre: nombre,
-  //   email: email,
-  //   dni: req.body.payer.identification.number,
-  //   medio: 'mercadopago',
-  //   monto: req.body.transaction_amount
-  // });
+  const pago = await mercadopago.payment.get(req.query.payment_id));
+  const identificacion = pago.body.payer.identification.number ?? "NO_ENCONTRADO";
+  const preferencia = await mercadopago.preferences.get(req.query.preference_id);
+  const provisto = JSON.parse(preferencia.body.additional_info);
+  logger.debug(`Ahora agregaría entrada pública con ${JSON.stringify({nombre: provisto.nombre, monto: provisto.monto})}`);
+  logger.debug(`Ahora agregaría entrada privada con ${JSON.stringify({nombre: provisto.nombre, monto: provisto.monto, email: provisto.mail, dni: identificacion, medio: 'mercadopago'})}`);
+
+  await appendPagoPublico({
+    nombre: provisto.nombre,
+    monto: provisto.monto
+  });
+  await appendPagoPrivado({
+    nombre: provisto.nombre,
+    monto: provisto.monto,
+    email: provisto.mail,
+    dni: identificacion,
+    medio: 'mercadopago'
+  });
   res.render('colecta/aprobado', { titulo: 'Gracias!', URLPlanillaPublica: `https://docs.google.com/spreadsheets/d/${conf.sheets.planillaPublica}` });
 }
 
 const back_pendiente = async (req, res) => {
   logger.debug('Pago pendiente, agregando a la planilla');
   dump(req);
-  // await appendPendientePrivado({
-  //   nombre: nombre,
-  //   email: email,
-  //   dni: req.body.payer.identification.number,
-  //   medio: 'mercadopago',
-  //   monto: req.body.transaction_amount
-  // });
+  const pago = await mercadopago.payment.get(req.query.payment_id));
+  const identificacion = pago.body.payer.identification.number ?? "NO_ENCONTRADO";
+  const preferencia = await mercadopago.preferences.get(req.query.preference_id);
+  const provisto = JSON.parse(preferencia.body.additional_info);
+  logger.debug(`Ahora agregaría entrada privada pendiente con ${JSON.stringify({nombre: provisto.nombre, monto: provisto.monto, email: provisto.mail, dni: identificacion, medio: 'mercadopago'})}`);
+  await appendPendientePrivado({
+    nombre: provisto.nombre,
+    monto: provisto.monto,
+    email: provisto.mail,
+    dni: identificacion,
+    medio: 'mercadopago'
+  });
   res.render('colecta/pendiente', { titulo: 'Esperamos', URLPlanillaPublica: `https://docs.google.com/spreadsheets/d/${conf.sheets.planillaPublica}` });
 }
 
 const back_rechazado = async (req, res) => {
   logger.debug('Pago rechazado, agregando a la planilla');
   dump(req);
-  // await appendRechazadoPrivado({
-  //   nombre: nombre,
-  //   email: email,
-  //   dni: req.body.payer.identification.number,
-  //   medio: 'mercadopago',
-  //   monto: req.body.transaction_amount
-  // });
+  const pago = await mercadopago.payment.get(req.query.payment_id));
+  const identificacion = pago.body.payer.identification.number ?? "NO_ENCONTRADO";
+  const preferencia = await mercadopago.preferences.get(req.query.preference_id);
+  const provisto = JSON.parse(preferencia.body.additional_info);
+  logger.debug(`Ahora agregaría entrada privada rechazada con ${JSON.stringify({nombre: provisto.nombre, monto: provisto.monto, email: provisto.mail, dni: identificacion, medio: 'mercadopago'})}`);
+  await appendRechazadoPrivado({
+    nombre: provisto.nombre, 
+    monto: provisto.monto,
+    email: provisto.mail,
+    dni: identificacion,
+    medio: 'mercadopago'
+  });
   res.render('colecta/rechazado', { titulo: 'Fallido', mensaje_mp: '[insertar mensaje]' });
 }
 
