@@ -146,18 +146,26 @@ const dump = (req) => {
 const webhook = async (req, res) => {
   // Al final no lo estamos usando porque el proceso de tarjeta
   // recibe confirmación sincrónica y las back_urls reciben por query
-  if(req.body.action == 'payment.created'){
-    let payment = mercadopago.payment.get(req.body.data.id);
-    logger.debug('Entró el pago:');
-    logger.debug(JSON.stringify(payment));
-  }
-  if(req.body.action == 'payment.updated'){} // ???
 
-  // if (req.body.type == 'payment') {
-  //   let payment = mercadopago.payment.get(req.body.data.id)
-  //   Agregar al excel
-  // }
-  logger.debug('Recibiendo POST en webhook');
+  logger.debug('Recibiendo POST en /webhook...');
+  if(req.body.action == 'payment.created'){
+    let pago = mercadopago.payment.get(req.body.data.id);
+    logger.debug('Entró pago en webhook:');
+    logger.debug(JSON.stringify(pago));
+  }
+
+  if(req.query.topic == 'merchant_order'){
+    let orden = mercadopago.merchant_orders.get(req.query.id);
+    logger.debug('Entró una merchant order en webhook:');
+    logger.debug(JSON.stringify(orden));
+  }
+
+  if(req.query.topic == 'payment'){
+    let pago = mercadopago.payment.get(req.query.id);
+    logger.debug('Entró un pago (topic) en webhook:');
+    logger.debug(JSON.stringify(pago));
+  }
+
   dump(req);
   res.status(200).send();
 }
