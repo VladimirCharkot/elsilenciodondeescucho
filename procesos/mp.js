@@ -167,7 +167,7 @@ const webhook = async (req, res) => {
 const back_aprobado = async (req, res) => {
   logger.debug('Pago aprobado, agregando a la planilla');
   dump(req);
-  const pago = await mercadopago.payment.get(req.query.payment_id));
+  const pago = await mercadopago.payment.get(req.query.payment_id)ß;
   const identificacion = pago.body.payer.identification.number ?? "NO_ENCONTRADO";
   const preferencia = await mercadopago.preferences.get(req.query.preference_id);
   const provisto = JSON.parse(preferencia.body.additional_info);
@@ -191,7 +191,7 @@ const back_aprobado = async (req, res) => {
 const back_pendiente = async (req, res) => {
   logger.debug('Pago pendiente, agregando a la planilla');
   dump(req);
-  const pago = await mercadopago.payment.get(req.query.payment_id));
+  const pago = await mercadopago.payment.get(req.query.payment_id);
   const identificacion = pago.body.payer.identification.number ?? "NO_ENCONTRADO";
   const preferencia = await mercadopago.preferences.get(req.query.preference_id);
   const provisto = JSON.parse(preferencia.body.additional_info);
@@ -209,13 +209,13 @@ const back_pendiente = async (req, res) => {
 const back_rechazado = async (req, res) => {
   logger.debug('Pago rechazado, agregando a la planilla');
   dump(req);
-  const pago = await mercadopago.payment.get(req.query.payment_id));
+  const pago = await mercadopago.payment.get(req.query.payment_id);
   const identificacion = pago.body.payer.identification.number ?? "NO_ENCONTRADO";
   const preferencia = await mercadopago.preferences.get(req.query.preference_id);
   const provisto = JSON.parse(preferencia.body.additional_info);
   logger.debug(`Ahora agregaría entrada privada rechazada con ${JSON.stringify({nombre: provisto.nombre, monto: provisto.monto, email: provisto.mail, dni: identificacion, medio: 'mercadopago'})}`);
   await appendRechazadoPrivado({
-    nombre: provisto.nombre, 
+    nombre: provisto.nombre,
     monto: provisto.monto,
     email: provisto.mail,
     dni: identificacion,
