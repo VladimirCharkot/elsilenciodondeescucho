@@ -65,8 +65,8 @@ const acciones = {
   approved: async (data) => {
     logger.info('Pago aprobado, agregando a la planilla')
     await appendPagoPublico({
-      nombre: nombre,
-      monto: req.body.transaction_amount
+      nombre: data.nombre,
+      monto: data.monto
     })
     await appendPagoPrivado(data);
   },
