@@ -142,7 +142,12 @@ const webhook = async (req, res) => {
   logger.debug('Recibiendo POST en /webhook...');
 
   if(req.body.action == 'payment.created'){
-    let pago = mercadopago.payment.get(req.body.data.id);
+    // let pago = mercadopago.payment.get(req.body.data.id);
+    let r = await axios.get(req.body.resource, {headers: {'Authorization': `Bearer ${conf.mercadoPago.token}`}});
+    if(r.status != 200){
+      logger.error(`Error queryiando merchant_order: ${JSON.stringify(r)}`);
+      return;
+    }
     logger.debug('Entró pago en webhook:');
     logger.debug(JSON.stringify(pago));
   }
@@ -150,7 +155,7 @@ const webhook = async (req, res) => {
   if(req.query.topic == 'merchant_order'){
 
     // Acá nos enteramos del pago de las preferencias (o sea de checkoutpro)
-    let r = await axios.get(req.body.resource, {headers: `Authorization: Bearer ${conf.mercadoPago.token}`});
+    let r = await axios.get(req.body.resource, {headers: {'Authorization': `Bearer ${conf.mercadoPago.token}`}});
     if(r.status != 200){
       logger.error(`Error queryiando merchant_order: ${JSON.stringify(r)}`);
       return;
@@ -192,7 +197,7 @@ const webhook = async (req, res) => {
 
   if(req.query.topic == 'payment'){
     // let pago = mercadopago.payment.get(req.query.id);
-    let r = await axios.get(req.body.resource, {headers: `Authorization: Bearer ${conf.mercadoPago.token}`});
+    let r = await axios.get(req.body.resource, {headers: {'Authorization': `Bearer ${conf.mercadoPago.token}`}});
     if(r.status != 200){
       logger.error(`Error queryiando merchant_order: ${JSON.stringify(r)}`);
       return;
