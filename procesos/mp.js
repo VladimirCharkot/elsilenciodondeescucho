@@ -180,13 +180,13 @@ const webhook = async (req, res) => {
 
     logger.debug(`Buscando el pago en https://api.mercadolibre.com/collections/notifications/${orden.payments[0].id}`)
 
-    let r = await axios.get(`https://api.mercadolibre.com/collections/notifications/${orden.payments[0].id}`, {headers: {'Authorization': `Bearer ${conf.mercadoPago.token}`}});
+    let r2 = await axios.get(`https://api.mercadolibre.com/collections/notifications/${orden.payments[0].id}`, {headers: {'Authorization': `Bearer ${conf.mercadoPago.token}`}});
 
-    if(r.status != 200){
-      logger.error(`Error queryiando pago: ${JSON.stringify(r)}`);
+    if(r2.status != 200){
+      logger.error(`Error queryiando pago: ${JSON.stringify(r2)}`);
       return;
     }
-    const pago = r.data;
+    const pago = r2.data;
     logger.debug('El pago asociado es:');
     logger.debug(JSON.stringify(pago));
 
