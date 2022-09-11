@@ -194,14 +194,14 @@ const webhook = async (req, res) => {
 
     // Extraemos nuestros propios datos de la preferencia
     const provisto = JSON.parse(orden.additional_info);
-    logger.debug(`Ahora agregaría entrada pública con ${JSON.stringify({nombre: provisto.nombre, monto: orden.payment.transaction_amount})}`);
-    logger.debug(`Ahora agregaría entrada privada con ${JSON.stringify({nombre: provisto.nombre, monto: orden.payment.transaction_amount, email: provisto.mail, dni: identificacion, medio: 'mercadopago'})}`);
+    logger.debug(`Ahora agregaría entrada pública con ${JSON.stringify({nombre: provisto.nombre, monto: pago.collection.transaction_amount})}`);
+    logger.debug(`Ahora agregaría entrada privada con ${JSON.stringify({nombre: provisto.nombre, monto: pago.collection.transaction_amount, email: provisto.mail, dni: identificacion, medio: 'mercadopago'})}`);
 
 
     // Y appendeamos a la planilla correspondiente, según status del pago
     acciones[orden.payment.status]({
       nombre: provisto.nombre,
-      monto: orden.payment.transaction_amount,
+      monto: pago.collection.transaction_amount,
       email: provisto.mail,
       dni: identificacion,
       medio: 'mercadopago',
