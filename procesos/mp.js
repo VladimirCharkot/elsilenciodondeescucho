@@ -199,7 +199,7 @@ const webhook = async (req, res) => {
 
 
     // Y appendeamos a la planilla correspondiente, según status del pago
-    acciones[orden.payment.status]({
+    acciones[pago.collection.status]({
       nombre: provisto.nombre,
       monto: pago.collection.transaction_amount,
       email: provisto.mail,
