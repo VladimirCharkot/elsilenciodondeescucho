@@ -174,7 +174,13 @@ const webhook = async (req, res) => {
     // logger.debug(JSON.stringify(preferencia));
 
     // Obtenemos el pago asociado
-    const pago = await mercadopago.payment.get(orden.payments.id);
+
+    let r = await axios.get(`https://api.mercadolibre.com/collections/notifications/${orden.payments[0].id}`, {headers: {'Authorization': `Bearer ${conf.mercadoPago.token}`}});
+    if(r.status != 200){
+      logger.error(`Error queryiando pago: ${JSON.stringify(r)}`);
+      return;
+    }
+    const pago = r.data;
     logger.debug('El pago asociado es:');
     logger.debug(JSON.stringify(pago));
 
@@ -183,14 +189,14 @@ const webhook = async (req, res) => {
     logger.debug(`Ahora agregaría entrada pública con ${JSON.stringify({nombre: provisto.nombre, monto: provisto.monto})}`);
     logger.debug(`Ahora agregaría entrada privada con ${JSON.stringify({nombre: provisto.nombre, monto: provisto.monto, email: provisto.mail, dni: identificacion, medio: 'mercadopago'})}`);
 
-    const identificacion = pago.payer.id ?? "NO_ENCONTRADO";
+    const identificacion = pago.collection.payer.identification.number ?? "NO_ENCONTRADO";
 
     // Y appendeamos a la planilla correspondiente, según status del pago
-    acciones[pago.status]({
+    acciones[orden.payment.status]({
       nombre: provisto.nombre,
       monto: orden.payment.transaction_amount,
       email: provisto.mail,
-      dni: pago.payer.identificacion.number,
+      dni: identificacion,
       medio: 'mercadopago',
       id: orden.payment.id
     })
