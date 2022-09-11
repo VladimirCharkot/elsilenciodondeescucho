@@ -141,16 +141,16 @@ const webhook = async (req, res) => {
 
   logger.debug('Recibiendo POST en /webhook...');
 
-  if(req.body.action == 'payment.created'){
-    // let pago = mercadopago.payment.get(req.body.data.id);
-    let r = await axios.get(req.body.resource, {headers: {'Authorization': `Bearer ${conf.mercadoPago.token}`}});
-    if(r.status != 200){
-      logger.error(`Error queryiando merchant_order: ${JSON.stringify(r)}`);
-      return;
-    }
-    logger.debug('Entró pago en webhook:');
-    logger.debug(JSON.stringify(pago));
-  }
+  // if(req.body.action == 'payment.created'){
+  //   // let pago = mercadopago.payment.get(req.body.data.id);
+  //   let r = await axios.get(req.body.resource, {headers: {'Authorization': `Bearer ${conf.mercadoPago.token}`}});
+  //   if(r.status != 200){
+  //     logger.error(`Error queryiando merchant_order: ${JSON.stringify(r)}`);
+  //     return;
+  //   }
+  //   logger.debug('Entró pago en webhook:');
+  //   logger.debug(JSON.stringify(pago));
+  // }
 
   if(req.query.topic == 'merchant_order'){
 
@@ -199,6 +199,7 @@ const webhook = async (req, res) => {
 
 
     // Y appendeamos a la planilla correspondiente, según status del pago
+    logger.debug(`Ejecutando accion ${pago.collection.status}, funcion ${acciones[pago.collection.status]}`);
     acciones[pago.collection.status]({
       nombre: provisto.nombre,
       monto: pago.collection.transaction_amount,
