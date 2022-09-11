@@ -206,22 +206,22 @@ const webhook = async (req, res) => {
       email: provisto.mail,
       dni: identificacion,
       medio: 'mercadopago',
-      id: orden.payment.id
+      id: pago.collection.id
     })
 
   }
 
-  if(req.query.topic == 'payment'){
-    // let pago = mercadopago.payment.get(req.query.id);
-    let r = await axios.get(req.body.resource, {headers: {'Authorization': `Bearer ${conf.mercadoPago.token}`}});
-    if(r.status != 200){
-      logger.error(`Error queryiando merchant_order: ${JSON.stringify(r)}`);
-      return;
-    }
-    const pago = r.data;
-    logger.debug('Entró un pago (topic) en webhook:');
-    logger.debug(JSON.stringify(pago));
-  }
+  // if(req.query.topic == 'payment'){
+  //   // let pago = mercadopago.payment.get(req.query.id);
+  //   let r = await axios.get(req.body.resource, {headers: {'Authorization': `Bearer ${conf.mercadoPago.token}`}});
+  //   if(r.status != 200){
+  //     logger.error(`Error queryiando merchant_order: ${JSON.stringify(r)}`);
+  //     return;
+  //   }
+  //   const pago = r.data;
+  //   logger.debug('Entró un pago (topic) en webhook:');
+  //   logger.debug(JSON.stringify(pago));
+  // }
 
   dump(req);
   res.status(200).send();
