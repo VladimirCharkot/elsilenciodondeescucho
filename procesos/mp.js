@@ -190,12 +190,13 @@ const webhook = async (req, res) => {
     logger.debug('El pago asociado es:');
     logger.debug(JSON.stringify(pago));
 
+    const identificacion = pago.collection.payer.identification.number ?? "NO_ENCONTRADO";
+
     // Extraemos nuestros propios datos de la preferencia
     const provisto = JSON.parse(orden.additional_info);
-    logger.debug(`Ahora agregaría entrada pública con ${JSON.stringify({nombre: provisto.nombre, monto: provisto.monto})}`);
-    logger.debug(`Ahora agregaría entrada privada con ${JSON.stringify({nombre: provisto.nombre, monto: provisto.monto, email: provisto.mail, dni: identificacion, medio: 'mercadopago'})}`);
+    logger.debug(`Ahora agregaría entrada pública con ${JSON.stringify({nombre: provisto.nombre, monto: orden.payment.transaction_amount})}`);
+    logger.debug(`Ahora agregaría entrada privada con ${JSON.stringify({nombre: provisto.nombre, monto: orden.payment.transaction_amount, email: provisto.mail, dni: identificacion, medio: 'mercadopago'})}`);
 
-    const identificacion = pago.collection.payer.identification.number ?? "NO_ENCONTRADO";
 
     // Y appendeamos a la planilla correspondiente, según status del pago
     acciones[orden.payment.status]({
