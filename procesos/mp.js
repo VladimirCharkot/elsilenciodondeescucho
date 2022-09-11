@@ -166,7 +166,10 @@ const webhook = async (req, res) => {
     logger.debug('Entró una merchant order en webhook:');
     logger.debug(JSON.stringify(orden));
 
-    // orden.additional_info tiene la data nostra
+    if(orden.payments.length == 0){
+      logger.debug('Todavia no hay info de pago disponible. Omitiendo.');
+      return res.status(200).send();
+    }
 
     // Obtenemos la preferencia asociada
     // const preferencia = await mercadopago.preferences.get(orden.preference_id);
@@ -175,7 +178,10 @@ const webhook = async (req, res) => {
 
     // Obtenemos el pago asociado
 
+    logger.debug(`Buscando el pago en https://api.mercadolibre.com/collections/notifications/${orden.payments[0].id}`)
+
     let r = await axios.get(`https://api.mercadolibre.com/collections/notifications/${orden.payments[0].id}`, {headers: {'Authorization': `Bearer ${conf.mercadoPago.token}`}});
+
     if(r.status != 200){
       logger.error(`Error queryiando pago: ${JSON.stringify(r)}`);
       return;
