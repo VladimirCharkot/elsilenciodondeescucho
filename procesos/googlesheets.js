@@ -67,36 +67,36 @@ const appendPagoPublico = async ({nombre, monto}) => {
 
 // Append a la planilla privada
 
-const appendPagoPrivado = async ({nombre, email, dni, medio, monto}) => {
+const appendPagoPrivado = async ({nombre, email, dni, medio, monto, id}) => {
   logger.debug(`Agregando ${nombre}, ${medio}, ${monto} al registro privado`);
   appendSpreadSheetValues({
     spreadsheetId : conf.sheets.planillaPrivada,
     auth: await getAuthToken(),
     sheetName : conf.sheets.nombreHoja,
-    values : [[nombre, email, dni, monto, medio, ahora().toLocaleString()]],
-    range: 'A:F'
+    values : [[nombre, email, dni, monto, medio, ahora().toLocaleString(), id]],
+    range: 'A:G'
   })
 }
 
-const appendPendientePrivado = async ({nombre, email, dni, medio, monto}) => {
+const appendPendientePrivado = async ({nombre, email, dni, medio, monto, id}) => {
   logger.debug(`Agregando ${nombre}, ${medio}, ${monto} al registro privado de PENDIENTES`);
   appendSpreadSheetValues({
     spreadsheetId : conf.sheets.planillaPrivada,
     auth: await getAuthToken(),
     sheetName : conf.sheets.nombreHoja,
-    values : [[nombre, email, dni, monto, medio, ahora().toLocaleString()]],
-    range: 'H:M'
+    values : [[nombre, email, dni, monto, medio, ahora().toLocaleString(), id]],
+    range: 'I:O'
   })
 }
 
-const appendRechazadoPrivado = async ({nombre, email, dni, medio, monto}) => {
+const appendRechazadoPrivado = async ({nombre, email, dni, medio, monto, id}) => {
   logger.debug(`Agregando ${nombre}, ${medio}, ${monto} al registro privado de RECHAZADOS`);
   appendSpreadSheetValues({
     spreadsheetId : conf.sheets.planillaPrivada,
     auth: await getAuthToken(),
     sheetName : conf.sheets.nombreHoja,
-    values : [[nombre, email, dni, monto, medio, ahora().toLocaleString()]],
-    range: 'O:T'
+    values : [[nombre, email, dni, monto, medio, ahora().toLocaleString(), id]],
+    range: 'Q:W'
   })
 }
 
