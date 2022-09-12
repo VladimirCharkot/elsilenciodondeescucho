@@ -6,7 +6,7 @@ const {appendPagoPublico, appendPagoPrivado, appendPendientePrivado, appendRecha
 const conf = require('./config');
 
 const url_base = 'https://elsilenciodondeescucho.com';
-const cache_pagos = [];
+const cache_pagos = {};
 
 try{
   mercadopago.configurations.setAccessToken(conf.mercadoPago.token);
@@ -113,7 +113,7 @@ const procesarPago = async (req, res) => {
       id
     })
 
-    cache_pagos.push(id);
+    cache_pagos[id] = status;
 
     res.status(200).json({ status, status_detail, id });
 
@@ -176,7 +176,8 @@ const webhook = async (req, res) => {
     logger.debug('El pago asociado es:');
     logger.debug(JSON.stringify(pago));
 
-    if (cache_pagos.includes(pago.collection.id)) {
+    // No procesar si la caché lo tiene como aprobado o con el mismo status
+    if (cache_pagos.includes(pago.collection.id) && (cache_pagos[pago.collection.id == 'approved'] || cache_pagos[pago.collection.id] == pago.collection.status)) {
       logger.debug('Pago ya procesado');
       return res.status(200).send();
     }
@@ -190,7 +191,6 @@ const webhook = async (req, res) => {
 
 
     // Y appendeamos a la planilla correspondiente, según status del pago
-    logger.debug(`Ejecutando accion ${pago.collection.status}, funcion ${acciones[pago.collection.status]}`);
     acciones[pago.collection.status]({
       nombre: provisto.nombre,
       monto: pago.collection.transaction_amount,
@@ -200,7 +200,7 @@ const webhook = async (req, res) => {
       id: pago.collection.id
     })
 
-    cache_pagos.push(pago.collection.id);
+    cache_pagos[pago.collection.id] = pago.collection.status;
 
   }
 
