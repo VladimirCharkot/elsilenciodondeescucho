@@ -120,7 +120,7 @@ block contenido
           p Realizás la transferencia por MercadoPago desde este mismo sitio, o por Western Union desde el exterior de Argentina
         .paso
           p Tu aporte se registra en una planilla de Drive abierta al público
-        button.quiero_ver ¡Quiero verla!
+        button.quiero_ver(onclick="document.location = document.querySelector('#UrlPlanillaPublica').getAttribute('data-url')") ¡Quiero verla!
         .paso
           p Ese aporte queda como adelanto (transferible) para la compra de uno o más ejemplares, en caso de querer adquirirlos, una vez la publicación se haya realizado
         .flor_sola_1
