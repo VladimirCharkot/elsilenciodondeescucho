@@ -11,4 +11,4 @@ block contenido
       p.de_nuevo Podés intentarlo de nuevo volviendo al sitio
       button.volver(onclick="document.location = '/colecta'") Volver
       script.
-        document.querySelector('.mensaje_mp').innerText = document.location.search.split('=')[1]
+        document.querySelector('.mensaje_mp').innerText = decodeURIComponent(document.location.search.split('=')[1])
