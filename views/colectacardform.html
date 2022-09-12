@@ -237,7 +237,8 @@
               const paths = {
                 approved: '/pago_aprobado?detail=',
                 in_process: '/pago_pendiente?detail=',
-                rejected: '/pago_fallido?detail='
+                rejected: '/pago_fallido?detail=',
+                error: '/pago_fallido?detail='
               }
               document.location = paths[r.status] + r.status_detail;
             }

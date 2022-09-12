@@ -6,7 +6,9 @@ block contenido
       h2 ¡Ups! 
       p Hubo un problema con la transferencia
       p Recibimos el siguiente mensaje de MercadoPago: 
-      p=mensaje_mp
+      p.mensaje_mp
       p Es todo lo que sabemos
       p.de_nuevo Podés intentarlo de nuevo volviendo al sitio
       button.volver(onclick="document.location = '/colecta'") Volver
+      script.
+        document.querySelector('.mensaje_mp').innerText = document.location.search.split('=')[1]

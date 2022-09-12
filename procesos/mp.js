@@ -94,12 +94,18 @@ const procesarPago = async (req, res) => {
     const email = req.body.email;
     delete req.body.email;
 
-    const r = await mercadopago.payment.save({
-      ...req.body,
-      notification_url: url_base + '/webhook' // Por si queda pendiente
-    })
-    logger.debug('Obtenida respuesta');
-    logger.debug(JSON.stringify(r.body));
+    try{
+      const r = await mercadopago.payment.save({
+        ...req.body,
+        notification_url: url_base + '/webhook' // Por si queda pendiente
+      })
+      logger.debug('Obtenida respuesta');
+      logger.debug(JSON.stringify(r.body));
+    }catch(e){
+      logger.error(`${e.name}: ${e.message}`);
+      res.status(200).json({ status: 'error', status_detail: `${e.name}: ${e.message}`});
+    }
+
 
     const { status, status_detail, id } = r.body;
 
