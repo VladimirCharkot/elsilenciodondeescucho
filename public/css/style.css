@@ -9,19 +9,15 @@
 body {
   font: 1.1em 'EB Garamond', serif;
   margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: start;
-  overflow: hidden; }
+  padding: 0; }
 
 a {
   color: black;
   text-decoration: none; }
 
 main {
-  height: 100%;
+  height: max-content;
   width: 100vw;
-  position: absolute;
   overflow-y: scroll;
   overflow-x: clip; }
 
@@ -544,11 +540,11 @@ header {
       visibility: visible; }
     #colecta #mobile {
       visibility: collapse;
-      position: absolute; } }
+      position: fixed; } }
   @media screen and (max-width: 1080px) {
     #colecta #desktop {
       visibility: collapse;
-      position: absolute; }
+      position: fixed; }
     #colecta #mobile {
       visibility: visible; } }
   #colecta #desktop h1 {
@@ -613,6 +609,7 @@ header {
         font-size: 1.5em;
         border: none;
         cursor: pointer;
+        color: black;
         align-self: end;
         width: 280px;
         height: 55px; }
@@ -863,8 +860,10 @@ header {
         font-size: 1.5em;
         border: none;
         cursor: pointer;
-        width: 280px;
-        height: 55px; }
+        color: black;
+        width: 10em;
+        height: 5em;
+        color: black; }
         #colecta #mobile .uno .boton_colaborar:active {
           transform: translateY(5px);
           background-image: url(/img/preventa/botonpresionado.png); }
@@ -1077,6 +1076,7 @@ header {
       font-size: 1.5em;
       border: none;
       cursor: pointer;
+      color: black;
       width: 280px;
       height: 55px; }
       #colecta #contribucion #mercadopago #listobutton:active {
@@ -1107,6 +1107,7 @@ header {
       font-size: 1.5em;
       border: none;
       cursor: pointer;
+      color: black;
       width: 9em;
       height: 2em; }
       #colecta #aprobado .botones .planilla:active, #colecta #aprobado .botones .leer:active {
@@ -1164,6 +1165,7 @@ header {
       font-size: 1.5em;
       border: none;
       cursor: pointer;
+      color: black;
       width: 9em;
       height: 2em; }
       #colecta #pendiente .botones .planilla:active, #colecta #pendiente .botones .leer:active {
@@ -1202,6 +1204,7 @@ header {
       font-size: 1.5em;
       border: none;
       cursor: pointer;
+      color: black;
       width: 9em;
       height: 2em; }
       #colecta #rechazado .volver:active {
