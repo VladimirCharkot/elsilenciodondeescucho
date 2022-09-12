@@ -440,7 +440,11 @@
 
   #contribucion
     @include fullscreen
-    font-size: 1.5em
+    @media screen and (min-width: $medium)
+      font-size: 1.5em
+    @media screen and (max-width: $medium)
+      font-size: 2.5em
+
     opacity: 1
     transition: 1s
     background: white
@@ -467,7 +471,10 @@
         margin: 0 1em
         width: 100%
         font-family: 'Reenie Beanie'
-        font-size: 1.5em
+        @media screen and (min-width: $medium)
+          font-size: 1.5em
+        @media screen and (max-width: $medium)
+          font-size: 2.5em
         font-weight: 100
         &:focus
           outline: none
