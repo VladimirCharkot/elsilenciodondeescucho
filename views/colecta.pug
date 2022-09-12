@@ -10,6 +10,7 @@ block contenido
     const ocultar = (s) => document.querySelector(s).classList.add('oculto');
     
   #colecta
+    #UrlPlanillaPublica(data-url=URLPlanillaPublica)
     #desktop
       .uno
         .izquierda
@@ -48,7 +49,7 @@ block contenido
           .paso
             .flechita4
             p Tu aporte se registra en una planilla de Drive abierta al público
-            button.quiero_ver ¡Quiero verla!
+            button.quiero_ver(onclick="document.location = document.querySelector('#UrlPlanillaPublica').getAttribute('data-url')") ¡Quiero verla!
           .paso
             .flechita5
             p Ese aporte queda como adelanto (transferible) para la compra de uno o más ejemplares, en caso de querer adquirirlos, una vez la publicación se haya realizado
@@ -79,7 +80,7 @@ block contenido
           .flor
           
         .botones
-          button.planilla(onclick="document.location = '#{URLPlanillaPublica}'") Consultar planilla
+          button.planilla(onclick="document.location = document.querySelector('#UrlPlanillaPublica').getAttribute('data-url')") Consultar planilla
           button.colaborar(onclick="revelar('#contribucion')") Colaborar
           button.leer(onclick="document.location = '/img/preventa/extracto.pdf'") Leer un fragmento
           
@@ -147,7 +148,7 @@ block contenido
           .flor
           
         button.colaborar(onclick="revelar('#contribucion')") Colaborar
-        button.planilla Consultar planilla
+        button.planilla(onclick="document.location = document.querySelector('#UrlPlanillaPublica').getAttribute('data-url')") Consultar planilla
         button.leer(onclick="document.location = '/img/preventa/extracto.pdf'") Leer un fragmento
         
 
@@ -207,7 +208,8 @@ block contenido
           
         #westernunion.detalle_de_pago.oculto
           h3 Datos para WesternUnion
-          p Enviar un depósito a Sebastián Rojo, datos tal, tal y tal
+          p Enviar un depósito a Sebastián Rojo, DNI 24.357.725, bastianrojo@gmail.com, +5493512116751. Escribinos a ese mail o celular indicando monto, remitente y número de transferencia (MTCN), que son los datos que WU pide para el retiro. 
+          p ¡Muchas gracias!
 
     script.
     
