@@ -6,7 +6,7 @@ const {appendPagoPublico, appendPagoPrivado, appendPendientePrivado, appendRecha
 const conf = require('./config');
 
 const url_base = 'https://elsilenciodondeescucho.com';
-const cache_pagos = {};
+const cache_pagos = [];
 
 try{
   mercadopago.configurations.setAccessToken(conf.mercadoPago.token);
@@ -113,6 +113,8 @@ const procesarPago = async (req, res) => {
       id
     })
 
+    cache_pagos.push(id);
+
     res.status(200).json({ status, status_detail, id });
 
   }catch(e){
@@ -141,17 +143,6 @@ const webhook = async (req, res) => {
 
   logger.debug('Recibiendo POST en /webhook...');
 
-  // if(req.body.action == 'payment.created'){
-  //   // let pago = mercadopago.payment.get(req.body.data.id);
-  //   let r = await axios.get(req.body.resource, {headers: {'Authorization': `Bearer ${conf.mercadoPago.token}`}});
-  //   if(r.status != 200){
-  //     logger.error(`Error queryiando merchant_order: ${JSON.stringify(r)}`);
-  //     return;
-  //   }
-  //   logger.debug('Entró pago en webhook:');
-  //   logger.debug(JSON.stringify(pago));
-  // }
-
   if(req.query.topic == 'merchant_order'){
 
     // Acá nos enteramos del pago de las preferencias (o sea de checkoutpro)
@@ -171,11 +162,6 @@ const webhook = async (req, res) => {
       return res.status(200).send();
     }
 
-    // Obtenemos la preferencia asociada
-    // const preferencia = await mercadopago.preferences.get(orden.preference_id);
-    // logger.debug('La preferencia asociada es:');
-    // logger.debug(JSON.stringify(preferencia));
-
     // Obtenemos el pago asociado
 
     logger.debug(`Buscando el pago en https://api.mercadolibre.com/collections/notifications/${orden.payments[0].id}`)
@@ -184,11 +170,16 @@ const webhook = async (req, res) => {
 
     if(r2.status != 200){
       logger.error(`Error queryiando pago: ${JSON.stringify(r2)}`);
-      return;
+      return res.status(400).send();
     }
     const pago = r2.data;
     logger.debug('El pago asociado es:');
     logger.debug(JSON.stringify(pago));
+
+    if (cache_pagos.includes(pago.id)) {
+      logger.debug('Pago ya procesado');
+      return res.status(200).send();
+    }
 
     const identificacion = pago.collection.payer.identification.number ?? "NO_ENCONTRADO";
 
@@ -209,83 +200,25 @@ const webhook = async (req, res) => {
       id: pago.collection.id
     })
 
+    cache_pagos.push(id);
+
   }
 
-  // if(req.query.topic == 'payment'){
-  //   // let pago = mercadopago.payment.get(req.query.id);
-  //   let r = await axios.get(req.body.resource, {headers: {'Authorization': `Bearer ${conf.mercadoPago.token}`}});
-  //   if(r.status != 200){
-  //     logger.error(`Error queryiando merchant_order: ${JSON.stringify(r)}`);
-  //     return;
-  //   }
-  //   const pago = r.data;
-  //   logger.debug('Entró un pago (topic) en webhook:');
-  //   logger.debug(JSON.stringify(pago));
-  // }
-
-  dump(req);
+  // dump(req);
   res.status(200).send();
 }
 
 
-// {"collection_id":"25550392357","collection_status":"approved","payment_id":"25550392357","status":"approved","external_reference":"null","payment_type":"account_money","merchant_order_id":"5739835224","preference_id":"1191219791-cf29e19d-98de-43cb-8d61-e592d63712f7","site_id":"MLA","processing_mode":"aggregator","merchant_account_id":"null"}
 
 const back_aprobado = async (req, res) => {
-  // logger.debug('Pago aprobado, agregando a la planilla');
-  // dump(req);
-  // const pago = await mercadopago.payment.get(req.query.payment_id);
-  // const identificacion = pago.body.payer.identification.number ?? "NO_ENCONTRADO";
-  // const preferencia = await mercadopago.preferences.get(req.query.preference_id);
-  // const provisto = JSON.parse(preferencia.body.additional_info);
-  //
-  //
-  // await appendPagoPublico({
-  //   nombre: provisto.nombre,
-  //   monto: provisto.monto
-  // });
-  // await appendPagoPrivado({
-  //   nombre: provisto.nombre,
-  //   monto: provisto.monto,
-  //   email: provisto.mail,
-  //   dni: identificacion,
-  //   medio: 'mercadopago'
-  // });
   res.render('colecta/aprobado', { titulo: 'Gracias!', URLPlanillaPublica: `https://docs.google.com/spreadsheets/d/${conf.sheets.planillaPublica}` });
 }
 
 const back_pendiente = async (req, res) => {
-  // logger.debug('Pago pendiente, agregando a la planilla');
-  // dump(req);
-  // const pago = await mercadopago.payment.get(req.query.payment_id);
-  // const identificacion = pago.body.payer.identification.number ?? "NO_ENCONTRADO";
-  // const preferencia = await mercadopago.preferences.get(req.query.preference_id);
-  // const provisto = JSON.parse(preferencia.body.additional_info);
-  // logger.debug(`Ahora agregaría entrada privada pendiente con ${JSON.stringify({nombre: provisto.nombre, monto: provisto.monto, email: provisto.mail, dni: identificacion, medio: 'mercadopago'})}`);
-  // await appendPendientePrivado({
-  //   nombre: provisto.nombre,
-  //   monto: provisto.monto,
-  //   email: provisto.mail,
-  //   dni: identificacion,
-  //   medio: 'mercadopago'
-  // });
   res.render('colecta/pendiente', { titulo: 'Esperamos', URLPlanillaPublica: `https://docs.google.com/spreadsheets/d/${conf.sheets.planillaPublica}` });
 }
 
 const back_rechazado = async (req, res) => {
-  // logger.debug('Pago rechazado, agregando a la planilla');
-  // dump(req);
-  // const pago = await mercadopago.payment.get(req.query.payment_id);
-  // const identificacion = pago.body.payer.identification.number ?? "NO_ENCONTRADO";
-  // const preferencia = await mercadopago.preferences.get(req.query.preference_id);
-  // const provisto = JSON.parse(preferencia.body.additional_info);
-  // logger.debug(`Ahora agregaría entrada privada rechazada con ${JSON.stringify({nombre: provisto.nombre, monto: provisto.monto, email: provisto.mail, dni: identificacion, medio: 'mercadopago'})}`);
-  // await appendRechazadoPrivado({
-  //   nombre: provisto.nombre,
-  //   monto: provisto.monto,
-  //   email: provisto.mail,
-  //   dni: identificacion,
-  //   medio: 'mercadopago'
-  // });
   res.render('colecta/rechazado', { titulo: 'Fallido', mensaje_mp: '[insertar mensaje]' });
 }
 
