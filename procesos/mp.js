@@ -94,8 +94,9 @@ const procesarPago = async (req, res) => {
     const email = req.body.email;
     delete req.body.email;
 
+    let r;
     try{
-      const r = await mercadopago.payment.save({
+      r = await mercadopago.payment.save({
         ...req.body,
         notification_url: url_base + '/webhook' // Por si queda pendiente
       })
