@@ -471,8 +471,7 @@
         margin: 0 1em
         width: 100%
         font-family: 'Reenie Beanie'
-        @media screen and (min-width: $medium)
-          font-size: 1.5em
+        font-size: 1.5em
         @media screen and (max-width: $medium)
           font-size: 2.5em
         font-weight: 100
@@ -480,10 +479,12 @@
           outline: none
     #monto_planilla
       width: 50vw
-      @media screen and (min-width: $medium)
-        width: 70vw
+      @media screen and (max-width: $medium)
+        width: 75vw
     #nombre_planilla, #mail_planilla
       width: 80vw
+      @media screen and (max-width: $medium)
+        width: 90vw
 
 
     #mercadopago
