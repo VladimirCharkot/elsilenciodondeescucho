@@ -177,7 +177,7 @@ const webhook = async (req, res) => {
     logger.debug(JSON.stringify(pago));
 
     // No procesar si la caché lo tiene como aprobado o con el mismo status
-    if (cache_pagos.includes(pago.collection.id) && (cache_pagos[pago.collection.id == 'approved'] || cache_pagos[pago.collection.id] == pago.collection.status)) {
+    if (cache_pagos.hasOwnProperty(pago.collection.id) && (cache_pagos[pago.collection.id == 'approved'] || cache_pagos[pago.collection.id] == pago.collection.status)) {
       logger.debug('Pago ya procesado');
       return res.status(200).send();
     }
