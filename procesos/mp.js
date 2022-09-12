@@ -176,7 +176,7 @@ const webhook = async (req, res) => {
     logger.debug('El pago asociado es:');
     logger.debug(JSON.stringify(pago));
 
-    if (cache_pagos.includes(pago.id)) {
+    if (cache_pagos.includes(pago.collection.id)) {
       logger.debug('Pago ya procesado');
       return res.status(200).send();
     }
@@ -200,7 +200,7 @@ const webhook = async (req, res) => {
       id: pago.collection.id
     })
 
-    cache_pagos.push(id);
+    cache_pagos.push(pago.collection.id);
 
   }
 
