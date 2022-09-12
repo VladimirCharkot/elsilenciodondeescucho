@@ -75,37 +75,42 @@
       justify-content: space-around;
     }
 
-    @media screen and (max-width: 590px) {
+    @media screen and (max-width: 990px) {
      .fila {
        display: flex;
        flex-direction: column;
        justify-content: space-around;
      }
      input{
-       font-size: 2.1em;
+       font-size: 1.1em;
        font-family: 'Reenie Beanie';
      }
      select{
-       font-size: 2.1em;
+       font-size: 1.1em;
        font-family: 'Reenie Beanie';
      }
      button{
-       font-size: 2.1em;
+       font-size: 1.5em;
+       width: 10em;
+       height: 3em;
        font-family: 'Reenie Beanie';
+       color: black;
      }
      .container {
        height: 2em;
      }
      .container *{
+       font-family: 'Reenie Beanie';
        font-size: 2em;
      }
     }
 
     #form-checkout__securityCode{ width: 40%; }
     #form-checkout__expirationDate{ width: 40%; }
-    #form-checkout__issuer{ visibility: collapse; }
-    #form-checkout__installments{ visibility: collapse; }
-    .progress-bar{ visibility: collapse; }
+    #form-checkout__issuer{ position: fixed; visibility: collapse; }
+    #form-checkout__installments{ position: fixed; visibility: collapse; }
+    .progress-bar{ position: fixed; visibility: collapse; }
+   
 
   </style>
 
