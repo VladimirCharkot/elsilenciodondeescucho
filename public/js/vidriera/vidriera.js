@@ -279,7 +279,14 @@ let menu_principal = [
     accion: () => document.location = '/esde/',
     color: d3.rgb("#ffd56b"),
     pie: ''
+  },
+  {
+    titulo: 'Colecta',
+    accion: () => document.location = '/colecta',
+    color: d3.rgb("#7e67e5"),
+    pie: ''
   }
+
 ]
 
 let menu = () => {
