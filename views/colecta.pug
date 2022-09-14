@@ -190,6 +190,11 @@ block contenido
               label(for='westernunion') 
                 .toggle
                 span WesternUnion
+            li 
+              input(id='transferencia' type='radio' name='medio_de_pago')
+              label(for='transferencia') 
+                .toggle
+                span Transferencia
           
         #mensaje
           p
@@ -211,6 +216,11 @@ block contenido
         #westernunion.detalle_de_pago.oculto
           h3 Datos para WesternUnion
           p Enviar un depósito a Sebastián Rojo, DNI 24.357.725, bastianrojo@gmail.com, +5493512116751. Escribinos a ese mail o celular indicando monto, remitente y número de transferencia (MTCN), que son los datos que WU pide para el retiro. 
+          p ¡Muchas gracias!
+          
+        #transferencia.detalle_de_pago.oculto
+          h3 Transferencia a cuenta
+          p Depositar a CVU [0000003100041473842117] o Alias [sbrojo.mp]. Luego escribinos a bastianrojo@gmail.com o al +5493512116751 para dar aviso, ya que lo tenemos que ingresar manualmente a la planilla.
           p ¡Muchas gracias!
 
     script.
