@@ -1,13 +1,13 @@
 extends layout
 
 block contenido
-  script(src="https://sdk.mercadopago.com/js/v2")
-  script.
-    // Credenciales Vlad
-    const mp = new MercadoPago('#{MPaccessKey}', {locale: 'es-AR'});
-    
-    const revelar = (s) => document.querySelector(s).classList.remove('oculto');
-    const ocultar = (s) => document.querySelector(s).classList.add('oculto');
+  //- script(src="https://sdk.mercadopago.com/js/v2")
+  //- script.
+  //-   // Credenciales Vlad
+  //-   const mp = new MercadoPago('#{MPaccessKey}', {locale: 'es-AR'});
+  //- 
+  //-   const revelar = (s) => document.querySelector(s).classList.remove('oculto');
+  //-   const ocultar = (s) => document.querySelector(s).classList.add('oculto');
     
   #colecta
     #UrlPlanillaPublica(data-url=URLPlanillaPublica)
@@ -23,8 +23,10 @@ block contenido
           .llamada
             p ¡Hola!
             p Les contamos, llenos de gratitud, que ha llegado el tiempo, luego de un largo proceso, de publicar el libro. Para esta primera tirada de 200 ejemplares, tomamos la opción de hacer una “colecta”, a la manera de crowdfunding, pero de manera independiente.
-            .flechita1
-            button.boton_colaborar(onclick="revelar('#contribucion')") ¡Quiero colaborar!
+            p Durante tres semanas estuvimos recibiendo colaboraciones 
+            p ¡La colecta finalizó y el libro está en vías de imprimirse!
+            //- .flechita1
+            //- button.boton_colaborar(onclick="revelar('#contribucion')") ¡Quiero colaborar!
         .derecha
           .libro
           
@@ -32,7 +34,7 @@ block contenido
         .izquierda
           h2 ¿Por qué de manera independiente?
           p Luego de revisar un poco, encontramos que la única plataforma –o la más usada y conocida- que funciona en argentina para gestión de fondos comunes es “Ideame”, y las maneras preestablecidas bajo las que se opera a través de la misma están bastante alejadas de nuestras preferencias. 
-          p Por esta razón hemos decidido programar por nuestra cuenta el mecanismo y realizar la recaudación de la siguiente manera:
+          p Por esta razón hemos decidido programar por nuestra cuenta el mecanismo y la recaudación fue realizada de la siguiente manera:
           .medio_circulo_flores
           .columna_tres_flores
         .derecha
@@ -42,17 +44,17 @@ block contenido
         .izquierda
           .paso
             .flechita2
-            p Elegís el monto con el que quieras colaborar
+            p Se eligieron los montos con que se quiso colaborar
           .paso
             .flechita3
-            p Realizás la transferencia por MercadoPago desde este mismo sitio, o por Western Union desde el exterior de Argentina
+            p Se realizaron las transferencias por MercadoPago desde este mismo sitio, o por Western Union desde el exterior de Argentina
           .paso
             .flechita4
-            p Tu aporte se registra en una planilla de Drive abierta al público
+            p Los aportes se registraron en una planilla de Drive abierta al público
             button.quiero_ver(onclick="document.location = document.querySelector('#UrlPlanillaPublica').getAttribute('data-url')") ¡Quiero verla!
           .paso
             .flechita5
-            p Ese aporte queda como adelanto (transferible) para la compra de uno o más ejemplares, en caso de querer adquirirlos, una vez la publicación se haya realizado. Pensamos que el ejemplar rondará los ARS$2000.
+            p Los aportes quedaron como adelanto (transferible) para la compra de uno o más ejemplares, en caso de querer adquirirlos, una vez la publicación se haya realizado. Pensamos que el ejemplar rondará los ARS$2000.
         .derecha
           .contratapa
           .flechita6
@@ -81,7 +83,7 @@ block contenido
           
         .botones
           button.planilla(onclick="document.location = document.querySelector('#UrlPlanillaPublica').getAttribute('data-url')") Consultar planilla
-          button.colaborar(onclick="revelar('#contribucion')") Colaborar
+          //- button.colaborar(onclick="revelar('#contribucion')") Colaborar
           button.leer(onclick="document.location = '/img/preventa/extracto.pdf'") Leer un fragmento
           button.volver(onclick="document.location = '/'") Volver al sitio
           
@@ -101,13 +103,15 @@ block contenido
         .llamada
           p ¡Hola!
           p Les contamos, llenos de gratitud, que ha llegado el tiempo, luego de un largo proceso, de publicar el libro. Para esta primera tirada de 200 ejemplares, tomamos la opción de hacer una “colecta”, a la manera de crowdfunding, pero de manera independiente.
+          p Durante tres semanas estuvimos recibiendo colaboraciones 
+          p ¡La colecta finalizó y el libro está en vías de imprimirse!
         .libro
         button.boton_colaborar(onclick="revelar('#contribucion')") ¡Quiero colaborar!
 
       .dos
         h2 ¿Por qué de manera independiente?
         p Luego de revisar un poco, encontramos que la única plataforma –o la más usada y conocida- que funciona en argentina para gestión de fondos comunes es “Ideame”, y las maneras preestablecidas bajo las que se opera a través de la misma están bastante alejadas de nuestras preferencias. 
-        p Por esta razón hemos decidido programar por nuestra cuenta el mecanismo y realizar la recaudación de la siguiente manera:
+        p Por esta razón hemos decidido programar por nuestra cuenta el mecanismo y la recaudación fue realizada de la siguiente manera:
         .flor_sola_1
         .flor_sola_2
         .fila_tres_flores
@@ -116,14 +120,14 @@ block contenido
         
       .tres
         .paso
-          p Elegís el monto con el que quieras colaborar
+          p Se eligieron los montos con que se quiso colaborar
         .paso
-          p Realizás la transferencia por MercadoPago desde este mismo sitio, o por Western Union desde el exterior de Argentina
+          p Se realizaron las transferencias por MercadoPago desde este mismo sitio, o por Western Union desde el exterior de Argentina
         .paso
-          p Tu aporte se registra en una planilla de Drive abierta al público
+          p Los aportes se registraron en una planilla de Drive abierta al público
         button.quiero_ver(onclick="document.location = document.querySelector('#UrlPlanillaPublica').getAttribute('data-url')") ¡Quiero verla!
         .paso
-          p Ese aporte queda como adelanto (transferible) para la compra de uno o más ejemplares, en caso de querer adquirirlos, una vez la publicación se haya realizado. Pensamos que el ejemplar rondará los ARS$2000.
+          p Los aportes quedaron como adelanto (transferible) para la compra de uno o más ejemplares, en caso de querer adquirirlos, una vez la publicación se haya realizado. Pensamos que el ejemplar rondará los ARS$2000.
         .flor_sola_1
         .flor_sola_2
         
@@ -148,167 +152,167 @@ block contenido
           p El Silencio Donde Escucho
           .flor
           
-        button.colaborar(onclick="revelar('#contribucion')") Colaborar
+        //- button.colaborar(onclick="revelar('#contribucion')") Colaborar
         button.planilla(onclick="document.location = document.querySelector('#UrlPlanillaPublica').getAttribute('data-url')") Consultar planilla
         button.leer(onclick="document.location = '/img/preventa/extracto.pdf'") Leer un fragmento
         button.volver(onclick="document.location = '/'") Volver al sitio
         
 
-    #contribucion.oculto
-      div
-        h1 Presencia
-        h2 Colecta para auto-publicación
-        #cruz(onclick="ocultar('#contribucion')")
-                
-        p Ingresá el monto con el que deseás colaborar 
-        #monto_planilla
-          label (ARS$)
-          input(type="tel")
-        p Ingresá tu nombre (como quieras que figure en la planilla pública, puede no ser completo)
-        #nombre_planilla
-          input
-        p Ingresá tu mail. Lo usaremos para validar identidad caso que en el futuro quieras comprar o regalar el libro con este adelanto.
-        #mail_planilla
-          input(type='email')
-          
-        #medios
-          p ¿Con qué medio querés transferir?
-          p Si vas a transferir con mercadopago, permití que se te redireccione a este sitio luego de efectuar el pago, para que se procese correctamente.
-          ul
-            li 
-              input(id='tarjeta' type='radio' name='medio_de_pago') 
-              label(for='tarjeta') 
-                .toggle
-                span Tarjeta
-            li 
-              input(id='mercadopago' type='radio' name='medio_de_pago') 
-              label(for='mercadopago') 
-                .toggle
-                span MercadoPago
-            li 
-              input(id='westernunion' type='radio' name='medio_de_pago')
-              label(for='westernunion') 
-                .toggle
-                span WesternUnion
-            li 
-              input(id='transferencia' type='radio' name='medio_de_pago')
-              label(for='transferencia') 
-                .toggle
-                span Transferencia
-          
-        #mensaje
-          p
-        
-        #tarjeta.detalle_de_pago.oculto
-          h3 Datos privados
-          p Ningún dato aquí será guardado o publicado. El tratamiento de la transacción es delegado a MercadoPago a través de una conexión excriptada (https).
-          p Ingresá los datos de tu tarjeta
-          include colectacardform.html
-          
-        #mercadopago.detalle_de_pago.oculto
-          h3 Redirigiendo a MercadoPago...
-          //- p Cargá tu nombre y monto arriba para generar un link de pago.
-          //- button#listobutton Listo!
-          //- p#mercadopagomensaje
-          //- div.cho-container
-          
-          
-        #westernunion.detalle_de_pago.oculto
-          h3 Datos para WesternUnion
-          p Enviar un depósito a:
-          pre Sebastián Rojo
-          pre DNI 24.357.725 
-          pre bastianrojo@gmail.com
-          pre +5493512116751
-          p Escribinos a ese mail o celular indicando monto, remitente y número de transferencia (MTCN), que son los datos que WU pide para el retiro. Al recibirlo lo ingresaremos manualmente a la planilla.
-          p ¡Muchas gracias!
-          
-        #transferencia.detalle_de_pago.oculto
-          h3 Transferencia a cuenta
-          p Depositar a CVU 
-          pre 0000003100041473842117
-          p O Alias 
-          pre sbrojo.mp
-          p Luego escribinos a elsilenciodondeescucho@gmail.com para dar aviso, ya que lo tenemos que ingresar manualmente a la planilla.
-          p ¡Muchas gracias!
-
-    script.
-    
-      const lis = document.querySelectorAll("#medios li");
-      const dvs = document.querySelectorAll(".detalle_de_pago");
-      
-      const freezar_datos_planilla = () => {
-        ['#monto_planilla', '#nombre_planilla', '#mail_planilla'].forEach(id => 
-          document.querySelector(`${id} input`).setAttribute('disabled', true)
-        )
-      }
-    
-      const elegir_medio_de_pago = async e => {
-          e.preventDefault();
-          
-          const medio_seleccionado = e.target.closest('li').querySelector('label').getAttribute('for');
-          const monto = document.querySelector("#monto_planilla input").value;
-          const nombre = document.querySelector("#nombre_planilla input").value;
-          const email = document.querySelector("#mail_planilla input").value;
-          const falta_alguno = (monto == "" || nombre == "" || email == "");
-        
-          const faltan_datos = 
-            (medio_seleccionado == 'tarjeta' && falta_alguno)
-            || (medio_seleccionado == 'mercadopago' && falta_alguno);
-            // WesternUnion valida con DNI en lugar de mail
-        
-          if (faltan_datos){
-            document.querySelector('#mensaje p').innerText = "Es preciso conocer monto, nombre y email antes de generar el formulario de tarjeta o link de MercadoPago, por favor completá esos datos antes de seleccionar medio de pago";
-            return;
-          }
-          
-          document.querySelector('#mensaje p').innerText = "";
-          if (medio_seleccionado == 'tarjeta') {initFormularioTarjeta(); freezar_datos_planilla();}
-          if (medio_seleccionado == 'mercadopago') {generar_link_mp(); freezar_datos_planilla();}
-          
-          // Descheckear radiobuttons y checkear este
-          lis.forEach(li => li.querySelector('input').checked = false);
-          e.target.closest('li').querySelector('input').checked = true;
-          
-          // Ocultar medios de pago y mostrar este
-          dvs.forEach(dv => {
-            if(dv.id !== medio_seleccionado){
-              dv.classList.add('oculto');
-            } else {
-              dv.classList.remove('oculto');
-            }
-          });           
-        }
-
-      // Registrar la función que acabamos de definir en el onclick de los radio
-      lis.forEach(li => {
-        li.querySelector('input').checked = false;
-        li.addEventListener('click', elegir_medio_de_pago)
-        })
-        
-        
-      // Billetera MP
-      const generar_link_mp = async () => {
-          //- document.querySelector('.cho-container').innerHTML = '';
-        
-          let r = await fetch('/billetera', {
-            method: 'POST',
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              monto: Number(document.querySelector("#monto_planilla input").value),
-              nombre: document.querySelector("#nombre_planilla input").value,
-              mail: document.querySelector("#mail_planilla input").value
-            })
-          });
-
-          let res = await r.json();
-
-          console.log('Respuesta jsoneada:');
-          console.log(res);
-          
-          document.location = res.body.init_point;
+    //- #contribucion.oculto
+    //-   div
+    //-     h1 Presencia
+    //-     h2 Colecta para auto-publicación
+    //-     #cruz(onclick="ocultar('#contribucion')")
+    //- 
+    //-     p Ingresá el monto con el que deseás colaborar 
+    //-     #monto_planilla
+    //-       label (ARS$)
+    //-       input(type="tel")
+    //-     p Ingresá tu nombre (como quieras que figure en la planilla pública, puede no ser completo)
+    //-     #nombre_planilla
+    //-       input
+    //-     p Ingresá tu mail. Lo usaremos para validar identidad caso que en el futuro quieras comprar o regalar el libro con este adelanto.
+    //-     #mail_planilla
+    //-       input(type='email')
+    //- 
+    //-     #medios
+    //-       p ¿Con qué medio querés transferir?
+    //-       p Si vas a transferir con mercadopago, permití que se te redireccione a este sitio luego de efectuar el pago, para que se procese correctamente.
+    //-       ul
+    //-         li 
+    //-           input(id='tarjeta' type='radio' name='medio_de_pago') 
+    //-           label(for='tarjeta') 
+    //-             .toggle
+    //-             span Tarjeta
+    //-         li 
+    //-           input(id='mercadopago' type='radio' name='medio_de_pago') 
+    //-           label(for='mercadopago') 
+    //-             .toggle
+    //-             span MercadoPago
+    //-         li 
+    //-           input(id='westernunion' type='radio' name='medio_de_pago')
+    //-           label(for='westernunion') 
+    //-             .toggle
+    //-             span WesternUnion
+    //-         li 
+    //-           input(id='transferencia' type='radio' name='medio_de_pago')
+    //-           label(for='transferencia') 
+    //-             .toggle
+    //-             span Transferencia
+    //- 
+    //-     #mensaje
+    //-       p
+    //- 
+    //-     #tarjeta.detalle_de_pago.oculto
+    //-       h3 Datos privados
+    //-       p Ningún dato aquí será guardado o publicado. El tratamiento de la transacción es delegado a MercadoPago a través de una conexión excriptada (https).
+    //-       p Ingresá los datos de tu tarjeta
+    //-       include colectacardform.html
+    //- 
+    //-     #mercadopago.detalle_de_pago.oculto
+    //-       h3 Redirigiendo a MercadoPago...
+    //-       //- p Cargá tu nombre y monto arriba para generar un link de pago.
+    //-       //- button#listobutton Listo!
+    //-       //- p#mercadopagomensaje
+    //-       //- div.cho-container
+    //- 
+    //- 
+    //-     #westernunion.detalle_de_pago.oculto
+    //-       h3 Datos para WesternUnion
+    //-       p Enviar un depósito a:
+    //-       pre Sebastián Rojo
+    //-       pre DNI 24.357.725 
+    //-       pre bastianrojo@gmail.com
+    //-       pre +5493512116751
+    //-       p Escribinos a ese mail o celular indicando monto, remitente y número de transferencia (MTCN), que son los datos que WU pide para el retiro. Al recibirlo lo ingresaremos manualmente a la planilla.
+    //-       p ¡Muchas gracias!
+    //- 
+    //-     #transferencia.detalle_de_pago.oculto
+    //-       h3 Transferencia a cuenta
+    //-       p Depositar a CVU 
+    //-       pre 0000003100041473842117
+    //-       p O Alias 
+    //-       pre sbrojo.mp
+    //-       p Luego escribinos a elsilenciodondeescucho@gmail.com para dar aviso, ya que lo tenemos que ingresar manualmente a la planilla.
+    //-       p ¡Muchas gracias!
+    //- 
+    //- script.
+    //- 
+    //-   const lis = document.querySelectorAll("#medios li");
+    //-   const dvs = document.querySelectorAll(".detalle_de_pago");
+    //- 
+    //-   const freezar_datos_planilla = () => {
+    //-     ['#monto_planilla', '#nombre_planilla', '#mail_planilla'].forEach(id => 
+    //-       document.querySelector(`${id} input`).setAttribute('disabled', true)
+    //-     )
+    //-   }
+    //- 
+    //-   const elegir_medio_de_pago = async e => {
+    //-       e.preventDefault();
+    //- 
+    //-       const medio_seleccionado = e.target.closest('li').querySelector('label').getAttribute('for');
+    //-       const monto = document.querySelector("#monto_planilla input").value;
+    //-       const nombre = document.querySelector("#nombre_planilla input").value;
+    //-       const email = document.querySelector("#mail_planilla input").value;
+    //-       const falta_alguno = (monto == "" || nombre == "" || email == "");
+    //- 
+    //-       const faltan_datos = 
+    //-         (medio_seleccionado == 'tarjeta' && falta_alguno)
+    //-         || (medio_seleccionado == 'mercadopago' && falta_alguno);
+    //-         // WesternUnion valida con DNI en lugar de mail
+    //- 
+    //-       if (faltan_datos){
+    //-         document.querySelector('#mensaje p').innerText = "Es preciso conocer monto, nombre y email antes de generar el formulario de tarjeta o link de MercadoPago, por favor completá esos datos antes de seleccionar medio de pago";
+    //-         return;
+    //-       }
+    //- 
+    //-       document.querySelector('#mensaje p').innerText = "";
+    //-       if (medio_seleccionado == 'tarjeta') {initFormularioTarjeta(); freezar_datos_planilla();}
+    //-       if (medio_seleccionado == 'mercadopago') {generar_link_mp(); freezar_datos_planilla();}
+    //- 
+    //-       // Descheckear radiobuttons y checkear este
+    //-       lis.forEach(li => li.querySelector('input').checked = false);
+    //-       e.target.closest('li').querySelector('input').checked = true;
+    //- 
+    //-       // Ocultar medios de pago y mostrar este
+    //-       dvs.forEach(dv => {
+    //-         if(dv.id !== medio_seleccionado){
+    //-           dv.classList.add('oculto');
+    //-         } else {
+    //-           dv.classList.remove('oculto');
+    //-         }
+    //-       });           
+    //-     }
+    //- 
+    //-   // Registrar la función que acabamos de definir en el onclick de los radio
+    //-   lis.forEach(li => {
+    //-     li.querySelector('input').checked = false;
+    //-     li.addEventListener('click', elegir_medio_de_pago)
+    //-     })
+    //- 
+    //- 
+    //-   // Billetera MP
+    //-   const generar_link_mp = async () => {
+    //-       //- document.querySelector('.cho-container').innerHTML = '';
+    //- 
+    //-       let r = await fetch('/billetera', {
+    //-         method: 'POST',
+    //-         headers: {
+    //-           "Content-Type": "application/json",
+    //-         },
+    //-         body: JSON.stringify({
+    //-           monto: Number(document.querySelector("#monto_planilla input").value),
+    //-           nombre: document.querySelector("#nombre_planilla input").value,
+    //-           mail: document.querySelector("#mail_planilla input").value
+    //-         })
+    //-       });
+    //- 
+    //-       let res = await r.json();
+    //- 
+    //-       console.log('Respuesta jsoneada:');
+    //-       console.log(res);
+    //- 
+    //-       document.location = res.body.init_point;
 
           //- Esto era para generar el botón de MP 
           //- mp.checkout({
