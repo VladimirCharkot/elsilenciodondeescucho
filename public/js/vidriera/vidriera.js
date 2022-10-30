@@ -146,9 +146,9 @@ let grafo = (idx, grupos={base: {x : 0, y: 0}}) => {
   gs.each((grupo,i) => {
 
     console.log(`Agregando esferas al grupo`)
-    console.log(idx.filter(elem => elem.serie ? elem.serie == grupo[0] : true))
+    console.log(idx.filter(elem => elem.fm?.serie ? elem.fm?.serie == grupo[0] : true))
     let nodos = d3.select('#' + grupo[0]).selectAll('g.entrada')
-      .data(idx.filter(elem => elem.serie ? elem.serie == grupo[0] : true))
+      .data(idx.filter(elem => elem.fm?.serie ? elem.fm?.serie == grupo[0] : true))
       .enter().append('g')
       // .call(drag)
       .on('click', (e, d) => {
@@ -170,7 +170,7 @@ let esferitas = (nodos) => {
   nodos.attr('class', d => 'entrada ' + (visitados.includes(d.id) ? 'visitado' : 'no_visitado'))
 
   let links = nodos.append('a')
-    .attr('href', d => d.filename ? `/escritos/${d.filename.split('.')[0]}` : '#')
+    .attr('href', d => d.nombre ? `/escritos/${d.nombre.split('.')[0]}` : '#')
 
   let circulos = links.append('circle')
     .attr('r', 95)
@@ -185,7 +185,7 @@ let esferitas = (nodos) => {
     .attr('class', 'titulo')
 
   let pies = nodos.append('text')
-    .text(d => d.pie ? d.pie : '')
+    .text(d => d.fm && d.fm.pie ? d.fm.pie : '')
     .attr('transform','translate(20,20)')
     .attr('class','pie')
     .call(wrap)
@@ -194,20 +194,18 @@ let esferitas = (nodos) => {
 
 
 
+let json_a_nodos = (idx) => idx.map(entrada => {
 
-let json_a_nodos = (idx) => {
-  for (let entrada of idx){
-    entrada.color = d3.color(centros_indice[entrada.serie].color)
-    entrada.titulo = capitalize(entrada.filename.split('.')[0].replaceAll('-', ' '))
-    entrada.accion = () => document.location = `/escritos/${entrada.filename.split('.')[0]}`
+  // Hmmm...
+  const nodo = {
+    ...entrada,
+    color: d3.color((entrada.fm && entrada.fm.serie) && centros_indice[entrada.fm.serie] ? centros_indice[entrada.fm.serie].color : 'grey'),
+    titulo: capitalize(entrada.nombre.split('.')[0].replaceAll('-', ' ')),
+    accion: () => document.location = `/escritos/${entrada.nombre.split('.')[0]}`
   }
-  return idx
-}
 
-
-
-
-
+  return nodo
+})
 
 
 
@@ -215,7 +213,13 @@ let indice = () => {
 
   d3.json('/indice_json').then(indice_json => {
 
+    console.log(indice_json)
     let data_indices = json_a_nodos(indice_json)
+
+    data_indices.forEach((item, i) => {
+      if (item.fm === undefined){ console.log(`Sin fm:`); console.log(item); }
+    });
+
 
     grafo(data_indices, centros_indice)
 

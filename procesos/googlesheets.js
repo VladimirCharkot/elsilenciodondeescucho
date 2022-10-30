@@ -3,7 +3,7 @@ const fs = require('fs');
 const SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 const sheets = google.sheets('v4');
 const { logger } = require('./esdelogger');
-const conf = require('./config');
+const conf = require('../dist/procesos/config');
 
 
 const getAuthToken = async () => {

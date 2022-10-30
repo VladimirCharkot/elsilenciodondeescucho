@@ -1,0 +1,19 @@
+{
+  "exclude": ["front", "scripts", "public", "views", "shared"],
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "strict": true,
+    "moduleResolution": "node",
+    // "baseUrl": "./",
+    // "paths": {},
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

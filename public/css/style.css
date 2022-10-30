@@ -146,69 +146,58 @@ header {
 /* Editor */
 /* Area del editor */
 #editor {
-  height: 100%;
+  height: 100vh;
   width: 100vw;
   display: flex;
   background-color: #fffd;
   background-image: url(/img/arbol.jpg);
   background-size: cover;
   background-blend-mode: color-burn; }
-  #editor > div {
+  #editor .btn {
+    width: 2em;
+    min-width: 2em;
+    height: 2em;
+    margin: 1em;
+    background-size: cover;
+    cursor: pointer;
+    box-sizing: border-box; }
+    #editor .btn:hover {
+      background-color: #fffa;
+      background-blend-mode: multiply;
+      border: 1px solid; }
+  #editor #controles {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    max-width: 3em;
+    border: 1px solid black;
+    background: #e6f3ff; }
+  #editor #paneles {
     width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-    scrollbar-width: none; }
-
-.panel {
-  overflow-y: scroll;
-  max-width: 0px; }
-  .panel.expandido {
-    max-width: 3000px;
-    border: 1px solid black; }
+    display: flex;
+    flex-direction: row; }
+    #editor #paneles .panel {
+      overflow-y: scroll;
+      max-width: 0px;
+      width: 100%;
+      scrollbar-width: none; }
+      #editor #paneles .panel.expandido {
+        max-width: max-content;
+        border: 1px solid black; }
 
 /* Barra */
-#controles {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-  max-width: 3em;
-  border: 1px solid black;
-  background: #e6f3ff; }
-
-.btn {
-  width: 2em;
-  min-width: 2em;
-  height: 2em;
-  margin: 1em;
-  background-size: cover;
-  cursor: pointer;
-  box-sizing: border-box; }
-  .btn:hover {
-    background-color: #fffa;
-    background-blend-mode: multiply;
-    border: 1px solid; }
-
-/* Íconos del árbol */
-.carpeta-icono {
-  background-image: url(/icon/folder.png) !important;
-  background-size: cover; }
-
-.texto-icono {
-  background-image: url(/icon/articulo.png) !important;
-  background-size: cover; }
-
 /* Botones de la barra */
-#texto {
+#btn_md {
   background-image: url(/icon/pen-2.png); }
 
-#preview {
+#btn_previa {
   background-image: url(/icon/preview-2.png); }
 
-#archivos {
+#btn_arbol {
   background-image: url(/icon/tree.png); }
 
-#imgs {
+#btn_imagenes {
   background-image: url(/icon/image.png); }
 
 #menu {
@@ -220,12 +209,31 @@ header {
 #logout {
   background-image: url(/icon/logout.png); }
 
-#nuevo {
+/* Controles del area de texto */
+#guardar {
+  background-image: url(/icon/save.png); }
+
+#descartar {
+  background-image: url(/icon/reset.png); }
+
+#crear {
   background-image: url(/icon/new.png); }
 
 #borrar {
   background-image: url(/icon/trash.png); }
 
+#nombre {
+  transition: .7s;
+  padding: 5px;
+  border: 1px solid white;
+  font-size: 1.3em; }
+  #nombre:hover {
+    background-color: #fcfaf4;
+    border: 1px solid antiquewhite; }
+  #nombre:focus {
+    outline: none; }
+
+/* Controles del area de imágenes */
 #subir_imagen {
   background-image: url(/icon/new.png); }
 
@@ -233,16 +241,12 @@ header {
   background-image: url(/icon/trash.png);
   margin-top: auto; }
 
-#cerrar {
+/* Compartido */
+#cerrar.btn {
   background-image: url(/icon/close.png);
   margin-left: auto;
-  opacity: 0;
-  transition: .1s;
   justify-self: flex-end;
   border: none; }
-  #cerrar:hover {
-    opacity: 1;
-    background-color: #fff0; }
 
 @keyframes eyecall {
   from {
@@ -256,33 +260,47 @@ header {
   animation-duration: 0.5s;
   animation-name: eyecall; }
 
-/* Botones del area de texto */
-#guardar {
-  background-image: url(/icon/save.png); }
-
-#reset {
-  background-image: url(/icon/reset.png); }
-
-#nombre {
-  transition: .7s;
-  padding: 5px;
-  border: 1px solid white;
-  font-size: 1.3em; }
-  #nombre:hover {
-    background-color: #fcfaf4;
-    border: 1px solid antiquewhite; }
-  #nombre:focus {
-    outline: none; }
-
 #status {
   visibility: collapse; }
 
 /* Paneles */
 #arbol {
-  border: 1px solid black; }
-  #arbol p {
-    margin: 0;
-    display: inline; }
+  position: relative;
+  background: #fff8;
+  color: white;
+  fill: white;
+  width: 12em;
+  padding: 0em 2em;
+  overflow: scroll;
+  min-width: 20em;
+  /* Íconos del árbol */ }
+  #arbol.contraido {
+    padding: 0;
+    min-width: 0em; }
+  #arbol ol, #arbol ul {
+    list-style: none; }
+  #arbol .carpeta-icono {
+    width: 24px;
+    height: 24px;
+    margin: 4px;
+    display: inline-block;
+    background-image: url(/icon/folder.png) !important;
+    background-size: cover; }
+  #arbol .texto-icono {
+    width: 24px;
+    height: 24px;
+    margin: 4px;
+    display: inline-block;
+    background-image: url(/icon/articulo.png) !important;
+    background-size: cover; }
+  #arbol .jstree-anchor {
+    display: flex;
+    align-items: center; }
+  #arbol .jstree-icon {
+    background-size: cover !important; }
+  #arbol .jstree-container-ul {
+    width: max-content;
+    padding: 0; }
 
 #md > div {
   display: flex;
@@ -307,35 +325,8 @@ header {
 #md.vacio > div {
   border-bottom: 1px solid #ffc6a4; }
 
-#md.vacio #guardar {
-  visibility: collapse; }
-
-#md.vacio #reset {
-  visibility: collapse; }
-
-#md.vacio #status {
-  visibility: collapse; }
-
-#md.vacio #nombre {
-  visibility: collapse; }
-
-#md.vacio #borrar {
-  visibility: collapse; }
-
-#md.vacio #cerrar {
-  visibility: collapse; }
-
-#md.nuevo #nuevo {
-  visibility: collapse; }
-
-#md.nuevo #reset {
-  visibility: collapse; }
-
 #md.nuevo #nombre {
   box-shadow: inset 0px 0px 5px orange; }
-
-#md.nuevo #borrar {
-  visibility: collapse; }
 
 #md.editado #nuevo {
   visibility: collapse; }
@@ -349,36 +340,30 @@ header {
 #md.editado #borrar {
   visibility: collapse; }
 
-#md.guardado #guardar {
-  visibility: collapse; }
-
-#md.guardado #reset {
-  visibility: collapse; }
-
-#md.guardado #status {
-  visibility: collapse; }
-
-#md.guardado textarea {
+#md.limpio textarea {
   box-shadow: inset 0px 0px 5px #bfff9b; }
 
 #imagenes {
   display: flex; }
-  #imagenes > div {
+  #imagenes .controles {
     display: flex;
     flex-direction: column;
     background: white;
     overflow: scroll;
     border-right: 1px solid #ffc6a4; }
-
-#vitrina {
-  width: 100%;
-  display: flex;
-  flex-direction: column; }
-  #vitrina > img {
-    margin: 20px;
-    border: 2px solid; }
-  #vitrina .seleccionada {
-    box-shadow: 0px 0px 10px 3px #70ebff; }
+  #imagenes #vitrina {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    #imagenes #vitrina > img {
+      object-fit: contain;
+      margin: 20px;
+      border: 2px solid;
+      width: 5em;
+      height: 4em; }
+    #imagenes #vitrina .seleccionada {
+      box-shadow: 0px 0px 10px 3px #70ebff; }
 
 #archivo_imagen {
   display: none; }
@@ -953,7 +938,8 @@ header {
       position: relative; }
       #colecta #mobile .tres .quiero_ver {
         padding: 1em 2em;
-        width: max-content; }
+        width: max-content;
+        color: black; }
       #colecta #mobile .tres p {
         font-size: 1.3em;
         text-align: center; }
@@ -1019,19 +1005,25 @@ header {
       #colecta #mobile .cuatro button {
         margin: 0.3em;
         width: 10em;
-        height: 3em; }
+        height: 3em;
+        color: black; }
   #colecta #contribucion {
     position: fixed;
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
-    font-size: 1.5em;
     opacity: 1;
     transition: 1s;
     background: white;
     overflow-y: scroll;
     z-index: 10; }
+    @media screen and (min-width: 1080px) {
+      #colecta #contribucion {
+        font-size: 1.5em; } }
+    @media screen and (max-width: 1080px) {
+      #colecta #contribucion {
+        font-size: 2.5em; } }
     #colecta #contribucion > div {
       margin: 2em; }
     #colecta #contribucion #cruz {
@@ -1060,12 +1052,21 @@ header {
         font-family: 'Reenie Beanie';
         font-size: 1.5em;
         font-weight: 100; }
+        @media screen and (max-width: 1080px) {
+          #colecta #contribucion #monto_planilla input, #colecta #contribucion #nombre_planilla input, #colecta #contribucion #mail_planilla input {
+            font-size: 2.5em; } }
         #colecta #contribucion #monto_planilla input:focus, #colecta #contribucion #nombre_planilla input:focus, #colecta #contribucion #mail_planilla input:focus {
           outline: none; }
     #colecta #contribucion #monto_planilla {
       width: 50vw; }
+      @media screen and (max-width: 1080px) {
+        #colecta #contribucion #monto_planilla {
+          width: 75vw; } }
     #colecta #contribucion #nombre_planilla, #colecta #contribucion #mail_planilla {
       width: 80vw; }
+      @media screen and (max-width: 1080px) {
+        #colecta #contribucion #nombre_planilla, #colecta #contribucion #mail_planilla {
+          width: 90vw; } }
     #colecta #contribucion #mercadopago #listobutton {
       background-position: center;
       background-size: contain;
@@ -1211,23 +1212,23 @@ header {
         transform: translateY(5px);
         background-image: url(/img/preventa/botonpresionado.png); }
 
-h1, h2 {
+#colecta h1, #colecta h2 {
   font-weight: 100; }
 
-h2 {
+#colecta h2 {
   margin: 0.2em 0; }
 
-.detalle_de_pago {
+#colecta .detalle_de_pago {
   max-height: 1000vh;
   transition: 1s; }
 
-.oculto {
+#colecta .oculto {
   visibility: hidden;
   opacity: 0;
   transition: 1s;
   max-height: 0; }
 
-.separador {
+#colecta .separador {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1235,20 +1236,20 @@ h2 {
   height: 1em;
   width: 100%; }
 
-ul {
+#colecta ul {
   list-style: none; }
 
-input[type="radio"] {
+#colecta input[type="radio"] {
   display: none; }
 
-label {
+#colecta label {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
   justify-content: start; }
 
-.toggle {
+#colecta .toggle {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1257,7 +1258,7 @@ label {
   margin: 0.5em;
   background-image: url(/img/preventa/unchecked.png); }
 
-input:checked ~ label .toggle {
+#colecta input:checked ~ label .toggle {
   background-image: url(/img/preventa/checked.png); }
 
 /*# sourceMappingURL=style.css.map */

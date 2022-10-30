@@ -574,45 +574,46 @@
         width: 9em
         height: 2em
 
+#colecta
 
-h1, h2
-  font-weight: 100
+  h1, h2
+    font-weight: 100
 
-h2
-  margin: 0.2em 0
+  h2
+    margin: 0.2em 0
 
 
-.detalle_de_pago
-  max-height: 1000vh
-  transition: 1s
+  .detalle_de_pago
+    max-height: 1000vh
+    transition: 1s
 
-.oculto
-  visibility: hidden
-  opacity: 0
-  transition: 1s
-  max-height: 0
+  .oculto
+    visibility: hidden
+    opacity: 0
+    transition: 1s
+    max-height: 0
 
-.separador
-  @include fullbackground
-  background-image: url(/img/preventa/separador.png)
-  height: 1em
-  width: 100%
+  .separador
+    @include fullbackground
+    background-image: url(/img/preventa/separador.png)
+    height: 1em
+    width: 100%
 
-ul
-  list-style: none
-input[type="radio"]
-  display: none
+  ul
+    list-style: none
+  input[type="radio"]
+    display: none
 
-label
-  @include flexcenterrow
-  justify-content: start
+  label
+    @include flexcenterrow
+    justify-content: start
 
-.toggle
-  @include fullbackground
-  width: 1em
-  height: 1em
-  margin: 0.5em
-  background-image: url(/img/preventa/unchecked.png)
+  .toggle
+    @include fullbackground
+    width: 1em
+    height: 1em
+    margin: 0.5em
+    background-image: url(/img/preventa/unchecked.png)
 
-input:checked ~ label .toggle
-  background-image: url(/img/preventa/checked.png)
+  input:checked ~ label .toggle
+    background-image: url(/img/preventa/checked.png)

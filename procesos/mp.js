@@ -3,7 +3,7 @@ const fs = require('fs');
 const mercadopago = require('mercadopago');
 const {logger} = require('./esdelogger');
 const {appendPagoPublico, appendPagoPrivado, appendPendientePrivado, appendRechazadoPrivado} = require('./googlesheets');
-const conf = require('./config');
+const conf = require('../dist/procesos/config');
 
 const url_base = 'https://elsilenciodondeescucho.com';
 const cache_pagos = {};

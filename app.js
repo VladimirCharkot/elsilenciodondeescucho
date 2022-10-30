@@ -5,16 +5,17 @@ const cookieParser = require('cookie-parser');
 const sassMiddleware = require('node-sass-middleware');
 const fs = require('fs')
 
-const passport = require('passport')
 const session = require('express-session')
 const bodyParser = require('body-parser');
-const LocalStrategy = require('passport-local').Strategy;
 
-const blogRouter = require('./routes/esde');
+const blogRouter = require('./dist/routes/esde');
 
 const { logger } = require('./procesos/esdelogger');
 
-const conf = require('./procesos/config');
+const conf = require('./dist/procesos/config').default;
+const { passport } = require('./dist/procesos/auth');
+
+const { cargar_cache } = require('./dist/procesos/cache');
 
 logger.info("Instanciando server")
 
@@ -25,10 +26,11 @@ let app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+app.use(cookieParser(conf.sessionSecret));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
+
 app.use(sassMiddleware({
   src: path.join(__dirname, 'public'),
   dest: path.join(__dirname, 'public'),
@@ -37,40 +39,30 @@ app.use(sassMiddleware({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-
-
-
-
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(session({ secret: "najndjvnskjdnvijwnjovnqoneuqnvqw", resave: true, saveUninitialized: true }));
+
+const store = new session.MemoryStore();
+app.use(session({ store, secret: conf.sessionSecret, resave: false, saveUninitialized: false, cookie: { maxAge: 600000000, expires: 600000000 } }));
+
 
 app.use(passport.initialize());
 app.use(passport.session());
 
-
-
-passport.use(new LocalStrategy(
-  (username, password, done) => {
-    console.log('Logueando...')
-    if (password.trim() == conf.editor.password.trim()) {
-      console.log('Login!')
-      return done(null, {user: 'esde', username: 'esde', id: 'esde'})
-    }
-    console.log('Fail')
-    return done(null, false)
-  }
-));
-
-passport.serializeUser(function(user, done) {
-  done(null, user.id);
-});
-
-passport.deserializeUser(function(id, done) {
-  done(null, {user: 'esde', username: 'esde', id: 'esde'})
-});
-
+app.use((req, ___, next) => {
+  if (req.session.views){ req.session.views++; }else{ req.session.views = 1; }
+  logger.debug(`SESSION: `);
+  logger.debug(JSON.stringify(req.session));
+  logger.debug(`COOKIES: `);
+  logger.debug(JSON.stringify(req.cookies));
+  logger.debug(`SESSIONS: `);
+  logger.debug(JSON.stringify(store.sessions));
+  logger.debug(`USER: `);
+  logger.debug(JSON.stringify(req.user));
+  next();
+})
 
 app.use('/', blogRouter);
+cargar_cache();
 
 
 // catch 404 and forward to error handler

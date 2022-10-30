@@ -1,6 +1,5 @@
 ---
 serie: primarios
-titulo: Movimiento
 pie: La Vida es un continuo en movimiento constante aconteciendo
 titulo: Movimiento
 ---

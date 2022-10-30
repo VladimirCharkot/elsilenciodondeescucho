@@ -11,69 +11,62 @@
   background-image: url(/img/arbol.jpg)
   background-size: cover
   background-blend-mode: color-burn
-  > div
-    width: 100%
-    height: 100%
-    overflow-y: scroll
-    scrollbar-width: none
 
+  .btn
+    width: 2em
+    min-width: 2em
+    height: 2em
+    margin: 1em
+    background-size: cover
+    cursor: pointer
+    box-sizing: border-box
+    &:hover
+      background-color: #fffa
+      background-blend-mode: multiply
+      border: 1px solid
 
-.panel
-  overflow-y: scroll
-  max-width: 0px
-  &.expandido
-    max-width: 3000px
+  #controles
+    display: flex
+    flex-direction: column
+    justify-items: center
+    align-items: center
+    max-width: 3em
     border: 1px solid black
+    background: #e6f3ff
+
+  #paneles
+    width: 100%
+    display: flex
+    flex-direction: row
+
+    .panel
+      overflow-y: scroll
+      max-width: 0px
+      width: 100%
+      scrollbar-width: none
+      &.expandido
+        max-width: max-content
+        border: 1px solid black
 
 
 
 /* Barra */
 
-#controles
-  display: flex
-  flex-direction: column
-  justify-items: center
-  align-items: center
-  max-width: 3em
-  border: 1px solid black
-  background: #e6f3ff
 
-.btn
-  width: 2em
-  min-width: 2em
-  height: 2em
-  margin: 1em
-  background-size: cover
-  cursor: pointer
-  box-sizing: border-box
-  &:hover
-    background-color: #fffa
-    background-blend-mode: multiply
-    border: 1px solid
-
-
-/* Íconos del árbol */
-.carpeta-icono
-  background-image: url(/icon/folder.png) !important
-  background-size: cover
-
-.texto-icono
-  background-image: url(/icon/articulo.png) !important
-  background-size: cover
 
 
 
 /* Botones de la barra */
-#texto
+#btn_md
   background-image: url(/icon/pen-2.png)
 
-#preview
+#btn_previa
   background-image: url(/icon/preview-2.png)
 
-#archivos
+#btn_arbol
   background-image: url(/icon/tree.png)
 
-#imgs
+#btn_imagenes
   background-image: url(/icon/image.png)
 
 #menu
@@ -85,11 +78,36 @@
 #logout
   background-image: url(/icon/logout.png)
 
-#nuevo
+
+
+/* Controles del area de texto */
+
+#guardar
+  background-image: url(/icon/save.png)
+
+#descartar
+  background-image: url(/icon/reset.png)
+
+#crear
   background-image: url(/icon/new.png)
 
 #borrar
   background-image: url(/icon/trash.png)
+
+#nombre
+  transition: .7s
+  padding: 5px
+  border: 1px solid white
+  font-size: 1.3em
+  &:hover
+    background-color: #fcfaf4
+    border: 1px solid antiquewhite
+  &:focus
+    outline: none
+
+
+
+/* Controles del area de imágenes */
 
 #subir_imagen
   background-image: url(/icon/new.png)
@@ -99,16 +117,18 @@
   margin-top: auto
 
 
-#cerrar
+/* Compartido */
+
+#cerrar.btn
   background-image: url(/icon/close.png)
   margin-left: auto
-  opacity: 0
-  transition: .1s
+  // opacity: 0
+  // transition: .1s
   justify-self: flex-end
   border: none
-  &:hover
-    opacity: 1
-    background-color: #fff0
+  // &:hover
+  //   opacity: 1
+  //   background-color: #fff0
 
 
 @keyframes eyecall
@@ -128,25 +148,10 @@
 
 
 
-/* Botones del area de texto */
-
-#guardar
-  background-image: url(/icon/save.png)
-
-#reset
-  background-image: url(/icon/reset.png)
 
 
-#nombre
-  transition: .7s
-  padding: 5px
-  border: 1px solid white
-  font-size: 1.3em
-  &:hover
-    background-color: #fcfaf4
-    border: 1px solid antiquewhite
-  &:focus
-    outline: none
+
+
 
 // #status
 //   transition: .5s
@@ -167,10 +172,54 @@
 /* Paneles */
 
 #arbol
-  border: 1px solid black
-  p
-    margin: 0
-    display: inline
+  position: relative
+  background: #fff8
+  color: white
+  fill: white
+
+  width: 12em
+  padding: 0em 2em
+
+  overflow: scroll
+  min-width: 20em
+
+  &.contraido
+    padding: 0
+    min-width: 0em
+
+  ol, ul
+    list-style: none
+
+  /* Íconos del árbol */
+  @mixin iconito
+    width: 24px
+    height: 24px
+    margin: 4px
+    display: inline-block
+
+  .carpeta-icono
+    @include iconito
+    background-image: url(/icon/folder.png) !important
+    background-size: cover
+
+  .texto-icono
+    @include iconito
+    background-image: url(/icon/articulo.png) !important
+    background-size: cover
+
+  .jstree-anchor
+    display: flex
+    align-items: center
+
+  .jstree-icon
+    background-size: cover !important
+
+  .jstree-container-ul
+    width: max-content
+    padding: 0
+
+
+
 
 
 #md
@@ -196,28 +245,10 @@
       visibility: hidden
     > div
       border-bottom: 1px solid #ffc6a4
-    #guardar
-      visibility: collapse
-    #reset
-      visibility: collapse
-    #status
-      visibility: collapse
-    #nombre
-      visibility: collapse
-    #borrar
-      visibility: collapse
-    #cerrar
-      visibility: collapse
 
 #md.nuevo
-  #nuevo
-    visibility: collapse
-  #reset
-    visibility: collapse
   #nombre
     box-shadow: inset 0px 0px 5px orange
-  #borrar
-    visibility: collapse
 
 #md.editado
   #nuevo
@@ -230,13 +261,7 @@
     visibility: collapse
     // box-shadow: inset 0px 0px 5px orange
 
-#md.guardado
-  #guardar
-    visibility: collapse
-  #reset
-    visibility: collapse
-  #status
-    visibility: collapse
+#md.limpio
   textarea
     box-shadow: inset 0px 0px 5px #bfff9b
 
@@ -247,22 +272,28 @@
 
 #imagenes
   display: flex
-  > div
+
+  .controles
     display: flex
     flex-direction: column
     background: white
     overflow: scroll
     border-right: 1px solid #ffc6a4
 
-#vitrina
-  width: 100%
-  display: flex
-  flex-direction: column
-  > img
-    margin: 20px
-    border: 2px solid
-  .seleccionada
-    box-shadow: 0px 0px 10px 3px #70ebff
+  #vitrina
+    width: 100%
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    > img
+      // align-self: center
+      object-fit: contain
+      margin: 20px
+      border: 2px solid
+      width: 5em
+      height: 4em
+    .seleccionada
+      box-shadow: 0px 0px 10px 3px #70ebff
 
 
 #archivo_imagen
@@ -316,7 +347,3 @@
 //   background: #fcfaf3
 //   padding: 5px
 //   margin: 5px
-
-
-// .jstree-icon
-//   background-size: cover !important
