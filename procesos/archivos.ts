@@ -1,13 +1,12 @@
 import fs from 'fs/promises';
 import path from 'path';
-import {render} from './mdesde';
 import {ArbolFS, NodoFS} from '../shared/types/arbol';
-import {Request, Response} from 'express';
 import {cache_textos, referencias_a_imagenes} from './cache';
 
 
 // Update o create
 export const post_public = async (ruta: string, recurso: any) => {
+  console.log(`Recibiendo request a post_public para ruta ${ruta}`)
   let target = path.join('public', ruta)
   try{
     let stat = await fs.stat(target)
@@ -123,20 +122,38 @@ export const flatten = <T>(tree: T[]): T[] => tree.map((n: any) => n.children ? 
 
 
 
+const atributos_fs = (ruta: string, nombre: string) => ({
+  ruta: ruta.replace('public', ''),
+  nombre: nombre,
+  type: nombre.split('.')[1]
+})
 
+// Esto es llamado para construir la cache
 export const construir_indice_textos = (addr: string) => fsTreeWalk<NodoFS>(addr,
-    async ({ruta, nombre}) => ({
-      ruta: ruta.replace('public', ''),
-      nombre: nombre,
-      type: ruta.split('.')[1],
-      atributos: ruta.split('.')[1] == 'md' ? render(await fs.readFile(ruta, 'utf8')).front_matter : null
-    }))
+    async ({ruta, nombre}) => atributos_fs(ruta, nombre)
+  )
+
+export const construir_indice_textos_hidratado = (addr: string) => fsTreeWalk<NodoFS>(addr,
+    async ({ruta, nombre}) => {
+      const path = ruta.replace('public', '');
+      const txts = cache_textos.filter(t => t.link == path);
+
+      if (txts.length == 0) {
+        console.log(`No encontramos ${path} en cache!`);
+        return atributos_fs(path, nombre);
+      }
+      const txt = txts[0];
+      // const portada =
+      return {
+        ...atributos_fs(path, nombre),
+        atributos: {...txt.fm, portada: txt.imagenes ? txt.imagenes[0] : null},
+      }
+    }
+  )
 
 export const construir_indice_imgs = (addr: string) => fsTreeWalk<NodoFS>(addr,
     async ({ruta, nombre}) => ({
-      ruta: ruta.replace('public', ''),
-      nombre: nombre,
-      type: ruta.split('.')[1],
+      ...atributos_fs(ruta, nombre),
       atributos: {
         referencias: referencias_a_imagenes[ruta.replace('public', '')]
       }
@@ -146,10 +163,6 @@ export const construir_indice_imgs = (addr: string) => fsTreeWalk<NodoFS>(addr,
 
 
 /* Endpoints */
-
-type Endpoint = (req: Request, res: Response) => Promise<void>;
-
-
 
 /* Transforma el índice json que devuelve construir_indice() a md */
 export const indice_a_md = async (idx: ArbolFS): Promise<string> => {

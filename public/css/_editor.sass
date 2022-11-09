@@ -1,35 +1,31 @@
 /* Editor */
-// @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap")
-@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap")
-/* Area del editor */
 
-#editor
-  height: 100vh
-  width: 100vw
-  display: flex
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap")
+
+@import "editor/iconos"
+
+@mixin fondo_editor
   background-color: #fffd
   background-image: url(/img/arbol.jpg)
   background-size: cover
   background-blend-mode: color-burn
 
-  .btn
-    width: 2em
-    min-width: 2em
-    height: 2em
-    margin: 1em
-    background-size: cover
-    cursor: pointer
-    box-sizing: border-box
-    &:hover
-      background-color: #fffa
-      background-blend-mode: multiply
-      border: 1px solid
+@mixin flex_column_center
+  display: flex
+  flex-direction: column
+  justify-items: center
+  align-items: center
+
+
+
+#editor
+  @include fondo_editor
+  height: 100vh
+  width: 100vw
+  display: flex
 
   #controles
-    display: flex
-    flex-direction: column
-    justify-items: center
-    align-items: center
+    @include flex_column_center
     max-width: 3em
     border: 1px solid black
     background: #e6f3ff
@@ -38,6 +34,11 @@
     width: 100%
     display: flex
     flex-direction: row
+
+    @import "editor/arbol"
+    @import "editor/imagenes"
+    @import "editor/md"
+    @import "editor/previa"
 
     .panel
       overflow-y: scroll
@@ -49,86 +50,6 @@
         border: 1px solid black
 
 
-
-/* Barra */
-
-
-
-
-
-/* Botones de la barra */
-#btn_md
-  background-image: url(/icon/pen-2.png)
-
-#btn_previa
-  background-image: url(/icon/preview-2.png)
-
-#btn_arbol
-  background-image: url(/icon/tree.png)
-
-#btn_imagenes
-  background-image: url(/icon/image.png)
-
-#menu
-  background-image: url(/icon/journal.png)
-
-#csss
-  background-image: url(/icon/curly-brackets.png)
-
-#logout
-  background-image: url(/icon/logout.png)
-
-
-
-/* Controles del area de texto */
-
-#guardar
-  background-image: url(/icon/save.png)
-
-#descartar
-  background-image: url(/icon/reset.png)
-
-#crear
-  background-image: url(/icon/new.png)
-
-#borrar
-  background-image: url(/icon/trash.png)
-
-#nombre
-  transition: .7s
-  padding: 5px
-  border: 1px solid white
-  font-size: 1.3em
-  &:hover
-    background-color: #fcfaf4
-    border: 1px solid antiquewhite
-  &:focus
-    outline: none
-
-
-
-/* Controles del area de imágenes */
-
-#subir_imagen
-  background-image: url(/icon/new.png)
-
-#borrar_imagen
-  background-image: url(/icon/trash.png)
-  margin-top: auto
-
-
-/* Compartido */
-
-#cerrar.btn
-  background-image: url(/icon/close.png)
-  margin-left: auto
-  // opacity: 0
-  // transition: .1s
-  justify-self: flex-end
-  border: none
-  // &:hover
-  //   opacity: 1
-  //   background-color: #fff0
 
 
 @keyframes eyecall
@@ -144,206 +65,15 @@
   animation-name: eyecall
 
 
-
-
-
-
-
-
-
-
-
-// #status
-//   transition: .5s
-//   background-image: url(/icon/changed.png)
-//   background-size: 16px
-//   background-repeat: no-repeat
-//   background-position: center
-//   cursor: auto
-//   &:hover
-//     background-color: white
-//     border: none
-
-#status
-  visibility: collapse
-
-
-
-/* Paneles */
-
-#arbol
-  position: relative
-  background: #fff8
-  color: white
-  fill: white
-
-  width: 12em
-  padding: 0em 2em
-
-  overflow: scroll
-  min-width: 20em
-
-  &.contraido
-    padding: 0
-    min-width: 0em
-
-  ol, ul
-    list-style: none
-
-  /* Íconos del árbol */
-  @mixin iconito
-    width: 24px
-    height: 24px
-    margin: 4px
-    display: inline-block
-
-  .carpeta-icono
-    @include iconito
-    background-image: url(/icon/folder.png) !important
-    background-size: cover
-
-  .texto-icono
-    @include iconito
-    background-image: url(/icon/articulo.png) !important
-    background-size: cover
-
-  .jstree-anchor
-    display: flex
-    align-items: center
-
-  .jstree-icon
-    background-size: cover !important
-
-  .jstree-container-ul
-    width: max-content
-    padding: 0
-
-
-
-
-
-#md
-  > div
-    display: flex
-    background: white
-    overflow: scroll
-  textarea
-    border: none
-    border-right: 1px solid #d7eac9
-    width: 100%
-    height: 100%
-    // font-family: 'Cutive Mono', monospace
-    font-family: 'Anonymous Pro', monospace
-    scrollbar-width: none
-    box-sizing: border-box
-    padding: 10px
-    &:focus
-      outline: none
-
-#md.vacio
-    textarea
-      visibility: hidden
-    > div
-      border-bottom: 1px solid #ffc6a4
-
-#md.nuevo
-  #nombre
-    box-shadow: inset 0px 0px 5px orange
-
-#md.editado
-  #nuevo
-    visibility: collapse
-  #cerrar
-    visibility: collapse
-  #reset
-    visibility: visible
-  #borrar
-    visibility: collapse
-    // box-shadow: inset 0px 0px 5px orange
-
-#md.limpio
-  textarea
-    box-shadow: inset 0px 0px 5px #bfff9b
-
-
-
-
-
-
-#imagenes
-  display: flex
-
-  .controles
-    display: flex
-    flex-direction: column
-    background: white
-    overflow: scroll
-    border-right: 1px solid #ffc6a4
-
-  #vitrina
-    width: 100%
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
-    > img
-      // align-self: center
-      object-fit: contain
-      margin: 20px
-      border: 2px solid
-      width: 5em
-      height: 4em
-    .seleccionada
-      box-shadow: 0px 0px 10px 3px #70ebff
-
-
-#archivo_imagen
-  display: none
-
-
-#css
-
-
-
-// Esto está bueno para mobile
-#previa
-  p
-    padding: 0px 5% 0px 5%
-  h2,h3,h4
-    font: 1.7em 'Julius Sans One'
-    padding: 5% 2%
-    margin: 0
-  img
-    width: 100%
-
-
-
-
-// #visor
-//   position: absolute
-//   top: 0
-//   right: 0
-//   margin: 15px
-//   opacity: .3
-//   transition: .5s
-//   &:hover
-//     opacity: 1
-//
-//
-// #imgs-indice
-//   // float: right
-//   display: inline-block
-//
-// #agregar_img
-//   // float: right
-//   display: inline-block
-//
-// #enviar_img
-//   // float: right
-//   display: inline-block
-
-
-// button
-//   border: 2px solid #cfddc4
-//   background: #fcfaf3
-//   padding: 5px
-//   margin: 5px
+// js-tree-context
+.vakata-context
+  position: absolute
+  background: #f0f0f0
+  border: 1px solid #c4c4c4
+  padding: 0
+  list-style: none
+  li
+    padding: 0 0.3em
+    &:hover
+      background: #ffeed0
+      border: 1px solid #ffdeb4

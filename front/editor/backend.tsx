@@ -21,8 +21,6 @@ export const useArchivos = () => {
   const postImgs = (fs: FileList) => postFiles(`/imagenes/`, fs)
   const eraseImg = (path: string) => del(`/imagenes/${path}`)
 
-  const textsByImg = () => get<Record<string, string[]>>('/referencias_a_imagenes')
-
   return {getMd, upsertMd, renameMd, eraseMd, getImgs, postImgs, eraseImg, getIndexMd, getIndexImgs}
 
 }

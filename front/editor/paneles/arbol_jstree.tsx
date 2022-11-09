@@ -2,10 +2,8 @@ import * as React from 'react';
 import {Panel} from './panel'
 import {useContext, useEffect} from 'react';
 import {EditorContext} from '../contexto';
-// import Tree from 'react-animated-tree';
 import {useEdicion} from '../edicion';
-// import * as $ from 'jquery';
-
+import {ArbolFS} from '../../../shared/types/arbol';
 
 export const PanelArbol = () => {
   const {textos, toggleExpandido} = useContext(EditorContext);
@@ -16,42 +14,58 @@ export const PanelArbol = () => {
 
       console.log("Inicializando jstree con: ");
 
-      const formatear = (txts) => txts.map((t: any) => {
-          if (t.es_dir){
+      // Agrega los atributos type y text que jstree necesita
+      const formatear = (txts: ArbolFS) => txts.map((t: any) => {
+          if (t.children){
             return {...t, text: t.nombre , type: 'carpeta', children: formatear(t.children)}
           }else{
-            return {...t, type: 'md'}
+            if(t.atributos && t.atributos.portada) return {...t, text: t.nombre, type: 'mdc'}  // La 'c' es de 'completo' c:
+            return {...t, text: t.nombre, type: 'md'}
           }
         })
-
 
       const textos_para_jstree = formatear(textos);
       console.log(textos_para_jstree);
 
-      $('#arbol').jstree({
-          "types" : {
-            "default" : { "icon" : "texto-icono" },
-            "carpeta" : { "icon" : "carpeta-icono" }
-          },
-          "plugins" : [ "types", "dnd", "search" ],
-          "core" : {
-            "data" : textos_para_jstree,
-            "multiple" : false,
-            "check_callback" : function (operation: any, node: any, node_parent: any, node_position: any, more: any) {
-              console.log(operation)
-              return operation == 'move_node' && node_parent.original.es_carpeta
-            }
+      $.jstree.defaults.contextmenu = {
+        select_node: false,
+        show_at_node: true,
+        items: (nodo, cb) => {
+          if(nodo.type != 'carpeta'){
+            console.log(nodo)
+            cb({
+              borrar : {
+                label : "Borrar",
+                action : () => console.log(`Borrar ${nodo.original.ruta}`)
+              }
+            })
           }
-        })
+        }
+        // items:
+        // }
+      }
 
-        $('#arbol').on("select_node.jstree", (e, data) => {
-          console.log('Seleccionado: ')
-          console.log(data.node.original)
-          if(!data.node.original.es_dir){
-            accion('cargar', data.node.original.ruta)
-            toggleExpandido('md', true)
-          }
-        })
+      $('#arbol').jstree({
+        "types" : {
+          "default" : {"icon" : "desconocido-icono"},
+          "md" : { "icon" : "texto-icono" },
+          "mdc" : { "icon" : "texto-completo-icono" },
+          "carpeta" : { "icon" : "carpeta-icono" }
+        },
+        "plugins" : [ "types", "dnd", "search", "contextmenu" ],
+        "core" : {
+          "data" : textos_para_jstree,
+          "multiple" : false,
+          "check_callback" : true
+        }
+      })
+
+      $('#arbol').on("select_node.jstree", (e, data) => {
+        if(data.node.original.type != 'carpeta'){
+          toggleExpandido('md', true)
+          accion('cargar', data.node.original)
+        }
+      })
 
       }
 

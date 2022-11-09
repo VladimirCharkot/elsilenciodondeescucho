@@ -1,0 +1,58 @@
+#imagenes
+  display: flex
+  flex-direction: column
+
+  // #archivo_imagen
+  //   display: none
+
+  // .controles
+  //   display: flex
+  //   flex-direction: column
+  //   background: white
+  //   overflow: scroll
+  //   border-right: 1px solid #ffc6a4
+
+  #vitrina
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    align-content: flex-start
+    overflow: scroll
+    .imagen_vitrina, .carpeta_vitrina
+      // align-self: center
+      margin: 20px
+      border: 2px solid
+      width: var(--anchoImagen)
+      height: calc(var(--anchoImagen) / 1.22)
+      > img
+        object-fit: cover
+        width: 100%
+        height: 100%
+      > p
+        margin: 0
+        text-overflow: ellipsis
+        overflow: hidden
+        white-space: nowrap
+        font-size: 0.6em
+    .carpeta_vitrina
+      border: none
+    .seleccionada
+      box-shadow: 0px 0px 10px 3px #70ebff
+
+  #ruta
+    display: flex
+    flex-direction: row
+    align-items: center
+    height: 2em
+    font-size: 0.7em
+    background: #fffa
+    p
+      margin: 0 1em
+    a
+      margin: 0 1em
+      margin-left: auto
+      &:hover
+        text-decoration: underline
+        cursor: pointer

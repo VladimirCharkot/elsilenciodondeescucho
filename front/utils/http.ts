@@ -1,6 +1,7 @@
 
 export const post = async (endpoint: string, payload: Record<string, any>, parseResponse = (r: Response) => r.json()) => {
   try{
+    console.log(`Fetching ${endpoint}`)
     const response = await fetch(endpoint,{
       method: 'post',
       body: JSON.stringify(payload),
@@ -9,12 +10,13 @@ export const post = async (endpoint: string, payload: Record<string, any>, parse
     if (response.status != 200)
       console.warn(`Mal status en post(${endpoint})`)
     const j = await parseResponse(response);
+    console.log(`Got response...`)
+    console.log(j)
     return j
   }catch(err){
     console.error(`Error en post(${endpoint}, ${payload})`)
     throw err
   }
-
 }
 
 export const get = async <T>(endpoint: string, parseResponse = (r: Response) => r.json()): Promise<T> => {

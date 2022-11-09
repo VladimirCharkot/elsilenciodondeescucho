@@ -5,41 +5,13 @@ include cabecera
 block contenido
   script(src="/js/hammer.min.js")
   script(src="/js/touch.js")
+  //- script(src="/js/general.js")
   
   script.
-  
-    // MD devuelve las imágenes en imgs dentro de ps, 
-    // acá las reemplazo por divs con background
     
-    let corregir_imagenes = () => {
-      document.querySelectorAll('p img').forEach(i => {
-          let d = document.createElement('div')
-          d.classList.add('ventana')
-          d.classList.add('cabecera')
-          for (let attr of i.getAttributeNames()){
-            d.setAttribute(attr, i.getAttribute(attr))
-          }
-          d.style.setProperty('--url-imagen', `url(${i.getAttribute('src')})`)
-          if(i.getAttribute('data-pos')) 
-            d.style.setProperty('--posicion', i.getAttribute('data-pos'))
-          if(i.getAttribute('data-escala'))
-            d.style.setProperty('--escala', i.getAttribute('data-escala'))
-          i.parentElement.replaceWith(d)
-          i.style.opacity = 0
-          d.appendChild(i)
-        }) 
-      try{
-        let titulo = document.querySelector('h2')
-        let imagen = document.querySelector('.ventana')
-        imagen.appendChild(titulo)
-      }catch{
-        console.log(`Parece que este texto no tiene imagen de cabecera c:`)
-      }
-    }
-    
-    let agregar_scroll_a_backref = () => {
+    const agregar_scroll_a_backref = () => {
       document.querySelectorAll('.footnote-backref').forEach(r => {
-        let target = document.querySelector(r.getAttribute('href'))
+        const target = document.querySelector(r.getAttribute('href'))
         r.addEventListener('click', e => {
           e.preventDefault()
           document.querySelector('main').scrollTo({
@@ -53,9 +25,9 @@ block contenido
       })
     }
     
-    let agregar_highlights_a_ref = () => {
+    const agregar_highlights_a_ref = () => {
       document.querySelectorAll('.footnote-ref a').forEach(r => {
-        let target = document.querySelector(r.getAttribute('href'))
+        const target = document.querySelector(r.getAttribute('href'))
         r.addEventListener('click', e => {
           e.preventDefault()
           document.querySelector('main').scrollTo({
@@ -68,7 +40,19 @@ block contenido
         })
       })
     }
+    
+    window.lastScrollY = 0;
+    const revelar_barra = () => {
+      //- console.log()
+      if(window.scrollY - window.lastScrollY > 0){
+        document.querySelector('header').classList.remove('habitado')
+      }else{
+        document.querySelector('header').classList.add('habitado')
+      }
+      window.lastScrollY = window.scrollY
+    }
       
+    window.addEventListener('scroll', revelar_barra)
     window.addEventListener('load', corregir_imagenes)
     window.addEventListener('load', agregar_scroll_a_backref)
     window.addEventListener('load', agregar_highlights_a_ref)

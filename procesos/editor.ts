@@ -3,7 +3,7 @@ import fs from 'fs/promises';
 import formidable from 'formidable';
 import _ from 'lodash';
 import {Request, Response} from 'express';
-import {delete_public, post_public, move_public, construir_indice_imgs, construir_indice_textos} from './archivos';
+import {delete_public, post_public, move_public, construir_indice_imgs, construir_indice_textos_hidratado} from './archivos';
 
 type Endpoint = (req: Request, res: Response) => Promise<void>;
 
@@ -19,9 +19,10 @@ export const borrar_imagen: Endpoint = async (req, res) => {
 }
 
 export const post_md: Endpoint = async (req, res) => {
-  if(req.body.md && req.body.ruta){
+  console.log(`Recibiendo post_md`)
+  if(req.body.contenido && req.body.ruta){
     if(!req.body.ruta.endsWith('.md')) req.body.ruta += '.md'
-    res.json(await post_public(req.body.ruta, req.body.md))
+    res.json(await post_public(req.body.ruta, req.body.contenido))
   }
   if(req.body.ruta_vieja && req.body.ruta_nueva){
     res.json(await move_public(req.body.ruta_vieja, req.body.ruta_nueva))
@@ -51,18 +52,28 @@ export const post_imagenes: Endpoint = async (req, res) => {
 export const indice_imagenes_editor: Endpoint = async (__, res) => {
   console.log(`Armando índice imágenes`)
   let idx_img = await construir_indice_imgs('public/img')
-  // let idx_foto = await construir_indice('public/foto')
-  // res.json(idx_img.concat(idx_foto))
-  res.json(idx_img)
+  let idx_foto = await construir_indice_imgs('public/foto')
+  res.json([
+    {
+      ruta: 'public/img',
+      nombre: 'img',
+      children: idx_img
+    },
+    {
+      ruta: 'public/foto',
+      nombre: 'foto',
+      children: idx_foto
+    }
+  ])
 }
 
 // Devuelve un ÁRBOL, que es procesado por el editor
 export const indice_textos_editor: Endpoint = async (__, res) => {
-  const idx = await construir_indice_textos('public/textos')
+  const idx = await construir_indice_textos_hidratado('public/textos')
   res.json(idx)
 }
 
 
 export const editor: Endpoint = async (__, res) => {
-  res.render('editor/editor')
+  res.render('editor')
 }
