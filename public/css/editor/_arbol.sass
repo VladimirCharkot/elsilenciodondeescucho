@@ -1,0 +1,56 @@
+#arbol
+  position: relative
+  background: #fff8
+  color: white
+  fill: white
+
+  width: 12em
+  padding: 0em 2em
+
+  overflow: scroll
+  min-width: 20em
+
+  &.contraido
+    padding: 0
+    min-width: 0em
+
+  ol, ul
+    list-style: none
+
+  /* Íconos del árbol */
+  @mixin iconito
+    width: 24px
+    height: 24px
+    margin: 4px
+    display: inline-block
+
+  .carpeta-icono
+    @include iconito
+    background-image: url(/icon/folder.png) !important
+    background-size: cover
+
+  .texto-icono
+    @include iconito
+    background-image: url(/icon/articulo.png) !important
+    background-size: cover
+
+  .texto-completo-icono
+    @include iconito
+    background-image: url(/icon/articulo-completo.png) !important
+    background-size: cover
+
+  .desconocido-icono
+    @include iconito
+    background-image: url(/icon/desconocido.png) !important
+    background-size: cover
+
+  .jstree-anchor
+    display: flex
+    align-items: center
+
+  .jstree-icon
+    background-size: cover !important
+
+  .jstree-container-ul
+    width: max-content
+    padding: 0

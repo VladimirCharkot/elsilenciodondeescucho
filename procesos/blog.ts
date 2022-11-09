@@ -76,6 +76,7 @@ interface ResultadoDeBusqueda{
 }
 
 export const buscar: Endpoint = async (req, res) => {
+  // console.log(`Buscando ${req.params.consulta}...`)
   if(req.params.consulta.length < 4) res.json([])
   const delta = 50
   const resultados = cache_textos.map(t => {
@@ -98,7 +99,9 @@ export const buscar: Endpoint = async (req, res) => {
     let resp = {titulo: t.titulo, matches : matches, id: t.nombre}
     return resp
   })
+  // console.log(`...filtrando...`)
   const relevantes = resultados.filter((r: ResultadoDeBusqueda) => r.matches.length > 0)
+  // console.log(`...y devolviendo`)
   res.json(relevantes)
 }
 

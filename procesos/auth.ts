@@ -31,7 +31,7 @@ const login: Middleware = async (req, res, next) => {
   }
 
 const is_admin: Middleware = async (req, res, next) => {
-  if(req.user) { next(); } else { res.redirect('/hogar'); }
+  if(req.user) { next(); } else { console.log(`Blocking non-admin request to ${req.path}`); res.redirect('/hogar'); }
 }
 
 

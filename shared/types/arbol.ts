@@ -24,7 +24,8 @@ export interface TextoSinCuerpo{
   link: string,
   nombre: string,
   fm: Record<string, string>,
-  cuerpo?: string
+  cuerpo?: string,
+  imagenes?: string[]
 }
 
 export interface Texto extends TextoSinCuerpo{

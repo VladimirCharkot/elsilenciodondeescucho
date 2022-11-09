@@ -9,19 +9,28 @@ import {render} from './mdesde';
 export let cache_textos : Texto[];
 export let referencias_a_imagenes: Record<string,string[]> = {};
 
+const extraer_imagenes = (cuerpo_md : string) => {
+  const imgs = []
+  const regex = RegExp('!\\[(.+?)\\]\\((.+?)\\)', 'ig')
+  let m = regex.exec(cuerpo_md)
+  while (m !== null) {
+    const ruta = m[2];
+    imgs.push(ruta)
+    m = regex.exec(cuerpo_md)
+  }
+  return imgs
+}
+
 export const cargar_referencias_a_imagenes = () => {
   cache_textos.forEach(t => {
-    const regex = RegExp('!\\[(.+?)\\]\\((.+?)\\)', 'ig')
-    let m = regex.exec(t.cuerpo)
-    while (m !== null) {
-      const ruta = m[2];
-      if (referencias_a_imagenes.hasOwnProperty(m[2]) ){
-        referencias_a_imagenes[ruta].push(t.link)
+    const imgs = t.imagenes ?? [];
+    imgs.forEach(img => {
+      if(referencias_a_imagenes.hasOwnProperty(img)){
+        referencias_a_imagenes[img].push(t.link);
       }else{
-        referencias_a_imagenes[ruta] = [t.link]
+        referencias_a_imagenes[img] = [t.link];
       }
-      m = regex.exec(t.cuerpo)
-    }
+    })
   })
 }
 
@@ -47,14 +56,16 @@ export const cargar_textos = async (): Promise<Texto[]> => {
   for (let entrada of indice){
     let contenido = await fs.readFile('public' + entrada.ruta, 'utf8')
     const {front_matter} = render(contenido);
-    //         const entrada: Entrada = {ruta: ruta_public, filename: e.name, type: 'md', id: e.name.split('.')[0], fm: front_matter}
+    const imgs = extraer_imagenes(contenido);
 
+    // console.log(`Cargando ${entrada.ruta}...`)
     textos.push({
       titulo: capitalize(entrada.nombre.replace(/-/g,' ')),
       cuerpo: contenido,
       link: entrada.ruta,
       nombre: entrada.nombre.split('.')[0],
-      fm: front_matter
+      fm: front_matter,
+      imagenes: imgs
     })
   }
   console.log('Textos cargados!...')

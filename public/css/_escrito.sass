@@ -13,18 +13,56 @@ $color-6: #d8d3cd
 
 .texto
   background: url(/img/ruido.png) fixed
-  // width: 100vw
   margin: 0
   display: flex
   flex-direction: column
-  // overflow-y: scroll
+  hr
+    width: 30%
+
   h2
+    font: 3.4em 'Cinzel'
     padding: 0em 20%
     padding-top: 1.8em
+    color: white
+    text-align: right
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
   h3, h4
     padding: 0.2em 20%
   p
     padding: 0px 20% 0px 20%
+
+  .ventana
+    &.cabecera
+      height: 60vh
+      min-height: auto
+    img
+      display: none
+    min-height: 40vh
+    border-top: 2px solid black
+    border-bottom: 2px solid black
+    // min-height: 40vh
+    // min-height: var(--altura-ventanas)
+    background-attachment: var(--attach-default)
+    background-image: var(--url-imagen) /* Se espera que esté definida en el elemento (div) */
+    background-size: var(--escala, var(--escala-default))
+    background-position: var(--posicion, var(--posicion-default))
+
+  // .cabecera
+  //   @media(max-width: 1000px)
+  //   position: relative
+  //   h2
+  //     position: absolute
+  //     bottom: 0
+  //     right: 0
+
+
+.piel
+  padding: var(--pad, var(--pad-default))
+  background-attachment: var(--attach, var(--attach-default))
+  background-color: var(--color, var(--color-default))
+  background-image: var(--textura, var(--textura-default))
+  background-blend-mode: var(--blend, var(--blend-default))
+
 
 
 .footnote-item
@@ -56,18 +94,3 @@ $color-6: #d8d3cd
   100%
     color: #000
     font-size: 1em
-
-.ventana
-  background-attachment: var(--attach-default)
-  background-image: var(--url-imagen) /* Se espera que esté definida en el elemento*/
-  background-size: var(--escala, var(--escala-default))
-  background-position: var(--posicion, var(--posicion-default))
-  height: var(--altura-ventanas)
-
-
-.piel
-  padding: var(--pad, var(--pad-default))
-  background-attachment: var(--attach, var(--attach-default))
-  background-color: var(--color, var(--color-default))
-  background-image: var(--textura, var(--textura-default))
-  background-blend-mode: var(--blend, var(--blend-default))

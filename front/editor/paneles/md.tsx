@@ -10,7 +10,7 @@ import {flash} from '../../general';
 
 export const PanelMd = () => {
 
-  const {textoMd, tituloMd, setTituloMd, textos, estado} = useContext(EditorContext);
+  const {textoMd, tituloMd, setTituloMd, estado, editorRef} = useContext(EditorContext);
   const {accion} = useEdicion();
 
   const Btn = ({id, txt}: {id: AccionEditor, txt: string}) =>
@@ -35,7 +35,6 @@ export const PanelMd = () => {
 
         <input id="nombre" title="Titulo" value={tituloMd}
           onChange={e => {
-            console.log(tituloMd)
             if(!/^[A-Za-z0-9- ]*$/.test(e.target.value)){
               flash({mensaje: '¡Nombre inválido! Sólo letras, números, espacios y guiones'})
               return
@@ -43,9 +42,9 @@ export const PanelMd = () => {
             setTituloMd(e.target.value)
         }}/>
 
-        {(estado == 'limpio' || estado == 'editado') &&
+        {/*(estado == 'limpio' || estado == 'editado') &&
           <Btn id='borrar' txt="Borrar"/>
-        }
+        */}
 
         {(estado != 'vacio') &&
           <Btn id='cerrar' txt="Cerrar"/>
@@ -53,7 +52,7 @@ export const PanelMd = () => {
 
       </div>
 
-      <textarea id="texto_md" value={textoMd}
+      <textarea id="texto_md" value={textoMd} ref={editorRef}
         onChange={e => accion('editar', e.target.value)}/>
 
     </Panel>)

@@ -1,0 +1,85 @@
+@mixin btn
+  background-size: cover
+  cursor: pointer
+  box-sizing: border-box
+  &:hover
+    background-color: #fffa
+    background-blend-mode: multiply
+    border: 1px solid
+
+.btn
+  @include btn
+  width: 2em
+  min-width: 2em
+  height: 2em
+  margin: 1em
+
+
+.minibtn
+  @include btn
+  width: 1em
+  height: 1em
+  margin: 0.2em
+
+
+/* Botones de la barra */
+#btn_md
+  background-image: url(/icon/pen-2.png)
+
+#btn_previa
+  background-image: url(/icon/preview-2.png)
+
+#btn_arbol
+  background-image: url(/icon/tree.png)
+
+#btn_imagenes
+  background-image: url(/icon/image.png)
+
+#menu
+  background-image: url(/icon/journal.png)
+
+#csss
+  background-image: url(/icon/curly-brackets.png)
+
+#logout
+  background-image: url(/icon/logout.png)
+
+
+
+/* Controles del area de texto */
+
+#guardar
+  background-image: url(/icon/save.png)
+
+#descartar
+  background-image: url(/icon/reset.png)
+
+#crear
+  background-image: url(/icon/new.png)
+
+#borrar
+  background-image: url(/icon/trash.png)
+
+
+
+/* Controles del area de imágenes */
+
+#subir_imagen
+  background-image: url(/icon/new.png)
+
+#borrar_imagen
+  background-image: url(/icon/trash.png)
+  margin-top: auto
+
+.link_a_texto
+  background-image: url(/icon/link.png)
+
+
+
+/* Compartido */
+
+#cerrar.btn
+  background-image: url(/icon/close.png)
+  margin-left: auto
+  justify-self: flex-end
+  border: none
