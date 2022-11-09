@@ -5,6 +5,8 @@ pie: Nombrar todo castra y condiciona el impulso a investigar
 
 ## **ESCRITOS DESDE LA PATERNIDAD.**
 
+![Limón](/foto/IMG_20200503_130017.webp)
+
 Observe a un niño.
 
 _Toma un limón, lo toca, se lo mete en la boca, lo saca, lo vuelve a mirar, lo deja cuando se le cruza otra cosa…_

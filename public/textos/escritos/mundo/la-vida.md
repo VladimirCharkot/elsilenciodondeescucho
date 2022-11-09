@@ -5,6 +5,8 @@ pie: Y hay hasta quienes la viven solamente en el último suspiro
 
 ## LA VIDA.
 
+![Pasto iluminado, bosque al fondo y bichitos volando cerca de la cámara, todo fuera de foco](/foto/10688355_10206348238486283_7750543191598458189_o.webp)
+
 ¡Es tan simple!
 
 ¿Qué decir?

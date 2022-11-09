@@ -5,6 +5,11 @@ pie: Saber no es tener ideas
 
 ## Saber
 
+
+![Maceta y artesanía en tela colgando de rama de árbol](/foto/10348932_10206346397800267_940787001383646576_o.webp)
+
+
+
 Estamos acostumbrados a usar la palabra saber para señalar el conocimiento que tenemos acumulado en la memoria, el que alcanzamos a abarcar con nuestra conciencia. Decimos: "Yo sé tal cosa o tal otra", "Sé que esto es así por tal y tal cosa" cuando eso, más que saber, es tener una idea cristalizada con respecto a alguna cosa. Estamos acostumbrados a llamar sabios a los que han logrado acumular mucho conocimiento. Sin embargo sabio es el que está sabiendo. Y ello comprende una presencia dando cuenta de estar sabiendo que sabe. Es decir, mientras lo Está Realizando. Mientras Está estando allí una conciencia consciente realizándose en la actividad _Saber._
 
 ::: piel
@@ -16,7 +21,7 @@ En consecuencia, nos preguntemos:
 
 ¿Cómo es posible saber, ahora, que se está sabiendo? Para saberlo debemos observar, a ver si estamos haciéndolo. Para atestiguar, de continuo, estar haciéndolo.
 Y ni ocuparse en decirlo, pues, saber es un flujo. -la vida misma es un flujo-
-Un flujo de información, de datos, de cosas que son, que _están siendo_. Un enorme complejo de flujos de información del que formamos parte y en el que estamos inmersos. Y ese flujo se puede conectar directamente con la acción _saber_. Sin percepciones[1] intermediando, sin velos. Directo.
+Un flujo de información, de datos, de cosas que son, que _están siendo_. Un enorme complejo de flujos de información del que formamos parte y en el que estamos inmersos. Y ese flujo se puede conectar directamente con la acción _saber_. Sin percepciones[^1] intermediando, sin velos. Directo.
 :::
 
 Saber es la acción, la actividad, en actividad.

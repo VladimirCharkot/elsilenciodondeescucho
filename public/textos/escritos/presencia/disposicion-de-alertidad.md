@@ -3,7 +3,9 @@ serie: presencia
 pie: ¿Qué se propone para el hacer que haga salir de lo conocido?
 ---
 
-## Disposición de Alertidad, de Repectividad
+## Disposición de Alertidad, de Receptividad
+
+![Frambuesa en su rama](/foto/11043366_10206321633901185_3300807188588984934_o.webp)
 
 ¿Qué se propone para el hacer que haga salir de lo conocido?
 
@@ -13,6 +15,7 @@ Esto abre una nueva posibilidad en la psiquis. Permite la posibilidad de un "pen
 
 Nosotros damos por hecho que hacemos las cosas, cuando la mayoría de las cosas en nosotros se hacen solas. Pensar, emocionar, sentir, escuchar, etc., y el hablar, mover la mano, nuestros gestos, actitudes, comportamientos, todas las posturas, las posiciones físicas, derivadas de aquellos pensamientos, sentimientos, emociones y sensaciones físicas y psíquicas, son todas cosas que en lo corriente se hacen en nosotros por mecanismos automáticos, repitiéndose. Creemos que porque por un momento las hicimos eso les da una continuidad, creemos que seguimos haciéndolas, damos por hecho que quedan "encendidas" haciéndose. En general nosotros no estamos allí cuando las cosas se hacen, llegamos siempre un momento después y vemos, vivimos, los residuos de este reaccionar automático, por tanto, menos podemos decir que las estemos haciendo. Por ejemplo, damos por hecho que atendemos, y puede que lo hagamos cada tanto, como por ejemplo cuando la fuerza de atracción de alguna cosa es muy grande, despierta nuestra atención, la "llama", y por ese momento atendemos. Pero así y todo ese movimiento de la atención para ir a posarse sobre dicha cosa, ha sido accidental. No hemos dirigido nosotros voluntariamente la atención sino que emocional y automáticamente se ha movido por la atracción de la cosa. Hay tiempo en esto: un momento es en el que no hay atención en lo más mínimo, otro momento es cuando esa cosa (un choque de autos o un pensamiento que cruza la mente) entra en el campo de la consciencia, nos "impresiona", tensiona y atrae nuestra atención, otro momento posterior es en el que la atención se mueve para posarse sobre dicha cosa, y otro momento es en el que nosotros llegamos detrás de la atención a dar cuenta de la cosa y de que nuestra atención ha sido atraída sobre ella... y mientras todo esto sucede, a la vez, se mueve en nosotros una nube, que no alcanzamos a percibir en ese mismo instante, de opiniones al respecto, pensamientos, emociones, sensaciones, pulsiones, apetitos y aversiones, etc. que no nos dejan ver lo que es.
 
+::: piel
 Hay que comprender que sólo atendemos cuando estamos atendiendo a estar atendiendo. Es decir, sólo atendemos cuando estamos dando cuenta de estar atendiendo.
 
 Sólo estamos, cuando estamos dando cuenta de estar estando. Y esto no es algo que se haga porque simplemente lo entendamos intelectualmente, o porque demos por hecho que así funcione. Únicamente lo estamos haciendo cuando "sabemos" que lo estamos haciendo. "Conciencia consciente de ser la consciencia consciente" de, estar parado, caminando, pensando, atendiendo, o de estar haciendo cualquier otra actividad que se esté haciendo.
@@ -20,6 +23,7 @@ Sólo estamos, cuando estamos dando cuenta de estar estando. Y esto no es algo q
 Es decir, aquel cierto estado de "disposición de alertidad y receptividad" no puede estar activo por sí mismo, precisa de un esfuerzo voluntario consciente para sostenerse en actividad.
 
 Esta "disposición de alertidad y receptividad", en tanto se realiza, se traduce a su vez en la vivencia de un espacio que es activo, y la actividad de este espacio es estar dando cuenta de sí. Es decir, es un espacio atendiendo a estar atendiendo a sí mismo. En tanto esto se realiza, lo que sucede es que ese mismo espacio dando cuenta de sí, dándose atención a sí, recibe atención; al recibir atención se alimenta, en tanto se alimenta crece, en tanto crece se expande, en tanto se expande más espacio hay, más lugar hay, entre lo conocido y lo conocido para que lo ocupe lo desconocido. Este es el principio. Todo esto se realiza mientras se anda en el mundo. Y es este, y en este, mismo espacio donde un "nuevo pensar", libre de lo conocido, se realiza.
+:::
 
 Hemos escuchado aquello de que: lo que vivimos (lo que pensamos, lo que sentimos, etc.) lo atraemos. Pues no podemos atraer lo desconocido con lo conocido. Lo conocido estando en actividad atrae lo conocido. Pero como no conozco lo desconocido como para poder hacer algo que lo atraiga, solo me queda el disponerme a que venga -lo que venga- sin importar qué pueda llegar a ser eso desconocido, porque todo lo que pueda pensar, sentir y decir que "pueda llegar a ser lo desconocido" será algo de lo conocido. Lo que "pueda llegar a ser lo desconocido" no puede ser de lo conocido. Así, lo "qué hacer" es estar "dispuesto a recibirlo". La "disposición de alertidad a recibirlo" y el "estar recibiéndolo" son la misma actividad y no dependen de "lo recibido" o "lo no recibido". Carece de importancia el "qué" es eso desconocido que pueda llegar a recibirse, ya que el impulso mismo que nos mueva a decir "qué pueda ser lo desconocido" es parte de lo conocido.
 

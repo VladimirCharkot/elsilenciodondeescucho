@@ -5,6 +5,8 @@ pie: No existen los acontecimientos como tales
 
 ## LA VIDA – UN ETERNO ACONTECIENDO.
 
+![Ocaso entre nubes y montañas](/foto/P1440041.webp)
+
 No existen los acontecimientos como tales.
 
 Si de alguna manera los nombramos "acontecimientos", estos, ya han sucedido, ya son una imagen dentro de nosotros y no lo que son, ni lo que fueron. Nunca la expresión "son un acontecimiento" puede señalar una realidad ("son" y "acontecimiento" tienen una realidad espacio temporal distintas). Si Son, eso es un "aconteciendo". Decir "acontecimiento" es fragmentar el tiempo en ahoras, limitando la realidad a un pasado muy próximo.

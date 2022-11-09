@@ -5,6 +5,8 @@ pie: El Ser crece en el decrecimiento de la persona
 
 ## EL SER CRECE (Y SE ALIMENTA DE) EN EL DECRECIMIENTO DE LA PERSONA
 
+![Pastizales y edificios a lo lejos](/foto/P1170929.webp)
+
 Fíjese:
 
 Aquello, lo que llamamos "crecimiento personal" (lograr mejor puesto en la empresa, u otro máster, o ser mejor bailarín, o más alto sueldo, o mejores y más largas vacaciones, el trabajo que queremos, el plan de salud para nuestros hijos, el reconocimiento de cierto circulo social, etc.) en fin, el "crecimiento personal" incluye muchas cosas que son parte de los roles que representamos ante la sociedad, y los posibles aumentos y beneficios que de ellos se puedan deducir. También podemos y solemos asociar el crecimiento personal con aquello que está incluido en eso que llamamos "Nuestros sueños": "Lograr lo que tanto soñamos", y que no es otra cosa que "lo que más deseamos".

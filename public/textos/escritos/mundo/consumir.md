@@ -5,9 +5,12 @@ pie: Si el problema está en algún lado, está en consumir
 
 ## CONSUMIR.
 
+![Publicidad sexualizada](/foto/P1120502.webp){data-pos=bottom}
+
 Si el problema está en algún lado, está en consumir.
 
 Se envenena por consumir.
+
 No solo por consumir alimentos envenenados, sino, por consumir este mundo -de seres/productos- que se envenena y alimenta consumiendo. Por consumir luces, Imágenes, cuerpos, ideas, encuentros sociales, discusiones, problemas y cumpleaños… días y días "de…", etc.
 
 Por querer y tomar, desmedidamente, todo lo que no es del ser humano y quiere.
@@ -15,9 +18,9 @@ Por querer y tomar, desmedidamente, todo lo que no es del ser humano y quiere.
 El problema, que es de la humanidad, se resuelve dejando de consumir.
 
 Dejando de consumir lo más que se pueda, y siendo lo más estricto posible en discernir _deseo_ de _necesidad_ y _necesidad_ de _necesariedad_.
-Porque el ser humano confunde deseo con capricho y pretensión…
-confunde necesidad con deseo…
-y necesariedad con necesidad.
+
+Porque el ser humano confunde deseo con capricho y pretensión… confunde necesidad con deseo… y necesariedad con necesidad.
+
 Lo necesario para un fin (necesariedad) está muy alejado de la necesidad personal, que, a su vez, es confundida con deseo: lo que se quiere. Y deseo se confunde con lo que se viene a gana tener o hacer y, en mayor o menor grado y en variadas formas, sin importar lo que cueste, sean estos billetes, años o cabezas.
 
 Si se quiere abordar el problema y solucionarlo, es imprescindible comprender qué es lo "estricta y realmente necesario" para llevar adelante la vida que ya está dada.

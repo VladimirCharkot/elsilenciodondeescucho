@@ -5,6 +5,8 @@ pie: Fíjese bien cómo es cuando está volviendo
 
 ## Fíjese
 
+![Pato de juguete](/foto/170649_1836159465200_4445294_o.webp)
+
 Fíjese bien cómo es cuando está volviendo
 Hasta ese momento, fíjese, ha estado perdido dentro de usted.
 

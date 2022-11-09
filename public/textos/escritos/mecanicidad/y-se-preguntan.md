@@ -5,6 +5,8 @@ pie: Carencia que fabrica duda
 
 ## Y SE PREGUNTAN
 
+![Rulos de aserrín](/foto/10454365_10204948038642162_5073341612204729535_o.webp)
+
 Podemos tomar como ejemplo para ver esto, lo siguiente:
 
 Hay quienes se preguntan, hombres entre nosotros, si Dios existe.

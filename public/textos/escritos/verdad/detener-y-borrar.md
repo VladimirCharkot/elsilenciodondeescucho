@@ -5,6 +5,8 @@ pie: Lo que borra a las ideas, es la paz que uno encuentra
 
 ## DETENER Y BORRAR
 
+![Luces entre sombras proyectadas sobre una pared](/foto/fb_lumen.webp)
+
 Detengámonos.
 
 Vamos a averiguar.

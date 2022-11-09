@@ -5,6 +5,8 @@ pie: El ser humano tiene una oportunidad
 
 ## POSIBLE LIBERTAD REAL
 
+![Ave enjaulada](/foto/wp-condicionamiento.webp)
+
 El ser humano no puede ser libre "ahora", es decir, en el momento en el que vive, pues, la vida que vive es "una cierta condición determinada" –prisión- que se ha fabricado en un momento pasado con base en "haber tomado ciertas _posiciones personales y mecánicas_" frente a algo con lo que se encontraba en interrelación en dichos momentos y lugares a lo largo de su, o sus, existencias, y en los que se hallaba igualmente encerrado y determinado por anteriores tomas mecánicas de posición; todo lo cual está basado, entre otras cosas, en cristalizaciones adquiridas por herencia o cultura y en cierto cúmulo de influencias que por completo desconoce y que lo conforman esencialmente.
 
 Sólo puede procurar hacer algo con miras a encontrarse libre en un momento futuro.

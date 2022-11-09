@@ -5,6 +5,7 @@ pie: En este tejido que es la existencia...
 
 ## LA TRAMA. LA RED.
 
+![Totora con hilos siendo tensados desde fuera del cuadro, enredados entre sí](/foto/P1120108.webp)
 ![Telaraña](/foto/P1500470.webp)
 
 En este tejido -de pensamientos- que es la existencia, hay tres tipos de humanos.

@@ -5,6 +5,8 @@ pie: Nada más que la plena receptividad, se puede dar
 
 ## Dar y Recibir
 
+![Pareja de ancianos caminando por el jardín tomados del brazo](/foto/P1530767.webp)
+
 Una integrada realidad.
 
 Al Ser humano, todo "se le ha sido dado": "su cuerpo", "sus pensamientos", "sus emociones", "su casa", "su auto", "su bicicleta", "su perro", "sus vínculos", "su trabajo", "sus ideas", "su genialidad", "su astucia y su ingenuidad", "su sufrimiento", "sus necesidades" y "sus satisfacciones", etc., todo lo que está contenido en lo que él llama "su vida", incluida esta última, todo "se le ha sido dado". Nada es de él.

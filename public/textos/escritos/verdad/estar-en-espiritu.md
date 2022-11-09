@@ -5,6 +5,8 @@ pie: Lo que borra a las ideas, es la paz que uno encuentra
 
 ## Estar en espíritu es lo único que trae paz
 
+![Monte vegetado a través de ventana](/foto/P1510856.webp)
+
 Detengámonos.
 
 Vamos a averiguar.

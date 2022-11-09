@@ -5,6 +5,8 @@ pie: Así es que lo que pensamos, nos hace
 
 ## DE LA IGUALDAD
 
+![Mosquito sobre un vidrio y su reflejo](/foto/PSX_20180902_182136.webp)
+
 Si somos iguales.
 
 Si vos sos yo y yo soy vos:

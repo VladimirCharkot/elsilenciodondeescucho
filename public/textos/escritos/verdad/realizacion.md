@@ -5,6 +5,8 @@ pie: Vivir ese silencio constantemente, revela, lo que allí, en el silencio est
 
 ## REALIZACIÓN
 
+![Pasto poblado de pequeñas flores rosa y amarillas](/foto/wp-por-ques.webp)
+
 Alguna vez leí, dónde, no recuerdo:
 
 >"_Dios es algo que está presente detrás de nosotros"_
@@ -30,7 +32,7 @@ La Presencia de Dios en Nosotros, Su Amor, y lo Dado: La Vida, Son lo que Princi
 
 Vivir ese silencio constantemente, revela, lo que allí, en el silencio está: _La Presencia de Dios_. Ese Silencio _Es la Presencia de Dios_.
 
-Solo se lo _Ve Estando en Actividad_. _Verbo._ Y cada uno _Puede y Debe_, ya que así _Es que Se Cumple,__Estar Sabiendo_ si dicha _Actividad está Activa_. Sólo _Uno Mismo_, el _Sí Mismo en Actividad_, puede, en dicha _Actividad, Saberse a Sí_. _Puede Estar Sabiendo_ si en ese momento dado _Está Presente ese Silencio_ en el que se Escucha y en el que Obran, la Vida, el Amor y la Verdad[^2].
+Solo se lo _Ve Estando en Actividad_. _Verbo._ Y cada uno _Puede y Debe_, ya que así _Es que Se Cumple_, _Estar Sabiendo_ si dicha _Actividad está Activa_. Sólo _Uno Mismo_, el _Sí Mismo en Actividad_, puede, en dicha _Actividad, Saberse a Sí_. _Puede Estar Sabiendo_ si en ese momento dado _Está Presente ese Silencio_ en el que se Escucha y en el que Obran, la Vida, el Amor y la Verdad[^2].
 
 Cuando la necesidad (siempre personal) se acaba, allí brota Dios. La Verdad. Lo que Es. El silencio. Lo vasto, lo insondable, lo inabarcable, lo sin forma. La nada.
 

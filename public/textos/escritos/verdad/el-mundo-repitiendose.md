@@ -5,6 +5,8 @@ pie: Nuestros actos son el mundo que fabricamos
 
 ## EL MUNDO REPITIÉNDOSE. AUTO-FABRICÁNDOSE
 
+![Pared con mosaicos](/foto/IMG_20181116_123935.webp)
+
 Nuestros actos son el mundo que fabricamos, que hemos fabricado, y que continuamos fabricando.
 
 Nuestras palabras, en el decir, son un acto. Acciones.

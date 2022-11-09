@@ -5,6 +5,8 @@ pie: No juzgues lo que sabes
 
 ## HACER CON SABIDURÍA
 
+![Madre sosteniendo a niño caminando](/foto/859770_10202021062909598_1745737001_o.webp)
+
 **SABER Y HACER**
 
 La verdad es siempre algo nuevo. Un conocimiento nuevo llegando, no uno antiguo repitiéndose. No juzgues con criterios basados en experiencia anteriores, o en criterios externos, de otros, la verdad (lo que sabes cada vez).

@@ -5,6 +5,9 @@ pie: Pequeña muerte de lo que se cree que se Es
 
 ## UN CAMINO INSTANTÁNEO
 
+
+![Valle, pueblo y montañas](/foto/P1480221.webp)
+
 Nos enseña si Estamos Obrando _desde_ el Ser.
 Sin deseo ni interés personal. Sin pretensión.
 En amor y unidad con Dios.

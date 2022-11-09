@@ -6,6 +6,8 @@ pie: Todo dado
 ## Madre
 
 
+![Niña y mujer de perfil, mirando en la misma dirección, en distintos planos](/foto/976001_10201264379552987_117891740_o.webp)
+
 La madre es quien ha dado todo,
 
 y llegada la hora,

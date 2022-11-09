@@ -5,6 +5,8 @@ pie: "Estar presentes aquí y ahora". ¿Aquí y ahora? Fíjese
 
 ## PRESENCIA
 
+![Ojo de caballo](/foto/11070941_10206346315878219_4054734173248381629_o.webp){data-escala="100%" data-pos="0% -70%"}
+
 Estar presentes "aquí y ahora".
 Allí mismo hay un límite para el tiempo y el espacio.
 ¿Aquí y ahora?

@@ -5,6 +5,10 @@ pie: El límite está siempre en relación a la receptividad
 
 ## CONFIAR Y RECIBIR
 
+![Pies con ojotas en el agua](/foto/10380089_10206321626661004_7029095784040783685_o.webp)
+![Ave en rama mirando hacia arriba](/foto/11079568_10206321831026113_2802784110416799952_o.webp)
+
+
 El límite,
 
 el que nos ponemos,

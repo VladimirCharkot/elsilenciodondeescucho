@@ -5,6 +5,8 @@ pie: La posibilidad -única- está en que ya "estemos estando".
 
 ## CUANDO ESTÁ PASANDO. ÚNICAMENTE CUANDO ESTÁ PASANDO
 
+![Pies y cuadro de bicicleta, borrosos](/foto/1064489_10201436775342774_1519004960_o.webp)
+
 La vida en manifestación es un "aconteciendo". Jamás se detiene.
 Es algo que está sucediendo ahora y ya ha pasado.
 

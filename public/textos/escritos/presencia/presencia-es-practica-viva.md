@@ -4,6 +4,9 @@ pie: Práctica es: el ejercicio de la actividad
 ---
 
 ## PRESENCIA ES PRÁCTICA VIVA
+ 
+![Sol deslumbrante en el horizonte, pasos a contraluz en primer plano](/foto/P1510750.webp)
+
 
 Presencia es
 

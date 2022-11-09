@@ -5,6 +5,8 @@ pie: Cuando "el sabiendo" está ocurriendo, el mismo es vacío de contenido
 
 ## LA VERDAD NO TIENE CAUSAS (del conocimiento real en la vida práctica)
 
+![Gotas sobre ventana](/foto/P1390652.webp)
+
 De la Verdad
 
 El Conocimiento Real en la Vida en Práctica

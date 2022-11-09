@@ -6,6 +6,8 @@ oculto: sí
 
 ## CONCIENCIA
 
+![Faro](/foto/P1130004.webp)
+
 Donde está nuestra Atención, ahí es donde Estamos. La Atención Es el asiento del Alma.
 
 La atención es el puente del Alma (psiquis) que conecta lo que Eres, el Ser (Espíritu), con la existencia. Es lo que une a Dios en ti con Dios en Todo.

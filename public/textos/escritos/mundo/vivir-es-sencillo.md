@@ -5,6 +5,12 @@ pie: El niño se sube al tobogán y se tira
 
 ## "VIVIR ES SENCILLO"
 
+
+![Gato descansando](/foto/P1500878.webp)
+![Gato descansando II](/foto/P1510091.webp)
+![Gato contemplando](/foto/P1500939.webp)
+
+
 El niño se sube al tobogán y se tira.
 
 El niño se sube al tobogán y se tira alzando los brazos al cielo.

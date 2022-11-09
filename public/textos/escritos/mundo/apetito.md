@@ -5,6 +5,9 @@ pie: Elimina eso que quieres de la cosa que quieres y fíjate si aún la quieres
 
 ## APETITO
 
+![Telaraña](/foto/P1400918.webp){data-pos=center}
+
+
 Es que…
 
 ¿qué puede haber de malo -o bueno- en algo? Eso, es eso y ya.

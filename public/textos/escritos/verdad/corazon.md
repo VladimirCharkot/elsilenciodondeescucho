@@ -6,6 +6,8 @@ oculto: sí
 
 ## EL CORAZÓN
 
+![Flor radial esférica con centro](/foto/11046218_10206321641781382_5816116434521442261_o.webp)
+
 "El corazón" es el centro de lo que Somos.
 
 No lo confundamos con todo lo que llamamos vida interior.

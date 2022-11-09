@@ -5,6 +5,8 @@ pie: Recibir cada cosa. No desear más. Confiar.
 
 ## VIVAMOS COMPLETOS
 
+![Hojas largas lilas y violetas](/foto/P1370692.webp)
+
 La vida trae todo lo que tenemos que vivir. Y trae qué vivir.
 
 Confiar.

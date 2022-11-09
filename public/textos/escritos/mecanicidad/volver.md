@@ -5,6 +5,8 @@ pie: Lo que principia a cada cosa es, en fin, su propio Fin.
 
 ## VOLVER
 
+![Puente peatonal en el monte](/foto/10982417_10206346454041673_8002235436671034592_o.webp)
+
 El principio de la existencia.
 
 El principio de la ilusión.

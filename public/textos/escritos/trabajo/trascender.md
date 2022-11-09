@@ -5,6 +5,8 @@ pie: La manera de "pasar" algo es llegar hasta ello y continuar
 
 ## Trascender
 
+![Puerta](/foto/P1470560.webp)
+
 La manera de "pasar" algo es llegar hasta ello y continuar.
 
 > Se camina hasta la esquina, se llega a ella y se sigue a la siguiente "cuadra". Se pasa la esquina.

@@ -5,6 +5,8 @@ pie: El resto, todo el resto, lo añadimos nosotros
 
 ## EL ORDEN
 
+![Hoja carcomida](/foto/IMG_20181101_101354.webp)
+
 Dios es el Único Orden. Su Voluntad Es un flujo de decretos, órdenes, continuo y constante en el que Hace, Dirige, Entrega, Vehiculiza y Ubica en la existencia entre dos, cada partícula de sí, LA VIDA.
 
 El Ser Siendo, zambullido en la corriente de la Voluntad de Dios, Hace lo que Sabe que le Es Hacer. Su voluntad en certeza está y se sostiene unida a la de Dios. Cumple la Voluntad de Dios.

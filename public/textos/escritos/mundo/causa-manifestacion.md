@@ -3,7 +3,10 @@ serie: mundo
 pie: Todo problema está fundado en la ignorancia
 ---
 
-## CUANDO LA CAUSA ACABA,SU MANIFESTACIÓN TAMBIÉN.
+## CUANDO LA CAUSA ACABA, SU MANIFESTACIÓN TAMBIÉN.
+
+
+![Telaraña](/foto/IMG_20140510_010945_287.webp)
 
 El problema, el único problema (si es que lo hay) se acaba cuando acaba en nuestra mente.
 
@@ -15,6 +18,9 @@ con respecto a todo.
 El problema y la confusión, están fundados en el proceso constante y automático mediante el cual nos identificamos… en medio del cual unimos, "pegamos", en lo profundo, en una relación completamente indirecta y de la que no nos damos cuenta, nuestra individual esencia con lo que tuvimos, tenemos y podremos, según nuestros cálculos absurdos, llegar a conseguir; y en la ilusoria necesidad de defenderlos que se deriva de dicha identificación.
 
 Cada quien, defendiendo, desde su lugar, su posición. En todo nivel, no solo material, hasta, por ejemplo: conseguir y defender el tener o no tener razón. Conseguir y defender "para cada uno y los suyos", sean cuales sean estos, familia, club, barrio, agrupación, ciudad, patria, estado, partido, empresa, corporación, etc.
+
+::: piel
+
 El problema acaba cuando acaba la confusión.
 
 Solo cuando transformamos completamente el modo de funcionar de nuestras mentes, cuando avanzamos en dar continuidad voluntaria y conscientemente al esfuerzo por observarnos a nosotros mismos, alcanzamos a ver aquella confusión en el instante y "lugar" donde comienza a suceder, dentro, cada vez.
@@ -22,6 +28,8 @@ Solo cuando transformamos completamente el modo de funcionar de nuestras mentes,
 Solo entonces, con sabiduría, con consciencia de sí, todo el problema de inseguridad, de carencia, insuficiencia, los reclamos, victimizaciones, abusos, peleas, disputas, razones, las diferencias todas, se acaban.
 
 Porque esa manera estructural de funcionar de nuestras mentes, constantemente midiendo lo que Somos en relación a lo que tenemos, lo que los otros tienen o dejan de tener, y a lo que podremos llegar a conseguir, que está íntimamente ligado a lo que queremos, a lo que deseamos, es el único sistema que hay funcionando y que, claro, está representado-manifestado por todos, TODES, los representantes del sistema: Nosotros. Los que conformamos el Mundo en el que vivimos.
+
+:::
 
 Cuando la causa acaba, su manifestación también.
 
@@ -33,7 +41,9 @@ Ocuparnos del Trabajo Verdadero.
 
 Que, de hacérselo -cosa que solo cada uno sabe en su honestidad y consecuencia, en su impecabilidad- la evidencia se presenta: el problema desaparece y se tiene más tiempo=energía para ocuparse de Hacer lo que Hay para Hacer. Una cooperativa humanidad.
 
-Y si el problema no desaparece, es evidencia de que no se Hace tan impecablemente, fijarse más profundamente donde uno se puede fijar. Para así:
+Y si el problema no desaparece, es evidencia de que no se Hace tan impecablemente, fijarse más profundamente donde uno se puede fijar. 
+
+Para así:
 
 Transformar.
 

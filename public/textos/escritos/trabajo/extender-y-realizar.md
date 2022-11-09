@@ -5,6 +5,8 @@ pie: Algo que se Extiende en tanto se Realiza no se pide, Se Hace
 
 ## Extender y realizar
 
+![Rocas de la rivera y su reflejo en el agua planchada](/foto/P1310233.webp)
+
 Nos engañamos constantemente… y el principio del engaño es el miedo y la pereza. La pretensión.
 Si queremos paz, el camino es co-crearla dentro para que Haya.
 

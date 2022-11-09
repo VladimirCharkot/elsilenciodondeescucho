@@ -5,6 +5,8 @@ pie: Hacia Uno mismo
 
 ## IR
 
+![Semáforo peatonal en verde](/foto/P1110385.webp)
+
 _Hacia Uno mismo_
 
 Una posición es algo fijo

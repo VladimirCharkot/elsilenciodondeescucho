@@ -5,6 +5,8 @@ pie: Tal como Es
 
 ## VIVIR PUNTUAL.MENTE VIVIR PURO
 
+![Agua con reflejos de sol en escala de grises](/foto/P1380247.webp)
+
 Puro
 
 No positivo

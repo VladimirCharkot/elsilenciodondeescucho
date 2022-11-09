@@ -5,6 +5,8 @@ pie: Retiro hay, cuando es retiro de sí
 
 ## RETIRO
 
+![Dos personas meditando en el monte, fuera de foco](/foto/10999328_10206321890507600_3314912575160920369_o.webp)
+
 Cuando hay retiro,
 es de los hábitos, costumbres, actividades, entornos, conocidos, familiares, amigos, etc.
 

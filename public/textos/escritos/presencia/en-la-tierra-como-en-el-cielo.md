@@ -5,6 +5,8 @@ pie: Está en nosotros tomar la vida y seguir camino, o dar otra vuelta, esperar
 
 ## HACIÉNDOSE EN LA TIERRA COMO EN EL CIELO
 
+![Praderas de pastizales dorados](/foto/P1150968.webp)
+
 Para crecer, para nacer, estamos en ambientes cuidados, no es menor, el bebe no se forma afuera, en contacto con la mugre, las miserias… lo mismo es para el Ser.
 
 Desde que se Nace, desde que "se vuelve a Nacer", es preciso que el amor esté manifestándose en las cosas, en el ambiente, en tanto es lo único que puede hacer que se reciban las palabras que serán duras, que serán la enseñanza para el propio crecimiento. "Lo opuesto a lo que quiero escuchar".

@@ -5,6 +5,8 @@ pie: Es sobre la escucha, silenciosa y profunda, que precisamente vamos a conver
 
 ## Es sobre la escucha
 
+![Ganso erguido entre el pasto](/foto/11090939_10206406146373944_7957914954208326699_o.webp)
+
 Es sobre la escucha, silenciosa y profunda, que precisamente vamos a conversar.
 
 Como en este instante,
@@ -27,17 +29,19 @@ y si observamos dentro, si buscamos escuchar alguna palabra, nada aparece.
 
 Nada hay.
 
+::: piel
 Cuando hay escucha abierta, sincera,
 cuando todos los yoes, las personalidades, están fuera,
 
 cuando no están dentro dominando,
 
 ninguna palabra llega, ninguna palabra-opinión aparece mediando y nublando la comunicación.
+:::
 
-::: piel
+
 En la escucha silenciosa la mirada es transparente y descansa en quien la da,
 
 en quien dirige la mirada,
 
 y hay descanso en quien recibe.
-:::
+

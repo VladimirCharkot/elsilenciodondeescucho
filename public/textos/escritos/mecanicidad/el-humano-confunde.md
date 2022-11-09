@@ -3,7 +3,9 @@ serie: mecanicidad
 pie: El humano confunde saber con conocer
 ---
 
-## EL HUMANO CONFUNDE SABER LO QUE PASA CON CONOCER LO QUE PASÓ.
+## EL HUMANO CONFUNDE SABER LO QUE PASA CON CONOCER LO QUE PASÓ
+
+![Paisaje a través de vidrio rayado](/foto/13584853_10210022064409635_5063085086270220989_o.webp)
 
 No ve la diferencia entre saber lo que hace y conocer lo que hizo. Aunque diga que sí, en general, esto es un entendimiento intelectual y no una actividad misma del ver mientras la cosa está sucediendo.
 

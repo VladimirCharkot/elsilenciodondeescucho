@@ -5,6 +5,8 @@ pie: ¿Qué es lo que podemos? ¿Qué es Poder?
 
 ## ACERCA DEL PODER
 
+![Clown con bola de papel en la boca](/foto/884428_10202256386392538_1140112565_o.webp)
+
 Trabalenguas transformador: usted no es "usted" sino Usted.
 
 Transformación

@@ -5,6 +5,8 @@ pie: Así que claro. No crea que todo esto que lee sea La Verdad.
 
 ## SOBRE LA VERDAD.
 
+![Dos pájaros mirando en direcciones opuestas](/foto/P1240468.webp)
+
 La idea dice:
 
 "Cada uno tiene su propia verdad"
@@ -40,7 +42,7 @@ Así que, cumpliendo lo dicho, casi todo vale: cualquier palabra, toda acción, 
 
 Que "cada persona tiene su propia verdad", no es más que la ilusión de otra ilusión.
 
-Estas palabras, las ideas que componen todas las creencias, "nuestras verdades" todas, personales… todas las que componen la persona (lo que contenemos dentro de "puedo", "quiero", "tengo", y todo lo que ponemos en lugar de los puntos suspensivos en las frases que comienzan con: "yo…", "mi…", "me…". Como: "yo sé", etc.) Son lo que nos separa. Uno piensa así, el otro piensa asá, esta es mi verdad y aquella la tuya. Diferencias. Son solo razón contra razón. Pura necesidad de tener razón, que nada tiene que ver con la Verdad y tampoco con la RAZÓN.
+Estas palabras, las ideas que componen todas las creencias, "nuestras verdades" todas, personales… todas las que componen la persona (lo que contenemos dentro de "puedo", "quiero", "tengo", y todo lo que ponemos en lugar de los puntos suspensivos en las frases que comienzan con: "yo…", "mi…", "me…". Como: "yo sé", etc.) Son lo que nos separa. Uno piensa así, el otro piensa asá, esta es mi verdad y aquella la tuya. Diferencias. Son solo razón contra razón. Pura necesidad de tener razón, que nada tiene que ver con la Verdad y tampoco con la _**razón**_.
 Aquellas, las razones que "tenemos" y "damos", acerca de lo que somos o hacemos, con las que nos justificamos… los porqués de y a cada cosa… aquellas, son nacidas de la inseguridad propia de la amnesia de lo que Somos [^1] y su respectiva necesidad de que sean reconocidas por otros, y así nosotros a través de ellas, para ocupar un mejor lugar en una jerarquía de ilusos, de soñadores auto-engañados, que hemos inventado.
 
 Esta jerarquía en la que vivimos genera una lucha en la que cada uno de nosotros pelea para que su ilusión sea la cierta, la "real", la "verdadera"… ella, "_tal_ verdad", entra en contienda con las otras para ver cuál es la que lleva las de ganar (que eso no puede durar mucho, el otro volverá por su revancha) y así, entramos ya en más conflicto.

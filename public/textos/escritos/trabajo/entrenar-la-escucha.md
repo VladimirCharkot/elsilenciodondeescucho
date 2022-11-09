@@ -5,6 +5,8 @@ pie: Lo importante de escuchar es que se establece una presencia que escucha
 
 ## ENTRENAR LA ESCUCHA: SER EN PRESENCIA
 
+![Dos búhos](/foto/P1540085.webp)
+
 Cuando se comienza a trabajar con el cuerpo; con los músculos, con los movimientos, con la voz, las sensaciones, etc., se lo hace con ciertos métodos en uno u otro caso, pero, a la vez, esto exige, inevitablemente, algún nivel de escucha. Se hace necesario escuchar el funcionamiento de estas partes con las que se trabaja. Comienza a hacerse necesario escuchar el cuerpo.
 
 Una vez que esto es notado, se hace también, en el ser humano, la costumbre de creer que, porque se ha establecido en él un relativo discernimiento acerca de qué es escuchar al cuerpo, lo hace todo el tiempo. Lo cual no es real. Únicamente se lo está escuchando cuando se lo está escuchando; solamente de a pequeños momentos, cuando se está en estas actividades que obligan a establecer esa escucha.

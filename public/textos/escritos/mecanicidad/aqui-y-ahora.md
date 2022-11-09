@@ -5,6 +5,8 @@ pie: La persona, no puede vivir aquí y ahora. No. No puede hacerlo.
 
 ## AQUÍ Y AHORA.
 
+![Ave posada sobre tronco](/foto/10482600_10206406144733903_2512402803953888351_o.webp)
+
 Sí. Aquí y Ahora.
 
 Mas, las personas, probablemente toman demasiado a la ligera, como casi todo, esto también.

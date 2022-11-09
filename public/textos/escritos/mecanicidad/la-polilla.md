@@ -5,6 +5,8 @@ pie: "Eso", lo gobierna y vive, casi por completo, "su vida".
 
 ## LA POLILLA NO PUEDE SINO, SOLO, IR A LA LUZ
 
+![Polilla](/foto/P1230214.webp)
+
 Mire, usted está sentado allí, y yo aquí.
 
 En este minuto estamos conversando. Hace un momento mientras usted escuchaba y yo hablaba, vino ese perro. En ese instante, en el mismo punto en que el perro vino, todo en usted se movió hacia el perro. El cuerpo, la mirada, la mano que se posó sobre él, su la emoción, el sentir y la atención… todo se desvió, moviéndose hacia el perro.

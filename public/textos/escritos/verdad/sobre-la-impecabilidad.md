@@ -5,6 +5,8 @@ pie: El «Saber» ocurre en una mente limpia de pasado
 
 ## SOBRE LA IMPECABILIDAD
 
+![Flores rosadas](/foto/IMG_20210327_144214.webp)
+
 ¿"Impecable con las palabras"?
 
 Impecable

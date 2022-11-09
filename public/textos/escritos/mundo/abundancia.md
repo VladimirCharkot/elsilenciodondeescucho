@@ -5,6 +5,9 @@ pie: La abundancia es un atributo de la creación
 
 ## SOBRE LA ABUNDANCIA, EL TENER Y EL PODER, Y UN REAL TRABAJO A SU RESPECTO
 
+
+![Cúpulas, techos y antenas de TV](/foto/P1120620.webp)
+
 La abundancia es un atributo de la creación. En manifestación, en existencia.
 La escasez no es real sino ilusoria, solo aparenta existir en tanto se la cree cierta. Y el movimiento en pos de tener más –lo que sea- es parte de esta misma ilusión, una desconexión con la Verdad de lo que Es.
 

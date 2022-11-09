@@ -5,6 +5,8 @@ pie: El ser humano está convencido de que puede hacer cosas que solo suceden.
 
 ## LO QUE SUCEDE Y LO QUE SE PUEDE HACER
 
+![Cayendo al agua](/foto/11046305_10206321709183067_3606148552381973847_o.webp)
+
 El ser humano está convencido de que puede hacer ciertas cosas; las cuales, solo suceden.
 
 Expresiones tales como, por ejemplo: "me caí", "me distraje", "me perdí"…etc. dejan entrever esto que decimos.

@@ -5,6 +5,10 @@ pie: Podemos decir que el principio para saber es observar
 
 ## ¿CÓMO SABER? ¿CÓMO SABER SI SABEMOS?
 
+
+![Persona en un claro con bosque de fondo, todo fuera de foco](/foto/10860893_10206321919388322_3631200177737392642_o.webp)
+
+
 Podemos decir que el principio para saber es observar.
 
 No podemos saber qué es una cosa, ni en qué estado se encuentra o qué función comete, si no la observamos primero.

@@ -5,6 +5,10 @@ pie: María tiene 82 años
 
 ## MARÍA INTENCIÓN
 
+
+![Gotas de agua a punto de precipitarse de una viga de madera](/foto/P1160682.webp)
+![Paisaje de campo a través de ventana horizontal](/foto/11080856_10206346262996897_6730003579232175736_o.webp)
+
 María tiene 82 años.
 
 Vive al pie de una montaña desde los 6. En esas tierras, debajo de unos sauces, cerca del río, descansa su padre, su madre y algunos de sus hermanos.

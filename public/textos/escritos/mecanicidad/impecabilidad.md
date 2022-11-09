@@ -5,6 +5,8 @@ pie: Pensar y decir son actos
 
 ## IMPECABILIDAD.
 
+![Amor seco](/foto/IMG_20140720_095453_699.webp)
+
 Ver = entender = pensar = decir = crear
 
 Pensar y decir son actos.

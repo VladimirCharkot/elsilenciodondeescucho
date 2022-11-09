@@ -5,6 +5,9 @@ pie: Y cuando se elige eso, ya nada hay que elegir
 
 ## LIBRE ELECCIÓN ES, AÚN, CUESTIÓN DE EGO
 
+
+![Carteles callejeros con corazones y nombres de deidades](/foto/P1120113.webp)
+
 El ego siempre reacciona, dice, y su pregunta tiene astucia y doblez.
 
 Se lo deja, que "haga" lo que quiera.

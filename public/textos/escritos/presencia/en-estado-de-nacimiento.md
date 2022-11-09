@@ -5,6 +5,9 @@ pie: Es importante, en tanto momento de nacimiento, "permanecer allí"
 
 ## EN ESTADO DE NACIMIENTO.
 
+![Brotes de hongos](/foto/P1400246.webp)
+![Brote de árbol](/foto/P1400257.webp)
+
 Es importante, en tanto momento de nacimiento, "permanecer allí".
 
 Aunque parezca que crece lento, que no hace muchas cosas, que no da tanto.

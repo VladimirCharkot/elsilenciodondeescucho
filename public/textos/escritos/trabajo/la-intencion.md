@@ -5,6 +5,9 @@ pie: El poder de la intención está en el reconocimiento del hecho
 
 ## LA INTENCIÓN
 
+![Ocaso en el palmar](/foto/10459083_10206321796905260_2831428621570424357_o.webp)
+
+
 Intención, es acción, interna y profunda, que mueve y transforma lo externo, se Realiza Conscientemente.
 
 No puede estar basada en un deseo. De hacerlo, lo que crea es la carencia en la que se basa dicho deseo.

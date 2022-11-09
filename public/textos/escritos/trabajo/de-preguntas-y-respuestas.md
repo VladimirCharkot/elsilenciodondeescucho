@@ -5,6 +5,8 @@ pie: Se aprende a preguntar preguntando.
 
 ## DE PREGUNTAS Y RESPUESTAS
 
+![Dos vacas entre el pastizal](/foto/P1530620.webp)
+
 Pregunta:
 
 > _Hola. ¿Cómo aprendo a preguntar?_

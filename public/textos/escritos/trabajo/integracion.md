@@ -5,6 +5,8 @@ pie: Nada Hacemos en realidad si la Quietud no está Activa
 
 ## INTEGRACIÓN
 
+![Alas de mariposa sobre pasto](/foto/11046660_10206321828106040_2187693462060037004_o.webp)
+
 Lo que Somos, Unidad, es trina, Cuerpo-Mente-Espíritu, y ese complejo trino está establecido en dos opuestos. Existencia y Ser. Movimiento (Cuerpo y Mente) y Quietud (Espíritu).
 
 Nada Hacemos en realidad, integrada e íntegramente, si la parte que es Quietud, y en la que todo movimiento de la existencia puede acontecer, realizarse, no está Activa.

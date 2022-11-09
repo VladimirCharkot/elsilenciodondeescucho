@@ -5,6 +5,8 @@ pie: Querer y hacer camino espiritual es "ajustarse"
 
 ## EN LA VARA
 
+![Camioneta iluminada desde dentro en la noche](/foto/10007362_10206321634661204_2463885057247621077_o.webp)
+
 Elegir camino espiritual es elegir reestructurar, a cualquier precio -con toda entrega- cualquier cosa que haya que reestructurar para Trabajar. Con errores, aciertos, tropezones… se camina hacia adelante.
 
 Las realidades existenciales, los presentes, ruidosos y atareados, no son hojas vacías que invitan a desplegarse, a ser y hacer desde una consciencia absoluta,  limpia, silenciosa y armoniosa con todo el entorno. No. Son en cuadriculado… cada uno de los presentes es un cuadrado en relación con miles de cuadrados más que se atraviesan, se chocan, se ponen límites entre sí, se cruzan. Donde es difícil observar y ser conscientes del propio cuadrado constantemente pues la visión se contamina rápidamente con los otros.

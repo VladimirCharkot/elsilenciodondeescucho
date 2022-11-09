@@ -5,6 +5,8 @@ pie: El ser humano vive "esparcido" en las cosas
 
 ## RECOGIMIENTO
 
+![Florcitas violetas](/foto/IMG_20180407_111923.webp)
+
 El ser humano vive "esparcido" en las cosas… a las que se encuentra "atado".
 
 Cada vez que el ser humano testifica con el pensar, el sentir, el accionar o el decir, que es tal o cual y no otro, basado en algo que "tiene", en tal o cual cosa, sea ello una idea o una casa, una posición social o un vínculo, una profesión, etc…

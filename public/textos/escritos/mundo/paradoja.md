@@ -5,6 +5,9 @@ pie: Es necesario ponerse en camino de averiguación.
 
 ## PARADOJA
 
+
+![Nido de paja](/foto/P1510297.webp)
+
 Está la pregunta que abre la búsqueda. ¿Qué soy? ¿Quién soy?
 
 De lo que debiera derivarse la pregunta ¿Qué es el ser?

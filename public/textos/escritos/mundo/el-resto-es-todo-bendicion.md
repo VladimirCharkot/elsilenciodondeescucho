@@ -5,6 +5,9 @@ pie: La vida no tiene "paras"
 
 ## EL RESTO ES TODO BENDICIÓN
 
+![Mujer recostada sobre hierbas y flores, mirando el cielo](/foto/1898690_10206321791505125_381200255227652749_o.webp)
+
+
 La publicación decía:
 
 > _A ver si me equivoco: busco meditación en YouTube y aparecen miles de opciones, "meditación para abundancia"; "meditación para esto o aquello..."_

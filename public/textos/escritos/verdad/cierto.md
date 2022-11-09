@@ -3,6 +3,8 @@ serie: verdad
 pie: De la duda poco certero, cierto, puede nacer
 ---
 
+![Libélula de cerca](/foto/10317639_10206321912028138_605441822310248739_o.webp)
+
 ## CIERTO
 De la duda poco certero, cierto, puede nacer.
 

@@ -5,6 +5,9 @@ pie: Cuando se dice: "yo soy así", "Así", contiene toda la limitación para lo
 
 ## "Así" Contiene limitación
 
+
+![Mujer fotografiando al punto de vista de la fotografía](/foto/901931_10202256351511666_371813744_o.webp)
+
 Cuando se dice: "yo soy así", "Así", contiene toda la limitación para lo que se Es.
 
 La contiene. No quiere decir que lo es. Contiene el contenido de lo que nos limita. Lo que se piensa que se Es nunca es, ni será, lo que se Es. Lo que se alcance a pensar, por más extenso y creativo que alcance a ser dicho pensar, siempre será limitado en relación a lo que se Es. Pensar tiene un límite. Está contenido en el campo de tal conciencia que piensa. Por más "alto" que alcance a estar ese pensar en esa consciencia.

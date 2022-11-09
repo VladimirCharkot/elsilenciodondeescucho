@@ -6,6 +6,8 @@ oculto: sí
 
 ## ¿QUÉ ES EL AMOR?
 
+![Luz por detrás de un árbol y cielo](/foto/wp-seres-humanos-nosotros-2.webp)
+
 >"El Amor, es la ausencia de juicio."
 >
 >Dalai Lama

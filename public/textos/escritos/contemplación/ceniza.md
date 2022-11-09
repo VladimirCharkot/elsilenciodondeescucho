@@ -5,7 +5,7 @@ pie: Tapa
 
 ## Ceniza
 
-![Fogata](/foto/10712553_10206321884027438_9174534756872404125_o.webp)
+![Fogata](/foto/10712553_10206321884027438_9174534756872404125_o.webp){data-pos="100% -290%" data-escala=140%}
 
 La brasa está ahí,
 en la ceniza.

@@ -5,6 +5,8 @@ pie: La Realidad de lo que es, es de continuo una completa desconocida
 
 ## EL FUTURO, ES AHORA, UNA QUIETUD VIGILANTE E INDAGATORIA
 
+![Ave posada sobre viga partida justo debajo suyo](/foto/10931020_10206322052311645_974901796183572505_o.webp)
+
 La Realidad es un completo imprevisto.
 
 Si se lo vio, ya fue,

@@ -5,6 +5,9 @@ pie: Ir tras los sueños es desconfiar
 
 ## Del libro de las ilusiones
 
+
+![Nubes](/foto/P1530568.webp)
+
 De los “sueños” y la confianza.
 
 ¡Atentos!

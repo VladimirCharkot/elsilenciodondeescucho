@@ -5,6 +5,8 @@ pie: Estar en Unión de instante en instante
 
 ## La vida
 
+![Ave posada sobre tranquera](/foto/11069926_10206322026150991_7411757997058228036_o.webp)
+
 Los cambios y las novedades que llegan en las "formas",
 
 las nuevas condiciones que se presentan,

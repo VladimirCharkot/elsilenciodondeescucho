@@ -5,6 +5,8 @@ pie: Señalando lo qué hay para sanar
 
 ## SOBRE LA ENFERMEDAD
 
+![Borde pinchudo de aloe vera](/foto/P1510016.webp)
+
 O sobre la salud…
 
 La sanidad

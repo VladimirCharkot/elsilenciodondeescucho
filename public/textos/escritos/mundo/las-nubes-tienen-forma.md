@@ -5,6 +5,9 @@ pie: Nos distanciamos del propio cielo
 
 ## LAS NUBES TIENEN FORMA
 
+
+![Reflejo de nubes al atardecer sobre agua](/foto/IMG_20210311_192056.webp)
+
 A través de la ventana, miro.
 
 Veo, entre otras cosas, dos nubes.

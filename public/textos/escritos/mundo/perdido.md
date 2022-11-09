@@ -5,6 +5,8 @@ pie: Hay un flujo constante de información
 
 ## PERDIDO
 
+![Cartel con flecha que dice "Salida"](/foto/wp-impecables-palabras.webp){data-escala="100%" data-pos="0% -70%"}
+
 Hay un flujo constante de información,
 
 está ahí, pasando,
