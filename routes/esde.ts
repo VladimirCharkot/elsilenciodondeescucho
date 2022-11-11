@@ -18,8 +18,7 @@ router.get('/', [logaccess, blog.escritos])
 router.get('/escritos', blog.escritos as Application)
 router.get('/escritos/:eid', [logaccess, blog.escrito])
 
-router.get('/propuestas/', [logaccess, blog.propuestas])
-router.get('/propuestas/:tid', [logaccess, blog.taller])
+router.get('/propuestas/:eid', [logaccess, blog.escrito])
 
 router.get('/buscar/:consulta', blog.buscar as Application)
 

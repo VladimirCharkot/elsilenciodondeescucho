@@ -36,15 +36,6 @@ export const escrito: Endpoint = async (req, res) => {
   res.cookie('visitados', [...new Set(visitados)], {maxAge: 3*365*24*60*60000, encode: String});
 
   let {html, front_matter} = await traer_texto(req.params.eid);
-  console.log(front_matter);
-  console.log(html);
-  if (!html) res.status(404).send();
-  res.render('texto', { titulo: front_matter.titulo || 'El Silencio Donde Escucho', cont: html });
-}
-
-export const taller: Endpoint = async (req, res) => {
-
-  let {html, front_matter} = await traer_texto(req.params.tid);
   if (!html) res.status(404).send();
   res.render('texto', { titulo: front_matter.titulo || 'El Silencio Donde Escucho', cont: html });
 }
