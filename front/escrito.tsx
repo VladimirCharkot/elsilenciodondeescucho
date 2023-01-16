@@ -82,6 +82,7 @@ const Texto = ({src_md} : {src_md: string}) => {
     useEffect(() => {
       lookupMd(src_md).then(t => {
         setHtml(t.html)
+        document.title = t.front_matter.titulo ?? 'El Silencio Donde Escucho'
     })
     }, [])
   

@@ -16,16 +16,17 @@ export interface IndiceProps {
     headerNav?: {
         texto: string,
         path: string
-    }
+    },
+    titulo?: string
 }
 
 
-export const Indice = ({animacion, nodos, layout, Overlay, headerNav} : IndiceProps) => {
+export const Indice = ({animacion, nodos, layout, Overlay, headerNav, titulo} : IndiceProps) => {
 
     // const [vidriera, setVidriera] = useState<VidrieraProps | null>(null);
 
     useEffect(() => {
-        
+        document.title = titulo ?? 'El Silencio Donde Escucho'
     }, [])
 
     return (
