@@ -27,7 +27,8 @@ const Inicio = () => {
             <Route path="/" element={<Indice
                 animacion={vidriera_inicial.animacion}
                 nodos={vidriera_inicial.nodos(navigate)}
-                layout={vidriera_inicial.layout} />} />
+                layout={vidriera_inicial.layout} 
+                titulo='El Silencio Donde Escucho' />} />
 
             {nodosEscritos && <Route path="/escritos/" element={<Indice
                 animacion={vidriera_escritos.animacion}
@@ -37,7 +38,8 @@ const Inicio = () => {
                 headerNav={{
                     texto: 'Inicio',
                     path: '/'
-                }} />} />}
+                }}
+                titulo='ESDE - Escritos' />} />}
 
             <Route path="/propuestas/" element={<Indice
                 animacion={vidriera_propuestas.animacion}
@@ -46,7 +48,8 @@ const Inicio = () => {
                 headerNav={{
                     texto: 'Inicio',
                     path: '/'
-                }}/>} />
+                }}
+                titulo='ESDE - Propuestas' />} />
 
             <Route path="/escritos/:textoId" element={<Escrito headerNav={{
                     texto: 'Escritos',
