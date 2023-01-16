@@ -1,0 +1,38 @@
+.telon
+    position: absolute
+    z-index: 10
+    width: 100vw 
+    height: 100vh
+    background: white
+    display: flex
+    align-items: center
+    justify-content: center
+    
+    h1
+        font-family: 'Libre Baskerville', sans-serif
+        font-size: 1.4em
+        letter-spacing: 0.28em
+        text-transform: uppercase
+        opacity: 0
+  
+    &.visible
+        animation: anim-fade-out 4s forwards
+        h1
+            animation: anim-fade-in 1s forwards
+
+    &.invisible
+        opacity: 0
+        visibility: hidden
+
+@keyframes anim-fade-out
+    0%
+        opacity: 1
+    100% 
+        opacity: 0
+    
+@keyframes anim-fade-in
+    0%
+        opacity: 0
+    100% 
+        opacity: 1
+    

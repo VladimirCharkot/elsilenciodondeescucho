@@ -1,24 +1,22 @@
-const visitas = require('../../procesos/visitas.js')
-const { logaccess } = require('../../procesos/accesos.js')
-const sheets = require('../../procesos/googlesheets.js')
-const mp = require('../../procesos/mp.js')
-
 import {Router, Application} from 'express';
+import {logaccess} from '../backend/accesos';
 
-import * as blog from '../procesos/blog';
-import * as auth from '../procesos/auth';
-import * as editor from '../procesos/editor';
+import * as visitas from '../backend/visitas';
+import * as mp from '../backend/mp';
+import * as blog from '../backend/blog';
+import * as auth from '../backend/auth';
+import * as editor from '../backend/editor';
 
 
 const router = Router();
 
 /* Público */
-router.get('/', [logaccess, blog.escritos])
+router.get('/', [logaccess, blog.indice])
 
-router.get('/escritos', blog.escritos as Application)
-router.get('/escritos/:eid', [logaccess, blog.escrito])
+// router.get('/escritos', blog.escritos as Application)
+// router.get('/escritos/:eid', [logaccess, blog.escrito])
 
-router.get('/propuestas/:eid', [logaccess, blog.escrito])
+router.get('/propuestas/:eid', [logaccess, blog.propuesta])
 
 router.get('/buscar/:consulta', blog.buscar as Application)
 
@@ -42,12 +40,10 @@ router.get('/pago_fallido', mp.back_rechazado);
 
 /* Público funcional */
 router.get('/reset_cookie/', (req, res) => res.clearCookie('visitados').json({ok: true}))
-
 router.get('/indice_json', blog.indice_textos_public as Application)
-
-
 router.get('/indice_arbol_textos',  editor.indice_textos_editor)
 router.get('/indice_arbol_imagenes',  editor.indice_imagenes_editor)
+router.get('/texto/:textoId', blog.buscar_texto)
 
 
 /* Privado */
@@ -76,5 +72,8 @@ router.post('/hogar', auth.login)
 
 router.get('/logout', auth.logout)
 
+// router.get('/vidriera', (__, res) => res.render('vidriera') )
+
+router.get('*', [logaccess, blog.indice])
 
 module.exports = router

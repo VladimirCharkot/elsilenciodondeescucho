@@ -2,8 +2,8 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    general: './front/general.ts',
-    editor: './front/app.tsx'
+    sitio: './front/root_indice.tsx',
+    editor: './front/root_editor.tsx',
   },
   devtool: 'inline-source-map',
   mode: 'development',
@@ -23,6 +23,7 @@ module.exports = {
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
+    fallback: { "url": require.resolve("url/") }
   },
   output: {
     filename: '[name].bundle.js',

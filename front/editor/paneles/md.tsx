@@ -4,7 +4,7 @@ import {EditorContext} from '../contexto';
 import {Control} from '../controles';
 import {Panel} from './panel';
 import {useEdicion, AccionEditor} from '../edicion';
-import {flash} from '../../general';
+// import {flash} from '../../general';
 
 
 
@@ -36,7 +36,7 @@ export const PanelMd = () => {
         <input id="nombre" title="Titulo" value={tituloMd}
           onChange={e => {
             if(!/^[A-Za-z0-9- ]*$/.test(e.target.value)){
-              flash({mensaje: '¡Nombre inválido! Sólo letras, números, espacios y guiones'})
+            //   flash({mensaje: '¡Nombre inválido! Sólo letras, números, espacios y guiones'})
               return
             }
             setTituloMd(e.target.value)

@@ -2,7 +2,7 @@ import * as React from 'react';
 import {useContext, useState} from 'react';
 import {EditorContext} from './contexto';
 import {useArchivos} from './backend';
-import {NodoFS} from '../../shared/types/arbol';
+import {NodoFS} from '../../shared/tipos';
 
 export type Panel = 'md' | 'arbol' | 'imagenes' | 'previa'
 
@@ -50,7 +50,8 @@ export const useEdicion = () => {
     try{
       acciones[acc](args);
       console.log(`Pasando a ${transiciones[estado][acc]}`)
-      setEstado(transiciones[estado][acc]);
+      // Estado al que se llega a través de este o este mismo
+      setEstado(transiciones[estado][acc] ?? estado);
     }catch(err){
       console.error(err);
       alert(err.message);

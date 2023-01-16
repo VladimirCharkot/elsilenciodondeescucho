@@ -10,12 +10,12 @@ const bodyParser = require('body-parser');
 
 const blogRouter = require('./dist/routes/esde');
 
-const { logger } = require('./procesos/esdelogger');
+const { logger } = require('./dist/backend/esdelogger');
 
-const conf = require('./dist/procesos/config').default;
-const { passport } = require('./dist/procesos/auth');
+const conf = require('./dist/backend/config').default;
+const { passport } = require('./dist/backend/auth');
 
-const { cargar_cache } = require('./dist/procesos/cache');
+const { cargar_cache } = require('./dist/backend/cache');
 
 logger.info("Instanciando server")
 

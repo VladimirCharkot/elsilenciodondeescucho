@@ -2,8 +2,8 @@ import * as React from 'react';
 import {useContext, useEffect} from 'react';
 import {Panel} from './panel';
 import {EditorContext} from '../contexto';
-import {render} from '../../../procesos/mdesde';
-import {corregir_imagenes} from '../../general';
+import {render} from '../../../backend/mdesde';
+// import {corregir_imagenes} from '../../general';
 
 export const PanelPrevia = () => {
   const {textoMd} = useContext(EditorContext);
@@ -15,7 +15,7 @@ export const PanelPrevia = () => {
   </address>`
 
   useEffect(() => {
-    corregir_imagenes()
+    // corregir_imagenes()
   }, [escritoHtml])
 
   return (

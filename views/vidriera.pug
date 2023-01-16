@@ -1,0 +1,48 @@
+include vidriera.svg
+
+script(src='https://cdnjs.cloudflare.com/ajax/libs/d3/7.4.4/d3.min.js')
+
+style.
+  .destacar{ transition: 0.5s; stroke: orange; } 
+
+script.
+
+  //- import { zoom } from 'zoom'; 
+  
+  let textos = []
+  document.querySelectorAll('g').forEach(n => {
+    if(n.id.startsWith('texto-')) textos.push(n)
+  })
+  textos.forEach(t => {
+    t.addEventListener('mouseover', () => t.classList.add('destacar'))
+    t.addEventListener('mouseout', () => t.classList.remove('destacar'))
+    })
+  console.log(textos)
+  
+  /* Lienzo */
+
+  let svg = d3.select("svg")
+  let lienzo = svg.append("g")
+  lienzo.attr("class", "lienzo")
+
+
+  let zoomed = ({transform}) => {
+    console.log(transform)
+    lienzo.attr("transform", transform)
+  }
+
+  let zoom = d3.zoom()
+    .scaleExtent([0.1, 5])
+    .on("zoom", zoomed);
+
+  svg.call(zoom)
+
+
+  // zoom.scaleTo(svg, 2)
+  // zoom.translateTo(svg, 0, 0)
+
+  // svg.call(zoom.scaleTo, 2)
+  // svg.call(zoom.translateTo, 0, 0)
+
+  // svg.transition().duration(750).call(zoom.scaleTo, 3)
+  // svg.transition().duration(750).call(zoom.translateTo, 0, 0)

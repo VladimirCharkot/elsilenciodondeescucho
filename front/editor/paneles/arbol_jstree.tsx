@@ -3,7 +3,7 @@ import {Panel} from './panel'
 import {useContext, useEffect} from 'react';
 import {EditorContext} from '../contexto';
 import {useEdicion} from '../edicion';
-import {ArbolFS} from '../../../shared/types/arbol';
+import {ArbolFS} from '../../../shared/tipos';
 
 export const PanelArbol = () => {
   const {textos, toggleExpandido} = useContext(EditorContext);
@@ -27,6 +27,7 @@ export const PanelArbol = () => {
       const textos_para_jstree = formatear(textos);
       console.log(textos_para_jstree);
 
+      //@ts-ignore
       $.jstree.defaults.contextmenu = {
         select_node: false,
         show_at_node: true,

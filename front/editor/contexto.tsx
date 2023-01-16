@@ -1,8 +1,8 @@
 import * as React from 'react';
-import {createContext, useState, useEffect, useRef, Dispatch, SetStateAction, MutableRefObject} from 'react';
+import {createContext, useState, useEffect, useRef, Dispatch, SetStateAction, MutableRefObject, RefObject} from 'react';
 import {EstadoEditor, Panel} from './edicion';
 
-import {ArbolFS} from '../../shared/types/arbol';
+import {ArbolFS} from '../../shared/tipos';
 
 interface EditorContextI{
   textoMd: string,
@@ -14,7 +14,7 @@ interface EditorContextI{
   pathMd: string,
   setPathMd: Dispatch<SetStateAction<string>>,
   expandidos: string[],
-  toggleExpandido: (id: string, on?: boolean) => void,
+  toggleExpandido: (id: Panel, on?: boolean) => void,
   textos: ArbolFS,
   imagenes: ArbolFS,
   imagenesMostradas: ArbolFS,
@@ -24,9 +24,10 @@ interface EditorContextI{
   setImagenSeleccionada: (id: string) => void,
   estado: EstadoEditor,
   setEstado: (e: EstadoEditor) => void,
-  editorRef: MutableRefObject<HTMLTextAreaElement>
-}
+  editorRef: RefObject<HTMLTextAreaElement>
+};
 
+//@ts-ignore
 export const EditorContext = createContext<EditorContextI>(null);
 
 export const EditorContextProvider = ({children}) => {
@@ -58,7 +59,7 @@ export const EditorContextProvider = ({children}) => {
     if (ruta.length == 0) return arbol
     else{
       const nodo = arbol.filter(n => n.nombre == ruta[0])[0]
-      return subArbol(nodo.children, ruta.slice(1))
+      return subArbol(nodo.children!, ruta.slice(1))
     }
   }
 

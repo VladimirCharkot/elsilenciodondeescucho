@@ -3,7 +3,7 @@ import {useState, useContext, CSSProperties} from 'react';
 import {EditorContext} from '../contexto';
 import {Panel} from './panel';
 import {useEdicion} from '../edicion';
-import {NodoFS} from '../../../shared/types/arbol';
+import {NodoFS} from '../../../shared/tipos';
 
 
 interface ImagenProps{
