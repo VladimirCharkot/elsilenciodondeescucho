@@ -1,9 +1,10 @@
-import * as React from 'react';
+import * as React from 'react'
 import {Panel} from './panel'
-import {useContext, useEffect} from 'react';
-import {EditorContext} from '../contexto';
-import {useEdicion} from '../edicion';
-import {ArbolFS} from '../../../shared/tipos';
+import {useContext, useEffect, useState} from 'react'
+import {EditorContext} from '../contexto'
+import {useEdicion} from '../edicion'
+import {ArbolFS} from '../../../shared/tipos'
+// import TreeView from 'react-simple-jstree';
 
 export const PanelArbol = () => {
   const {textos, toggleExpandido} = useContext(EditorContext);
@@ -61,12 +62,12 @@ export const PanelArbol = () => {
         }
       })
 
-      $('#arbol').on("select_node.jstree", (e, data) => {
-        if(data.node.original.type != 'carpeta'){
-          toggleExpandido('md', true)
-          accion('cargar', data.node.original)
-        }
-      })
+       $('#arbol').on("select_node.jstree", (e, data) => {
+         if(data.node.original.type != 'carpeta'){
+           toggleExpandido('md', true)
+           accion('cargar', data.node.original)
+         }
+       })
 
       }
 
@@ -75,5 +76,7 @@ export const PanelArbol = () => {
   }, [textos]);
 
   //@ts-ignore
-  return ( <Panel id="arbol"> </Panel> )
+  return ( <Panel id="arbol"> 
+    {/* <TreeView treeData={textos} /> */}
+  </Panel> )
 }

@@ -6,6 +6,7 @@ addEventListener('load', () => {
   window.baseFontSize = parseInt(contenido.style.fontSize != "" ? contenido.style.fontSize : "12px")
 
   delete Hammer.defaults.cssProps.userSelect;
+  
   var hammertime = new Hammer(contenido,  {
     inputClass: Hammer.TouchInput
   })

@@ -1,9 +1,12 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
+  plugins: [
+    new webpack.IgnorePlugin({resourceRegExp : /jsdom/})
+  ],
   entry: {
-    sitio: './front/root_indice.tsx',
-    editor: './front/root_editor.tsx',
+    sitio: './front/root.tsx'
   },
   devtool: 'inline-source-map',
   mode: 'development',
@@ -18,12 +21,12 @@ module.exports = {
         test: /\.tsx$/,
         use: 'babel-loader',
         exclude: /node_modules/,
-      },
+      }
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
-    fallback: { "url": require.resolve("url/") }
+    extensions: ['.mjs', '.tsx', '.ts', '.js', '.jsx'],
+    fallback: { "url": require.resolve("url/"), "path": require.resolve("path-browserify") }
   },
   output: {
     filename: '[name].bundle.js',

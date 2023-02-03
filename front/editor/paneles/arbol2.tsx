@@ -51,14 +51,14 @@ const SubTree = ({elems} : any) => {
   return (<>
     {elems.map(e => {
       if(e.children){
-        return (<TreeNodes prefixCls={null} key={e.ruta}>
+        return (<TreeNodes prefixCls={undefined} key={e.ruta}>
           <SubTree elems={e.children}/>
          </TreeNodes>)
       }else{
         const onTextoClick = () => {
           accion('cargar', e.ruta);
         }
-        return (<TreeNodes prefixCls={null} key={e.ruta} />)
+        return (<TreeNodes prefixCls={undefined} key={e.ruta} />)
       }})
     }
     </>)

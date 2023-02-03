@@ -15,8 +15,6 @@ const { logger } = require('./dist/backend/esdelogger');
 const conf = require('./dist/backend/config').default;
 const { passport } = require('./dist/backend/auth');
 
-const { cargar_cache } = require('./dist/backend/cache');
-
 logger.info("Instanciando server")
 
 let app = express();
@@ -62,7 +60,7 @@ app.use((req, ___, next) => {
 })
 
 app.use('/', blogRouter);
-cargar_cache();
+// cargar_cache();
 
 
 // catch 404 and forward to error handler

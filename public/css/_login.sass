@@ -1,0 +1,64 @@
+.btn
+  width: 30px
+  height: 36px
+  margin: 10px
+  background-size: cover
+  cursor: pointer
+  box-sizing: border-box
+
+
+  &:hover
+    background-color: #eadcce
+    background-blend-mode: multiply
+    border: 1px solid
+
+
+#login
+  background-image: url('/icon/login.png')
+  background-position: center
+  
+
+#hogar
+  display: flex
+  width: 100vw
+  height: 100vh
+  background-image: url(/img/mussi.jpg) 
+  background-size: cover
+  background-position: center
+  justify-content: center
+  align-items: center
+
+
+  > div
+    display: flex
+    height: min-content
+
+
+#pwd
+  background: none
+  border: none
+  border-bottom: 1px solid #fff4
+
+
+  &:hover
+    border: 1px solid
+
+
+  &:focus
+    background: #fff4
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1)
+    outline: none
+
+
+#login
+  opacity: 0
+
+
+#pwd:focus + #login
+  opacity: 1
+
+
+@media (max-width: 1060px)
+  #pwd 
+    border-bottom: 1px solid #000 
+  

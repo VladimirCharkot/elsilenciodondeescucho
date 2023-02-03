@@ -1315,4 +1315,74 @@ svg.vidriera {
   100% {
     opacity: 1; } }
 
+.btn {
+  width: 30px;
+  height: 36px;
+  margin: 10px;
+  background-size: cover;
+  cursor: pointer;
+  box-sizing: border-box; }
+  .btn:hover {
+    background-color: #eadcce;
+    background-blend-mode: multiply;
+    border: 1px solid; }
+
+#login {
+  background-image: url("/icon/login.png");
+  background-position: center; }
+
+#hogar {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/img/mussi.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center; }
+  #hogar > div {
+    display: flex;
+    height: min-content; }
+
+#pwd {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff4; }
+  #pwd:hover {
+    border: 1px solid; }
+  #pwd:focus {
+    background: #fff4;
+    box-shadow: 0 0 5px #51cbee;
+    outline: none; }
+
+#login {
+  opacity: 0; }
+
+#pwd:focus + #login {
+  opacity: 1; }
+
+@media (max-width: 1060px) {
+  #pwd {
+    border-bottom: 1px solid #000; } }
+
+.visitas {
+  padding: 10vw; }
+
+.g {
+  padding: 1em; }
+
+#listas {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw; }
+
+.ranking {
+  width: 35vw;
+  padding: 0; }
+  .ranking li {
+    display: flex;
+    justify-content: space-between; }
+  .ranking p {
+    display: inline-block; }
+
 /*# sourceMappingURL=style.css.map */

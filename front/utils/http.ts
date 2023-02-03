@@ -65,3 +65,7 @@ export const postFiles = async (endpoint: string, files: FileList, parseResponse
   }
 
 }
+
+export const logaccess = async (accion: string) => {
+  return (await post('/accion', {accion})).ok
+}

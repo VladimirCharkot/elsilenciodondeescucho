@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ResultadoDeBusqueda } from '../../backend/blog';
+import { ResultadoDeBusqueda } from '../../backend/blog/blog';
 import { debounce } from 'lodash';
 
 

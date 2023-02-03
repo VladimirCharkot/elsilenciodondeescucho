@@ -1,9 +1,9 @@
-import { text } from 'd3';
 import * as React from 'react';
 import { useEffect, useState, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import { useArchivos } from './editor/backend';
 import { Cabecera } from './cabecera';
+import { logaccess } from './utils/http';
 import { throttle } from 'lodash';
 import { use } from 'passport';
 
@@ -29,6 +29,7 @@ interface EscritoProps{
 // Puede venir por prop o por url
 export const Escrito = ({txtId, headerNav}: EscritoProps) => {
   const { textoId } = useParams();
+  const txt = txtId ?? textoId
 
   const [y, setY] = useState(0);
   const [barraActiva, setBarraActiva] = useState(false)
@@ -46,6 +47,7 @@ export const Escrito = ({txtId, headerNav}: EscritoProps) => {
   }
 
   useEffect(() => {setY(window.scrollY)}, [])
+  useEffect(() => {logaccess(txt ?? 'escrito')}, [])
 
   useEffect(() => {
     window.addEventListener("scroll", manejarNav);
@@ -53,8 +55,6 @@ export const Escrito = ({txtId, headerNav}: EscritoProps) => {
       window.removeEventListener("scroll",manejarNav);
     };
   }, [y]);
-
-  const txt = txtId ?? textoId
 
   return (
     <>
@@ -125,19 +125,3 @@ const Texto = ({src_md} : {src_md: string}) => {
 //       })
 //     })
 //   }
-  
-//   window.lastScrollY = 0;
-//   const revelar_barra = () => {
-//     //- console.log()
-//     if(window.scrollY - window.lastScrollY > 0){
-//       document.querySelector('header').classList.remove('habitado')
-//     }else{
-//       document.querySelector('header').classList.add('habitado')
-//     }
-//     window.lastScrollY = window.scrollY
-//   }
-
-//   window.addEventListener('scroll', revelar_barra)
-//   window.addEventListener('load', corregir_imagenes)
-//   window.addEventListener('load', agregar_scroll_a_backref)
-//   window.addEventListener('load', agregar_highlights_a_ref)

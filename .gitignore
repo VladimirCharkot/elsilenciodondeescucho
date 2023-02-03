@@ -1,9 +1,13 @@
 .config.yaml
 .sheet_credentials.json
+package-lock.json
 node_modules/
 public/img
 public/foto
+public/front
+views/ensayos
 diseños/
+public/front/*
 style.css
 style.css.map
 logs

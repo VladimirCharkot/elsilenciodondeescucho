@@ -4,5 +4,5 @@ Sitio web para los textos de [El Silencio Donde Escucho](https://elsilenciodonde
 
 Textos por Sebastián Rojo.
 
-Desarrollo por Vladimir Charkot.
+Dev por Vladimir Charkot.
 
