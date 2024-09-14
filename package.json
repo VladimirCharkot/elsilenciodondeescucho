@@ -37,7 +37,7 @@
     "markdown-it-front-matter": "^0.2.3",
     "mercadopago": "^1.5.14",
     "morgan": "~1.9.1",
-    "node-sass-middleware": "^1.0.1",
+    "node-sass-middleware": "^1.1.0",
     "nodemon": "^2.0.6",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
