@@ -1,5 +1,4 @@
-import {RGBColor} from 'd3'
-// import { EfectoVidriera } from './vidriera'
+import * as d3 from 'd3'
 
 export interface DataNodo{
   titulo: string,
@@ -21,3 +20,8 @@ export interface NodoType{
     visitado?: boolean,
     slug?: string
 }
+
+export type Menu = (navigate: (path: string) => void) => Promise<NodoType[]>;
+
+export type Punto = { x: number, y: number }
+export type GenericD3Selection = d3.Selection<any, any, any, any>

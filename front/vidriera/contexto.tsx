@@ -1,86 +1,46 @@
+import * as d3 from "d3";
 import * as React from "react";
 import { createContext, useState } from "react";
-import * as d3 from "d3";
-import { GenericD3Selection, LayoutFunc, Punto } from "./vidriera";
-import { NodoType } from "./tipos";
-import { transform } from "./utils";
-import { layout_centros } from "./contenido";
+import { GenericD3Selection, NodoType, Punto } from "./tipos";
 
-type Animacion = "inicial" | "indice";
+export type SVG = d3.Selection<SVGSVGElement, unknown, HTMLElement, any>
+export type Zoom = d3.ZoomBehavior<SVGSVGElement, unknown>
+export type Animacion = (svg: SVG, zoom: Zoom, ) => Promise<void>
+export type Layout = (nodos: GenericD3Selection) => void;
 
 interface VidrieraContextI {
-  animacion: (anim: Animacion) => void;
-  zoom: d3.ZoomBehavior<SVGSVGElement, unknown> | null;
-  setZoom: React.Dispatch<
-    React.SetStateAction<d3.ZoomBehavior<SVGSVGElement, unknown> | null>
-  >;
-  svg: d3.Selection<SVGSVGElement, unknown, HTMLElement, any> | null;
-  setSvg: React.Dispatch<
-    React.SetStateAction<d3.Selection<
-      SVGSVGElement,
-      unknown,
-      HTMLElement,
-      any
-    > | null>
-  >;
+  zoom: Zoom | null;
+  setZoom: React.Dispatch< React.SetStateAction<Zoom | null> >;
+  svg: SVG | null;
+  setSvg: React.Dispatch< React.SetStateAction<SVG | null> >;
   nodos: NodoType[];
   setNodos: React.Dispatch<React.SetStateAction<NodoType[]>>;
-  layout: LayoutFunc | null;
-  setLayout: React.Dispatch<React.SetStateAction<LayoutFunc | null>>;
+  layout: Layout | null;
+  setLayout: React.Dispatch<React.SetStateAction<Layout | null>>;
 }
-
-const layout_fuerza = (nodos: GenericD3Selection, custom_opcs = {}) => {
-  const default_opcs = {
-    init: () => {},
-    draw: () => transform(nodos),
-    dv: 0.6,
-    da: 0.01,
-    df: -450,
-  };
-  const opcs = { ...default_opcs, ...custom_opcs };
-
-  // opcs.init()
-
-  //@ts-ignore
-  let simulacion = d3
-    .forceSimulation(d3.selectAll(".entrada").data() as d3.SimulationNodeDatum[])
-    .velocityDecay(opcs.dv)
-    .alphaDecay(opcs.da)
-    .force("campo", d3.forceManyBody().strength(opcs.df))
-    .on("tick", opcs.draw);
-
-  return simulacion;
-};
 
 //@ts-ignore
 const VidrieraContext = createContext<VidrieraContextI>(null);
 
 export const VidrieraContextProvider = ({ children }) => {
-  const [zoom, setZoom] = useState<d3.ZoomBehavior< SVGSVGElement, unknown > | null>(null);
-  const [svg, setSvg] = useState<d3.Selection< SVGSVGElement, unknown, HTMLElement, any > | null>(null);
+  const [zoom, setZoom] = useState<d3.ZoomBehavior<
+    SVGSVGElement,
+    unknown
+  > | null>(null);
+  const [svg, setSvg] = useState<d3.Selection<
+    SVGSVGElement,
+    unknown,
+    HTMLElement,
+    any
+  > | null>(null);
   const [nodos, setNodos] = useState<NodoType[]>([]);
-  const [layout, setLayout] = useState<LayoutFunc | null>(null);
+  const [layout, setLayout] = useState<Layout | null>(null);
+  const [montado, setMontado] = useState(false);
 
-  const lo_centros = (nodos: GenericD3Selection) => layout_centros(nodos, [{
-    nombre: "Inicio",
-    x: 0,
-    y: 0,
-    color: "red",
-  }])
-
+  // Configura zoom y pan y drag una vez que svg está montado
   React.useEffect(() => {
-    if (svg && nodos.length > 0) {
-      console.log(`Corriendo posta`);
-
-      const entradas = d3.selectAll(".entrada").data(nodos);
+    if (svg && montado) {
       const lienzo = d3.select(".lienzo");
-
-      // Debug
-      document.addEventListener("keypress", (e) => {
-        if (e.key == "d" || e.key == "D") console.log(lienzo.attr("transform"));
-      });
-
-      console.log(`Instanciando zoom`);
 
       // Zoom and pan
       const zoomd3 = d3
@@ -90,74 +50,58 @@ export const VidrieraContextProvider = ({ children }) => {
           lienzo.attr("transform", transform);
         });
 
-      // console.log(`Seteando zoom`)
+      console.log(`Seteando zoom`, zoomd3);
 
+      // // Lo seteamos para poder accederlo desde fuera
       // setZoom(zoomd3);
+      svg.call(zoomd3);
 
       // Debug
       document.addEventListener("keypress", (e) => {
         if (e.key == "d" || e.key == "D") console.log(lienzo.attr("transform"));
       });
 
-      console.log(`ok`)
+      // Drag
 
-      svg.call(zoomd3);
+      const drag = d3
+        .drag<SVGSVGElement, unknown>()
+        .on("drag", (ev, d: any) => {
+          console.log(`Drag`);
+          d.x = ev.x;
+          d.y = ev.y;
+        });
+      svg.call(drag);
 
-
-      const drag = d3.drag<SVGSVGElement, unknown>()
-          .on('drag', (ev, d: any) => {
-              console.log(`Drag`)
-              d.x = ev.x;
-              d.y = ev.y;
-          })
-      svg.call(drag)
+      console.log(`ok`);
 
       // Fuerza
       // const fuerza = layout_fuerza(entradas);
+    }
+  }, [montado, svg]);
 
-      // layout(entradas);
+  // Configura d3 en el svg
+  React.useEffect(() => {
+    if (svg && nodos.length > 0 && layout && !montado) {
+      console.log(`Corriendo useEffect que configura d3 en el svg`);
+
+      // Linkea data de nodos a los circulitos
+      const entradas = d3.selectAll(".entrada").data(nodos);
+      const lienzo = d3.select(".lienzo");
+
+      // Debug
+      document.addEventListener("keypress", (e) => {
+        if (e.key == "d" || e.key == "D") console.log(lienzo.attr("transform"));
+      });
+
+      console.log(`Aplicando layout`, layout);
+
+      // layout?.(entradas);
+
+      setMontado(true);
     }
   }, [svg, layout, nodos]);
 
-  const escalar = (ms: number, scl: number) =>
-    zoom &&
-    svg &&
-    svg.transition().duration(ms).ease(d3.easeCubic).call(zoom.scaleTo, scl);
-
-  const panear = (ms: number, p: Punto) =>
-    zoom &&
-    svg &&
-    svg
-      .transition()
-      .duration(ms)
-      .ease(d3.easeCubic)
-      .call(zoom.translateTo, p.x, p.y);
-
-  const animaciones: Record<Animacion, () => void> = {
-    inicial: async () => {
-      console.log("animación inicial zoom ", zoom, " svg ", svg);
-      if (!zoom || !svg) return;
-      zoom.translateTo(svg, 100, 0);
-      zoom.scaleTo(svg, 0.2);
-      escalar(3000, 0.5);
-    },
-    indice: async () => {
-      console.log("animación indice");
-      if (!zoom || !svg) return;
-      zoom.translateTo(svg, 0, 0);
-      zoom.scaleTo(svg, 0.5);
-      escalar(3000, 0.08);
-    },
-  };
-
-  const animacion = async (anim: Animacion) => {
-    if (anim in animaciones) {
-      await animaciones[anim]();
-    }
-  };
-
   const data = {
-    animacion,
     zoom,
     setZoom,
     svg,

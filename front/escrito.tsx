@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useEffect, useState, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import { useArchivos } from './editor/backend';
-import { Cabecera } from './cabecera';
+import { Barra } from './cabecera';
 import { logaccess } from './utils/http';
 import { throttle } from 'lodash';
 import { use } from 'passport';
@@ -58,7 +58,7 @@ export const Escrito = ({txtId, headerNav}: EscritoProps) => {
 
   return (
     <>
-      <Cabecera atrasTexto={headerNav?.texto} atrasPath={headerNav?.path} active={barraActiva} />
+      <Barra atrasTexto={headerNav?.texto} atrasPath={headerNav?.path} active={barraActiva} />
       <article className="texto">
         {txt && <>
             <Texto src_md={txt}/>

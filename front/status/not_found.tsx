@@ -1,4 +1,4 @@
-import { Cabecera } from '../cabecera'
+import { Barra } from '../cabecera'
 import * as React from 'react'
 
 export const NotFound = () => {
@@ -10,7 +10,7 @@ export const NotFound = () => {
     }, [])
 
     return (<>
-        <Cabecera />
+        <Barra />
         <div ref={d} style={{
             display: 'flex',
             alignItems: 'center',

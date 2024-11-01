@@ -40,7 +40,7 @@ export interface CabeceraProps {
     atrasPath?: string
 }
 
-export const Cabecera = ({ active, atrasTexto, atrasPath }: CabeceraProps) => {
+export const Barra = ({ active, atrasTexto, atrasPath }: CabeceraProps) => {
 
     const [hovereado, setHovereado] = useState(false);
     // const [buscando, setBuscando] = useState(false);

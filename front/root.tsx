@@ -21,7 +21,7 @@ const Inicio = () => {
   const [nodosEscritos, setNodosEscritos] = useState<NodoType[]>();
 
   useEffect(() => {
-    vidriera_escritos.nodos(navigate).then(setNodosEscritos);
+    vidriera_escritos.menu(navigate).then(setNodosEscritos);
   }, []);
 
   return (
@@ -32,7 +32,7 @@ const Inicio = () => {
           element={
             <Indice
               // animacion={vidriera_inicial.animacion}
-              nodos={vidriera_inicial.nodos(navigate)}
+              menu={vidriera_inicial.menu}
               layout={vidriera_inicial.layout}
               titulo="El Silencio Donde Escucho"
             />
@@ -45,12 +45,12 @@ const Inicio = () => {
             element={
               <Indice
                 // animacion={vidriera_escritos.animacion}
-                nodos={nodosEscritos}
+                menu={async () => nodosEscritos}
                 layout={vidriera_escritos.layout}
                 Overlay={vidriera_escritos.Overlay}
                 headerNav={{
-                  texto: "Inicio",
-                  path: "/",
+                  atrasTexto: "Inicio",
+                  atrasPath: "/",
                 }}
                 titulo="ESDE - Escritos"
               />
@@ -63,11 +63,11 @@ const Inicio = () => {
           element={
             <Indice
               // animacion={vidriera_propuestas.animacion}
-              nodos={vidriera_propuestas.nodos(navigate)}
+              menu={vidriera_propuestas.menu}
               layout={vidriera_propuestas.layout}
               headerNav={{
-                texto: "Inicio",
-                path: "/",
+                atrasTexto: "Inicio",
+                atrasPath: "/",
               }}
               titulo="ESDE - Propuestas"
             />

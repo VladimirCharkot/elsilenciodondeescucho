@@ -1,48 +1,42 @@
-import * as React from 'react';
-import { Cabecera } from '../cabecera';
-import { Vidriera } from './vidriera';
-import { vidriera_inicial } from './contenido';
-import { useState, useEffect, useContext } from 'react';
-import { VidrieraProps, LayoutFunc } from './vidriera';
-import { NodoType } from './tipos';
-import { Telon } from '../telon'
-// import VidrieraContext, { VidrieraContextProvider } from './contexto';
-import VidrieraContext, { VidrieraContextProvider } from './contexto';
+import * as React from "react";
+import { useEffect } from "react";
+import { Barra, CabeceraProps } from "../cabecera";
+import { Telon } from "../telon";
+import { Menu } from "./tipos";
+import { Vidriera } from "./vidriera";
+import { Layout, VidrieraContextProvider } from "./contexto";
+
+/**
+ * Telón + Vidriera + Barra
+ */
 
 export interface IndiceProps {
-    nodos: NodoType[],                              // Nodos de la vidriera
-    layout: LayoutFunc,                             // Función que asigna posición inicial a cada nodo
-    // animacion?: 'inicial' | 'indice',               // Animación inicial, usualmente pan y zoom
-    Overlay?: React.FC,
-    headerNav?: {
-        texto: string,
-        path: string
-    },
-    titulo?: string
+  menu: Menu; // Nodos de la vidriera
+  layout: Layout; // Función que asigna posición inicial a cada nodo
+  Overlay?: React.FC;
+  headerNav?: CabeceraProps;
+  titulo?: string;
 }
 
+export const Indice = ({
+  menu,
+  layout,
+  Overlay,
+  headerNav,
+  titulo,
+}: IndiceProps) => {
 
-export const Indice = ({nodos, layout, Overlay, headerNav, titulo} : IndiceProps) => {
+  useEffect(() => {
+    document.title = titulo ?? "El Silencio Donde Escucho";
+  }, []);
 
-    // const [vidriera, setVidriera] = useState<VidrieraProps | null>(null);
-    
-    const { animacion } = useContext(VidrieraContext)
-
-    useEffect(() => {
-        document.title = titulo ?? 'El Silencio Donde Escucho'
-    }, [])
-
-    return (
-        <>
-            <VidrieraContextProvider>
-                {/* <Telon onDesvanecer={() => animacion('indice')}/> */}
-                <Telon onDesvanecer={() => animacion('inicial') }/>
-                <Cabecera atrasTexto={headerNav?.texto} atrasPath={headerNav?.path} />
-                <Vidriera
-                    nodos={nodos}
-                    layout={layout} 
-                    Overlay={Overlay}/>
-            </VidrieraContextProvider>
-        </>
-    )
-}
+  return (
+    <>
+      <VidrieraContextProvider>
+        <Telon onDesvanecer={() => console.log(`Telón desvanecido`)} />
+        <Barra atrasTexto={headerNav?.atrasTexto} atrasPath={headerNav?.atrasPath} />
+        <Vidriera menu={menu} layout={layout} Overlay={Overlay} />
+      </VidrieraContextProvider>
+    </>
+  );
+};

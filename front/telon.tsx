@@ -1,6 +1,5 @@
 import * as React from 'react'
-import { useContext, useEffect, useState } from 'react'
-import VidrieraContext from './vidriera/contexto'
+import { useEffect, useState } from 'react'
 
 const umbral = 0 //1000 * 60 // en ms
 
@@ -9,8 +8,6 @@ interface TelonProps {
 }
 
 export const Telon = ({onDesvanecer}: TelonProps) => {
-
-    const { animacion } = useContext(VidrieraContext)
 
     type EstadosTelon = 'visible' | 'aparecer' | 'desvanecer' | 'escondido'
 
@@ -23,9 +20,6 @@ export const Telon = ({onDesvanecer}: TelonProps) => {
         // Lo desvanecemos
         setEstado('desvanecer')
         onDesvanecer && onDesvanecer()
-
-        // Triggereamos el zoom in de la vidriera
-        animacion('inicial')
 
         // Scheduleamos el escondido
         setTimeout(() => {

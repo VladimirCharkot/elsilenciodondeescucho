@@ -1,3 +1,9 @@
+import { NodoType } from "../front/vidriera/tipos";
+
+/**
+ * Backend
+ */
+
 // Representa un archivo o carpeta levantado del FS
 export interface NodoFS{
   ruta: string,
@@ -20,8 +26,12 @@ export interface Entrada{
 }
 
 
+/**
+ * Interfaz
+ */
 
-// Representa una entrada del blog como son enviadas al frontend
+// Representa una _entrada_ del blog como son enviadas al frontend
+// (no tiene el texto, solo el "header")
 export interface TextoSinCuerpo{
   titulo: string,
   link: string,
