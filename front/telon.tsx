@@ -1,74 +1,69 @@
 import * as React from 'react'
-import { useRef } from 'react'
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
+import VidrieraContext from './vidriera/contexto'
 
-// const umbral = 1000 * 60 * 60
-const umbral = 1000 * 60
+const umbral = 0 //1000 * 60 // en ms
 
-export const Telon = () => {
+interface TelonProps {
+    onDesvanecer?: () => void
+}
 
-    const [mostrar, setMostrar] = useState(false)
-    const telon = useRef<HTMLDivElement>(null)
+export const Telon = ({onDesvanecer}: TelonProps) => {
 
-    const visualizar = () => {
-        if(telon.current !== null){
-            setTimeout(() => {telon.current!.classList.add('visible')}, 500)
-            setTimeout(() => {telon.current!.style.visibility = 'hidden'}, 4000)
-        }
-        
+    const { animacion } = useContext(VidrieraContext)
+
+    type EstadosTelon = 'visible' | 'aparecer' | 'desvanecer' | 'escondido'
+
+    // El telón está visible por default
+    const [estado, setEstado] = useState<EstadosTelon>('visible')
+
+    const desvanecer = (e) => {
+        e.preventDefault()
+
+        // Lo desvanecemos
+        setEstado('desvanecer')
+        onDesvanecer && onDesvanecer()
+
+        // Triggereamos el zoom in de la vidriera
+        animacion('inicial')
+
+        // Scheduleamos el escondido
+        setTimeout(() => {
+            setEstado('escondido')
+        }, 4000) // Lo que demora en desvanecerse
     }
 
     useEffect(() => {
+
+        // Entrar contenido
+        setEstado('aparecer')
+
+        // Verficar si ya se ha visitado la página
         const t0 = localStorage.getItem('ultima_visita')
+        console.log(`t0: ${ t0 ? Date.now() - parseInt(t0) : t0}`)
+        // No encontrado: 
         if (t0 === null){
-            visualizar()
+            // setEstado()
         }else{
+            // Hace cuanto? 
             const paso_umbral_t = !!(t0 && (Date.now() - parseInt(t0) > umbral))
             if(paso_umbral_t) {
-                visualizar()
+                // visualizar()
             }else{
-                telon.current?.classList.add('invisible')
+                setEstado('desvanecer')
             }
         }
         localStorage.setItem('ultima_visita', Date.now().toString())
     }, [])
 
-    return (<div className='telon' ref={telon}>
+    return (<div className={`telon ${ estado }`}>
         <h1>El Silencio Donde Escucho</h1>
+        <p>Bienvenidx</p>
+        <p>Aquí encontrará la expresión de un proceso de enseñanza <b>vivo</b>. De un grupo de trabajo por la libertad interior y para el encuentro con la Verdad. Principalmente en la forma de escritos, que es el segmento de esta enseñanza que puede volcarse a este formato.</p>
+        <p>El trabajo que lleva adelante ESDE se desenvuelve también en actividades presenciales, encuentros, ejercicios, rondas, seminarios y demás realizaciones. También están disponibles aquí algunas propuestas.</p>
+        <p>Nos encontramos cerca de Ciudad de Córdoba. Nos movemos donde el Trabajo nos convoque. Le damos la bienvenida a entrar en contacto, si así lo siente.</p>
+        <p>Pase. Con todo alborozo le invitamos a leer estos escritos. Encontrará marcados los que ya haya leído al regresar a este sitio.</p>
+        <p>Buen provecho!</p>
+        <a href="#" onClick={desvanecer}>Continuar</a>
     </div>)
 }
-
-
-
-// script.
-  
-//   if(Date.now() - window.visto > 1000 * 60 * 60){
-//     setTimeout(() => document.querySelector('.telon h1').style.opacity = 1, 100)
-//     setTimeout(() => document.querySelector('.telon').style.opacity = 0, 3000)
-//     setTimeout(() => document.querySelector('.telon').style.visibility = 'hidden', 4000)
-//     document.cookie = `visto=${Date.now()};max-age=${60*60*24}`
-//   }else{
-//     setTimeout(() => document.querySelector('.telon').style.opacity = 0, 300)
-//     setTimeout(() => document.querySelector('.telon').style.visibility = 'hidden', 300)
-//   }
-
-
-
-
-
-// let visto
-// try {
-//     visto = parseInt(document.cookie.split('; ').filter(s => s.startsWith('visto'))[0].split('=')[1])
-// } catch (err) {
-//     visto = 0
-// }
-
-// const desplegar = () => window.location.hash == '#indice' ? indice() : menu()
-
-// //@ts-ignore
-// if (Date.now() - window.visto > 1000 * 60 * 60) {
-//     setTimeout(desplegar, 2000)
-// } else {
-//     desplegar()
-// }
-

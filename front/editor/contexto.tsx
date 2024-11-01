@@ -1,8 +1,8 @@
 import * as React from 'react';
-import {createContext, useState, useEffect, useRef, Dispatch, SetStateAction, MutableRefObject, RefObject} from 'react';
-import {EstadoEditor, Panel} from './edicion';
+import { createContext, Dispatch, RefObject, SetStateAction, useEffect, useRef, useState } from 'react';
+import { EstadoEditor, Panel } from './edicion';
 
-import {ArbolFS} from '../../shared/tipos';
+import { ArbolFS } from '../../shared/tipos';
 
 interface EditorContextI{
   textoMd: string,

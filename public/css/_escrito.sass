@@ -1,14 +1,5 @@
 /* Escrito */
-
-
-$color-1: rgb(252, 250, 243)
-$color-2: rgba(226, 247, 235, 0.5)
-
-$color-3: #f6ba8f66
-$color-4: #8bbcfc
-
-$color-5: #d8e3e3
-$color-6: #d8d3cd
+@import 'settings'
 
 .texto
   background: url(/img/ruido.png) fixed
@@ -45,6 +36,17 @@ $color-6: #d8d3cd
     background-image: var(--url-imagen) /* Se espera que esté definida en el elemento (div) */
     background-size: var(--escala, var(--escala-default))
     background-position: var(--posicion, var(--posicion-default))
+
+@media (max-width: $layout-breakpoint-small)
+  .texto 
+    h2
+      font-size: 1.8em
+      letter-spacing: 0.12em
+      padding: 0em 1.6em
+      padding-top: 2.8em
+    p
+      padding: 0 1.6em
+
 
   // .cabecera
   //   @media(max-width: 1000px)

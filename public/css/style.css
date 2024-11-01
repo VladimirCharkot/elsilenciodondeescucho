@@ -83,6 +83,20 @@ header {
       header #area_busqueda #busqueda:focus-visible {
         outline-width: 0; }
 
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 0.6em; }
+  header nav {
+    width: max-content; }
+    header nav .texto-volver {
+      display: inline-block;
+      width: 0;
+      visibility: hidden; }
+  header #area_busqueda {
+    display: inline-block;
+    width: 0;
+    visibility: hidden; } }
+
 #resultados {
   overflow: scroll;
   z-index: 1;
@@ -434,6 +448,15 @@ header {
       min-height: auto; }
     .texto .ventana img {
       display: none; }
+
+@media (max-width: 600px) {
+  .texto h2 {
+    font-size: 1.8em;
+    letter-spacing: 0.12em;
+    padding: 0em 1.6em;
+    padding-top: 2.8em; }
+  .texto p {
+    padding: 0 1.6em; } }
 
 .piel {
   padding: var(--pad, var(--pad-default));
@@ -1283,25 +1306,49 @@ svg.vidriera {
 .telon {
   position: absolute;
   z-index: 10;
-  width: 100vw;
+  box-sizing: border-box;
   height: 100vh;
+  width: 100vw;
   background: white;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  padding: 0 2em; }
+  .telon p {
+    max-width: 25em;
+    text-align: center; }
   .telon h1 {
     font-family: 'Libre Baskerville', sans-serif;
-    font-size: 1.4em;
+    font-size: 0.8em;
     letter-spacing: 0.28em;
     text-transform: uppercase;
     opacity: 0; }
+  .telon a {
+    text-decoration: underline; }
   .telon.visible {
+    opacity: 1;
+    visibility: inherit; }
+  .telon.aparecer h1 {
+    animation: anim-fade-in 1s forwards; }
+  .telon.aparecer p {
+    animation: anim-fade-in 1s forwards; }
+  .telon.desvanecer {
     animation: anim-fade-out 4s forwards; }
-    .telon.visible h1 {
-      animation: anim-fade-in 1s forwards; }
-  .telon.invisible {
+    .telon.desvanecer h1 {
+      animation: anim-fade-out 2s forwards; }
+    .telon.desvanecer p {
+      animation: anim-fade-out 1s forwards; }
+    .telon.desvanecer a {
+      animation: anim-fade-out 0.5s forwards; }
+  .telon.escondido {
     opacity: 0;
     visibility: hidden; }
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 0.8em;
+    letter-spacing: 0.12em; } }
 
 @keyframes anim-fade-out {
   0% {

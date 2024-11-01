@@ -1,6 +1,4 @@
-import * as d3 from 'd3'
-import {parse as parseCookie} from 'cookie';
-import { parse } from 'path';
+import * as d3 from 'd3';
 
 export const capitalize = (s) => s.substr(0,1).toUpperCase() + s.substr(1)
 
@@ -48,20 +46,4 @@ export const wrap = (text) => {
   })
 }
 
-
-export const get_cookie = (nombre: string) => {
-  let c
-  try{
-    const cookies = parseCookie(document.cookie)
-    console.log(`Cookies parseadas`)
-    c = JSON.parse(cookies.visitados.split(':')[1])
-    console.log(c)
-  }catch(err){
-    console.warn(`Error parseando cookie ${nombre} :oops: `)
-    console.warn(err)
-    c = []
-  }
-  return c
-}
-
-export const get_visitados = () : string[] => get_cookie('visitados')
+export const get_visitados = () : string[] => JSON.parse(localStorage.getItem('visitados') ?? '[]')

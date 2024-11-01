@@ -8,7 +8,6 @@ import { capitalize, transform, get_visitados } from './utils'
 import { get } from '../utils/http'
 import { GenericD3Selection } from './vidriera'
 import {find, defaultTo} from 'lodash'
-// import {indice, propuestas} from './vidriera';
 
 // Textos ya visitados
 const visitados = get_visitados()
@@ -162,13 +161,13 @@ export let menu_propuestas = (navigate) => [
 export const layout_inicial =  (ns: GenericD3Selection) => layout_centros(ns, [{nombre: '', x: 0, y: 0, color: 'black'}])
 
 export const vidriera_inicial = {
-    animacion: 'inicial' as 'inicial',
+    animacion: 'inicial',
     nodos: menu_principal,
     layout: layout_inicial
 }
 
 export const vidriera_propuestas = {
-    animacion: 'inicial' as 'inicial',
+    animacion: 'inicial',
     nodos: menu_propuestas, 
     layout: layout_inicial
 }
@@ -191,7 +190,6 @@ export const layout_centros = (nodos: GenericD3Selection, centros: CentroType[] 
     if (!centros) centros = [{ nombre: '', x: 0, y: 0, color: '#aaa' }]
 
     centros.forEach(c => {
-        //@ts-ignore
         const these_nodos = c.nombre ? nodos.filter(n => n.fm?.serie == c.nombre) : nodos;
         centrar(these_nodos, c)
     })

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {useContext} from 'react';
 import {EditorContext} from './contexto';
+import { Panel } from './edicion';
 
 interface ControlProps{
   id: string,
@@ -16,7 +17,7 @@ export const Control = ({id, texto, tecla, accion}: ControlProps) => {
 }
 
 interface BtnProps{
-  target: string,
+  target: Panel,
   texto: string,
   tecla?: string
 }

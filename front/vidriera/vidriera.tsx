@@ -1,20 +1,19 @@
 import * as d3 from 'd3'
 import * as React from 'react'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 import { chunk } from 'lodash'
 import { NodoType } from './tipos'
 import { transform } from './utils'
 import { useEffect } from 'react'
-import e from 'express'
+import VidrieraContext from './contexto'
 
-// export type EfectoVidriera = (update) => Promise<void>
 export type LayoutFunc = (nodos: GenericD3Selection) => void
 
 export interface VidrieraProps {
     // update: React.Dispatch<VidrieraProps | null>,   // Dispatcher que actualiza el contenido de la vidriera
-    animacion?: 'inicial' | 'indice',               // Animación inicial, usualmente pan y zoom
+    // animacion?: 'inicial' | 'indice',               // Animación inicial, usualmente pan y zoom
     nodos: NodoType[],                              // Nodos de la vidriera
     layout: LayoutFunc,                             // Función que asigna posición inicial a cada nodo
     Overlay?: React.FC
@@ -28,58 +27,22 @@ export type Punto = { x: number, y: number }
 export type GenericD3Selection = d3.Selection<any, any, any, any>
 
 
-export const Vidriera = ({ animacion, nodos, layout, Overlay }: VidrieraProps) => {
+export const Vidriera = ({ nodos, layout, Overlay }: VidrieraProps) => {
+    const { setNodos, setSvg } = useContext(VidrieraContext)
 
     useEffect(() => {
 
         const svg = d3.select<SVGSVGElement, unknown>("svg")
-        const entradas = d3.selectAll('.entrada').data(nodos)
-        const lienzo = d3.select('.lienzo')
+        setSvg(svg)
+        setNodos(nodos)
 
-        // Zoom and pan
-        const zoom = d3.zoom<SVGSVGElement, unknown>()
-            .scaleExtent([0.05, 5])
-            .on("zoom", ({ transform }) => {
-                lienzo.attr('transform', transform)
-            });
+        // const entradas = d3.selectAll('.entrada').data(nodos)
 
-        document.addEventListener('keypress', (e) => {
-            if(e.key == 'd' || e.key == 'D')
-                console.log(lienzo.attr('transform'))
-        })
-
-        svg.call(zoom)
-
-        // Fuerza
-        const fuerza = layout_fuerza(entradas);
-
-        //@ts-ignore
-        const escalar = (ms: number, scl: number) => svg.transition().duration(ms).ease(d3.easeCubic).call(zoom.scaleTo, scl)
-        //@ts-ignore
-        const panear = (ms: number, p: Punto) => svg.transition().duration(ms).ease(d3.easeCubic).call(zoom.translateTo, p.x, p.y)
-
-        const animaciones = {
-            'inicial': async () => {
-                console.log(`Corriendo animacion`)
-                zoom.translateTo(svg, 100, 0)
-                zoom.scaleTo(svg, 0.2)
-                escalar(3000, 0.5)
-            },
-            'indice': async () => {
-                zoom.translateTo(svg, 0, 0)
-                zoom.scaleTo(svg, 0.5)
-                escalar(3000, 0.08) 
-            }
-        }
-
-        layout(entradas)
-
-        if(animacion) setTimeout(() => animaciones[animacion]())
+        // setZoom(zoomd3)
 
         // La animación a veces no sale bien. 
         // translate(-599,-494.25) scale(0.5) -> Mal
         // translate(316,329.5) scale(0.5) -> Bien
-        
 
         // Drag
         // const drag = d3.drag<SVGSVGElement, unknown>()
@@ -120,32 +83,6 @@ export const Vidriera = ({ animacion, nodos, layout, Overlay }: VidrieraProps) =
 
 
 /* Layout */
-
-
-
-const layout_fuerza = (nodos: GenericD3Selection, custom_opcs = {}) => {
-    const default_opcs = {
-        init: () => { },
-        draw: () => transform(nodos),
-        dv: 0.6,
-        da: 0.01,
-        df: -450
-    }
-    const opcs = { ...default_opcs, ...custom_opcs }
-
-    opcs.init()
-
-    //@ts-ignore
-    let simulacion = d3.forceSimulation(d3.selectAll('.entrada').data())
-        .velocityDecay(opcs.dv)
-        .alphaDecay(opcs.da)
-        .force("campo", d3.forceManyBody().strength(opcs.df))
-        .on("tick", opcs.draw)
-
-    return simulacion
-}
-
-
 
 export interface NodoProps {
     g: NodoType,

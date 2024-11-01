@@ -1,28 +1,70 @@
+@import 'settings'; 
+
 .telon
+
+    // Telonicidad
     position: absolute
     z-index: 10
-    width: 100vw 
+    box-sizing: border-box
     height: 100vh
+    width: 100vw
     background: white
+
+    // Layout vertical
     display: flex
+    flex-direction: column
     align-items: center
     justify-content: center
+
+    // Texto
+    padding: 0 2em
+
+    p 
+        max-width: 25em
+        text-align: center
     
+    // Titulo
     h1
         font-family: 'Libre Baskerville', sans-serif
-        font-size: 1.4em
+        font-size: 0.8em
         letter-spacing: 0.28em
         text-transform: uppercase
         opacity: 0
-  
+
+    a
+        text-decoration: underline
+    
+    // Telón blanco tapando el background
     &.visible
-        animation: anim-fade-out 4s forwards
+        opacity: 1
+        visibility: inherit
+
+    // Fade in del contenido del telón
+    &.aparecer
         h1
             animation: anim-fade-in 1s forwards
+        p
+            animation: anim-fade-in 1s forwards
 
-    &.invisible
+    // Fade out del telón entero
+    &.desvanecer
+        animation: anim-fade-out 4s forwards
+        h1
+            animation: anim-fade-out 2s forwards
+        p
+            animation: anim-fade-out 1s forwards
+        a
+            animation: anim-fade-out 0.5s forwards
+
+    // Quitarlo del render
+    &.escondido
         opacity: 0
         visibility: hidden
+
+@media (max-width: $layout-breakpoint-small)
+    h1
+        font-size: 0.8em
+        letter-spacing: 0.12em
 
 @keyframes anim-fade-out
     0%

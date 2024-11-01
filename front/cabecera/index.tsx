@@ -88,7 +88,9 @@ const Titulo = () => (
 const Nav = ({ atrasTexto, atrasPath }: {atrasTexto?: string, atrasPath?: string}) => {
     const navigate = useNavigate()
 
-    return (<nav onClick={() => { if (atrasPath) navigate(atrasPath) }}>{atrasTexto ? `< ${atrasTexto}` : ''}</nav>)
+    return (<nav onClick={() => { if (atrasPath) navigate(atrasPath) }}>
+        &lt; <span className='texto-volver'>{atrasTexto ?? ''}</span>
+        </nav>)
 }
 
 
