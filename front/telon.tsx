@@ -8,7 +8,11 @@ interface TelonProps {
 }
 
 export const Telon = ({ onDesvanecer }: TelonProps) => {
-  type EstadosTelon = "visible" | "aparecer" | "desvanecer" | "escondido";
+  type EstadosTelon = 
+  | "visible"    // Telón visible
+  | "aparecer"   // Telón visible y contenido fade in
+  | "desvanecer" // Telón desvaneciéndose
+  | "escondido"; // Telón escondido del DOM
 
   // El telón está visible por default
   const [estado, setEstado] = useState<EstadosTelon>("visible");
@@ -26,13 +30,15 @@ export const Telon = ({ onDesvanecer }: TelonProps) => {
     }, 4000); // Lo que demora en desvanecerse
   };
 
+  // Al montar el componente, verificar si ya se visitó la página y hace cuanto 
   useEffect(() => {
+
     // Entrar contenido
     setEstado("aparecer");
 
     // Verficar si ya se ha visitado la página
     const t0 = localStorage.getItem("ultima_visita");
-    console.log(`t0: ${t0 ? Date.now() - parseInt(t0) : t0}`);
+
     // No encontrado:
     if (t0 === null) {
       // setEstado()

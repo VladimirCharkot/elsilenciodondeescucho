@@ -87,7 +87,7 @@ export const menu_principal: Menu = async (navigate) => [
       navigate("/escritos/");
     },
     color: rgb("#23689b").formatHsl(),
-    pie: "",
+    pie: "Textos y escritos de ESDE",
   },
   {
     id: "propuestas",
@@ -96,7 +96,7 @@ export const menu_principal: Menu = async (navigate) => [
       navigate("/propuestas/");
     },
     color: rgb("#939b62").formatHsl(),
-    pie: "",
+    pie: "Talleres, seminarios, encuentros y charlas",
   },
   {
     id: "esde",
@@ -105,7 +105,7 @@ export const menu_principal: Menu = async (navigate) => [
       navigate("/esde/");
     },
     color: rgb("#ffd56b").formatHsl(),
-    pie: "",
+    pie: "Indentidad, propósito e historia",
   },
   //   {
   //     id: "colecta",
@@ -122,19 +122,15 @@ export const menu_principal: Menu = async (navigate) => [
  * Animación inicial, zoom in desde lejos
  */
 export const anim_inicial: Animacion = async (svg, zoom) => {
-  console.log("animación inicial zoom ", zoom, " svg ", svg);
-  if (!zoom || !svg) return;
   zoom.translateTo(svg, 100, 0);
   zoom.scaleTo(svg, 0.2);
   escalar(svg, zoom, 3000, 0.5);
 };
 
 /**
- * Animaci´øn
+ * Animación índice de textos, zoom out desde cerca
  */
 export const anim_indice: Animacion = async (svg, zoom) => {
-  console.log("animación indice");
-  if (!zoom || !svg) return;
   zoom.translateTo(svg, 0, 0);
   zoom.scaleTo(svg, 0.5);
   escalar(svg, zoom, 3000, 0.08);
@@ -222,7 +218,7 @@ export const vidriera_inicial: VidrieraProps = {
   layout: (nodos) => {
     layout_inicial(nodos);
     layout_fuerza(nodos);
-},
+  },
 };
 
 /**

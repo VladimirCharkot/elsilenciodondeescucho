@@ -9,6 +9,7 @@ import { Animacion, Layout, Menu } from "../vidriera/tipos";
 import { NodoVidriera } from "./tipos";
 import { dragd3, zoomd3 } from "./utils";
 import EventEmitter from "events";
+import { Nodo } from "./nodo";
 
 export interface VidrieraProps {
   animacion?: Animacion; // Animación inicial, usualmente pan y zoom
@@ -30,18 +31,13 @@ export const Vidriera = ({
 }: VidrieraProps) => {
   const navigate = useNavigate();
 
-  const navegar = (to: string) => {
-    console.log(`Navegando a ${to}`);
-    setTriggereado(false);
-    setNodos([]);
-    navigate(to)
-  }
-
   const [nodos, setNodos] = useState<NodoVidriera[]>([]);
   const [triggereado, setTriggereado] = useState(false);
 
+  // Monta el svg zoom, drag con d3 sobre los nodos que haya devuelto el menu
+  // Llama al layout y a la animación si la hubiera
+  // Los nodos son renderizados en el template y linkeados a d3 acá
   const montarD3 = () => {
-    console.log(`Montando svg y bindeando nodos a `, nodos);
     const svg = d3.select<SVGSVGElement, unknown>("svg");
     const entradas = d3.selectAll(".entrada").data(nodos);
     const lienzo = d3.select(".lienzo");
@@ -51,41 +47,29 @@ export const Vidriera = ({
     if (animacion) animacion(svg, zoomBehavior);
   };
 
-  // Al montar el componente, cargar los nodos
+  // Al montar el componente, o cambiar el menu, cargar los nodos
   useEffect(() => {
-    console.log(`Cargando nodos...`);
-    menu(navegar).then(setNodos);
-  }, []);
+    menu(navigate).then(setNodos);
+  }, [menu]);
 
-  // Al montar el componente, bindear trigger a la variable de estado
+  // Al montar el componente, o cambiar el menu, bindear trigger a la variable de estado
   useEffect(() => {
-    console.log(`Bindeando trigger...`);
-    const flagTrigger = () => setTriggereado(true);
     if (trigger) {
-      trigger.on("listo", flagTrigger);
-      return () => {
-        trigger.off("resolve", flagTrigger);
-      };
+      trigger.on("listo", () => setTriggereado(true));
     } else {
-      flagTrigger();
+      setTriggereado(true)
     }
-  }, []);
+  }, [nodos]);
 
   // Cuando los nodos estén cargados y el trigger efectuado, montar el svg
   useEffect(() => {
     if (nodos.length > 0 && triggereado) {
-      console.log(`Triggereado! Montando d3...`);
       montarD3();
     }
   }, [nodos, triggereado]);
 
   return (
-    <svg
-      className="vidriera"
-      onKeyUp={(e) => {
-        if (e.key == "a") console.log("a");
-      }}
-    >
+    <svg className="vidriera" >
       <g className="lienzo">
         {Overlay && <Overlay />}
         {nodos.map((n) => (
@@ -96,56 +80,3 @@ export const Vidriera = ({
   );
 };
 
-/* Layout */
-export interface NodoProps {
-  g: NodoVidriera;
-}
-
-/**
- * Renderiza un nodo de la vidriera en svg (<g> + <circle> + <text>)
- */
-export const Nodo = ({ g }: NodoProps) => {
-  // if(color === undefined) color = '#ccc';
-  const navigate = useNavigate();
-
-  if (g.id === undefined) g.id = g.titulo.toLowerCase().split(" ").join("-");
-
-  const [hovereado, setHovereado] = useState(false);
-
-  return (
-    <g
-      onClick={() => {
-        if (g.accion) g.accion();
-        else if (g.slug) navigate(`/escritos/${g.slug!}`);
-      }}
-      className={`entrada ${hovereado ? "resaltado" : ""} ${
-        g.visitado ? "visitado" : ""
-      }`}
-      onMouseEnter={() => setHovereado(true)}
-      onMouseLeave={() => setHovereado(false)}
-    >
-      {/* Esferita */}
-      <circle
-        r={95}
-        fill={g.color}
-        stroke={d3.color(g.color)?.darker().formatHex()}
-      ></circle>
-
-      {/* Titulo */}
-      <text className="titulo" transform="translate(-10,-10)">
-        {g.titulo}
-      </text>
-
-      {/* Parte el pie en renglones de siete palabras: */}
-      {chunk(g.pie.split(" "), 7).map((frase, i) => (
-        <text
-          key={frase.join("")}
-          className="pie"
-          transform={`translate(20,${20 + 25 * i})`}
-        >
-          {frase.join(" ")}
-        </text>
-      ))}
-    </g>
-  );
-};
