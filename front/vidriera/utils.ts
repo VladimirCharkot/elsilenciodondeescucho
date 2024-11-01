@@ -1,6 +1,5 @@
 import * as d3 from "d3";
-import { CentroType, GenericD3Selection, Punto } from "./tipos";
-import { Animacion, SVG, Zoom } from "./contexto";
+import { CentroType, GenericD3Selection, Punto, SVG, Zoom } from "./tipos";
 
 export const capitalize = (s) => s.substr(0, 1).toUpperCase() + s.substr(1);
 
@@ -143,30 +142,45 @@ interface IOpcionesFuerza {
   df: number;
 }
 
+export const zoomd3 = (svg: SVG, lienzo: GenericD3Selection) => { 
+  const zoomBehavior = d3
+    .zoom<SVGSVGElement, unknown>()
+    .scaleExtent([0.05, 5])
+    .on("zoom", ({ transform }) => {
+      lienzo.attr("transform", transform);
+    });
+    
+  svg.call(zoomBehavior);
 
+  return zoomBehavior;
+}
 
-const escalar = (svg: SVG, zoom: Zoom,  ms: number, scl: number) =>
+export const dragd3 = (svg: SVG) => {
+  const dragBehavior = d3
+    .drag<SVGSVGElement, unknown>()
+    .on("drag", (ev, d: any) => {
+      console.log(`Drag`);
+      d.x = ev.x;
+      d.y = ev.y;
+    });
+
+    svg.call(dragBehavior);
+
+  return dragBehavior;
+}
+
+/**
+ * Escala el svg a un factor, animando en ms milisegundos
+ */
+export const escalar = (svg: SVG, zoom: Zoom,  ms: number, scl: number) =>
   svg.transition().duration(ms).ease(d3.easeCubic).call(zoom.scaleTo, scl);
 
-const panear = (svg: SVG, zoom: Zoom,  ms: number, p: Punto) =>
+/**
+ * Panea el svg a un punto, animando en ms milisegundos
+ */
+export const panear = (svg: SVG, zoom: Zoom,  ms: number, p: Punto) =>
   svg
     .transition()
     .duration(ms)
     .ease(d3.easeCubic)
     .call(zoom.translateTo, p.x, p.y);
-
-export const anim_inicial: Animacion = async (svg, zoom) => {
-  console.log("animación inicial zoom ", zoom, " svg ", svg);
-  if (!zoom || !svg) return;
-  zoom.translateTo(svg, 100, 0);
-  zoom.scaleTo(svg, 0.2);
-  escalar(svg, zoom, 3000, 0.5);
-}
-
-export const anim_indice: Animacion =  async (svg, zoom) => {
-  console.log("animación indice");
-  if (!zoom || !svg) return;
-  zoom.translateTo(svg, 0, 0);
-  zoom.scaleTo(svg, 0.5);
-  escalar(svg, zoom, 3000, 0.08);
-}

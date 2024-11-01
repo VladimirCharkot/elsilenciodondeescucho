@@ -14,16 +14,9 @@ import {
   vidriera_propuestas,
 } from "./vidriera/contenido";
 import { VidrieraContextProvider } from "./vidriera/contexto";
-import { NodoType } from "./vidriera/tipos";
+import { NodoVidriera } from "./vidriera/tipos";
 
 const Inicio = () => {
-  const navigate = useNavigate();
-  const [nodosEscritos, setNodosEscritos] = useState<NodoType[]>();
-
-  useEffect(() => {
-    vidriera_escritos.menu(navigate).then(setNodosEscritos);
-  }, []);
-
   return (
     <VidrieraContextProvider>
       <Routes>
@@ -31,33 +24,29 @@ const Inicio = () => {
           path="/"
           element={
             <Indice
-              // animacion={vidriera_inicial.animacion}
+              animacion={vidriera_inicial.animacion}
               menu={vidriera_inicial.menu}
               layout={vidriera_inicial.layout}
               titulo="El Silencio Donde Escucho"
             />
           }
         />
-
-        {nodosEscritos && (
-          <Route
-            path="/escritos/"
-            element={
-              <Indice
-                // animacion={vidriera_escritos.animacion}
-                menu={async () => nodosEscritos}
-                layout={vidriera_escritos.layout}
-                Overlay={vidriera_escritos.Overlay}
-                headerNav={{
-                  atrasTexto: "Inicio",
-                  atrasPath: "/",
-                }}
-                titulo="ESDE - Escritos"
-              />
-            }
-          />
-        )}
-
+        <Route
+          path="/escritos/"
+          element={
+            <Indice
+              animacion={vidriera_escritos.animacion}
+              menu={vidriera_escritos.menu}
+              layout={vidriera_escritos.layout}
+              Overlay={vidriera_escritos.Overlay}
+              headerNav={{
+                atrasTexto: "Inicio",
+                atrasPath: "/",
+              }}
+              titulo="ESDE - Escritos"
+            />
+          }
+        />
         <Route
           path="/propuestas/"
           element={
@@ -73,7 +62,6 @@ const Inicio = () => {
             />
           }
         />
-
         <Route
           path="/escritos/:textoId"
           element={
@@ -85,7 +73,6 @@ const Inicio = () => {
             />
           }
         />
-
         <Route
           path="/propuestas/:textoId"
           element={
@@ -97,7 +84,6 @@ const Inicio = () => {
             />
           }
         />
-
         <Route
           path="/esde/"
           element={
@@ -110,11 +96,8 @@ const Inicio = () => {
             />
           }
         />
-
         <Route path="/editor" element={<Editor />} />
-
         <Route path="/hogar" element={<Login />} />
-
         <Route path="*" element={<NotFound />} />
       </Routes>
     </VidrieraContextProvider>

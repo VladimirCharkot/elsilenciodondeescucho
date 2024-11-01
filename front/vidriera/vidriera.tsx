@@ -1,63 +1,89 @@
 import * as d3 from "d3";
 import * as React from "react";
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { chunk } from "lodash";
 import { useEffect } from "react";
-import VidrieraContext, { Animacion, Layout } from "./contexto";
-import { GenericD3Selection, NodoType } from "./tipos";
-import { Menu } from "../vidriera/tipos";
+import { Animacion, Layout, Menu } from "../vidriera/tipos";
+import { NodoVidriera } from "./tipos";
+import { dragd3, zoomd3 } from "./utils";
+import EventEmitter from "events";
 
 export interface VidrieraProps {
   animacion?: Animacion; // Animación inicial, usualmente pan y zoom
   menu: Menu; // Nodos de la vidriera
   layout: Layout; // Función que asigna posición inicial a cada nodo
   Overlay?: React.FC; // Componente que se renderiza sobre los nodos
+  trigger?: EventEmitter; // Trigger de animación y fuerzas
 }
 
-// Una vidriera es: nodos + layout + fuerzas + animacion
+// Una vidriera es: nodos + layout inicial + fuerzas + animacion inicial
+// Renderiza los nodos desde react y llama luego a d3 para posicionarlos y delegar animaciones y etc
 
 export const Vidriera = ({
   animacion,
   menu,
   layout,
   Overlay,
+  trigger,
 }: VidrieraProps) => {
   const navigate = useNavigate();
-  const { nodos, setNodos, setSvg, setLayout } = useContext(VidrieraContext);
 
-  useEffect(() => {
+  const navegar = (to: string) => {
+    console.log(`Navegando a ${to}`);
+    setTriggereado(false);
+    setNodos([]);
+    navigate(to)
+  }
+
+  const [nodos, setNodos] = useState<NodoVidriera[]>([]);
+  const [triggereado, setTriggereado] = useState(false);
+
+  const montarD3 = () => {
+    console.log(`Montando svg y bindeando nodos a `, nodos);
     const svg = d3.select<SVGSVGElement, unknown>("svg");
-    menu(navigate).then(setNodos);
-    setSvg(svg);
+    const entradas = d3.selectAll(".entrada").data(nodos);
+    const lienzo = d3.select(".lienzo");
+    layout(entradas);
+    const zoomBehavior = zoomd3(svg, lienzo);
+    dragd3(svg);
+    if (animacion) animacion(svg, zoomBehavior);
+  };
 
-    // Esto pincha <------------
-    // setLayout(layout);
+  // Al montar el componente, cargar los nodos
+  useEffect(() => {
+    console.log(`Cargando nodos...`);
+    menu(navegar).then(setNodos);
+  }, []);
 
-    // const entradas = d3.selectAll('.entrada').data(nodos)
+  // Al montar el componente, bindear trigger a la variable de estado
+  useEffect(() => {
+    console.log(`Bindeando trigger...`);
+    const flagTrigger = () => setTriggereado(true);
+    if (trigger) {
+      trigger.on("listo", flagTrigger);
+      return () => {
+        trigger.off("resolve", flagTrigger);
+      };
+    } else {
+      flagTrigger();
+    }
+  }, []);
 
-    // setZoom(zoomd3)
-
-    // La animación a veces no sale bien.
-    // translate(-599,-494.25) scale(0.5) -> Mal
-    // translate(316,329.5) scale(0.5) -> Bien
-
-    // Drag
-    // const drag = d3.drag<SVGSVGElement, unknown>()
-    //     .on('drag', (ev, d: any) => {
-    //         console.log(`Drag`)
-    //         d.x = ev.x;
-    //         d.y = ev.y;
-    //     })
-    // svg.call(drag)
-  }, [menu]);
+  // Cuando los nodos estén cargados y el trigger efectuado, montar el svg
+  useEffect(() => {
+    if (nodos.length > 0 && triggereado) {
+      console.log(`Triggereado! Montando d3...`);
+      montarD3();
+    }
+  }, [nodos, triggereado]);
 
   return (
     <svg
       className="vidriera"
       onKeyUp={(e) => {
-        // if (e.key == 'a') console.log('a')
+        if (e.key == "a") console.log("a");
       }}
     >
       <g className="lienzo">
@@ -70,24 +96,14 @@ export const Vidriera = ({
   );
 };
 
-/* Lienzo */
-
-// zoom.scaleTo(svg, 2)
-// zoom.translateTo(svg, 0, 0)
-
-// svg.call(zoom.scaleTo, 2)
-// svg.call(zoom.translateTo, 0, 0)
-
-// svg.transition().duration(750).call(zoom.scaleTo, 3)
-// svg.transition().duration(750).call(zoom.translateTo, 0, 0)
-
 /* Layout */
-
 export interface NodoProps {
-  g: NodoType;
-  // update: React.Dispatch<any>
+  g: NodoVidriera;
 }
 
+/**
+ * Renderiza un nodo de la vidriera en svg (<g> + <circle> + <text>)
+ */
 export const Nodo = ({ g }: NodoProps) => {
   // if(color === undefined) color = '#ccc';
   const navigate = useNavigate();

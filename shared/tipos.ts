@@ -1,4 +1,4 @@
-import { NodoType } from "../front/vidriera/tipos";
+import { NodoVidriera } from "../front/vidriera/tipos";
 
 /**
  * Backend

@@ -13,3 +13,4 @@ style.css.map
 logs
 dist
 dump.rdb
+**/*.bundle.js

@@ -4,8 +4,15 @@ import { rgb } from "d3";
 import { defaultTo, find } from "lodash";
 import { TextoSinCuerpo } from "../../shared/tipos";
 import { get } from "../utils/http";
-import { CentroType, GenericD3Selection, Menu, NodoType } from "./tipos";
-import { anim_indice, anim_inicial, capitalize, get_visitados, layout_centros, layout_inicial } from "./utils";
+import { Animacion, CentroType, GenericD3Selection, Menu, NodoVidriera } from "./tipos";
+import {
+  capitalize,
+  escalar,
+  get_visitados,
+  layout_centros,
+  layout_fuerza,
+  layout_inicial,
+} from "./utils";
 import { VidrieraProps } from "./vidriera";
 
 // Textos ya visitados
@@ -51,7 +58,7 @@ export const Etiquetas: React.FC = () => (
 );
 
 // Procesamiento de la información del backend para mostrarla como nodos
-const texto_a_nodo = (entrada: TextoSinCuerpo): NodoType => ({
+const texto_a_nodo = (entrada: TextoSinCuerpo): NodoVidriera => ({
   ...entrada,
   color: defaultTo(
     find(centros_indice, ["nombre", entrada.fm.serie])?.color,
@@ -64,7 +71,7 @@ const texto_a_nodo = (entrada: TextoSinCuerpo): NodoType => ({
 });
 
 // Menú de escritos, como lista de nodos
-export const menu_escritos = async (navigate) => {
+export const menu_escritos: Menu = async (navigate) => {
   const r = await get<TextoSinCuerpo[]>("/indice_json");
   return r.map(texto_a_nodo);
 };
@@ -110,6 +117,28 @@ export const menu_principal: Menu = async (navigate) => [
   //     pie: "",
   //   },
 ];
+
+/**
+ * Animación inicial, zoom in desde lejos
+ */
+export const anim_inicial: Animacion = async (svg, zoom) => {
+  console.log("animación inicial zoom ", zoom, " svg ", svg);
+  if (!zoom || !svg) return;
+  zoom.translateTo(svg, 100, 0);
+  zoom.scaleTo(svg, 0.2);
+  escalar(svg, zoom, 3000, 0.5);
+};
+
+/**
+ * Animaci´øn
+ */
+export const anim_indice: Animacion = async (svg, zoom) => {
+  console.log("animación indice");
+  if (!zoom || !svg) return;
+  zoom.translateTo(svg, 0, 0);
+  zoom.scaleTo(svg, 0.5);
+  escalar(svg, zoom, 3000, 0.08);
+};
 
 /**
  * Menú con las propuestas
@@ -173,16 +202,16 @@ export let menu_propuestas: Menu = async (navigate) => [
   },
 ];
 
-
-
-
 // Config de la vidriera de escritos
 export const vidriera_escritos: VidrieraProps = {
-    animacion: anim_indice,
-    menu: menu_escritos,
-    layout: layout_inicial_escritos,
-    Overlay: Etiquetas,
-  };  
+  animacion: anim_indice,
+  menu: menu_escritos,
+  layout: (nodos) => {
+    layout_inicial_escritos(nodos)
+    layout_fuerza(nodos)
+  },
+  Overlay: Etiquetas,
+};
 
 /**
  * Setting entero para la vidriera inicial
@@ -190,7 +219,10 @@ export const vidriera_escritos: VidrieraProps = {
 export const vidriera_inicial: VidrieraProps = {
   animacion: anim_inicial,
   menu: menu_principal,
-  layout: layout_inicial,
+  layout: (nodos) => {
+    layout_inicial(nodos);
+    layout_fuerza(nodos);
+},
 };
 
 /**
@@ -199,5 +231,8 @@ export const vidriera_inicial: VidrieraProps = {
 export const vidriera_propuestas: VidrieraProps = {
   animacion: anim_inicial,
   menu: menu_propuestas,
-  layout: layout_inicial,
+  layout: (nodos) => {
+    layout_inicial(nodos)
+    layout_fuerza(nodos)
+  },
 };

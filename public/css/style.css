@@ -1334,6 +1334,7 @@ svg.vidriera {
   .telon.aparecer p {
     animation: anim-fade-in 1s forwards; }
   .telon.desvanecer {
+    pointer-events: none;
     animation: anim-fade-out 4s forwards; }
     .telon.desvanecer h1 {
       animation: anim-fade-out 2s forwards; }
