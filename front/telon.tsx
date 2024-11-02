@@ -1,61 +1,44 @@
+import { extend } from "lodash";
 import * as React from "react";
 import { useEffect, useState } from "react";
 
-const umbral = 0; //1000 * 60 // en ms
-
-interface TelonProps {
-  onDesvanecer?: () => void;
-}
-
-export const Telon = ({ onDesvanecer }: TelonProps) => {
-  type EstadosTelon = 
-  | "visible"    // Telón visible
-  | "aparecer"   // Telón visible y contenido fade in
+type EstadoTelon =
+  | "visible" // Telón visible
+  | "aparecer" // Telón visible y contenido fade in
   | "desvanecer" // Telón desvaneciéndose
   | "escondido"; // Telón escondido del DOM
 
-  // El telón está visible por default
-  const [estado, setEstado] = useState<EstadosTelon>("visible");
+interface TelonProps extends React.PropsWithChildren {
+  onDesvanecer?: () => void;
+  umbral?: number;
+  estado: EstadoTelon;
+}
 
-  const desvanecer = (e) => {
+export const TelonBienvenida = ({
+  onDesvanecer,
+}: Omit<TelonProps, "estado">) => {
+  const umbral = 1000 * 60 * 60 * 24; // Un día, en ms
+
+  // Verficar si ya se ha visitado la página
+  const t0 = localStorage.getItem("ultima_visita");
+  const paso_umbral = t0 && Date.now() - parseInt(t0) > umbral;
+
+  return paso_umbral ? (
+    <TelonDescripcion estado={"visible"} onDesvanecer={onDesvanecer} />
+  ) : (
+    <TelonTitulo estado={"visible"} onDesvanecer={onDesvanecer} />
+  );
+};
+
+export const TelonDescripcion = ({ onDesvanecer }: TelonProps) => {
+  const [estado, setEstado] = useState<EstadoTelon>("aparecer");
+  const desvanecer: React.MouseEventHandler<HTMLAnchorElement> = (e) => {
     e.preventDefault();
-
-    // Lo desvanecemos
     setEstado("desvanecer");
-    onDesvanecer && onDesvanecer();
-
-    // Scheduleamos el escondido
-    setTimeout(() => {
-      setEstado("escondido");
-    }, 4000); // Lo que demora en desvanecerse
   };
 
-  // Al montar el componente, verificar si ya se visitó la página y hace cuanto 
-  useEffect(() => {
-
-    // Entrar contenido
-    setEstado("aparecer");
-
-    // Verficar si ya se ha visitado la página
-    const t0 = localStorage.getItem("ultima_visita");
-
-    // No encontrado:
-    if (t0 === null) {
-      // setEstado()
-    } else {
-      // Hace cuanto?
-      const paso_umbral_t = !!(t0 && Date.now() - parseInt(t0) > umbral);
-      if (paso_umbral_t) {
-        // visualizar()
-      } else {
-        setEstado("desvanecer");
-      }
-    }
-    localStorage.setItem("ultima_visita", Date.now().toString());
-  }, []);
-
   return (
-    <div className={`telon ${estado}`}>
+    <Telon estado={estado} onDesvanecer={onDesvanecer}>
       <h1>El Silencio Donde Escucho</h1>
       <p>Bienvenidx</p>
       <p>
@@ -82,6 +65,38 @@ export const Telon = ({ onDesvanecer }: TelonProps) => {
       <a href="#" onClick={desvanecer}>
         Continuar
       </a>
-    </div>
+    </Telon>
   );
+};
+
+export const TelonTitulo = ({ onDesvanecer }: TelonProps) => {
+  const [estado, setEstado] = useState<EstadoTelon>("aparecer");
+  const desvanecer = () => setEstado("desvanecer");
+
+  useEffect(() => {
+    setTimeout(desvanecer, 1000);
+  }, []);
+
+  return (
+    <Telon estado={estado} onDesvanecer={onDesvanecer}>
+      <h1>El Silencio Donde Escucho</h1>
+    </Telon>
+  );
+};
+
+export const Telon = ({ onDesvanecer, estado, children }: TelonProps) => {
+  const [estadoLocal, setEstadoLocal] = useState<EstadoTelon | null>(null);
+
+  useEffect(() => {
+    if (estado === "desvanecer") {
+      onDesvanecer && onDesvanecer();
+
+      // Desvanecer el telón n segundos después de aparecer
+      setTimeout(() => {
+        setEstadoLocal("escondido");
+      }, 4000); // Lo que demora en desvanecerse
+    }
+  }, [estado]);
+
+  return <div className={`telon ${estadoLocal ?? estado}`}>{children}</div>;
 };

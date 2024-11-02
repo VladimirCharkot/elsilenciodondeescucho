@@ -1285,6 +1285,7 @@ svg.vidriera {
     width: 100vw;
     height: 100vh; }
   svg.vidriera .cabecera {
+    user-select: none;
     font-size: 15em;
     opacity: 0.1; }
   svg.vidriera .entrada {
@@ -1301,7 +1302,7 @@ svg.vidriera {
     svg.vidriera .entrada.resaltado circle {
       transform: scale(1.1); }
     svg.vidriera .entrada.visitado circle {
-      fill-opacity: 0.5; }
+      fill-opacity: 0.8; }
 
 .telon {
   position: absolute;

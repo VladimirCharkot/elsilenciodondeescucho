@@ -1,20 +1,13 @@
 import * as React from 'react';
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { useArchivos } from './editor/backend';
 import { Barra } from './cabecera';
+import { useArchivos } from './editor/backend';
 import { logaccess } from './utils/http';
-import { throttle } from 'lodash';
-import { use } from 'passport';
+import { visitar } from './vidriera/utils';
 
 // MD devuelve las imágenes en imgs dentro de ps,
 // acá las reemplazo por divs con background
-
-// const Ventana = () => (
-//   <div className="ventana">
-//     {}
-//   </div>
-// )
 
 interface EscritoProps{
     txtId?: string,
@@ -24,8 +17,6 @@ interface EscritoProps{
     }
 }
 
-
-
 // Puede venir por prop o por url
 export const Escrito = ({txtId, headerNav}: EscritoProps) => {
   const { textoId } = useParams();
@@ -34,18 +25,12 @@ export const Escrito = ({txtId, headerNav}: EscritoProps) => {
   const [y, setY] = useState(0);
   const [barraActiva, setBarraActiva] = useState(false)
 
-//   const manejarNav = useCallback(throttle(() => {
-//     // const window = e.currentTarget;
-//     console.log(y > window.scrollY)
-//     setY(window.scrollY);
-//     setBarraActiva(y > window.scrollY)
-//   }, 500), []);
-
   const manejarNav = () => {
     setY(window.scrollY);
     setBarraActiva(y > window.scrollY)
   }
 
+  useEffect(() => {txt && visitar(txt)}, [])
   useEffect(() => {setY(window.scrollY)}, [])
   useEffect(() => {logaccess(txt ?? 'escrito')}, [])
 

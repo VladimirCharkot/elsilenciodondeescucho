@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useEffect } from "react";
 import { Barra, CabeceraProps } from "../cabecera";
-import { Telon } from "../telon";
+import { Telon, TelonBienvenida } from "../telon";
 import { Animacion, Layout, Menu } from "./tipos";
 import { Vidriera } from "./vidriera";
 import { EventEmitter } from 'events';
@@ -29,7 +29,7 @@ export const Indice = ({ animacion, menu, layout, Overlay, headerNav, titulo, }:
 
   return (
     <>
-        <Telon onDesvanecer={() => trigger.emit('listo')} />
+        <TelonBienvenida onDesvanecer={() => trigger.emit('listo')}/>
         <Barra atrasTexto={headerNav?.atrasTexto} atrasPath={headerNav?.atrasPath} />
         <Vidriera animacion={animacion} menu={menu} layout={layout} Overlay={Overlay} trigger={trigger}/>
     </>

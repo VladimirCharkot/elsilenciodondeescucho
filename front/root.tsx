@@ -1,7 +1,7 @@
 import * as React from "react";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Editor } from "./editor/editor";
 import { Escrito } from "./escrito";
 import { Login } from "./login";
@@ -14,9 +14,12 @@ import {
   vidriera_propuestas,
 } from "./vidriera/contenido";
 import { VidrieraContextProvider } from "./vidriera/contexto";
-import { NodoVidriera } from "./vidriera/tipos";
 
 const Inicio = () => {
+
+  // Registramos este momento como la última visita (se usa para determinar si mostrar el telón de bienvenida)
+  useEffect(() => localStorage.setItem("ultima_visita", Date.now().toString()), []);
+
   return (
     <VidrieraContextProvider>
       <Routes>

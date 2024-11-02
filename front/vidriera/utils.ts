@@ -1,5 +1,6 @@
 import * as d3 from "d3";
 import { CentroType, GenericD3Selection, Punto, SVG, Zoom } from "./tipos";
+import { uniq } from "lodash";
 
 export const capitalize = (s) => s.substr(0, 1).toUpperCase() + s.substr(1);
 
@@ -64,6 +65,16 @@ export const wrap = (text) => {
  */
 export const get_visitados = (): string[] =>
   JSON.parse(localStorage.getItem("visitados") ?? "[]");
+
+/**
+ * Guarda la lista de los ids de los nodos visitados en el localStorage
+ */
+export const set_visitados = (visitados: string[]) => localStorage.setItem("visitados", JSON.stringify(visitados));
+
+/**
+ * Guarda un texto en el array de visitados en localStorage 
+ */
+export const visitar = (slug: string) => {set_visitados(uniq([...get_visitados(), slug])); console.log(`Visitado ${slug}`)};
 
 /**
  * Arregla los nodos alrededor de los centros como pétalos
@@ -149,7 +160,7 @@ export const zoomd3 = (svg: SVG, lienzo: GenericD3Selection) => {
     .on("zoom", ({ transform }) => {
       lienzo.attr("transform", transform);
     });
-    
+
   svg.call(zoomBehavior);
 
   return zoomBehavior;
