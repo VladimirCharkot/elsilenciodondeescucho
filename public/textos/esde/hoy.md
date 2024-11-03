@@ -61,6 +61,6 @@ Tomado esto como una convicción –“filosofía de vida”- acerca del cómo e
 
 Estando en este preciso momento en contacto con algo de lo que desde “El Silencio Donde Escucho” se ofrece, sea esto alguna instancia de trabajo de las que llevamos adelante como talleres, charlas, retiros, reuniones de grupo, etc., o si es simplemente leyendo los textos que se publican en papel y en plataformas digitales y redes sociales, y si algo de todo esto te resuena o resulta de utilidad e importancia…
 
-Si ves que contribuyen a tu desarrollo y el de la humanidad y “ves” o “sentís” la oportunidad de colaborar con el sostenimiento de todo el trabajo que desde aquí se desarrolla, podés hacerlo contactándote con nosotros vía mail a: elsilenciodondeescucho@gmail.com
+Si ves que contribuyen a tu desarrollo y el de la humanidad y “ves” o “sentís” la oportunidad de colaborar con el sostenimiento de todo el trabajo que desde aquí se desarrolla, podés hacerlo contactándote con nosotros vía mail a: **elsilenciodondeescucho@gmail.com**
 
 ---
