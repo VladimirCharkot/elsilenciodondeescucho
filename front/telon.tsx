@@ -17,7 +17,7 @@ interface TelonProps extends React.PropsWithChildren {
 export const TelonBienvenida = ({
   onDesvanecer,
 }: Omit<TelonProps, "estado">) => {
-  const umbral = 1000 * 60 * 60 * 24; // Un día, en ms
+  const umbral = 1000 * 10 // * 60 * 24; // Un día, en ms
 
   // Verficar si ya se ha visitado la página
   const t0 = localStorage.getItem("ultima_visita");
