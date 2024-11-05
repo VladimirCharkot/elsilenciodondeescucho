@@ -99,5 +99,5 @@ export const Telon = ({ onDesvanecer, estado, children }: TelonProps) => {
     }
   }, [estado]);
 
-  return <div className={`telon ${estadoLocal ?? estado}`}>{children}</div>;
+  return <div className={`telon ${estadoLocal ?? estado}`}><div>{children}</div></div>;
 };

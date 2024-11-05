@@ -1312,23 +1312,25 @@ svg.vidriera {
   box-sizing: border-box;
   height: 100vh;
   width: 100vw;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 2em; }
-  .telon p {
-    max-width: 25em;
-    text-align: center; }
-  .telon h1 {
-    font-family: 'Libre Baskerville', sans-serif;
-    font-size: 0.8em;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    opacity: 0; }
-  .telon a {
-    text-decoration: underline; }
+  background: white; }
+  .telon > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em; }
+    .telon > div p {
+      max-width: 25em;
+      text-align: center; }
+    .telon > div h1 {
+      font-family: 'Libre Baskerville', sans-serif;
+      font-size: 0.8em;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      opacity: 0; }
+    .telon > div a {
+      text-decoration: underline; }
   .telon.visible {
     opacity: 1;
     visibility: inherit; }
