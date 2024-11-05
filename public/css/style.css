@@ -48,6 +48,8 @@ header {
     font-size: 1em;
     margin: 0.5em;
     display: inline-block; }
+  header .placeholder {
+    width: 11em; }
   header nav {
     opacity: 0.2;
     width: 11em;

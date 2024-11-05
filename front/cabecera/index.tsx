@@ -43,7 +43,6 @@ export interface CabeceraProps {
 export const Barra = ({ active, atrasTexto, atrasPath }: CabeceraProps) => {
 
     const [hovereado, setHovereado] = useState(false);
-    // const [buscando, setBuscando] = useState(false);
     const [busqueda, setBusqueda] = useState("");
     const [resultado, setResultado] = useState<Resultados>();
 
@@ -58,11 +57,12 @@ export const Barra = ({ active, atrasTexto, atrasPath }: CabeceraProps) => {
 
     return (
         <>
-            <header className={`${resultado ? 'resultados' : ''} ${/*buscando ? 'buscando' : */''} ${(hovereado || active) ? 'hovereado' : ''}`}
+            <header className={`${resultado ? 'resultados' : ''} ${(hovereado || active) ? 'hovereado' : ''}`}
                 onMouseEnter={() => setHovereado(true)}
                 onMouseLeave={() => setHovereado(false)}>
 
-                <Nav atrasTexto={atrasTexto} atrasPath={atrasPath} />
+                {atrasTexto && atrasPath && <Nav atrasTexto={atrasTexto} atrasPath={atrasPath} />}
+                {(!atrasTexto || !atrasPath) && <div className='placeholder'/>}
 
                 <Titulo />
 

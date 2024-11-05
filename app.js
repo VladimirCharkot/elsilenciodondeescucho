@@ -48,14 +48,6 @@ app.use(passport.session());
 
 app.use((req, ___, next) => {
   if (req.session.views){ req.session.views++; }else{ req.session.views = 1; }
-  logger.debug(`SESSION: `);
-  logger.debug(JSON.stringify(req.session));
-  logger.debug(`COOKIES: `);
-  logger.debug(JSON.stringify(req.cookies));
-  logger.debug(`SESSIONS: `);
-  logger.debug(JSON.stringify(store.sessions));
-  logger.debug(`USER: `);
-  logger.debug(JSON.stringify(req.user));
   next();
 })
 

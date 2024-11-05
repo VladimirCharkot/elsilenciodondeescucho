@@ -1,4 +1,3 @@
-import { extend } from "lodash";
 import * as React from "react";
 import { useEffect, useState } from "react";
 
@@ -17,11 +16,13 @@ interface TelonProps extends React.PropsWithChildren {
 export const TelonBienvenida = ({
   onDesvanecer,
 }: Omit<TelonProps, "estado">) => {
-  const umbral = 1000 * 10 // * 60 * 24; // Un día, en ms
+  const umbral = 1000 * 30 // * 60 * 24; // Un día, en ms
 
   // Verficar si ya se ha visitado la página
   const t0 = localStorage.getItem("ultima_visita");
   const paso_umbral = t0 && Date.now() - parseInt(t0) > umbral;
+
+  useEffect(() => { console.log(`Montando TelonBienvenida con t0 = ${t0} y paso_umbral ${paso_umbral} (umbral es ${umbral})`) }, [])
 
   return paso_umbral ? (
     <TelonDescripcion estado={"visible"} onDesvanecer={onDesvanecer} />
