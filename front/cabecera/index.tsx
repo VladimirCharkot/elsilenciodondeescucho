@@ -60,7 +60,7 @@ export const Barra = ({ active, atrasTexto, atrasPath }: CabeceraProps) => {
             <header className={`${resultado ? 'resultados' : ''} ${(hovereado || active) ? 'hovereado' : ''}`}
                 onMouseEnter={() => setHovereado(true)}
                 onMouseLeave={() => setHovereado(false)}>
-
+                    
                 {atrasTexto && atrasPath && <Nav atrasTexto={atrasTexto} atrasPath={atrasPath} />}
                 {(!atrasTexto || !atrasPath) && <div className='placeholder'/>}
 
@@ -138,17 +138,3 @@ const ResultadosDeBusqueda = ({ resultados }: { resultados: Resultados }) => (
         </a>
     ))}</div>
 )
-
-
-// header
-//   #indice
-//     a(href='/#indice') < Índice
-//     script.
-//       d3.select("#indice a").style("visibility", location.pathname.includes("escritos") ? "visible" : "hidden")
-//   h1
-//     a(href="/", title="El Silencio Donde Escucho", rel="home") El Silencio Donde Escucho
-//   #area_busqueda
-//     //- div.icon#brujula(onclick="abrir_busqueda()")
-//     a(href='#' onclick="abrir_busqueda()") Búsqueda
-//     input#busqueda(type="text")
-// #area_encuentro
