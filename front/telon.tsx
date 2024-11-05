@@ -41,7 +41,7 @@ export const TelonDescripcion = ({ onDesvanecer }: TelonProps) => {
   return (
     <Telon estado={estado} onDesvanecer={onDesvanecer}>
       <h1>El Silencio Donde Escucho</h1>
-      <p>Te damos la bienvenida!</p>
+      <p>¡Te damos la bienvenida!</p>
       <p>
         ESDE es un proceso de enseñanza <b>vivo</b>. De
         un grupo de trabajo por la libertad interior y para el encuentro con la
@@ -49,9 +49,9 @@ export const TelonDescripcion = ({ onDesvanecer }: TelonProps) => {
         nuestra historia y nuestros proyectos.
       </p>
       <p>
-        El Trabajo que llevamos adelante sucede también en actividades
+        También extendemos el Trabajo en actividades
         presenciales, encuentros, ejercicios, rondas, seminarios y otras. 
-        También están disponibles aquí algunas propuestas.
+        Están disponibles aquí algunas propuestas.
       </p>
       <p>
         Nos encontramos cerca de Ciudad de Córdoba. Nos movemos donde el Trabajo
@@ -59,8 +59,8 @@ export const TelonDescripcion = ({ onDesvanecer }: TelonProps) => {
         al mail que se encuentra al final de la sección de identidad.
       </p>
       <p>
-        ¡Adelante! Le invitamos a navegar los escritos. 
-        Encontrará marcados los que ya haya leído al regresar a este sitio.
+        ¡Adelante! Te invitamos a navegar los escritos, que están agrupados por temática.
+        Al regresar al sitio vas a encontrar marcados los que ya hayas visitado.
       </p>
       <p>Buen provecho!</p>
       <a href="#" onClick={desvanecer}>
