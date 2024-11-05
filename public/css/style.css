@@ -1332,7 +1332,8 @@ svg.vidriera {
       font-size: 0.8em;
       letter-spacing: 0.28em;
       text-transform: uppercase;
-      opacity: 0; }
+      opacity: 0;
+      text-align: center; }
     .telon > div a {
       text-decoration: underline; }
   .telon.visible {
