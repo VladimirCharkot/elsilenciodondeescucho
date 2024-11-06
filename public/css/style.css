@@ -1281,7 +1281,7 @@ blockquote {
 
 svg.vidriera {
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -1289,7 +1289,7 @@ svg.vidriera {
   font-weight: 200; }
   svg.vidriera .lienzo {
     width: 100vw;
-    height: 100vh; }
+    height: 120vh; }
   svg.vidriera .cabecera {
     user-select: none;
     font-size: 15em;
