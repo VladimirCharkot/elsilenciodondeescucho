@@ -1,4 +1,4 @@
-@import 'settings'; 
+@import 'settings'
 
 .telon
 
@@ -20,11 +20,10 @@
 
         // Texto
         padding: 2em
-
-        p 
+        p
             max-width: 25em
             text-align: center
-        
+
         // Titulo
         h1
             font-family: 'Libre Baskerville', sans-serif
@@ -34,9 +33,16 @@
             opacity: 0
             text-align: center
 
+        // Link de "Seguir al sitio"
         a
+            margin-top: 1em
+            font-family: 'EB Garamond', sans-serif
+            font-size: 0.8em
+            letter-spacing: 0.28em
+            text-transform: uppercase
+            font-weight: 800
             text-decoration: underline
-    
+
     // Telón blanco tapando el background
     &.visible
         opacity: 1
@@ -73,12 +79,11 @@
 @keyframes anim-fade-out
     0%
         opacity: 1
-    100% 
+    100%
         opacity: 0
-    
+
 @keyframes anim-fade-in
     0%
         opacity: 0
-    100% 
+    100%
         opacity: 1
-    
