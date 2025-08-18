@@ -457,12 +457,14 @@ header {
 
 @media (max-width: 800px) {
   .texto h2 {
-    font-size: 1.8em;
+    font-size: 1.55em;
     letter-spacing: 0.12em;
     padding: 0em 1.6em;
     padding-top: 2.8em; }
   .texto p {
-    padding: 0 1.6em; } }
+    padding: 0 1.6em; }
+  .texto .cabecera {
+    background-attachment: initial; } }
 
 .piel {
   padding: var(--pad, var(--pad-default));
@@ -1335,6 +1337,12 @@ svg.vidriera {
       opacity: 0;
       text-align: center; }
     .telon > div a {
+      margin-top: 1em;
+      font-family: 'EB Garamond', sans-serif;
+      font-size: 0.8em;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      font-weight: 800;
       text-decoration: underline; }
   .telon.visible {
     opacity: 1;
