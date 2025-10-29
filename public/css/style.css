@@ -590,6 +590,7 @@ header #area_busqueda #busqueda:focus-visible {
     background-attachment: initial;
   }
 }
+
 .piel {
   padding: var(--pad, var(--pad-default));
   background-attachment: var(--attach, var(--attach-default));

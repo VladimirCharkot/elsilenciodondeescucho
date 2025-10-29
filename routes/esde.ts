@@ -57,7 +57,7 @@ router.delete('/imagenes/:path', [auth.is_admin, editor.borrar_imagen])
 router.post('/hogar', auth.login)
 
 //@ts-ignore
-router.post('/accion', (req, res) => { logaccess(req.headers['X-Forwarded-For'] ?? req.ip, req.body.accion); res.json({ok: true}) })
+router.post('/accion', (req, res) => { logaccess(req.headers['X-Forwarded-For'] ? req.ip : 'unknown', req.body.accion); res.json({ok: true}) })
 
 router.get('/check', auth.check_admin)
 router.get('/logout', auth.logout)
