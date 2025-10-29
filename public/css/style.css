@@ -3,106 +3,133 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=DM+Serif+Display:ital@0;1&family=Fredericka+the+Great&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap");
-/* Sitio */
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+/* Editor */
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap");
+/* Sitio */
 body {
-  font: 1.1em 'EB Garamond', serif;
+  font: 1.1em "EB Garamond", serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 a {
   color: black;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 main {
   height: max-content;
   width: 100vw;
   overflow-y: scroll;
-  overflow-x: clip; }
+  overflow-x: clip;
+}
 
 hr {
-  border: 1px solid #e7e7e7; }
+  border: 1px solid #e7e7e7;
+}
 
 .error {
-  padding: 10%; }
+  padding: 10%;
+}
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Libre Baskerville', sans-serif;
+  font-family: "Libre Baskerville", sans-serif;
   letter-spacing: 0.28em;
   text-transform: uppercase;
+}
+header:hover {
+  text-shadow: 1px 1px #b4b4b4;
+}
+header {
   z-index: 1;
   width: 100vw;
   padding: 0.5em;
   position: fixed;
   transition: 0.5s;
-  border-bottom: 0px solid #0000;
-  height: 8vh; }
-  header:hover {
-    text-shadow: 1px 1px #b4b4b4; }
-  header h1 {
-    opacity: 0.2;
-    font-size: 1em;
-    margin: 0.5em;
-    display: inline-block; }
-  header .placeholder {
-    width: 11em; }
-  header nav {
-    opacity: 0.2;
-    width: 11em;
-    padding: 1em;
-    cursor: pointer;
-    text-shadow: 2px 2px #cdcdcd;
-    white-space: nowrap; }
-  header.hovereado, header.habitado {
-    background-color: rgba(255, 255, 255, 0.65);
-    border-bottom: 1px solid black; }
-    header.hovereado h1, header.habitado h1 {
-      opacity: 1;
-      color: black; }
-    header.hovereado nav, header.habitado nav {
-      opacity: 1; }
-    header.hovereado #indice, header.hovereado #area_busqueda a, header.habitado #indice, header.habitado #area_busqueda a {
-      opacity: 1; }
-  header.resultados {
-    background-color: #fffe; }
-  header #area_busqueda {
-    display: flex;
-    flex-direction: row;
-    margin-right: 2em;
-    width: 11em; }
-    header #area_busqueda #busqueda {
-      transition: 1s;
-      border: none;
-      border-bottom: 1px solid gainsboro;
-      font-family: 'Libre Baskerville', sans-serif;
-      background-color: #fff6; }
-      header #area_busqueda #busqueda:focus {
-        outline: none; }
-      header #area_busqueda #busqueda:focus-visible {
-        outline-width: 0; }
+  border-bottom: 0px solid rgba(0, 0, 0, 0);
+  height: 8vh;
+}
+header h1 {
+  opacity: 0.2;
+  font-size: 1em;
+  margin: 0.5em;
+  display: inline-block;
+}
+header .placeholder {
+  width: 11em;
+}
+header nav {
+  opacity: 0.2;
+  width: 11em;
+  padding: 1em;
+  cursor: pointer;
+  text-shadow: 2px 2px #cdcdcd;
+  white-space: nowrap;
+}
+header.hovereado, header.habitado {
+  background-color: rgba(255, 255, 255, 0.65);
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+header.hovereado h1, header.habitado h1 {
+  opacity: 1;
+  color: black;
+}
+header.hovereado nav, header.habitado nav {
+  opacity: 1;
+}
+header.hovereado #indice, header.hovereado #area_busqueda a, header.habitado #indice, header.habitado #area_busqueda a {
+  opacity: 1;
+}
+header.resultados {
+  background-color: rgba(255, 255, 255, 0.9333333333);
+}
+header #area_busqueda {
+  display: flex;
+  flex-direction: row;
+  margin-right: 2em;
+  width: 11em;
+}
+header #area_busqueda #busqueda {
+  transition: 1s;
+  border: none;
+  border-bottom: 1px solid gainsboro;
+  font-family: "Libre Baskerville", sans-serif;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+header #area_busqueda #busqueda:focus {
+  outline: none;
+}
+header #area_busqueda #busqueda:focus-visible {
+  outline-width: 0;
+}
 
 @media (max-width: 800px) {
   header h1 {
-    font-size: 0.6em; }
+    font-size: 0.6em;
+  }
   header nav {
-    width: max-content; }
-    header nav .texto-volver {
-      display: inline-block;
-      width: 0;
-      visibility: hidden; }
+    width: max-content;
+  }
+  header nav .texto-volver {
+    display: inline-block;
+    width: 0;
+    visibility: hidden;
+  }
   header #area_busqueda {
     display: inline-block;
     width: 0;
-    visibility: hidden; }
+    visibility: hidden;
+  }
   header .placeholder {
     display: inline-block;
     width: 0;
-    visibility: hidden; } }
-
+    visibility: hidden;
+  }
+}
 #resultados {
   overflow: scroll;
   z-index: 1;
@@ -114,394 +141,500 @@ header {
   padding: 0 20vw;
   padding-top: 1em;
   transition: 1s;
-  background: #fffe;
-  /* Fade del texto (overlay con gradiente de transparente a blanco) */ }
-  #resultados .resultado {
-    opacity: 0.7;
-    cursor: pointer;
-    display: block; }
-    #resultados .resultado:first-of-type {
-      margin-top: 5vh; }
-    #resultados .resultado:last-of-type {
-      margin-bottom: 15vh; }
-    #resultados .resultado:hover {
-      opacity: 1; }
-      #resultados .resultado:hover h4 {
-        color: #9b8303; }
-    #resultados .resultado h4 {
-      margin: 0;
-      padding: 0em 1em; }
-    #resultados .resultado p {
-      font-size: 0.7em;
-      padding: 0em 0.1em;
-      padding-bottom: 1em;
-      margin: 0.6em 1em; }
-  #resultados::after {
-    position: fixed;
-    content: '';
-    width: 100vw;
-    height: 15vh;
-    top: 49vh;
-    left: 0;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, white 50%, white 80%, rgba(255, 255, 255, 0.109664) 100%); }
+  background: rgba(255, 255, 255, 0.9333333333);
+}
+#resultados .resultado {
+  opacity: 0.7;
+  cursor: pointer;
+  display: block;
+}
+#resultados .resultado:first-of-type {
+  margin-top: 5vh;
+}
+#resultados .resultado:last-of-type {
+  margin-bottom: 15vh;
+}
+#resultados .resultado:hover {
+  opacity: 1;
+}
+#resultados .resultado:hover h4 {
+  color: #9b8303;
+}
+#resultados .resultado h4 {
+  margin: 0;
+  padding: 0em 1em;
+}
+#resultados .resultado p {
+  font-size: 0.7em;
+  padding: 0em 0.1em;
+  padding-bottom: 1em;
+  margin: 0.6em 1em;
+}
+#resultados {
+  /* Fade del texto (overlay con gradiente de transparente a blanco) */
+}
+#resultados::after {
+  position: fixed;
+  content: "";
+  width: 100vw;
+  height: 15vh;
+  top: 49vh;
+  left: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, white 50%, white 80%, rgba(255, 255, 255, 0.1096638484) 100%);
+}
 
-/* Editor */
 .btn {
   background-size: cover;
   cursor: pointer;
   box-sizing: border-box;
+}
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.6666666667);
+  background-blend-mode: multiply;
+  border: 1px solid;
+}
+.btn {
   width: 2em;
   min-width: 2em;
   height: 2em;
-  margin: 1em; }
-  .btn:hover {
-    background-color: #fffa;
-    background-blend-mode: multiply;
-    border: 1px solid; }
+  margin: 1em;
+}
 
 .minibtn {
   background-size: cover;
   cursor: pointer;
   box-sizing: border-box;
+}
+.minibtn:hover {
+  background-color: rgba(255, 255, 255, 0.6666666667);
+  background-blend-mode: multiply;
+  border: 1px solid;
+}
+.minibtn {
   width: 1em;
   height: 1em;
-  margin: 0.2em; }
-  .minibtn:hover {
-    background-color: #fffa;
-    background-blend-mode: multiply;
-    border: 1px solid; }
+  margin: 0.2em;
+}
 
 /* Botones de la barra */
 #btn_md {
-  background-image: url(/icon/pen-2.png); }
+  background-image: url(/icon/pen-2.png);
+}
 
 #btn_previa {
-  background-image: url(/icon/preview-2.png); }
+  background-image: url(/icon/preview-2.png);
+}
 
 #btn_arbol {
-  background-image: url(/icon/tree.png); }
+  background-image: url(/icon/tree.png);
+}
 
 #btn_imagenes {
-  background-image: url(/icon/image.png); }
+  background-image: url(/icon/image.png);
+}
 
 #menu {
-  background-image: url(/icon/journal.png); }
+  background-image: url(/icon/journal.png);
+}
 
 #csss {
-  background-image: url(/icon/curly-brackets.png); }
+  background-image: url(/icon/curly-brackets.png);
+}
 
 #logout {
-  background-image: url(/icon/logout.png); }
+  background-image: url(/icon/logout.png);
+}
 
 /* Controles del area de texto */
 #guardar {
-  background-image: url(/icon/save.png); }
+  background-image: url(/icon/save.png);
+}
 
 #descartar {
-  background-image: url(/icon/reset.png); }
+  background-image: url(/icon/reset.png);
+}
 
 #crear {
-  background-image: url(/icon/new.png); }
+  background-image: url(/icon/new.png);
+}
 
 #borrar {
-  background-image: url(/icon/trash.png); }
+  background-image: url(/icon/trash.png);
+}
 
 /* Controles del area de imágenes */
 #subir_imagen {
-  background-image: url(/icon/new.png); }
+  background-image: url(/icon/new.png);
+}
 
 #borrar_imagen {
   background-image: url(/icon/trash.png);
-  margin-top: auto; }
+  margin-top: auto;
+}
 
 .link_a_texto {
-  background-image: url(/icon/link.png); }
+  background-image: url(/icon/link.png);
+}
 
 /* Compartido */
 #cerrar.btn {
   background-image: url(/icon/close.png);
   margin-left: auto;
   justify-self: flex-end;
-  border: none; }
+  border: none;
+}
 
 #editor {
-  background-color: #fffd;
+  background-color: rgba(255, 255, 255, 0.8666666667);
   background-image: url(/img/arbol.jpg);
   background-size: cover;
   background-blend-mode: color-burn;
   height: 100vh;
   width: 100vw;
-  display: flex; }
-  #editor #controles {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    max-width: 3em;
-    border: 1px solid black;
-    background: #e6f3ff; }
-  #editor #paneles {
-    width: 100%;
-    display: flex;
-    flex-direction: row; }
-    #editor #paneles #arbol {
-      position: relative;
-      background: #fff8;
-      color: white;
-      fill: white;
-      width: 12em;
-      padding: 0em 2em;
-      overflow: scroll;
-      min-width: 20em;
-      /* Íconos del árbol */ }
-      #editor #paneles #arbol.contraido {
-        padding: 0;
-        min-width: 0em; }
-      #editor #paneles #arbol ol, #editor #paneles #arbol ul {
-        list-style: none; }
-      #editor #paneles #arbol .carpeta-icono {
-        width: 24px;
-        height: 24px;
-        margin: 4px;
-        display: inline-block;
-        background-image: url(/icon/folder.png) !important;
-        background-size: cover; }
-      #editor #paneles #arbol .texto-icono {
-        width: 24px;
-        height: 24px;
-        margin: 4px;
-        display: inline-block;
-        background-image: url(/icon/articulo.png) !important;
-        background-size: cover; }
-      #editor #paneles #arbol .texto-completo-icono {
-        width: 24px;
-        height: 24px;
-        margin: 4px;
-        display: inline-block;
-        background-image: url(/icon/articulo-completo.png) !important;
-        background-size: cover; }
-      #editor #paneles #arbol .desconocido-icono {
-        width: 24px;
-        height: 24px;
-        margin: 4px;
-        display: inline-block;
-        background-image: url(/icon/desconocido.png) !important;
-        background-size: cover; }
-      #editor #paneles #arbol .jstree-anchor {
-        display: flex;
-        align-items: center; }
-      #editor #paneles #arbol .jstree-icon {
-        background-size: cover !important; }
-      #editor #paneles #arbol .jstree-container-ul {
-        width: max-content;
-        padding: 0; }
-    #editor #paneles #imagenes {
-      display: flex;
-      flex-direction: column; }
-      #editor #paneles #imagenes #vitrina {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        overflow: scroll; }
-        #editor #paneles #imagenes #vitrina .imagen_vitrina, #editor #paneles #imagenes #vitrina .carpeta_vitrina {
-          margin: 20px;
-          border: 2px solid;
-          width: var(--anchoImagen);
-          height: calc(var(--anchoImagen) / 1.22); }
-          #editor #paneles #imagenes #vitrina .imagen_vitrina > img, #editor #paneles #imagenes #vitrina .carpeta_vitrina > img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%; }
-          #editor #paneles #imagenes #vitrina .imagen_vitrina > p, #editor #paneles #imagenes #vitrina .carpeta_vitrina > p {
-            margin: 0;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
-            font-size: 0.6em; }
-        #editor #paneles #imagenes #vitrina .carpeta_vitrina {
-          border: none; }
-        #editor #paneles #imagenes #vitrina .seleccionada {
-          box-shadow: 0px 0px 10px 3px #70ebff; }
-      #editor #paneles #imagenes #ruta {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 2em;
-        font-size: 0.7em;
-        background: #fffa; }
-        #editor #paneles #imagenes #ruta p {
-          margin: 0 1em; }
-        #editor #paneles #imagenes #ruta a {
-          margin: 0 1em;
-          margin-left: auto; }
-          #editor #paneles #imagenes #ruta a:hover {
-            text-decoration: underline;
-            cursor: pointer; }
-    #editor #paneles #md #nombre {
-      transition: .7s;
-      padding: 5px;
-      border: 1px solid white;
-      font-size: 1.3em; }
-      #editor #paneles #md #nombre:hover {
-        background-color: #fcfaf4;
-        border: 1px solid antiquewhite; }
-      #editor #paneles #md #nombre:focus {
-        outline: none; }
-    #editor #paneles #md > div {
-      display: flex;
-      background: white;
-      overflow: scroll; }
-    #editor #paneles #md textarea {
-      border: none;
-      border-right: 1px solid #d7eac9;
-      width: 100%;
-      height: 100%;
-      font-family: 'Anonymous Pro', monospace;
-      scrollbar-width: none;
-      box-sizing: border-box;
-      padding: 10px; }
-      #editor #paneles #md textarea:focus {
-        outline: none; }
-    #editor #paneles #md.vacio #nombre {
-      visibility: collapse; }
-    #editor #paneles #md.vacio textarea {
-      visibility: collapse; }
-    #editor #paneles #md.vacio > div {
-      border-bottom: 1px solid #ffc6a4; }
-    #editor #paneles #md.nuevo #crear {
-      visibility: collapse; }
-    #editor #paneles #md.nuevo #nombre {
-      box-shadow: inset 0px 0px 5px orange; }
-    #editor #paneles #md.editado #crear {
-      visibility: collapse; }
-    #editor #paneles #md.editado #cerrar {
-      visibility: collapse; }
-    #editor #paneles #md.editado #reset {
-      visibility: visible; }
-    #editor #paneles #md.editado #borrar {
-      visibility: collapse; }
-    #editor #paneles #md.limpio #crear {
-      visibility: collapse; }
-    #editor #paneles #md.limpio textarea {
-      box-shadow: inset 0px 0px 5px #bfff9b; }
-    #editor #paneles #previa img {
-      width: 100%; }
-    #editor #paneles .panel {
-      overflow-y: scroll;
-      max-width: 0px;
-      width: 100%;
-      scrollbar-width: none; }
-      #editor #paneles .panel.expandido {
-        max-width: max-content;
-        border: 1px solid black; }
+  display: flex;
+}
+#editor #controles {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  max-width: 3em;
+  border: 1px solid black;
+  background: #e6f3ff;
+}
+#editor #paneles {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#editor #paneles #arbol {
+  position: relative;
+  background: rgba(255, 255, 255, 0.5333333333);
+  color: white;
+  fill: white;
+  width: 12em;
+  padding: 0em 2em;
+  overflow: scroll;
+  min-width: 20em;
+}
+#editor #paneles #arbol.contraido {
+  padding: 0;
+  min-width: 0em;
+}
+#editor #paneles #arbol ol, #editor #paneles #arbol ul {
+  list-style: none;
+}
+#editor #paneles #arbol {
+  /* Íconos del árbol */
+}
+#editor #paneles #arbol .carpeta-icono {
+  width: 24px;
+  height: 24px;
+  margin: 4px;
+  display: inline-block;
+  background-image: url(/icon/folder.png) !important;
+  background-size: cover;
+}
+#editor #paneles #arbol .texto-icono {
+  width: 24px;
+  height: 24px;
+  margin: 4px;
+  display: inline-block;
+  background-image: url(/icon/articulo.png) !important;
+  background-size: cover;
+}
+#editor #paneles #arbol .texto-completo-icono {
+  width: 24px;
+  height: 24px;
+  margin: 4px;
+  display: inline-block;
+  background-image: url(/icon/articulo-completo.png) !important;
+  background-size: cover;
+}
+#editor #paneles #arbol .desconocido-icono {
+  width: 24px;
+  height: 24px;
+  margin: 4px;
+  display: inline-block;
+  background-image: url(/icon/desconocido.png) !important;
+  background-size: cover;
+}
+#editor #paneles #arbol .jstree-anchor {
+  display: flex;
+  align-items: center;
+}
+#editor #paneles #arbol .jstree-icon {
+  background-size: cover !important;
+}
+#editor #paneles #arbol .jstree-container-ul {
+  width: max-content;
+  padding: 0;
+}
+#editor #paneles #imagenes {
+  display: flex;
+  flex-direction: column;
+}
+#editor #paneles #imagenes #vitrina {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  overflow: scroll;
+}
+#editor #paneles #imagenes #vitrina .imagen_vitrina, #editor #paneles #imagenes #vitrina .carpeta_vitrina {
+  margin: 20px;
+  border: 2px solid;
+  width: var(--anchoImagen);
+  height: calc(var(--anchoImagen) / 1.22);
+}
+#editor #paneles #imagenes #vitrina .imagen_vitrina > img, #editor #paneles #imagenes #vitrina .carpeta_vitrina > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#editor #paneles #imagenes #vitrina .imagen_vitrina > p, #editor #paneles #imagenes #vitrina .carpeta_vitrina > p {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 0.6em;
+}
+#editor #paneles #imagenes #vitrina .carpeta_vitrina {
+  border: none;
+}
+#editor #paneles #imagenes #vitrina .seleccionada {
+  box-shadow: 0px 0px 10px 3px #70ebff;
+}
+#editor #paneles #imagenes #ruta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 2em;
+  font-size: 0.7em;
+  background: rgba(255, 255, 255, 0.6666666667);
+}
+#editor #paneles #imagenes #ruta p {
+  margin: 0 1em;
+}
+#editor #paneles #imagenes #ruta a {
+  margin: 0 1em;
+  margin-left: auto;
+}
+#editor #paneles #imagenes #ruta a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#editor #paneles #md #nombre {
+  transition: 0.7s;
+  padding: 5px;
+  border: 1px solid white;
+  font-size: 1.3em;
+}
+#editor #paneles #md #nombre:hover {
+  background-color: #fcfaf4;
+  border: 1px solid antiquewhite;
+}
+#editor #paneles #md #nombre:focus {
+  outline: none;
+}
+#editor #paneles #md > div {
+  display: flex;
+  background: white;
+  overflow: scroll;
+}
+#editor #paneles #md textarea {
+  border: none;
+  border-right: 1px solid #d7eac9;
+  width: 100%;
+  height: 100%;
+  font-family: "Anonymous Pro", monospace;
+  scrollbar-width: none;
+  box-sizing: border-box;
+  padding: 10px;
+}
+#editor #paneles #md textarea:focus {
+  outline: none;
+}
+#editor #paneles #md.vacio #nombre {
+  visibility: collapse;
+}
+#editor #paneles #md.vacio textarea {
+  visibility: collapse;
+}
+#editor #paneles #md.vacio > div {
+  border-bottom: 1px solid #ffc6a4;
+}
+#editor #paneles #md.nuevo #crear {
+  visibility: collapse;
+}
+#editor #paneles #md.nuevo #nombre {
+  box-shadow: inset 0px 0px 5px orange;
+}
+#editor #paneles #md.editado #crear {
+  visibility: collapse;
+}
+#editor #paneles #md.editado #cerrar {
+  visibility: collapse;
+}
+#editor #paneles #md.editado #reset {
+  visibility: visible;
+}
+#editor #paneles #md.editado #borrar {
+  visibility: collapse;
+}
+#editor #paneles #md.limpio #crear {
+  visibility: collapse;
+}
+#editor #paneles #md.limpio textarea {
+  box-shadow: inset 0px 0px 5px #bfff9b;
+}
+#editor #paneles #previa img {
+  width: 100%;
+}
+#editor #paneles .panel {
+  overflow-y: scroll;
+  max-width: 0px;
+  width: 100%;
+  scrollbar-width: none;
+}
+#editor #paneles .panel.expandido {
+  max-width: max-content;
+  border: 1px solid black;
+}
 
 @keyframes eyecall {
   from {
-    box-shadow: inset 0px 0px 0px; }
+    box-shadow: inset 0px 0px 0px;
+  }
   50% {
-    box-shadow: inset 0px 0px 5px orange; }
+    box-shadow: inset 0px 0px 5px orange;
+  }
   to {
-    box-shadow: inset 0px 0px 0px; } }
-
+    box-shadow: inset 0px 0px 0px;
+  }
+}
 .call_eye {
   animation-duration: 0.5s;
-  animation-name: eyecall; }
+  animation-name: eyecall;
+}
 
 .vakata-context {
   position: absolute;
   background: #f0f0f0;
   border: 1px solid #c4c4c4;
   padding: 0;
-  list-style: none; }
-  .vakata-context li {
-    padding: 0 0.3em; }
-    .vakata-context li:hover {
-      background: #ffeed0;
-      border: 1px solid #ffdeb4; }
+  list-style: none;
+}
+.vakata-context li {
+  padding: 0 0.3em;
+}
+.vakata-context li:hover {
+  background: #ffeed0;
+  border: 1px solid #ffdeb4;
+}
 
 /* Escrito */
 .texto {
   background: url(/img/ruido.png) fixed;
   margin: 0;
   display: flex;
-  flex-direction: column; }
-  .texto hr {
-    width: 30%; }
-  .texto h2 {
-    font: 3.4em 'Cinzel';
-    padding: 0em 20%;
-    padding-top: 1.8em;
-    color: white;
-    text-align: right;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
-  .texto h3, .texto h4 {
-    padding: 0.2em 20%; }
-  .texto p {
-    padding: 0px 20% 0px 20%; }
-  .texto .ventana {
-    min-height: 40vh;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    background-attachment: var(--attach-default);
-    background-image: var(--url-imagen);
-    background-size: var(--escala, var(--escala-default));
-    background-position: var(--posicion, var(--posicion-default)); }
-    .texto .ventana.cabecera {
-      height: 60vh;
-      min-height: auto; }
-    .texto .ventana img {
-      display: none; }
+  flex-direction: column;
+}
+.texto hr {
+  width: 30%;
+}
+.texto h2 {
+  font: 3.4em "Cinzel";
+  padding: 0em 20%;
+  padding-top: 1.8em;
+  color: white;
+  text-align: right;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.texto h3, .texto h4 {
+  padding: 0.2em 20%;
+}
+.texto p {
+  padding: 0px 20% 0px 20%;
+}
+.texto .ventana.cabecera {
+  height: 60vh;
+  min-height: auto;
+}
+.texto .ventana img {
+  display: none;
+}
+.texto .ventana {
+  min-height: 40vh;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  background-attachment: var(--attach-default);
+  background-image: var(--url-imagen);
+  background-size: var(--escala, var(--escala-default));
+  background-position: var(--posicion, var(--posicion-default));
+}
 
 @media (max-width: 800px) {
   .texto h2 {
     font-size: 1.55em;
     letter-spacing: 0.12em;
     padding: 0em 1.6em;
-    padding-top: 2.8em; }
+    padding-top: 2.8em;
+  }
   .texto p {
-    padding: 0 1.6em; }
+    padding: 0 1.6em;
+  }
   .texto .cabecera {
-    background-attachment: initial; } }
-
+    background-attachment: initial;
+  }
+}
 .piel {
   padding: var(--pad, var(--pad-default));
   background-attachment: var(--attach, var(--attach-default));
   background-color: var(--color, var(--color-default));
   background-image: var(--textura, var(--textura-default));
-  background-blend-mode: var(--blend, var(--blend-default)); }
+  background-blend-mode: var(--blend, var(--blend-default));
+}
 
 .footnote-item {
-  margin: 0 20vw; }
+  margin: 0 20vw;
+}
 
 .footnote-item p {
-  padding: 0; }
+  padding: 0;
+}
 
 .backref-highlight {
   border-radius: 20%;
-  animation: 2s ease-in backref-highlight; }
+  animation: 2s ease-in backref-highlight;
+}
 
 .ref-highlight::marker {
-  animation: 2s ease-in ref-highlight; }
+  animation: 2s ease-in ref-highlight;
+}
 
 @keyframes backref-highlight {
   0% {
     background-color: #75d2ff;
-    padding: 0.2em; }
+    padding: 0.2em;
+  }
   100% {
-    background-color: #75d2ff00;
-    padding: 0em; } }
-
+    background-color: rgba(117, 210, 255, 0);
+    padding: 0em;
+  }
+}
 @keyframes ref-highlight {
   0% {
     color: #75d2ff;
-    font-size: 2em; }
+    font-size: 2em;
+  }
   100% {
     color: #000;
-    font-size: 1em; } }
-
+    font-size: 1em;
+  }
+}
 /* Escrito */
 html {
   --color-base: #fcfaf4;
@@ -512,763 +645,935 @@ html {
   --pad-default: 5px 0px;
   --altura-ventanas: 400px;
   --escala-default: cover;
-  --posicion-default: center; }
+  --posicion-default: center;
+}
 
 .verde {
-  background-color: #e2f7eb88; }
+  background-color: rgba(226, 247, 235, 0.5333333333);
+}
 
 .naranja {
-  background-color: #f6ba8f66; }
+  background-color: rgba(246, 186, 143, 0.4);
+}
 
 .celeste {
-  background-color: #d7e8ff; }
+  background-color: #d7e8ff;
+}
 
 .firma {
   text-align: right;
   padding-bottom: 3em;
-  flex: 1 0 auto; }
+  flex: 1 0 auto;
+}
 
 blockquote {
   text-align: right;
-  font-style: italic; }
+  font-style: italic;
+}
 
 #colecta {
-  font-family: 'Reenie Beanie';
-  overflow-x: clip; }
-  #colecta #back {
-    font-size: 2em;
-    padding: 0.3em 0 0 0.5em; }
-    #colecta #back:hover {
-      text-shadow: 2px 2px #cdcdcd; }
-  @media screen and (min-width: 1080px) {
-    #colecta #desktop {
-      visibility: visible; }
-    #colecta #mobile {
-      visibility: collapse;
-      position: fixed; } }
-  @media screen and (max-width: 1080px) {
-    #colecta #desktop {
-      visibility: collapse;
-      position: fixed; }
-    #colecta #mobile {
-      visibility: visible; } }
-  #colecta #desktop h1 {
-    font-size: 5em;
-    margin: 0em; }
-  #colecta #desktop h2 {
-    font-size: 3.6vw;
-    margin: 0 0 1em 0; }
-  #colecta #desktop p {
-    font-size: 2em;
-    margin: 1em; }
-  #colecta #desktop .izquierda, #colecta #desktop .derecha {
-    height: 90vh; }
-  #colecta #desktop .izquierda {
-    position: relative;
-    width: 60vw;
-    padding: 5vw; }
-  #colecta #desktop .derecha {
+  font-family: "Reenie Beanie";
+  overflow-x: clip;
+}
+#colecta #back {
+  font-size: 2em;
+  padding: 0.3em 0 0 0.5em;
+}
+#colecta #back:hover {
+  text-shadow: 2px 2px #cdcdcd;
+}
+@media screen and (min-width: 1080px) {
+  #colecta #desktop {
+    visibility: visible;
+  }
+  #colecta #mobile {
+    visibility: collapse;
+    position: fixed;
+  }
+}
+@media screen and (max-width: 1080px) {
+  #colecta #desktop {
+    visibility: collapse;
+    position: fixed;
+  }
+  #colecta #mobile {
+    visibility: visible;
+  }
+}
+#colecta #desktop h1 {
+  font-size: 5em;
+  margin: 0em;
+}
+#colecta #desktop h2 {
+  font-size: 3.6vw;
+  margin: 0 0 1em 0;
+}
+#colecta #desktop p {
+  font-size: 2em;
+  margin: 1em;
+}
+#colecta #desktop .izquierda, #colecta #desktop .derecha {
+  height: 90vh;
+}
+#colecta #desktop .izquierda {
+  position: relative;
+  width: 60vw;
+  padding: 5vw;
+}
+#colecta #desktop .derecha {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 40vw;
+}
+#colecta #desktop .uno {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+#colecta #desktop .uno .izquierda .header .titulo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+}
+#colecta #desktop .uno .izquierda .header .titulo #flores {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/preventa/ocho_flores.png);
+  width: 30vw;
+  height: 5em;
+}
+#colecta #desktop .uno .izquierda .llamada {
+  position: relative;
+}
+#colecta #desktop .uno .izquierda .llamada p {
+  font-size: 2em;
+  margin: 1em;
+}
+#colecta #desktop .uno .izquierda .llamada p:nth-of-type(1) {
+  font-size: 3em;
+  align-self: baseline;
+  margin: 1em 0em 0em 0.6em;
+}
+#colecta #desktop .uno .izquierda .llamada {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#colecta #desktop .uno .izquierda .llamada .boton_colaborar {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/preventa/botonnopresionado.png);
+  background-color: rgba(255, 255, 255, 0);
+  font-family: "Reenie Beanie";
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+#colecta #desktop .uno .izquierda .llamada .boton_colaborar:active {
+  transform: translateY(5px);
+  background-image: url(/img/preventa/botonpresionado.png);
+}
+#colecta #desktop .uno .izquierda .llamada .boton_colaborar {
+  align-self: end;
+  width: 280px;
+  height: 55px;
+}
+#colecta #desktop .uno .izquierda .llamada .flechita1 {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 15px;
+  right: 280px;
+  width: 10vw;
+  height: 3vw;
+  background-image: url(/img/preventa/flechita_1.png);
+}
+#colecta #desktop .uno .derecha .libro {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/preventa/tapa_preventa.png);
+  margin: 10%;
+  width: 70%;
+  height: 70%;
+}
+#colecta #desktop .dos {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+#colecta #desktop .dos .izquierda {
+  position: relative;
+  width: 60vw;
+  padding: 5vw;
+  padding-bottom: 0;
+}
+#colecta #desktop .dos .izquierda h2 {
+  text-align: center;
+}
+#colecta #desktop .dos .izquierda p {
+  font-size: 1.6em;
+  width: 60%;
+  margin: 2em;
+}
+#colecta #desktop .dos .izquierda p:nth-of-type(2) {
+  text-align: right;
+  float: right;
+}
+#colecta #desktop .dos .izquierda .medio_circulo_flores {
+  position: absolute;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/preventa/medio_circulo.png);
+  width: 10vw;
+  height: 40vh;
+  transform: translateX(-5vw);
+}
+#colecta #desktop .dos .izquierda .columna_tres_flores {
+  position: absolute;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/preventa/columna_tres_flores.png);
+  width: 10vw;
+  height: 20vh;
+  right: 10%;
+  top: 20%;
+}
+#colecta #desktop .dos .derecha .portada {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/preventa/tapa_1.png);
+  margin: 10%;
+  width: 70%;
+  height: 70%;
+}
+#colecta #desktop .tres {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+#colecta #desktop .tres button {
+  padding: 1.4em;
+}
+#colecta #desktop .tres .flechita2, #colecta #desktop .tres .flechita3, #colecta #desktop .tres .flechita4, #colecta #desktop .tres .flechita5, #colecta #desktop .tres .flechita6 {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10vw;
+  height: 10vw;
+  position: absolute;
+}
+#colecta #desktop .tres .izquierda {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0;
+}
+#colecta #desktop .tres .izquierda .paso {
+  position: relative;
+}
+#colecta #desktop .tres .izquierda .paso .flechita2 {
+  background-image: url(/img/preventa/flechita_2.png);
+  top: 8vh;
+  left: 8vw;
+}
+#colecta #desktop .tres .izquierda .paso .flechita3 {
+  background-image: url(/img/preventa/flechita_3.png);
+  top: 8vh;
+  left: -5vw;
+  transform: scaleY(0.9);
+}
+#colecta #desktop .tres .izquierda .paso .flechita4 {
+  background-image: url(/img/preventa/flechita_4.png);
+  left: 32vw;
+}
+#colecta #desktop .tres .izquierda .paso .flechita5 {
+  background-image: url(/img/preventa/flechita_5.png);
+  left: 15vw;
+  top: -5vw;
+  transform: scale(0.5);
+}
+#colecta #desktop .tres .izquierda .paso p {
+  font-size: 1.6em;
+  width: 80%;
+  margin: 1.2em;
+  text-align: center;
+  float: right;
+}
+#colecta #desktop .tres .izquierda .paso:nth-of-type(1) {
+  align-self: start;
+  margin-left: 0.5em;
+}
+#colecta #desktop .tres .izquierda .paso:nth-of-type(2) {
+  align-self: end;
+  width: 80%;
+}
+#colecta #desktop .tres .izquierda .paso:nth-of-type(3) {
+  align-self: start;
+  margin-right: 1.5em;
+  width: 60%;
+}
+#colecta #desktop .tres .izquierda .paso:nth-of-type(4) {
+  width: 80%;
+}
+#colecta #desktop .tres .izquierda .quiero_ver {
+  position: absolute;
+  left: 32vw;
+  top: 8vh;
+  width: max-content;
+}
+#colecta #desktop .tres .derecha {
+  position: relative;
+}
+#colecta #desktop .tres .derecha .contratapa {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/preventa/contratapa_1.png);
+  margin: 10%;
+  width: 70%;
+  height: 70%;
+}
+#colecta #desktop .tres .derecha .flechita6 {
+  background-image: url(/img/preventa/flechita_6.png);
+  right: 30vw;
+  bottom: 14vh;
+}
+#colecta #desktop .tres .derecha .quiero_leer {
+  position: absolute;
+  right: 30vw;
+  bottom: 5vh;
+  width: max-content;
+}
+#colecta #desktop .cuatro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#colecta #desktop .cuatro .ochoflores {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/preventa/ocho_flores.png);
+  height: 3em;
+  width: 14em;
+}
+#colecta #desktop .cuatro p {
+  font-size: 1.5em;
+  margin: 0.3em;
+  text-align: center;
+}
+#colecta #desktop .cuatro .grupo {
+  width: 60vw;
+  margin: 1em;
+}
+#colecta #desktop .cuatro .firma {
+  align-self: flex-end;
+  margin-right: 20vw;
+  position: relative;
+  padding-bottom: 0;
+}
+#colecta #desktop .cuatro .firma p {
+  text-align: right;
+}
+#colecta #desktop .cuatro .firma .flor {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/preventa/flor_sola.png);
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  right: -3.2em;
+  top: 0.6em;
+}
+#colecta #desktop .cuatro button {
+  margin: 1em;
+  width: 10em;
+  height: 3em;
+}
+#colecta #mobile {
+  font-size: 42px;
+}
+#colecta #mobile .uno {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+}
+#colecta #mobile .uno .header .titulo {
+  margin-top: 1em;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+#colecta #mobile .uno .header .titulo #cuatroflores1, #colecta #mobile .uno .header .titulo #cuatroflores2 {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 5vh;
+}
+#colecta #mobile .uno .header .titulo #cuatroflores1 {
+  background-image: url(/img/preventa/cuatro_flores_1.png);
+}
+#colecta #mobile .uno .header .titulo #cuatroflores2 {
+  background-image: url(/img/preventa/cuatro_flores_2.png);
+}
+#colecta #mobile .uno .header .titulo h1 {
+  font-size: 10vw;
+  margin: 0;
+}
+#colecta #mobile .uno .header h2 {
+  text-align: center;
+  font-size: 5vw;
+}
+#colecta #mobile .uno .separador {
+  width: 80%;
+}
+#colecta #mobile .uno .llamada {
+  text-align: center;
+}
+#colecta #mobile .uno .llamada p {
+  font-size: 1.2em;
+  margin: 1em;
+}
+#colecta #mobile .uno .llamada p:nth-of-type(1) {
+  font-size: 1.6em;
+  margin: 1em 0em 0em 0.6em;
+}
+#colecta #mobile .uno .libro {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/preventa/tapa_preventa.png);
+  width: 30vw;
+  height: 30vh;
+}
+#colecta #mobile .uno .boton_colaborar {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/preventa/botonnopresionado.png);
+  background-color: rgba(255, 255, 255, 0);
+  font-family: "Reenie Beanie";
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+#colecta #mobile .uno .boton_colaborar:active {
+  transform: translateY(5px);
+  background-image: url(/img/preventa/botonpresionado.png);
+}
+#colecta #mobile .uno .boton_colaborar {
+  width: 10em;
+  height: 5em;
+  color: black;
+}
+#colecta #mobile .uno .boton_colaborar::before {
+  background-image: url(/img/preventa/flechita_1.png);
+}
+#colecta #mobile .dos {
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+#colecta #mobile .dos h2 {
+  font-size: 1.8em;
+}
+#colecta #mobile .dos p {
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.9);
+}
+#colecta #mobile .dos p:nth-of-type(1) {
+  padding: 0.3em 0em;
+  font-size: 1.3em;
+  width: 60vw;
+  align-self: flex-end;
+  text-align: right;
+}
+#colecta #mobile .dos p:nth-of-type(2) {
+  padding: 0.3em 0em;
+  font-size: 1.3em;
+  width: 60vw;
+  text-align: center;
+  margin-top: 12vh;
+}
+@media screen and (max-width: 530px) {
+  #colecta #mobile .dos .flor_sola_1 {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/img/preventa/flor_sola.png);
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    left: 10vw;
+    top: 55vh;
+  }
+  #colecta #mobile .dos .flor_sola_2 {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/img/preventa/flor_sola_2.png);
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    right: 10vw;
+    top: 60vh;
+  }
+  #colecta #mobile .dos .fila_tres_flores {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/img/preventa/fila_tres_flores.png);
+    position: absolute;
+    width: 40vw;
+    height: 10vw;
+    left: 2vw;
+    bottom: 0;
+  }
+}
+#colecta #mobile .dos .circulo_flores_1 {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/preventa/circulo_flores.png);
+  position: absolute;
+  width: 60vw;
+  height: 50vw;
+  left: -30vw;
+  top: 15vh;
+}
+#colecta #mobile .dos .circulo_flores_2 {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/preventa/circulo_flores.png);
+  position: absolute;
+  width: 60vw;
+  height: 50vw;
+  right: -37vw;
+  bottom: -15vh;
+}
+#colecta #mobile .tres {
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+#colecta #mobile .tres .quiero_ver {
+  padding: 1em 2em;
+  width: max-content;
+  color: black;
+}
+#colecta #mobile .tres p {
+  font-size: 1.3em;
+  text-align: center;
+}
+#colecta #mobile .tres p:nth-of-type(1) {
+  align-self: flex-start;
+  width: 50vw;
+}
+#colecta #mobile .tres .flor_sola_1 {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/preventa/flor_sola.png);
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  left: 10vw;
+  top: 55vh;
+}
+#colecta #mobile .tres .flor_sola_2 {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/preventa/flor_sola_2.png);
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  right: 10vw;
+  top: 60vh;
+}
+#colecta #mobile .cuatro p {
+  text-align: center;
+  font-size: 1.3em;
+  margin: 0.3em;
+}
+#colecta #mobile .cuatro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#colecta #mobile .cuatro .ochoflores {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/preventa/ocho_flores.png);
+  height: 3em;
+  width: 14em;
+}
+#colecta #mobile .cuatro .grupo {
+  width: 80vw;
+  margin: 1em;
+}
+#colecta #mobile .cuatro .firma {
+  align-self: flex-end;
+  margin-right: 20vw;
+  position: relative;
+  padding-bottom: 0;
+}
+#colecta #mobile .cuatro .firma p {
+  text-align: right;
+}
+#colecta #mobile .cuatro .firma .flor {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/preventa/flor_sola.png);
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  right: -3.2em;
+  top: 0.6em;
+}
+#colecta #mobile .cuatro button {
+  margin: 0.3em;
+  width: 10em;
+  height: 3em;
+  color: black;
+}
+#colecta #contribucion {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+@media screen and (min-width: 1080px) {
+  #colecta #contribucion {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 1080px) {
+  #colecta #contribucion {
+    font-size: 2.5em;
+  }
+}
+#colecta #contribucion {
+  opacity: 1;
+  transition: 1s;
+  background: white;
+  overflow-y: scroll;
+  z-index: 10;
+}
+#colecta #contribucion > div {
+  margin: 2em;
+}
+#colecta #contribucion #cruz {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 2em;
+  top: 2em;
+  width: 5vw;
+  height: 5vh;
+  background-image: url(/img/preventa/cruz.png);
+  cursor: pointer;
+}
+#colecta #contribucion #monto_planilla, #colecta #contribucion #nombre_planilla, #colecta #contribucion #mail_planilla {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+}
+#colecta #contribucion #monto_planilla input, #colecta #contribucion #nombre_planilla input, #colecta #contribucion #mail_planilla input {
+  border: none;
+  text-align: center;
+  border-bottom: 1px solid gainsboro;
+  margin: 0 1em;
+  width: 100%;
+  font-family: "Reenie Beanie";
+  font-size: 1.5em;
+}
+@media screen and (max-width: 1080px) {
+  #colecta #contribucion #monto_planilla input, #colecta #contribucion #nombre_planilla input, #colecta #contribucion #mail_planilla input {
+    font-size: 2.5em;
+  }
+}
+#colecta #contribucion #monto_planilla input, #colecta #contribucion #nombre_planilla input, #colecta #contribucion #mail_planilla input {
+  font-weight: 100;
+}
+#colecta #contribucion #monto_planilla input:focus, #colecta #contribucion #nombre_planilla input:focus, #colecta #contribucion #mail_planilla input:focus {
+  outline: none;
+}
+#colecta #contribucion #monto_planilla {
+  width: 50vw;
+}
+@media screen and (max-width: 1080px) {
+  #colecta #contribucion #monto_planilla {
+    width: 75vw;
+  }
+}
+#colecta #contribucion #nombre_planilla, #colecta #contribucion #mail_planilla {
+  width: 80vw;
+}
+@media screen and (max-width: 1080px) {
+  #colecta #contribucion #nombre_planilla, #colecta #contribucion #mail_planilla {
+    width: 90vw;
+  }
+}
+#colecta #contribucion #mercadopago #listobutton {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/preventa/botonnopresionado.png);
+  background-color: rgba(255, 255, 255, 0);
+  font-family: "Reenie Beanie";
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+#colecta #contribucion #mercadopago #listobutton:active {
+  transform: translateY(5px);
+  background-image: url(/img/preventa/botonpresionado.png);
+}
+#colecta #contribucion #mercadopago #listobutton {
+  width: 280px;
+  height: 55px;
+}
+#colecta #aprobado {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#colecta #aprobado h2 {
+  font-size: 9em;
+  margin: 0.3em;
+  margin-top: 1em;
+}
+#colecta #aprobado p {
+  font-size: 2em;
+  text-align: center;
+}
+#colecta #aprobado .botones .planilla, #colecta #aprobado .botones .leer {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/preventa/botonnopresionado.png);
+  background-color: rgba(255, 255, 255, 0);
+  font-family: "Reenie Beanie";
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+#colecta #aprobado .botones .planilla:active, #colecta #aprobado .botones .leer:active {
+  transform: translateY(5px);
+  background-image: url(/img/preventa/botonpresionado.png);
+}
+#colecta #aprobado .botones .planilla, #colecta #aprobado .botones .leer {
+  width: 9em;
+  height: 2em;
+}
+@media screen and (min-width: 1080px) {
+  #colecta #aprobado {
+    background-image: url(/img/preventa/flores_scatter.png);
+  }
+  #colecta #aprobado p {
+    margin: 0.3em 10em;
+  }
+}
+@media screen and (max-width: 1080px) {
+  #colecta #aprobado {
+    background-image: url(/img/preventa/fila_tres_flores.png);
+    background-position: center 5%;
+    background-size: 30%;
+  }
+  #colecta #aprobado h2 {
+    font-size: 6em;
+  }
+  #colecta #aprobado p {
+    margin: 0.3em 1em;
+  }
+  #colecta #aprobado .botones {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 40vw; }
-  #colecta #desktop .uno {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center; }
-    #colecta #desktop .uno .izquierda .header .titulo {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      justify-content: center;
-      justify-content: space-between; }
-      #colecta #desktop .uno .izquierda .header .titulo #flores {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(/img/preventa/ocho_flores.png);
-        width: 30vw;
-        height: 5em; }
-    #colecta #desktop .uno .izquierda .llamada {
-      position: relative;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center; }
-      #colecta #desktop .uno .izquierda .llamada p {
-        font-size: 2em;
-        margin: 1em; }
-      #colecta #desktop .uno .izquierda .llamada p:nth-of-type(1) {
-        font-size: 3em;
-        align-self: baseline;
-        margin: 1em 0em 0em 0.6em; }
-      #colecta #desktop .uno .izquierda .llamada .boton_colaborar {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(/img/preventa/botonnopresionado.png);
-        background-color: #fff0;
-        font-family: 'Reenie Beanie';
-        font-size: 1.5em;
-        border: none;
-        cursor: pointer;
-        color: black;
-        align-self: end;
-        width: 280px;
-        height: 55px; }
-        #colecta #desktop .uno .izquierda .llamada .boton_colaborar:active {
-          transform: translateY(5px);
-          background-image: url(/img/preventa/botonpresionado.png); }
-      #colecta #desktop .uno .izquierda .llamada .flechita1 {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        position: absolute;
-        bottom: 15px;
-        right: 280px;
-        width: 10vw;
-        height: 3vw;
-        background-image: url(/img/preventa/flechita_1.png); }
-    #colecta #desktop .uno .derecha .libro {
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(/img/preventa/tapa_preventa.png);
-      margin: 10%;
-      width: 70%;
-      height: 70%; }
-  #colecta #desktop .dos {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center; }
-    #colecta #desktop .dos .izquierda {
-      position: relative;
-      width: 60vw;
-      padding: 5vw;
-      padding-bottom: 0; }
-      #colecta #desktop .dos .izquierda h2 {
-        text-align: center; }
-      #colecta #desktop .dos .izquierda p {
-        font-size: 1.6em;
-        width: 60%;
-        margin: 2em; }
-      #colecta #desktop .dos .izquierda p:nth-of-type(2) {
-        text-align: right;
-        float: right; }
-      #colecta #desktop .dos .izquierda .medio_circulo_flores {
-        position: absolute;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(/img/preventa/medio_circulo.png);
-        width: 10vw;
-        height: 40vh;
-        transform: translateX(-5vw); }
-      #colecta #desktop .dos .izquierda .columna_tres_flores {
-        position: absolute;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(/img/preventa/columna_tres_flores.png);
-        width: 10vw;
-        height: 20vh;
-        right: 10%;
-        top: 20%; }
-    #colecta #desktop .dos .derecha .portada {
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(/img/preventa/tapa_1.png);
-      margin: 10%;
-      width: 70%;
-      height: 70%; }
-  #colecta #desktop .tres {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center; }
-    #colecta #desktop .tres button {
-      padding: 1.4em; }
-    #colecta #desktop .tres .flechita2, #colecta #desktop .tres .flechita3, #colecta #desktop .tres .flechita4, #colecta #desktop .tres .flechita5, #colecta #desktop .tres .flechita6 {
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 10vw;
-      height: 10vw;
-      position: absolute; }
-    #colecta #desktop .tres .izquierda {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
-      padding-top: 0; }
-      #colecta #desktop .tres .izquierda .paso {
-        position: relative; }
-        #colecta #desktop .tres .izquierda .paso .flechita2 {
-          background-image: url(/img/preventa/flechita_2.png);
-          top: 8vh;
-          left: 8vw; }
-        #colecta #desktop .tres .izquierda .paso .flechita3 {
-          background-image: url(/img/preventa/flechita_3.png);
-          top: 8vh;
-          left: -5vw;
-          transform: scaleY(0.9); }
-        #colecta #desktop .tres .izquierda .paso .flechita4 {
-          background-image: url(/img/preventa/flechita_4.png);
-          left: 32vw; }
-        #colecta #desktop .tres .izquierda .paso .flechita5 {
-          background-image: url(/img/preventa/flechita_5.png);
-          left: 15vw;
-          top: -5vw;
-          transform: scale(0.5); }
-        #colecta #desktop .tres .izquierda .paso p {
-          font-size: 1.6em;
-          width: 80%;
-          margin: 1.2em;
-          text-align: center;
-          float: right; }
-      #colecta #desktop .tres .izquierda .paso:nth-of-type(1) {
-        align-self: start;
-        margin-left: 0.5em; }
-      #colecta #desktop .tres .izquierda .paso:nth-of-type(2) {
-        align-self: end;
-        width: 80%; }
-      #colecta #desktop .tres .izquierda .paso:nth-of-type(3) {
-        align-self: start;
-        margin-right: 1.5em;
-        width: 60%; }
-      #colecta #desktop .tres .izquierda .paso:nth-of-type(4) {
-        width: 80%; }
-      #colecta #desktop .tres .izquierda .quiero_ver {
-        position: absolute;
-        left: 32vw;
-        top: 8vh;
-        width: max-content; }
-    #colecta #desktop .tres .derecha {
-      position: relative; }
-      #colecta #desktop .tres .derecha .contratapa {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(/img/preventa/contratapa_1.png);
-        margin: 10%;
-        width: 70%;
-        height: 70%; }
-      #colecta #desktop .tres .derecha .flechita6 {
-        background-image: url(/img/preventa/flechita_6.png);
-        right: 30vw;
-        bottom: 14vh; }
-      #colecta #desktop .tres .derecha .quiero_leer {
-        position: absolute;
-        right: 30vw;
-        bottom: 5vh;
-        width: max-content; }
-  #colecta #desktop .cuatro {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center; }
-    #colecta #desktop .cuatro .ochoflores {
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(/img/preventa/ocho_flores.png);
-      height: 3em;
-      width: 14em; }
-    #colecta #desktop .cuatro p {
-      font-size: 1.5em;
-      margin: 0.3em;
-      text-align: center; }
-    #colecta #desktop .cuatro .grupo {
-      width: 60vw;
-      margin: 1em; }
-    #colecta #desktop .cuatro .firma {
-      align-self: flex-end;
-      margin-right: 20vw;
-      position: relative;
-      padding-bottom: 0; }
-      #colecta #desktop .cuatro .firma p {
-        text-align: right; }
-      #colecta #desktop .cuatro .firma .flor {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(/img/preventa/flor_sola.png);
-        position: absolute;
-        width: 3em;
-        height: 3em;
-        right: -3.2em;
-        top: 0.6em; }
-    #colecta #desktop .cuatro button {
-      margin: 1em;
-      width: 10em;
-      height: 3em; }
-  #colecta #mobile {
-    font-size: 42px; }
-    #colecta #mobile .uno {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
-      justify-content: space-between; }
-      #colecta #mobile .uno .header .titulo {
-        margin-top: 1em;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content: center; }
-        #colecta #mobile .uno .header .titulo #cuatroflores1, #colecta #mobile .uno .header .titulo #cuatroflores2 {
-          background-position: center;
-          background-size: contain;
-          background-repeat: no-repeat;
-          width: 100%;
-          height: 5vh; }
-        #colecta #mobile .uno .header .titulo #cuatroflores1 {
-          background-image: url(/img/preventa/cuatro_flores_1.png); }
-        #colecta #mobile .uno .header .titulo #cuatroflores2 {
-          background-image: url(/img/preventa/cuatro_flores_2.png); }
-        #colecta #mobile .uno .header .titulo h1 {
-          font-size: 10vw;
-          margin: 0; }
-      #colecta #mobile .uno .header h2 {
-        text-align: center;
-        font-size: 5vw; }
-      #colecta #mobile .uno .separador {
-        width: 80%; }
-      #colecta #mobile .uno .llamada {
-        text-align: center; }
-        #colecta #mobile .uno .llamada p {
-          font-size: 1.2em;
-          margin: 1em; }
-        #colecta #mobile .uno .llamada p:nth-of-type(1) {
-          font-size: 1.6em;
-          margin: 1em 0em 0em 0.6em; }
-      #colecta #mobile .uno .libro {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(/img/preventa/tapa_preventa.png);
-        width: 30vw;
-        height: 30vh; }
-      #colecta #mobile .uno .boton_colaborar {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(/img/preventa/botonnopresionado.png);
-        background-color: #fff0;
-        font-family: 'Reenie Beanie';
-        font-size: 1.5em;
-        border: none;
-        cursor: pointer;
-        color: black;
-        width: 10em;
-        height: 5em;
-        color: black; }
-        #colecta #mobile .uno .boton_colaborar:active {
-          transform: translateY(5px);
-          background-image: url(/img/preventa/botonpresionado.png); }
-        #colecta #mobile .uno .boton_colaborar::before {
-          background-image: url(/img/preventa/flechita_1.png); }
-    #colecta #mobile .dos {
-      padding: 2em;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
-      position: relative; }
-      #colecta #mobile .dos h2 {
-        font-size: 1.8em; }
-      #colecta #mobile .dos p {
-        z-index: 1;
-        background: rgba(255, 255, 255, 0.9); }
-      #colecta #mobile .dos p:nth-of-type(1) {
-        padding: 0.3em 0em;
-        font-size: 1.3em;
-        width: 60vw;
-        align-self: flex-end;
-        text-align: right; }
-      #colecta #mobile .dos p:nth-of-type(2) {
-        padding: 0.3em 0em;
-        font-size: 1.3em;
-        width: 60vw;
-        text-align: center;
-        margin-top: 12vh; }
-      @media screen and (max-width: 530px) {
-        #colecta #mobile .dos .flor_sola_1 {
-          background-position: center;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-image: url(/img/preventa/flor_sola.png);
-          position: absolute;
-          width: 10vw;
-          height: 10vw;
-          left: 10vw;
-          top: 55vh; }
-        #colecta #mobile .dos .flor_sola_2 {
-          background-position: center;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-image: url(/img/preventa/flor_sola_2.png);
-          position: absolute;
-          width: 10vw;
-          height: 10vw;
-          right: 10vw;
-          top: 60vh; }
-        #colecta #mobile .dos .fila_tres_flores {
-          background-position: center;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-image: url(/img/preventa/fila_tres_flores.png);
-          position: absolute;
-          width: 40vw;
-          height: 10vw;
-          left: 2vw;
-          bottom: 0; } }
-      #colecta #mobile .dos .circulo_flores_1 {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(/img/preventa/circulo_flores.png);
-        position: absolute;
-        width: 60vw;
-        height: 50vw;
-        left: -30vw;
-        top: 15vh; }
-      #colecta #mobile .dos .circulo_flores_2 {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(/img/preventa/circulo_flores.png);
-        position: absolute;
-        width: 60vw;
-        height: 50vw;
-        right: -37vw;
-        bottom: -15vh; }
-    #colecta #mobile .tres {
-      padding: 2em;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
-      position: relative; }
-      #colecta #mobile .tres .quiero_ver {
-        padding: 1em 2em;
-        width: max-content;
-        color: black; }
-      #colecta #mobile .tres p {
-        font-size: 1.3em;
-        text-align: center; }
-      #colecta #mobile .tres p:nth-of-type(1) {
-        align-self: flex-start;
-        width: 50vw; }
-      #colecta #mobile .tres .flor_sola_1 {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(/img/preventa/flor_sola.png);
-        position: absolute;
-        width: 10vw;
-        height: 10vw;
-        left: 10vw;
-        top: 55vh; }
-      #colecta #mobile .tres .flor_sola_2 {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(/img/preventa/flor_sola_2.png);
-        position: absolute;
-        width: 10vw;
-        height: 10vw;
-        right: 10vw;
-        top: 60vh; }
-    #colecta #mobile .cuatro {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center; }
-      #colecta #mobile .cuatro p {
-        text-align: center;
-        font-size: 1.3em;
-        margin: 0.3em; }
-      #colecta #mobile .cuatro .ochoflores {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(/img/preventa/ocho_flores.png);
-        height: 3em;
-        width: 14em; }
-      #colecta #mobile .cuatro .grupo {
-        width: 80vw;
-        margin: 1em; }
-      #colecta #mobile .cuatro .firma {
-        align-self: flex-end;
-        margin-right: 20vw;
-        position: relative;
-        padding-bottom: 0; }
-        #colecta #mobile .cuatro .firma p {
-          text-align: right; }
-        #colecta #mobile .cuatro .firma .flor {
-          background-position: center;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-image: url(/img/preventa/flor_sola.png);
-          position: absolute;
-          width: 3em;
-          height: 3em;
-          right: -3.2em;
-          top: 0.6em; }
-      #colecta #mobile .cuatro button {
-        margin: 0.3em;
-        width: 10em;
-        height: 3em;
-        color: black; }
-  #colecta #contribucion {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    transition: 1s;
-    background: white;
-    overflow-y: scroll;
-    z-index: 10; }
-    @media screen and (min-width: 1080px) {
-      #colecta #contribucion {
-        font-size: 1.5em; } }
-    @media screen and (max-width: 1080px) {
-      #colecta #contribucion {
-        font-size: 2.5em; } }
-    #colecta #contribucion > div {
-      margin: 2em; }
-    #colecta #contribucion #cruz {
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      position: absolute;
-      right: 2em;
-      top: 2em;
-      width: 5vw;
-      height: 5vh;
-      background-image: url(/img/preventa/cruz.png);
-      cursor: pointer; }
-    #colecta #contribucion #monto_planilla, #colecta #contribucion #nombre_planilla, #colecta #contribucion #mail_planilla {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      justify-content: center;
-      margin: 0 auto; }
-      #colecta #contribucion #monto_planilla input, #colecta #contribucion #nombre_planilla input, #colecta #contribucion #mail_planilla input {
-        border: none;
-        text-align: center;
-        border-bottom: 1px solid gainsboro;
-        margin: 0 1em;
-        width: 100%;
-        font-family: 'Reenie Beanie';
-        font-size: 1.5em;
-        font-weight: 100; }
-        @media screen and (max-width: 1080px) {
-          #colecta #contribucion #monto_planilla input, #colecta #contribucion #nombre_planilla input, #colecta #contribucion #mail_planilla input {
-            font-size: 2.5em; } }
-        #colecta #contribucion #monto_planilla input:focus, #colecta #contribucion #nombre_planilla input:focus, #colecta #contribucion #mail_planilla input:focus {
-          outline: none; }
-    #colecta #contribucion #monto_planilla {
-      width: 50vw; }
-      @media screen and (max-width: 1080px) {
-        #colecta #contribucion #monto_planilla {
-          width: 75vw; } }
-    #colecta #contribucion #nombre_planilla, #colecta #contribucion #mail_planilla {
-      width: 80vw; }
-      @media screen and (max-width: 1080px) {
-        #colecta #contribucion #nombre_planilla, #colecta #contribucion #mail_planilla {
-          width: 90vw; } }
-    #colecta #contribucion #mercadopago #listobutton {
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(/img/preventa/botonnopresionado.png);
-      background-color: #fff0;
-      font-family: 'Reenie Beanie';
-      font-size: 1.5em;
-      border: none;
-      cursor: pointer;
-      color: black;
-      width: 280px;
-      height: 55px; }
-      #colecta #contribucion #mercadopago #listobutton:active {
-        transform: translateY(5px);
-        background-image: url(/img/preventa/botonpresionado.png); }
-  #colecta #aprobado {
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center; }
-    #colecta #aprobado h2 {
-      font-size: 9em;
-      margin: 0.3em;
-      margin-top: 1em; }
-    #colecta #aprobado p {
-      font-size: 2em;
-      text-align: center; }
-    #colecta #aprobado .botones .planilla, #colecta #aprobado .botones .leer {
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(/img/preventa/botonnopresionado.png);
-      background-color: #fff0;
-      font-family: 'Reenie Beanie';
-      font-size: 1.5em;
-      border: none;
-      cursor: pointer;
-      color: black;
-      width: 9em;
-      height: 2em; }
-      #colecta #aprobado .botones .planilla:active, #colecta #aprobado .botones .leer:active {
-        transform: translateY(5px);
-        background-image: url(/img/preventa/botonpresionado.png); }
-    @media screen and (min-width: 1080px) {
-      #colecta #aprobado {
-        background-image: url(/img/preventa/flores_scatter.png); }
-        #colecta #aprobado p {
-          margin: 0.3em 10em; } }
-    @media screen and (max-width: 1080px) {
-      #colecta #aprobado {
-        background-image: url(/img/preventa/fila_tres_flores.png);
-        background-position: center 5%;
-        background-size: 30%; }
-        #colecta #aprobado h2 {
-          font-size: 6em; }
-        #colecta #aprobado p {
-          margin: 0.3em 1em; }
-        #colecta #aprobado .botones {
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          justify-content: center; } }
-  #colecta #pendiente {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center; }
-    #colecta #pendiente h2 {
-      font-size: 9em;
-      margin: 0.3em; }
-      #colecta #pendiente h2::after {
-        display: inline-block;
-        content: '';
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 0.7em;
-        height: 0.7em;
-        background-image: url(/img/preventa/flor_sola.png); }
-    #colecta #pendiente p {
-      font-size: 2em;
-      margin: 0.3em 8em;
-      text-align: center; }
-      #colecta #pendiente p.gracias {
-        font-size: 3em; }
-    #colecta #pendiente .botones .planilla, #colecta #pendiente .botones .leer {
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(/img/preventa/botonnopresionado.png);
-      background-color: #fff0;
-      font-family: 'Reenie Beanie';
-      font-size: 1.5em;
-      border: none;
-      cursor: pointer;
-      color: black;
-      width: 9em;
-      height: 2em; }
-      #colecta #pendiente .botones .planilla:active, #colecta #pendiente .botones .leer:active {
-        transform: translateY(5px);
-        background-image: url(/img/preventa/botonpresionado.png); }
-  #colecta #rechazado {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center; }
-    #colecta #rechazado h2 {
-      font-size: 9em;
-      margin: 0.3em; }
-    #colecta #rechazado p {
-      font-size: 2em;
-      margin: 0.3em 4em;
-      text-align: center; }
-      #colecta #rechazado p.de_nuevo {
-        font-size: 3em; }
-        #colecta #rechazado p.de_nuevo::after {
-          display: inline-block;
-          content: '';
-          background-position: center;
-          background-size: contain;
-          background-repeat: no-repeat;
-          width: 0.7em;
-          height: 0.7em;
-          background-image: url(/img/preventa/flor_sola.png); }
-    #colecta #rechazado .volver {
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(/img/preventa/botonnopresionado.png);
-      background-color: #fff0;
-      font-family: 'Reenie Beanie';
-      font-size: 1.5em;
-      border: none;
-      cursor: pointer;
-      color: black;
-      width: 9em;
-      height: 2em; }
-      #colecta #rechazado .volver:active {
-        transform: translateY(5px);
-        background-image: url(/img/preventa/botonpresionado.png); }
+  }
+}
+#colecta #pendiente {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#colecta #pendiente h2 {
+  font-size: 9em;
+  margin: 0.3em;
+}
+#colecta #pendiente h2::after {
+  display: inline-block;
+  content: "";
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 0.7em;
+  height: 0.7em;
+  background-image: url(/img/preventa/flor_sola.png);
+}
+#colecta #pendiente p {
+  font-size: 2em;
+  margin: 0.3em 8em;
+  text-align: center;
+}
+#colecta #pendiente p.gracias {
+  font-size: 3em;
+}
+#colecta #pendiente .botones .planilla, #colecta #pendiente .botones .leer {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/preventa/botonnopresionado.png);
+  background-color: rgba(255, 255, 255, 0);
+  font-family: "Reenie Beanie";
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+#colecta #pendiente .botones .planilla:active, #colecta #pendiente .botones .leer:active {
+  transform: translateY(5px);
+  background-image: url(/img/preventa/botonpresionado.png);
+}
+#colecta #pendiente .botones .planilla, #colecta #pendiente .botones .leer {
+  width: 9em;
+  height: 2em;
+}
+#colecta #rechazado {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#colecta #rechazado h2 {
+  font-size: 9em;
+  margin: 0.3em;
+}
+#colecta #rechazado p {
+  font-size: 2em;
+  margin: 0.3em 4em;
+  text-align: center;
+}
+#colecta #rechazado p.de_nuevo {
+  font-size: 3em;
+}
+#colecta #rechazado p.de_nuevo::after {
+  display: inline-block;
+  content: "";
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 0.7em;
+  height: 0.7em;
+  background-image: url(/img/preventa/flor_sola.png);
+}
+#colecta #rechazado .volver {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/preventa/botonnopresionado.png);
+  background-color: rgba(255, 255, 255, 0);
+  font-family: "Reenie Beanie";
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+#colecta #rechazado .volver:active {
+  transform: translateY(5px);
+  background-image: url(/img/preventa/botonpresionado.png);
+}
+#colecta #rechazado .volver {
+  width: 9em;
+  height: 2em;
+}
 
 #colecta h1, #colecta h2 {
-  font-weight: 100; }
-
+  font-weight: 100;
+}
 #colecta h2 {
-  margin: 0.2em 0; }
-
+  margin: 0.2em 0;
+}
 #colecta .detalle_de_pago {
   max-height: 1000vh;
-  transition: 1s; }
-
+  transition: 1s;
+}
 #colecta .oculto {
   visibility: hidden;
   opacity: 0;
   transition: 1s;
-  max-height: 0; }
-
+  max-height: 0;
+}
 #colecta .separador {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(/img/preventa/separador.png);
   height: 1em;
-  width: 100%; }
-
+  width: 100%;
+}
 #colecta ul {
-  list-style: none; }
-
-#colecta input[type="radio"] {
-  display: none; }
-
+  list-style: none;
+}
+#colecta input[type=radio] {
+  display: none;
+}
 #colecta label {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  justify-content: start; }
-
+  justify-content: start;
+}
 #colecta .toggle {
   background-position: center;
   background-size: contain;
@@ -1276,10 +1581,11 @@ blockquote {
   width: 1em;
   height: 1em;
   margin: 0.5em;
-  background-image: url(/img/preventa/unchecked.png); }
-
+  background-image: url(/img/preventa/unchecked.png);
+}
 #colecta input:checked ~ label .toggle {
-  background-image: url(/img/preventa/checked.png); }
+  background-image: url(/img/preventa/checked.png);
+}
 
 svg.vidriera {
   width: 100vw;
@@ -1287,30 +1593,39 @@ svg.vidriera {
   position: absolute;
   top: 0;
   left: 0;
-  font-family: 'EB Garamond';
-  font-weight: 200; }
-  svg.vidriera .lienzo {
-    width: 100vw;
-    height: 120vh; }
-  svg.vidriera .cabecera {
-    user-select: none;
-    font-size: 15em;
-    opacity: 0.1; }
-  svg.vidriera .entrada {
-    cursor: pointer; }
-    svg.vidriera .entrada .titulo {
-      font-size: 3em; }
-    svg.vidriera .entrada .pie {
-      font-size: 1.5em; }
-    svg.vidriera .entrada circle {
-      stroke-width: 5px;
-      stroke-opacity: 0.5;
-      transition: 0.6s;
-      fill-opacity: 0.2; }
-    svg.vidriera .entrada.resaltado circle {
-      transform: scale(1.1); }
-    svg.vidriera .entrada.visitado circle {
-      fill-opacity: 0.8; }
+  font-family: "EB Garamond";
+  font-weight: 200;
+}
+svg.vidriera .lienzo {
+  width: 100vw;
+  height: 120vh;
+}
+svg.vidriera .cabecera {
+  user-select: none;
+  font-size: 15em;
+  opacity: 0.1;
+}
+svg.vidriera .entrada {
+  cursor: pointer;
+}
+svg.vidriera .entrada .titulo {
+  font-size: 3em;
+}
+svg.vidriera .entrada .pie {
+  font-size: 1.5em;
+}
+svg.vidriera .entrada circle {
+  stroke-width: 5px;
+  stroke-opacity: 0.5;
+  transition: 0.6s;
+  fill-opacity: 0.2;
+}
+svg.vidriera .entrada.resaltado circle {
+  transform: scale(1.1);
+}
+svg.vidriera .entrada.visitado circle {
+  fill-opacity: 0.8;
+}
 
 .telon {
   position: absolute;
@@ -1318,78 +1633,105 @@ svg.vidriera {
   box-sizing: border-box;
   height: 100vh;
   width: 100vw;
-  background: white; }
-  .telon > div {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2em; }
-    .telon > div p {
-      max-width: 25em;
-      text-align: center; }
-    .telon > div h1 {
-      font-family: 'Libre Baskerville', sans-serif;
-      font-size: 0.8em;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      opacity: 0;
-      text-align: center; }
-    .telon > div a {
-      text-decoration: underline; }
-  .telon.visible {
-    opacity: 1;
-    visibility: inherit; }
-  .telon.aparecer h1 {
-    animation: anim-fade-in 1s forwards; }
-  .telon.aparecer p {
-    animation: anim-fade-in 1s forwards; }
-  .telon.desvanecer {
-    pointer-events: none;
-    animation: anim-fade-out 4s forwards; }
-    .telon.desvanecer h1 {
-      animation: anim-fade-out 2s forwards; }
-    .telon.desvanecer p {
-      animation: anim-fade-out 1s forwards; }
-    .telon.desvanecer a {
-      animation: anim-fade-out 0.5s forwards; }
-  .telon.escondido {
-    opacity: 0;
-    visibility: hidden; }
+  background: white;
+}
+.telon > div {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+.telon > div p {
+  max-width: 25em;
+  text-align: center;
+}
+.telon > div h1 {
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 0.8em;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  opacity: 0;
+  text-align: center;
+}
+.telon > div a {
+  margin-top: 1em;
+  font-family: "EB Garamond", sans-serif;
+  font-size: 0.8em;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-decoration: underline;
+}
+.telon.visible {
+  opacity: 1;
+  visibility: inherit;
+}
+.telon.aparecer h1 {
+  animation: anim-fade-in 1s forwards;
+}
+.telon.aparecer p {
+  animation: anim-fade-in 1s forwards;
+}
+.telon.desvanecer {
+  pointer-events: none;
+  animation: anim-fade-out 4s forwards;
+}
+.telon.desvanecer h1 {
+  animation: anim-fade-out 2s forwards;
+}
+.telon.desvanecer p {
+  animation: anim-fade-out 1s forwards;
+}
+.telon.desvanecer a {
+  animation: anim-fade-out 0.5s forwards;
+}
+.telon.escondido {
+  opacity: 0;
+  visibility: hidden;
+}
 
 @media (max-width: 800px) {
   h1 {
     font-size: 0.8em;
-    letter-spacing: 0.12em; } }
-
+    letter-spacing: 0.12em;
+  }
+}
 @keyframes anim-fade-out {
   0% {
-    opacity: 1; }
+    opacity: 1;
+  }
   100% {
-    opacity: 0; } }
-
+    opacity: 0;
+  }
+}
 @keyframes anim-fade-in {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 1; } }
-
+    opacity: 1;
+  }
+}
 .btn {
   width: 30px;
   height: 36px;
   margin: 10px;
   background-size: cover;
   cursor: pointer;
-  box-sizing: border-box; }
-  .btn:hover {
-    background-color: #eadcce;
-    background-blend-mode: multiply;
-    border: 1px solid; }
+  box-sizing: border-box;
+}
+.btn:hover {
+  background-color: #eadcce;
+  background-blend-mode: multiply;
+  border: 1px solid;
+}
 
 #login {
   background-image: url("/icon/login.png");
-  background-position: center; }
+  background-position: center;
+}
 
 #hogar {
   display: flex;
@@ -1399,50 +1741,64 @@ svg.vidriera {
   background-size: cover;
   background-position: center;
   justify-content: center;
-  align-items: center; }
-  #hogar > div {
-    display: flex;
-    height: min-content; }
+  align-items: center;
+}
+#hogar > div {
+  display: flex;
+  height: min-content;
+}
 
 #pwd {
   background: none;
   border: none;
-  border-bottom: 1px solid #fff4; }
-  #pwd:hover {
-    border: 1px solid; }
-  #pwd:focus {
-    background: #fff4;
-    box-shadow: 0 0 5px #51cbee;
-    outline: none; }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2666666667);
+}
+#pwd:hover {
+  border: 1px solid;
+}
+#pwd:focus {
+  background: rgba(255, 255, 255, 0.2666666667);
+  box-shadow: 0 0 5px rgb(81, 203, 238);
+  outline: none;
+}
 
 #login {
-  opacity: 0; }
+  opacity: 0;
+}
 
 #pwd:focus + #login {
-  opacity: 1; }
+  opacity: 1;
+}
 
 @media (max-width: 1060px) {
   #pwd {
-    border-bottom: 1px solid #000; } }
-
+    border-bottom: 1px solid #000;
+  }
+}
 .visitas {
-  padding: 10vw; }
+  padding: 10vw;
+}
 
 .g {
-  padding: 1em; }
+  padding: 1em;
+}
 
 #listas {
   display: flex;
   justify-content: space-between;
-  width: 80vw; }
+  width: 80vw;
+}
 
 .ranking {
   width: 35vw;
-  padding: 0; }
-  .ranking li {
-    display: flex;
-    justify-content: space-between; }
-  .ranking p {
-    display: inline-block; }
+  padding: 0;
+}
+.ranking li {
+  display: flex;
+  justify-content: space-between;
+}
+.ranking p {
+  display: inline-block;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -2,9 +2,9 @@
   "name": "esde",
   "version": "0.0.0",
   "private": true,
-  "scripts": {
-    "start": "node ./bin/www",
-    "devstart": "PORT=50505 redis-server & tsc --watch & npx webpack --watch & nodemon ./bin/www",
+"scripts": {
+    "start": "bun ./bin/www",
+    "devstart": "PORT=50505 redis-server & tsc --watch & npx webpack --watch & bun --watch ./bin/www",
     "build": "tsc && npx webpack",
     "watch": "tsc --watch & npx webpack --watch",
     "syncImg": "rsync --help"
@@ -37,7 +37,6 @@
     "markdown-it-front-matter": "^0.2.3",
     "mercadopago": "^1.5.14",
     "morgan": "~1.9.1",
-    "node-sass-middleware": "^1.1.0",
     "nodemon": "^2.0.6",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
@@ -50,6 +49,8 @@
     "react-router-dom": "^6.6.2",
     "react-simple-jstree": "^0.2.2",
     "redis": "^4.0.1",
+    "sass": "^1.93.2",
+    "sass-middleware": "^0.0.3",
     "url": "^0.11.0",
     "uuid": "^8.3.2",
     "webpack-node-externals": "^3.0.0",

@@ -1,5 +1,5 @@
 /* Escrito */
-@import 'settings'
+@use 'settings'
 
 .texto
   background: url(/img/ruido.png) fixed
@@ -37,7 +37,7 @@
     background-size: var(--escala, var(--escala-default))
     background-position: var(--posicion, var(--posicion-default))
 
-@media (max-width: $layout-breakpoint-small)
+@media (max-width: settings.$layout-breakpoint-small)
   .texto 
     h2
       font-size: 1.55em

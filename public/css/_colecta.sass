@@ -1,7 +1,7 @@
-@import "herramientas/herramientas"
+@use "herramientas/herramientas"
 
 @mixin ochoflores
-  @include fullbackground
+  @include herramientas.fullbackground
   background-image: url(/img/preventa/ocho_flores.png)
 
 @mixin pagina
@@ -61,15 +61,15 @@
       padding: 5vw
 
     .derecha
-      @include flexcentercolumn
+      @include herramientas.flexcentercolumn
       width: 40vw
 
     .uno
-      @include flexcenterrow
+      @include herramientas.flexcenterrow
       .izquierda
         .header
           .titulo
-            @include flexcenterrow
+            @include herramientas.flexcenterrow
             justify-content: space-between
             #flores
               @include ochoflores
@@ -85,14 +85,14 @@
             font-size: 3em
             align-self: baseline
             margin: 1em 0em 0em 0.6em
-          @include flexcentercolumn
+          @include herramientas.flexcentercolumn
           .boton_colaborar
-            @include boton
+            @include herramientas.boton
             align-self: end
             width: 280px
             height: 55px
           .flechita1
-            @include fullbackground
+            @include herramientas.fullbackground
             position: absolute
             bottom: 15px
             right: 280px
@@ -102,14 +102,14 @@
 
       .derecha
         .libro
-          @include fullbackground
+          @include herramientas.fullbackground
           background-image: url(/img/preventa/tapa_preventa.png)
           margin: 10%
           width: 70%
           height: 70%
 
     .dos
-      @include flexcenterrow
+      @include herramientas.flexcenterrow
       .izquierda
         position: relative
         width: 60vw
@@ -126,14 +126,14 @@
           float: right
         .medio_circulo_flores
           position: absolute
-          @include fullbackground
+          @include herramientas.fullbackground
           background-image: url(/img/preventa/medio_circulo.png)
           width: 10vw
           height: 40vh
           transform: translateX(-5vw)
         .columna_tres_flores
           position: absolute
-          @include fullbackground
+          @include herramientas.fullbackground
           background-image: url(/img/preventa/columna_tres_flores.png)
           width: 10vw
           height: 20vh
@@ -141,26 +141,26 @@
           top: 20%
       .derecha
         .portada
-          @include fullbackground
+          @include herramientas.fullbackground
           background-image: url(/img/preventa/tapa_1.png)
           margin: 10%
           width: 70%
           height: 70%
 
     .tres
-      @include flexcenterrow
+      @include herramientas.flexcenterrow
 
       button
         padding: 1.4em
 
       .flechita2, .flechita3, .flechita4, .flechita5, .flechita6
-        @include fullbackground
+        @include herramientas.fullbackground
         width: 10vw
         height: 10vw
         position: absolute
 
       .izquierda
-        @include flexcentercolumn
+        @include herramientas.flexcentercolumn
         padding-top: 0
         .paso
           position: relative
@@ -215,7 +215,7 @@
       .derecha
         position: relative
         .contratapa
-          @include fullbackground
+          @include herramientas.fullbackground
           background-image: url(/img/preventa/contratapa_1.png)
           margin: 10%
           width: 70%
@@ -231,9 +231,9 @@
           width: max-content
 
     .cuatro
-      @include flexcentercolumn
+      @include herramientas.flexcentercolumn
       .ochoflores
-        @include fullbackground
+        @include herramientas.fullbackground
         background-image: url(/img/preventa/ocho_flores.png)
         height: 3em
         width: 14em
@@ -252,7 +252,7 @@
         p
           text-align: right
         .flor
-          @include fullbackground
+          @include herramientas.fullbackground
           background-image: url(/img/preventa/flor_sola.png)
           position: absolute
           width: 3em
@@ -268,15 +268,15 @@
     font-size: 42px
     .uno
       height: 100vh
-      @include flexcentercolumn
+      @include herramientas.flexcentercolumn
       justify-content: space-between
       .header
         .titulo
           margin-top: 1em
           width: 100vw
-          @include flexcenterrow
+          @include herramientas.flexcenterrow
           #cuatroflores1, #cuatroflores2
-            @include fullbackground
+            @include herramientas.fullbackground
             width: 100%
             height: 5vh
           #cuatroflores1
@@ -300,12 +300,12 @@
           font-size: 1.6em
           margin: 1em 0em 0em 0.6em
       .libro
-        @include fullbackground
+        @include herramientas.fullbackground
         background-image: url(/img/preventa/tapa_preventa.png)
         width: 30vw
         height: 30vh
       .boton_colaborar
-        @include boton
+        @include herramientas.boton
         width: 10em
         height: 5em
         color: black
@@ -314,7 +314,7 @@
 
     .dos
       padding: 2em
-      @include flexcentercolumn
+      @include herramientas.flexcentercolumn
       position: relative
       h2
         font-size: 1.8em
@@ -335,7 +335,7 @@
         margin-top: 12vh
       @media screen and (max-width: 530px)
         .flor_sola_1
-          @include fullbackground
+          @include herramientas.fullbackground
           background-image: url(/img/preventa/flor_sola.png)
           position: absolute
           width: 10vw
@@ -343,7 +343,7 @@
           left: 10vw
           top: 55vh
         .flor_sola_2
-          @include fullbackground
+          @include herramientas.fullbackground
           background-image: url(/img/preventa/flor_sola_2.png)
           position: absolute
           width: 10vw
@@ -351,7 +351,7 @@
           right: 10vw
           top: 60vh
         .fila_tres_flores
-          @include fullbackground
+          @include herramientas.fullbackground
           background-image: url(/img/preventa/fila_tres_flores.png)
           position: absolute
           width: 40vw
@@ -359,7 +359,7 @@
           left: 2vw
           bottom: 0
       .circulo_flores_1
-        @include fullbackground
+        @include herramientas.fullbackground
         background-image: url(/img/preventa/circulo_flores.png)
         position: absolute
         width: 60vw
@@ -367,7 +367,7 @@
         left: -30vw
         top: 15vh
       .circulo_flores_2
-        @include fullbackground
+        @include herramientas.fullbackground
         background-image: url(/img/preventa/circulo_flores.png)
         position: absolute
         width: 60vw
@@ -377,7 +377,7 @@
 
     .tres
       padding: 2em
-      @include flexcentercolumn
+      @include herramientas.flexcentercolumn
       position: relative
       .quiero_ver
         padding: 1em 2em
@@ -389,11 +389,8 @@
       p:nth-of-type(1)
         align-self: flex-start
         width: 50vw
-      p:nth-of-type(2)
-      p:nth-of-type(3)
-      p:nth-of-type(4)
       .flor_sola_1
-        @include fullbackground
+        @include herramientas.fullbackground
         background-image: url(/img/preventa/flor_sola.png)
         position: absolute
         width: 10vw
@@ -401,7 +398,7 @@
         left: 10vw
         top: 55vh
       .flor_sola_2
-        @include fullbackground
+        @include herramientas.fullbackground
         background-image: url(/img/preventa/flor_sola_2.png)
         position: absolute
         width: 10vw
@@ -414,9 +411,9 @@
         text-align: center
         font-size: 1.3em
         margin: 0.3em
-      @include flexcentercolumn
+      @include herramientas.flexcentercolumn
       .ochoflores
-        @include fullbackground
+        @include herramientas.fullbackground
         background-image: url(/img/preventa/ocho_flores.png)
         height: 3em
         width: 14em
@@ -431,7 +428,7 @@
         p
           text-align: right
         .flor
-          @include fullbackground
+          @include herramientas.fullbackground
           background-image: url(/img/preventa/flor_sola.png)
           position: absolute
           width: 3em
@@ -445,7 +442,7 @@
         color: black
 
   #contribucion
-    @include fullscreen
+    @include herramientas.fullscreen
     @media screen and (min-width: $medium)
       font-size: 1.5em
     @media screen and (max-width: $medium)
@@ -459,7 +456,7 @@
     > div
       margin: 2em
     #cruz
-      @include fullbackground
+      @include herramientas.fullbackground
       position: absolute
       right: 2em
       top: 2em
@@ -468,7 +465,7 @@
       background-image: url(/img/preventa/cruz.png)
       cursor: pointer
     #monto_planilla, #nombre_planilla, #mail_planilla
-      @include flexcenterrow
+      @include herramientas.flexcenterrow
       margin: 0 auto
       input
         border: none
@@ -495,14 +492,14 @@
 
     #mercadopago
       #listobutton
-        @include boton
+        @include herramientas.boton
         width: 280px
         height: 55px
 
 
   #aprobado
-    @include fullbackground
-    @include flexcentercolumn
+    @include herramientas.fullbackground
+    @include herramientas.flexcentercolumn
     h2
       font-size: 9em
       margin: 0.3em
@@ -513,7 +510,7 @@
       text-align: center
     .botones
       .planilla, .leer
-        @include boton
+        @include herramientas.boton
         width: 9em
         height: 2em
     @media screen and (min-width: $medium)
@@ -529,17 +526,17 @@
       p
         margin: 0.3em 1em
       .botones
-        @include flexcentercolumn
+        @include herramientas.flexcentercolumn
 
   #pendiente
-    @include flexcentercolumn
+    @include herramientas.flexcentercolumn
     h2
       font-size: 9em
       margin: 0.3em
       &::after
         display: inline-block
         content: ''
-        @include fullbackground
+        @include herramientas.fullbackground
         width: 0.7em
         height: 0.7em
         background-image: url(/img/preventa/flor_sola.png)
@@ -551,13 +548,13 @@
         font-size: 3em
     .botones
       .planilla, .leer
-        @include boton
+        @include herramientas.boton
         width: 9em
         height: 2em
 
 
   #rechazado
-    @include flexcentercolumn
+    @include herramientas.flexcentercolumn
     h2
       font-size: 9em
       margin: 0.3em
@@ -571,12 +568,12 @@
         &::after
           display: inline-block
           content: ''
-          @include fullbackground
+          @include herramientas.fullbackground
           width: 0.7em
           height: 0.7em
           background-image: url(/img/preventa/flor_sola.png)
     .volver
-        @include boton
+        @include herramientas.boton
         width: 9em
         height: 2em
 
@@ -600,7 +597,7 @@
     max-height: 0
 
   .separador
-    @include fullbackground
+    @include herramientas.fullbackground
     background-image: url(/img/preventa/separador.png)
     height: 1em
     width: 100%
@@ -611,11 +608,11 @@
     display: none
 
   label
-    @include flexcenterrow
+    @include herramientas.flexcenterrow
     justify-content: start
 
   .toggle
-    @include fullbackground
+    @include herramientas.fullbackground
     width: 1em
     height: 1em
     margin: 0.5em

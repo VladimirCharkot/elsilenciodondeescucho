@@ -1,4 +1,4 @@
-@import 'settings'
+@use 'settings'
 
 .telon
 
@@ -71,7 +71,7 @@
         opacity: 0
         visibility: hidden
 
-@media (max-width: $layout-breakpoint-small)
+@media (max-width: settings.$layout-breakpoint-small)
     h1
         font-size: 0.8em
         letter-spacing: 0.12em

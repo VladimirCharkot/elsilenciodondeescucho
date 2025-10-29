@@ -1,8 +1,10 @@
+@use "sass:meta"
+@use "editor/iconos"
+
 /* Editor */
 
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap")
 
-@import "editor/iconos"
 
 @mixin fondo_editor
   background-color: #fffd
@@ -35,10 +37,10 @@
     display: flex
     flex-direction: row
 
-    @import "editor/arbol"
-    @import "editor/imagenes"
-    @import "editor/md"
-    @import "editor/previa"
+    @include meta.load-css("editor/arbol")
+    @include meta.load-css("editor/imagenes")
+    @include meta.load-css("editor/md")
+    @include meta.load-css("editor/previa")
 
     .panel
       overflow-y: scroll

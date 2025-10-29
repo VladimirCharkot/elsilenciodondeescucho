@@ -1,5 +1,6 @@
+@use "settings"
+
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap")
-@import settings
 
 @mixin flex-horizontal-even
   display: flex
@@ -88,7 +89,7 @@ header
       &:focus-visible
         outline-width: 0
 
-@media (max-width: $layout-breakpoint-small)
+@media (max-width: settings.$layout-breakpoint-small)
   header
 
     // Ajustamos el tamaño de fuente
