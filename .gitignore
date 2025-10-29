@@ -11,6 +11,5 @@ public/front/*
 style.css
 style.css.map
 logs
-dist
 dump.rdb
 **/*.bundle.js
