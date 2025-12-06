@@ -29,7 +29,6 @@ export const VidrieraContextProvider = ({ children }) => {
   const [layout, setLayout] = useState<Layout | null>(null);
   const [montado, setMontado] = useState(false);
 
-
   // Configura d3 en el svg
   React.useEffect(() => {
     if (svg && nodos.length > 0 && layout && !montado) {

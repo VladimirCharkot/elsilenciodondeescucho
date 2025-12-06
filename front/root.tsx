@@ -6,7 +6,7 @@ import { Editor } from "./editor/editor";
 import { Escrito } from "./escrito";
 import { Login } from "./login";
 import { NotFound } from "./status/not_found";
-import { Indice } from "./vidriera/indice";
+import { Vista } from "./vidriera/vista";
 
 import {
   vidriera_escritos,
@@ -26,7 +26,7 @@ const Inicio = () => {
         <Route
           path="/"
           element={
-            <Indice
+            <Vista
               animacion={vidriera_inicial.animacion}
               menu={vidriera_inicial.menu}
               layout={vidriera_inicial.layout}
@@ -37,7 +37,7 @@ const Inicio = () => {
         <Route
           path="/escritos/"
           element={
-            <Indice
+            <Vista
               animacion={vidriera_escritos.animacion}
               menu={vidriera_escritos.menu}
               layout={vidriera_escritos.layout}
@@ -53,7 +53,7 @@ const Inicio = () => {
         <Route
           path="/propuestas/"
           element={
-            <Indice
+            <Vista
               // animacion={vidriera_propuestas.animacion}
               menu={vidriera_propuestas.menu}
               layout={vidriera_propuestas.layout}

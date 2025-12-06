@@ -19,7 +19,7 @@ export interface IndiceProps {
   titulo?: string;
 }
 
-export const Indice = ({ animacion, menu, layout, Overlay, headerNav, titulo, }: IndiceProps) => {
+export const Vista = ({ animacion, menu, layout, Overlay, headerNav, titulo, }: IndiceProps) => {
 
   useEffect(() => {
     document.title = titulo ?? "El Silencio Donde Escucho";
@@ -32,6 +32,7 @@ export const Indice = ({ animacion, menu, layout, Overlay, headerNav, titulo, }:
         <TelonBienvenida onDesvanecer={() => trigger.emit('listo')}/>
         <Barra atrasTexto={headerNav?.atrasTexto} atrasPath={headerNav?.atrasPath} />
         <Vidriera animacion={animacion} menu={menu} layout={layout} Overlay={Overlay} trigger={trigger}/>
+        {/* <Indice/> */}
     </>
   );
 };
