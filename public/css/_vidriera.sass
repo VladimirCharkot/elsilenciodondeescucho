@@ -60,7 +60,8 @@ svg.vidriera
 
 .indice
 
-  ol
+  // Lista de series
+  > ol
     background: linear-gradient(90deg,rgba(255, 255, 255, 1) 1%, rgba(255, 255, 255, 1) 85%, rgba(255, 255, 255, 0) 100%);
     list-style: none
     margin: 0
@@ -73,22 +74,36 @@ svg.vidriera
 
     overflow-y: auto
 
+    // Cada serie
     li
-        margin-bottom: 0.5em
-        padding-left: 1em
-        cursor: pointer
-        transition: 0.1s
+      margin-bottom: 1em
+      padding-left: 1em
 
-        a
-            text-decoration: none
-            color: black
+      user-select: none
 
-        &.activo a
-            font-weight: bold
+      // Lista de entradas dentro de cada serie
+      > ol
+        font-weight: medium
+        list-style: none
+        padding-left: 0
 
-        &:hover
-          text-decoration: underline
-          transform: translateX(.3em)
+        // Cada entrada
+        > li
+          margin-bottom: 0.5em
+          padding-left: 1em
+          cursor: pointer
+          transition: 0.1s
+
+          a
+              text-decoration: none
+              color: black
+
+          &.activo a
+              font-weight: bold
+
+          &:hover
+            text-decoration: underline
+            transform: translateX(.3em)
 
   // Para abrir y cerrar el índice
   .perilla

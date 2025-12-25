@@ -64,6 +64,7 @@ export const Vidriera = ({
   }, [menu, setNodos]);
 
   // Al montar el componente, o cambiar el menu, bindear trigger a la variable de estado
+  // Attachear eventos al trigger, como enfocar y listo
   useEffect(() => {
     if (trigger) {
       trigger.on("listo", () => setTriggereado(true));
@@ -79,7 +80,7 @@ export const Vidriera = ({
         
         if (centro) {
           // Enfocar el centro de la serie
-          anim_enfocar(svg, zoom, centro, 0.3, 700);
+          anim_enfocar(svg, zoom, centro, 0.3, 2000);
         } else { 
           // Enfocar el nodo
           anim_enfocar(svg, zoom, nodo as { x: number, y: number }, 0.3, 700);

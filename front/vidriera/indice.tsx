@@ -1,5 +1,5 @@
 import EventEmitter from 'events';
-import { debounce } from 'lodash';
+import { capitalize, debounce, groupBy } from 'lodash';
 import * as React from 'react';
 import { Menu, NodoVidriera } from './tipos';
 
@@ -31,16 +31,30 @@ export default function Indice({ menu, trigger }: IndiceProps) {
     };
   }, [debouncedEnfocar]);
 
+  const grupos = groupBy(entradas, e => e.fm?.serie || 'otros');
+
   return <div className='indice'>
     <ol>
+      {Object.entries(grupos).map(([serie, entradasSerie]) => (
+        <li key={ serie }>
+          <strong>{ serie !== 'otros' ? capitalize(serie) : 'Otros escritos' }</strong>
+          <ol>
+            {entradasSerie.map(e => <li
+              key={ e.slug }
+              onMouseEnter={() => {if (e.slug) debouncedEnfocar( e.slug )}}
+              onMouseLeave={() => trigger.emit('unhover', e.slug )}
+            >{e.titulo}</li>)}
+          </ol>
+        </li>
+      ))}
+    </ol>
+    {/* <ol>
       {entradas.map(e => <li
         key={ e.slug }
         onMouseEnter={() => {if (e.slug) debouncedEnfocar( e.slug )}}
         onMouseLeave={() => trigger.emit('unhover', e.slug )}
       >{e.titulo}</li>)}
-    </ol>
-    <div className='perilla'>
+    </ol> */}
 
-    </div>
   </div>
 }

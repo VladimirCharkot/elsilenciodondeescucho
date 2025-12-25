@@ -1637,7 +1637,7 @@ svg.vidriera .entrada.visitado circle {
   fill-opacity: 0.8;
 }
 
-.indice ol {
+.indice > ol {
   background: linear-gradient(90deg, rgb(255, 255, 255) 1%, rgb(255, 255, 255) 85%, rgba(255, 255, 255, 0) 100%);
   list-style: none;
   margin: 0;
@@ -1648,20 +1648,30 @@ svg.vidriera .entrada.visitado circle {
   height: 100vh;
   overflow-y: auto;
 }
-.indice ol li {
+.indice > ol li {
+  margin-bottom: 1em;
+  padding-left: 1em;
+  user-select: none;
+}
+.indice > ol li > ol {
+  font-weight: medium;
+  list-style: none;
+  padding-left: 0;
+}
+.indice > ol li > ol > li {
   margin-bottom: 0.5em;
   padding-left: 1em;
   cursor: pointer;
   transition: 0.1s;
 }
-.indice ol li a {
+.indice > ol li > ol > li a {
   text-decoration: none;
   color: black;
 }
-.indice ol li.activo a {
+.indice > ol li > ol > li.activo a {
   font-weight: bold;
 }
-.indice ol li:hover {
+.indice > ol li > ol > li:hover {
   text-decoration: underline;
   transform: translateX(0.3em);
 }
