@@ -1,4 +1,3 @@
-import { NodoVidriera } from "../front/vidriera/tipos";
 
 /**
  * Backend

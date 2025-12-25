@@ -5,12 +5,13 @@ import { Telon, TelonBienvenida } from "../telon";
 import { Animacion, Layout, Menu } from "./tipos";
 import { Vidriera } from "./vidriera";
 import { EventEmitter } from 'events';
+import Indice from "./indice";
 
 /**
  * Telón + Vidriera + Barra
  */
 
-export interface IndiceProps {
+export interface VistaProps {
   animacion?: Animacion; // Animación inicial, usualmente pan y zoom
   menu: Menu; // Nodos de la vidriera
   layout: Layout; // Función que asigna posición inicial a cada nodo
@@ -19,20 +20,20 @@ export interface IndiceProps {
   titulo?: string;
 }
 
-export const Vista = ({ animacion, menu, layout, Overlay, headerNav, titulo, }: IndiceProps) => {
+export const Vista = ({ animacion, menu, layout, Overlay, headerNav, titulo, }: VistaProps) => {
 
   useEffect(() => {
     document.title = titulo ?? "El Silencio Donde Escucho";
   }, []);
 
-  const trigger = new EventEmitter();
+  const trigger = React.useMemo(() => new EventEmitter(), []);
 
   return (
     <>
-        <TelonBienvenida onDesvanecer={() => trigger.emit('listo')}/>
-        <Barra atrasTexto={headerNav?.atrasTexto} atrasPath={headerNav?.atrasPath} />
-        <Vidriera animacion={animacion} menu={menu} layout={layout} Overlay={Overlay} trigger={trigger}/>
-        {/* <Indice/> */}
+      <TelonBienvenida onDesvanecer={() => trigger.emit('listo')}/>
+      <Barra atrasTexto={headerNav?.atrasTexto} atrasPath={headerNav?.atrasPath} />
+      <Vidriera animacion={animacion} menu={menu} layout={layout} Overlay={Overlay} trigger={trigger}/>
+      <Indice menu={menu} trigger={trigger} />
     </>
   );
 };

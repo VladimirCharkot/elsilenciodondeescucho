@@ -1,10 +1,10 @@
 import * as React from "react";
 
-import { rgb } from "d3";
+import * as d3 from "d3";
 import { defaultTo, find } from "lodash";
 import { TextoSinCuerpo } from "../../shared/tipos";
 import { get } from "../utils/http";
-import { Animacion, CentroType, GenericD3Selection, Menu, NodoVidriera } from "./tipos";
+import { Animacion, CentroType, GenericD3Selection, Menu, NodoVidriera, SVG, Zoom } from "./tipos";
 import {
   capitalize,
   escalar,
@@ -12,6 +12,7 @@ import {
   layout_centros,
   layout_fuerza,
   layout_inicial,
+  panear,
 } from "./utils";
 import { VidrieraProps } from "./vidriera";
 
@@ -25,7 +26,7 @@ const visitados = get_visitados();
 export const layout_inicial_escritos = (nodos: GenericD3Selection) =>
   layout_centros(
     nodos,
-    centros_indice.map((c) => ({ ...c, x: c.x * 2.6, y: c.y * 2.6 }))
+    centros_indice
   );
 
 // Centros para usar en el índice de escritos
@@ -39,7 +40,7 @@ export let centros_indice: CentroType[] = [
   { nombre: "contemplación", x: -2000, y: 0, color: "#D9C8DE" },
   { nombre: "verdad", x: 0, y: -800, color: "#D9C8DE" },
   { nombre: "libertad", x: 1000, y: 400, color: "#DBB6B6" },
-];
+].map(c => ({ ...c, x: c.x * 3, y: c.y * 3 }));
 
 // Etiquetas dibujadas sobre los centros
 // Van en su propia capa
@@ -48,7 +49,8 @@ export const Etiquetas: React.FC = () => (
     {centros_indice.map((c) => (
       <g
         className="cabecera"
-        transform={`translate(${c.x * 3}, ${c.y * 3})`}
+        data-slug={c.nombre}
+        transform={`translate(${c.x}, ${c.y})`}
         key={c.nombre}
       >
         <text>{capitalize(c.nombre)}</text>
@@ -84,27 +86,27 @@ export const menu_principal: Menu = async (navigate) => [
     id: "escritos",
     titulo: "Escritos",
     accion: () => {
-      navigate("/escritos/");
+      if (navigate) navigate("/escritos/");
     },
-    color: rgb("#23689b").formatHsl(),
+    color: d3.rgb("#23689b").formatHsl(),
     pie: "Textos y escritos de ESDE",
   },
   {
     id: "propuestas",
     titulo: "Propuestas",
     accion: () => {
-      navigate("/propuestas/");
+      if (navigate) navigate("/propuestas/");
     },
-    color: rgb("#939b62").formatHsl(),
+    color: d3.rgb("#939b62").formatHsl(),
     pie: "Talleres, seminarios, encuentros y charlas",
   },
   {
     id: "esde",
     titulo: "El Silencio Donde Escucho",
     accion: () => {
-      navigate("/esde/");
+      if (navigate) navigate("/esde/");
     },
-    color: rgb("#ffd56b").formatHsl(),
+    color: d3.rgb("#ffd56b").formatHsl(),
     pie: "Indentidad, propósito e historia",
   },
   //   {
@@ -136,6 +138,22 @@ export const anim_indice: Animacion = async (svg, zoom) => {
   escalar(svg, zoom, 3000, 0.08);
 };
 
+export const anim_enfocar = async (svg: SVG, zoom: Zoom, nodo: { x: number, y: number }, scale: number) => {
+  const svgWidth = parseInt(svg.style("width"));
+  const svgHeight = parseInt(svg.style("height"));
+  const { x, y } = nodo;
+
+  const t = d3.zoomIdentity
+    .translate(svgWidth / 2, svgHeight / 2)
+    .scale(scale)
+    .translate(-x, -y);
+
+  svg.transition()
+    .duration(300)
+    .ease(d3.easeCubic)
+    .call(zoom.transform, t);
+}
+
 /**
  * Menú con las propuestas
  */
@@ -143,7 +161,7 @@ export let menu_propuestas: Menu = async (navigate) => [
   {
     titulo: "Integrador de movimiento",
     accion: async () => {
-      navigate("/propuestas/integrador-movimiento/");
+      if (navigate) navigate("/propuestas/integrador-movimiento/");
     },
     color: "#23689b",
     pie: "Enfoque integrador de la dialéctica Cuerpo-Mente-Espíritu y de la relación entre lo Interno y lo externo",
@@ -151,7 +169,7 @@ export let menu_propuestas: Menu = async (navigate) => [
   {
     titulo: "Malabareando un no-malabar",
     accion: async () => {
-      navigate("/propuestas/malabareando");
+      if (navigate) navigate("/propuestas/malabareando");
     },
     color: "#23689b",
     pie: "Estancia de Investigación para malabaristas",
@@ -159,7 +177,7 @@ export let menu_propuestas: Menu = async (navigate) => [
   {
     titulo: "El Silencio Donde Escucho",
     accion: async () => {
-      navigate("/propuestas/esde");
+      if (navigate) navigate("/propuestas/esde");
     },
     color: "#23689b",
     pie: "Taller Entrenamiento de Presencia Activa",
@@ -167,7 +185,7 @@ export let menu_propuestas: Menu = async (navigate) => [
   {
     titulo: 'Los movimientos -en la práctica de la presencia- son "Acción"',
     accion: async () => {
-      navigate("/propuestas/accion");
+      if (navigate) navigate("/propuestas/accion");
     },
     color: "#23689b",
     pie: '"Cada lenguaje, el gesto de una mano, el toque en una cuerda, un pincel que se desliza, el lanzamiento de un objeto, cada uno, es un movimiento. Y un movimiento es también lo que lo generó"',
@@ -175,7 +193,7 @@ export let menu_propuestas: Menu = async (navigate) => [
   {
     titulo: "Formato Anual Grupal",
     accion: async () => {
-      navigate("/propuestas/grupal");
+      if (navigate) navigate("/propuestas/grupal");
     },
     color: "#939b62",
     pie: "Este primer modulo abre el trabajo para la investigación y exploración sobre nosotros mismos, a nivel vivencial y conceptual. Las partes que componen lo que somos, cómo funcionan, cuál es nuestra naturaleza esencial y cuál la adquirida, cuál es y de qué consta un Real Trabajo sobre sí mismo sin formas predeterminadas.",
@@ -183,7 +201,7 @@ export let menu_propuestas: Menu = async (navigate) => [
   {
     titulo: "Formato Personalizado",
     accion: async () => {
-      navigate("/propuestas/personalizado");
+      if (navigate) navigate("/propuestas/personalizado");
     },
     color: "#939b62",
     pie: "Se abre un espacio-tiempo para iniciar un proceso individual de trabajo sobre sí mismo, dando la atención y cuidado precisos",
@@ -191,7 +209,7 @@ export let menu_propuestas: Menu = async (navigate) => [
   {
     titulo: "Formato Charla Abierta",
     accion: async () => {
-      navigate("/propuestas/abierta");
+      if (navigate) navigate("/propuestas/abierta");
     },
     color: "#939b62",
     pie: "La misma se propone sin dirección ni recorrido determinado de antemano, sino que se confía en que tome la forma que le corresponda por intermedio de las cuestiones que atraviesen a los asistentes en torno a estos temas",

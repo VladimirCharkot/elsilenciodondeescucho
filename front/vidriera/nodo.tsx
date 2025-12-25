@@ -23,6 +23,7 @@ export const Nodo = ({ g }: NodoProps) => {
 
   return (
     <g
+      data-slug={g.slug} // Para identificarlo
       onClick={() => {
         if (g.accion) g.accion();
         else if (g.slug) navigate(`/escritos/${g.slug!}`);

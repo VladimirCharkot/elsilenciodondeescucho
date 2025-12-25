@@ -58,6 +58,7 @@ header h1 {
   font-size: 1em;
   margin: 0.5em;
   display: inline-block;
+  transition: 0.3s;
 }
 header .placeholder {
   width: 11em;
@@ -590,7 +591,6 @@ header #area_busqueda #busqueda:focus-visible {
     background-attachment: initial;
   }
 }
-
 .piel {
   padding: var(--pad, var(--pad-default));
   background-attachment: var(--attach, var(--attach-default));
@@ -1621,11 +1621,48 @@ svg.vidriera .entrada circle {
   transition: 0.6s;
   fill-opacity: 0.2;
 }
+svg.vidriera .entrada.dimmeado circle {
+  fill-opacity: 0.05;
+  stroke-opacity: 0.2;
+}
+svg.vidriera .entrada.destacado circle {
+  stroke-width: 12px;
+  stroke-opacity: 1;
+  fill-opacity: 0.4;
+}
 svg.vidriera .entrada.resaltado circle {
   transform: scale(1.1);
 }
 svg.vidriera .entrada.visitado circle {
   fill-opacity: 0.8;
+}
+
+.indice ol {
+  background: linear-gradient(90deg, rgb(255, 255, 255) 1%, rgb(255, 255, 255) 85%, rgba(255, 255, 255, 0) 100%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+  position: absolute;
+  padding-top: 12vh;
+  height: 100vh;
+  overflow-y: auto;
+}
+.indice ol li {
+  margin-bottom: 0.5em;
+  padding-left: 1em;
+}
+.indice ol li a {
+  text-decoration: none;
+  color: black;
+}
+.indice ol li.activo a {
+  font-weight: bold;
+}
+.indice .perilla {
+  position: absolute;
+  top: 12vh;
+  height: 88vh;
 }
 
 .telon {
