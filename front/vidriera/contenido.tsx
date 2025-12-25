@@ -11,8 +11,7 @@ import {
   get_visitados,
   layout_centros,
   layout_fuerza,
-  layout_inicial,
-  panear,
+  layout_inicial
 } from "./utils";
 import { VidrieraProps } from "./vidriera";
 
@@ -138,7 +137,7 @@ export const anim_indice: Animacion = async (svg, zoom) => {
   escalar(svg, zoom, 3000, 0.08);
 };
 
-export const anim_enfocar = async (svg: SVG, zoom: Zoom, nodo: { x: number, y: number }, scale: number) => {
+export const anim_enfocar = async (svg: SVG, zoom: Zoom, nodo: { x: number, y: number }, scale: number, duracion = 500) => {
   const svgWidth = parseInt(svg.style("width"));
   const svgHeight = parseInt(svg.style("height"));
   const { x, y } = nodo;
@@ -149,7 +148,7 @@ export const anim_enfocar = async (svg: SVG, zoom: Zoom, nodo: { x: number, y: n
     .translate(-x, -y);
 
   svg.transition()
-    .duration(300)
+    .duration(duracion)
     .ease(d3.easeCubic)
     .call(zoom.transform, t);
 }

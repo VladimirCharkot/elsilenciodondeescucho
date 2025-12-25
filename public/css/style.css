@@ -1651,6 +1651,8 @@ svg.vidriera .entrada.visitado circle {
 .indice ol li {
   margin-bottom: 0.5em;
   padding-left: 1em;
+  cursor: pointer;
+  transition: 0.1s;
 }
 .indice ol li a {
   text-decoration: none;
@@ -1658,6 +1660,10 @@ svg.vidriera .entrada.visitado circle {
 }
 .indice ol li.activo a {
   font-weight: bold;
+}
+.indice ol li:hover {
+  text-decoration: underline;
+  transform: translateX(0.3em);
 }
 .indice .perilla {
   position: absolute;

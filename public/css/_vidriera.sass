@@ -76,6 +76,8 @@ svg.vidriera
     li
         margin-bottom: 0.5em
         padding-left: 1em
+        cursor: pointer
+        transition: 0.1s
 
         a
             text-decoration: none
@@ -83,6 +85,10 @@ svg.vidriera
 
         &.activo a
             font-weight: bold
+
+        &:hover
+          text-decoration: underline
+          transform: translateX(.3em)
 
   // Para abrir y cerrar el índice
   .perilla

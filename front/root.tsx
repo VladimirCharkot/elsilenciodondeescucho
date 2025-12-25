@@ -42,6 +42,7 @@ const Inicio = () => {
               menu={vidriera_escritos.menu}
               layout={vidriera_escritos.layout}
               Overlay={vidriera_escritos.Overlay}
+              indice
               headerNav={{
                 atrasTexto: "Inicio",
                 atrasPath: "/",

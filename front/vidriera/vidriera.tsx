@@ -4,10 +4,10 @@ import * as React from "react";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Animacion, Layout, Menu } from "../vidriera/tipos";
+import { anim_enfocar, centros_indice } from "./contenido";
 import VidrieraContext from "./contexto";
 import { Nodo } from "./nodo";
-import { dragd3, escalar, panear, zoomd3 } from "./utils";
-import { anim_enfocar } from "./contenido";
+import { dragd3, zoomd3 } from "./utils";
 
 export interface VidrieraProps {
   animacion?: Animacion; // Animación inicial, usualmente pan y zoom
@@ -15,6 +15,7 @@ export interface VidrieraProps {
   layout: Layout; // Función que asigna posición inicial a cada nodo
   Overlay?: React.FC; // Componente que se renderiza sobre los nodos
   trigger?: EventEmitter; // Trigger de animación y fuerzas
+  
 }
 
 // Una vidriera es: nodos + layout inicial + fuerzas + animacion inicial
@@ -67,24 +68,22 @@ export const Vidriera = ({
     if (trigger) {
       trigger.on("listo", () => setTriggereado(true));
 
-      trigger.on("hover", (slug: string) => {
+      trigger.on("enfocar", (slug: string) => {
         const svg = svgRef.current
         const zoom = zoomRef.current
 
         const nodo = nodos.find(n => n.slug === slug)
         if (!nodo || !svg || !zoom) return;
 
-        // if (nodo.fm && nodo.fm.serie) {
-        //   // Si tiene serie, buscamios el centro de la serie
-        //   const nodo_d3 = d3.select(`[data-slug="${nodo.fm.serie}"]`).node()
-        //   if (!nodo_d3) return;
-
-        //   const p = (nodo_d3 as Element).getBoundingClientRect()
-        //   panear(svg, zoom, 300, p)
-        // } else { 
+        const centro = centros_indice.find(c => nodo.fm && c.nombre === nodo.fm.serie);
+        
+        if (centro) {
+          // Enfocar el centro de la serie
+          anim_enfocar(svg, zoom, centro, 0.3, 700);
+        } else { 
           // Enfocar el nodo
-          anim_enfocar(svg, zoom, nodo as { x: number, y: number }, 0.3);
-        // }
+          anim_enfocar(svg, zoom, nodo as { x: number, y: number }, 0.3, 700);
+        }
 
         d3.selectAll('.entrada').classed("dimmeado", true);
         d3.select(`[data-slug="${slug}"]`).classed("destacado", true);
