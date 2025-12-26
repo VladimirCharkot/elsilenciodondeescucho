@@ -1,16 +1,16 @@
-import { EventEmitter } from 'events'
 import * as React from "react"
 import { useEffect } from "react"
 import { Barra, CabeceraProps } from "../cabecera"
 import { TelonBienvenida } from "../telon"
+import { useVidriera } from './contexto'
 import Indice from "./indice"
 import { Animacion, Layout, Menu } from "./tipos"
 import { Vidriera } from "./vidriera"
+import { useNavigate } from "react-router-dom"
 
 /**
  * Telón + Vidriera + Barra
  */
-
 export interface VistaProps {
   animacion?: Animacion // Animación inicial, usualmente pan y zoom
   menu: Menu // Nodos de la vidriera
@@ -21,20 +21,32 @@ export interface VistaProps {
   indice?: boolean
 }
 
-export const Vista = ({ animacion, menu, layout, Overlay, headerNav, titulo, indice = false}: VistaProps) => {
-
+export const Vista = ({ headerNav, menu, indice = false, Overlay, ...vidriera}: VistaProps) => {
+  const navigate = useNavigate()
+  
   useEffect(() => {
-    document.title = titulo ?? "El Silencio Donde Escucho"
+    document.title = vidriera.titulo ?? "El Silencio Donde Escucho"
   }, [])
 
-  const trigger = React.useMemo(() => new EventEmitter(), [])
+  const [telonListo, setTelonListo] = React.useState(false)
+
+  const { montar } = useVidriera()
+  
+  useEffect(() => { 
+    if (!telonListo) return;
+    menu(navigate).then(nodos => {
+      console.log(`Vista: Montando vidriera con ${nodos.length} nodos.`)
+      montar({ nodos, layout: vidriera.layout, animacion: vidriera.animacion })
+    })
+
+  }, [telonListo])
 
   return (
     <>
-      <TelonBienvenida onDesvanecer={() => trigger.emit('listo')}/>
+      <TelonBienvenida onDesvanecer={() => setTelonListo(true)}/>
       <Barra atrasTexto={headerNav?.atrasTexto} atrasPath={headerNav?.atrasPath} />
-      <Vidriera animacion={animacion} menu={menu} layout={layout} Overlay={Overlay} trigger={trigger}/>
-      {indice && <Indice menu={menu} trigger={trigger} />}
+      <Vidriera Overlay={Overlay} />
+      {indice && <Indice />}
     </>
   )
 }

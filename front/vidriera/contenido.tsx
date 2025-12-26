@@ -4,7 +4,7 @@ import * as d3 from "d3";
 import { defaultTo, find } from "lodash";
 import { TextoSinCuerpo } from "../../shared/tipos";
 import { get } from "../utils/http";
-import { Animacion, CentroType, GenericD3Selection, Menu, NodoVidriera, SVG, Zoom } from "./tipos";
+import { Animacion, CentroType, GenericD3Selection, Menu, NodoVidriera } from "./tipos";
 import {
   capitalize,
   escalar,
@@ -13,7 +13,7 @@ import {
   layout_fuerza,
   layout_inicial
 } from "./utils";
-import { VidrieraProps } from "./vidriera";
+import { VistaProps } from "./vista";
 
 // Textos ya visitados
 const visitados = get_visitados();
@@ -108,15 +108,6 @@ export const menu_principal: Menu = async (navigate) => [
     color: d3.rgb("#ffd56b").formatHsl(),
     pie: "Indentidad, propósito e historia",
   },
-  //   {
-  //     id: "colecta",
-  //     titulo: "Colecta",
-  //     accion: () => {
-  //       document.location = "/colecta";
-  //     },
-  //     color: rgb("#7e67e5").formatHsl(),
-  //     pie: "",
-  //   },
 ];
 
 /**
@@ -137,21 +128,6 @@ export const anim_indice: Animacion = async (svg, zoom) => {
   escalar(svg, zoom, 3000, 0.08);
 };
 
-export const anim_enfocar = async (svg: SVG, zoom: Zoom, nodo: { x: number, y: number }, scale: number, duracion = 500) => {
-  const svgWidth = parseInt(svg.style("width"));
-  const svgHeight = parseInt(svg.style("height"));
-  const { x, y } = nodo;
-
-  const t = d3.zoomIdentity
-    .translate(svgWidth / 2, svgHeight / 2)
-    .scale(scale)
-    .translate(-x, -y);
-
-  svg.transition()
-    .duration(duracion)
-    .ease(d3.easeCubic)
-    .call(zoom.transform, t);
-}
 
 /**
  * Menú con las propuestas
@@ -216,7 +192,7 @@ export let menu_propuestas: Menu = async (navigate) => [
 ];
 
 // Config de la vidriera de escritos
-export const vidriera_escritos: VidrieraProps = {
+export const vidriera_escritos: VistaProps = {
   animacion: anim_indice,
   menu: menu_escritos,
   layout: (nodos) => {
@@ -229,7 +205,7 @@ export const vidriera_escritos: VidrieraProps = {
 /**
  * Setting entero para la vidriera inicial
  */
-export const vidriera_inicial: VidrieraProps = {
+export const vidriera_inicial: VistaProps = {
   animacion: anim_inicial,
   menu: menu_principal,
   layout: (nodos) => {
@@ -241,7 +217,7 @@ export const vidriera_inicial: VidrieraProps = {
 /**
  * Setting entero para la vidriera de propuestas
  */
-export const vidriera_propuestas: VidrieraProps = {
+export const vidriera_propuestas: VistaProps = {
   animacion: anim_inicial,
   menu: menu_propuestas,
   layout: (nodos) => {

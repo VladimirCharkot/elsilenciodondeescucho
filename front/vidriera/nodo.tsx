@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { NodoVidriera } from "./tipos";
 import { chunk } from "lodash";
 import * as d3 from "d3";
+import { useVidriera } from "./contexto";
 
 /* Layout */
 export interface NodoProps {
@@ -16,6 +17,8 @@ export interface NodoProps {
 export const Nodo = ({ g }: NodoProps) => {
   // if(color === undefined) color = '#ccc';
   const navigate = useNavigate();
+
+  const { setEnfocado } = useVidriera()
 
   if (g.id === undefined) g.id = g.titulo.toLowerCase().split(" ").join("-");
 
@@ -31,7 +34,11 @@ export const Nodo = ({ g }: NodoProps) => {
       className={`entrada ${hovereado ? "resaltado" : ""} ${
         g.visitado ? "visitado" : ""
       }`}
-      onMouseEnter={() => setHovereado(true)}
+      onMouseEnter={() => {
+        setHovereado(true)
+        console.log(`Nodo: hover sobre ${g.slug}`)
+        setEnfocado(g.slug || null)
+      }}
       onMouseLeave={() => setHovereado(false)}
     >
       {/* Esferita */}
