@@ -1590,16 +1590,18 @@ blockquote {
 
 svg.vidriera {
   width: 100vw;
-  height: 120vh;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
   font-family: "EB Garamond";
   font-weight: 200;
+  width: calc(100vw - 12em);
+  left: 12em;
 }
 svg.vidriera .lienzo {
   width: 100vw;
-  height: 120vh;
+  height: 100vh;
 }
 svg.vidriera .cabecera {
   user-select: none;
@@ -1644,8 +1646,9 @@ svg.vidriera .entrada.visitado circle {
   padding: 0;
   font-size: 1.2em;
   position: absolute;
+  width: 12em;
   padding-top: 12vh;
-  height: 100vh;
+  height: 88vh;
   overflow-y: auto;
 }
 .indice > ol li {

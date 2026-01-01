@@ -53,9 +53,9 @@ function useVidrieraState() {
    * Busca por slug el nodo o centro, y enfoca si lo encuentra.
    */
   const enfocarItem = React.useCallback(
-    (slug: string, escala: number = 0.8, duracion: number = 500) => {
+    (slug: string, escala: number = 0.8, duracion: number = 1500) => {
       const nodo = nodos.find((n) => n.titulo === slug)
-      const centro = centros_indice.find((c) => c.nombre === nodo?.fm?.serie)
+      const centro = centros_indice.find((c) => c.nombre === slug)
 
       if (centro || nodo) enfocarPunto(centro || nodo!, escala, duracion)
     },
@@ -66,13 +66,14 @@ function useVidrieraState() {
   React.useEffect(() => {
     if (enfocado) {
       // Buscamos nodo y centro (serie)
-      const nodo = nodos.find((n) => n.titulo === enfocado)
+      const nodo = nodos.find((n) => n.slug === enfocado)
       const centro = centros_indice.find((c) => c.nombre === nodo?.fm?.serie)
 
       // Destacamos
       if (centro) {
         d3.selectAll('.cabecera').classed('dimmeado', true)
         d3.select(`[data-slug="${centro.nombre}"]`).classed('destacado', true)
+        enfocarItem(centro.nombre, 0.6)
       }
 
       // Destacamos
@@ -95,8 +96,6 @@ function useVidrieraState() {
     // Triggereamos el render
     setNodos(config.nodos)
   }, [])
-
-  // setMontado(true);
 
   /**
    * Cuando los nodos estén, lanzamos d3 (layout y animación)
@@ -128,45 +127,15 @@ function useVidrieraState() {
     // Corremos animación
     if (animacionRef.current) {
       animacionRef.current(svg, zoomBehavior)
-      // Optional, si tiene que correr solo una vez
+      // Optional, si hubiera que limparla luego de triggerear:
       // animacionRef.current = null;
     }
 
     // Abastecer refs
     svgRef.current = svg
     zoomRef.current = zoomBehavior
+    setMontado(true)
   }, [nodos])
-
-  // const montar = React.useCallback((config: VidrieraConfig) => {
-  //   console.log(`Vidriera: Montando vidriera con ${config.nodos.length} nodos:`, config);
-
-  //   // Agarramos el svg
-  //   const svg = d3.select<SVGSVGElement, unknown>("svg");
-  //   if (!svg) throw new Error("Vidriera: No se encontró el elemento SVG en el DOM.");
-
-  //   // Layout - config, state o nada
-  //   const entradas = d3.selectAll(".entrada").data(config.nodos)
-  //   const layout = config.layout || layoutRef.current;
-  //   if (layout) layout(entradas);
-
-  //   // Zoom y drag
-  //   const lienzo = d3.select(".lienzo");
-  //   const zoomBehavior = zoomd3(svg, lienzo);
-  //   dragd3(svg);
-
-  //   // Animación inicial, config, state o nada
-  //   const animacion = config.animacion || animacionRef.current;
-  //   if (animacion) animacion(svg, zoomBehavior)
-
-  //   // Abastecer context
-  //   setNodos(config.nodos)
-  //   svgRef.current = svg
-  //   zoomRef.current = zoomBehavior
-  //   if (config.layout) layoutRef.current = config.layout || null
-  //   if (config.animacion) animacionRef.current = animacion || null
-
-  //   setMontado(true)
-  // }, []);
 
   return {
     nodos,
